@@ -1,0 +1,26 @@
+.Etude1, .Etude2, .Etude3 {
+    width: 100%;
+    margin-top: 100px; 
+}
+.Etude1{
+    margin-top: 200px;
+}
+.Etude2 {
+    margin-top: 20px;
+}
+
+.videoWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+}

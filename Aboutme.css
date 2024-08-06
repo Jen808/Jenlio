@@ -1,0 +1,32 @@
+.MyInfo{
+    color:white;
+    margin: 200px 30% 0 10%;
+}
+
+.Name, .Email, .City{
+    line-height: 10px;
+}
+
+.Name{
+    font-size: 40px;
+}
+
+.Email{
+    font-size: 20px;
+    color: #FF9900;
+}
+
+.Des{
+    Margin-top: 100px;
+
+}
+
+.ResumeLink{
+    text-decoration:underline;
+    color:#FF9900;
+    font-size: 20px;
+}
+
+.resume{
+    margin: 80px 30% 0 10%;
+}

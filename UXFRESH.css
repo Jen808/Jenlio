@@ -1,0 +1,107 @@
+.FreshBanner{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.FreshIconBox {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns the items vertically */
+    gap: 50px;
+    margin-top: 40px; /* Adds space between each icon-description pair */
+}
+
+.FDate, .FTeam, .FPurpose, .FTool {
+    display: flex;
+    align-items: center; /* Aligns the icon and description vertically */
+    gap: 1px; /* Adds space between the icon and the text */
+}
+
+.Ficon1, .Ficon2, .Ficon3, .Ficon4 {
+    width: 50px; /* Sets icon width */
+    height: 50px; /* Sets icon height */
+    fill: #00B0BB; /* This will not work for <img> tags, see below */
+}
+
+.FIconDes1 {
+    margin: 0; /* Removes default paragraph margin */
+    color: white; /* Sets text color to white */
+    font-family: 'IBM Plex Sans', sans-serif; /* Sets the font family */
+    font-size: 14px;
+    font-weight: lighter; /* Sets the font size */
+}
+
+
+
+
+.FreshDetails {
+    color:white;
+    display: flex;
+    justify-content: space-between; /* Adjusts the spacing between the child elements */
+    align-items: flex-start; /* Aligns children at the top */
+    gap: 40px; /* Optional: Adds space between the child elements */
+    margin: 100px 20% 0 10%;
+
+}
+
+
+.FreshProgressSec {
+    flex: 1;
+    min-width: 100px; /* Ensures it doesn't get too narrow */
+    max-width: 30%; /* Optional, for further control */
+    text-align: right;
+}
+
+.FreshResearch{
+    color:#04CFAB;
+}
+
+
+.FreshObjectiveSec {
+    flex: 2;
+    min-width: 500px; /* Ensures it doesn't get too narrow */
+    max-width: 70%; /* Optional, for further control */
+    text-align: left;
+}
+
+
+.FreshPhoto {
+    width: 1000px;
+    height: auto;
+    justify-self: center;
+    margin: 200px 20% 0 20%;
+}
+
+.FreshPhoto2 {
+    width: 1000px;
+    height: auto;
+    justify-self: center;
+    margin: 200px 20% 0 20%;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .FreshPhoto, .FreshPhoto2 {
+        width: 100%;
+        margin:0;
+    }
+}
+
+
+.IfelinkBox {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    margin-top: 100px;
+    color: white; /* Adjust as needed */
+}
+
+.FreshPdf{
+    text-decoration: underline;
+}
+
+.FreshPdf:hover{
+    color:#FF9900;
+}

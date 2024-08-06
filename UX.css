@@ -1,0 +1,148 @@
+.UxIntro{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+.UxIfeImg, .UxFreshImg, .UxVendorsImg, .UxGlansisImg, .UxRoosRoastImg, .UxAmongUsImg{
+    width: auto;
+    height: 363px;
+    flex-direction: column;
+    margin: 200px auto 200px 180px;
+}
+
+.UxIfeImg{
+    padding-top: 0px;
+}
+
+.UxIfeBack, .UxFreshBack, .UxVendrosBack, .UxGlansisBack, .UxRoosRoastBack, .UxAmongUsBack {
+    background-color: #3F3F3F;
+    width: 80%;
+    height: 250px;
+    flex-direction: column;
+    margin: -510px auto 80px; auto;
+    align-content: center;
+}
+
+.UxIfeTD, .UxFreshTD, .UxVendorsTD, .UxGlansisTD, .UxRoosRoastTD, .UxAmongUsTD {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-align: left;
+    justify-content: space-between;
+    line-height: 180%;
+}
+
+
+.UxIfeTitle, .UxFreshTitle, .UxVendorsTitle, .UxGlansisTitle, .UxRoosRoastTitle, .UxAmongUsTitle {
+    margin-left: 800px;
+    margin-top: -280px;
+
+}
+
+.UxIfeDes, .UxFreshDes, .UxVendorsDes, .UxGlansisDes, .UxRoosRoastDes, .UxAmongUsDes {
+    margin-left: 800px;
+    margin-right: 200px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .UxIfeImg, .UxFreshImg, .UxVendorsImg, .UxGlansisImg, .UxRoosRoastImg, .UxAmongUsImg{
+        position: relative;
+        width: 100%;
+        margin: 30px 0 420px 0;
+        justify-content: space-evenly;
+    }
+
+    .UxIfeBack, .UxFreshBack, .UxVendrosBack, .UxGlansisBack, .UxRoosRoastBack, .UxAmongUsBack {
+        background-color: #3F3F3F;
+        width: 0%;
+        height: 0px;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .UxIfeTD, .UxFreshTD, .UxVendorsTD, .UxGlansisTD, .UxRoosRoastTD, .UxAmongUsTD {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 0px;
+        text-align: left;
+        justify-content: space-between;
+        line-height: 180%;
+    }
+
+}
+
+
+.IfeDetails{
+    color: white;
+    text-align: right;
+    
+}
+
+.IfeProgressSec{
+    margin: 100px 70% auto auto;
+}
+
+.IfeResearchDes, .IfeDesignDes {
+    /* Assuming you might wrap the text in a div for flex purposes */
+    order: 1; /* This ensures it comes before the bar in visual order */
+} 
+
+.IfeResearch{
+    color: #00B0BB;
+}
+
+
+.IfeResearchSec {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: flex-end; /* Align items to the right */
+    gap: 10px;
+ /* Adjust the gap between items as needed */
+}
+
+
+.IfeResearchBar {
+    order: 2; /* This ensures the bar is to the right */
+    background-color: #00B0BB;
+    width: 2px;
+    height: 180px;
+}
+
+
+
+.IfeDesign{
+    color: #96DEE2;
+}
+
+.IfeDesignSec {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: flex-end; /* Align items to the right */
+    gap: 10px; /* Adjust the gap between items as needed */
+}
+
+.IfeDesignBar {
+    order: 2; /* This ensures the bar is to the right */
+    background-color: #96DEE2;
+    width: 2px;
+    height: 140px;
+}
+
+.IfeObjectiveSec{
+    color: white;
+    width: 800px;
+    text-align: left;
+    margin: -458px 20% auto 33%;
+}
+
+.IfeObjectiveDes{
+    width: 500px;
+
+}

@@ -1,0 +1,427 @@
+body {
+    background-color: #2A2A2A;
+    font-family: 'IBM Plex Sans', 'Roboto', 'Archivo Black', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+/* Main Intro */
+
+.Intro {
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+    margin-left: 200px;
+    margin-top: 200px;
+    line-height: 26px;
+    text-align: left;
+}
+
+    .Intro1 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    .Intro2 {
+        font-family: "Roboto" sans-serif;
+        font-size: 28px;
+        line-height: 35px;  
+    }
+
+    .things{
+        color: #3c3c3c;
+        transition: color 0.8s ease;
+    }
+
+    .things:hover {
+        color: #FF9900;
+
+    }
+
+/* Sub Intro */
+
+.subIntro {
+    margin-top: 200px;
+    font-family: "Roboto" sans-serif;
+    font-size: 23px;
+    color: white;
+    text-align: right;
+    margin-right: 60px;
+}
+
+.subIntroDes2{
+    color:#FF9900;
+    font-weight: bold;
+
+}
+
+/* Main Intro, Sub Intro resposive */
+
+@media screen and (max-width: 768px) {
+
+    .Intro{
+        flex-direction: column;
+        margin-left:20px;
+    }
+
+    .Intro1{
+        line-height: 55px;
+    }
+}
+
+
+/* UX Research and Design */
+
+.homeUx {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    line-height: 10px;
+}
+
+.homeUxTitle{
+    margin-top: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .homeUxDes{
+        line-height: 20px;
+    }
+}
+
+
+
+.gallery1{
+    position: relative;
+}
+
+.background{
+    width: 100%;
+    height: 1000px;
+    background-color: #3F3F3F;
+    margin-top: 200px;
+}
+
+    .IFEimg{
+        position: absolute; 
+        top: -100px; 
+        left: 32%;
+        transform: translateX(-50%); 
+        width: 544px; 
+        height: 363px;
+    }
+
+    .FRESHimg{
+        position: absolute; 
+        top: -100px; 
+        left: 68%;
+        transform: translateX(-50%); 
+        width: 544px; 
+        height: 363px;
+    }
+
+    .VENDORSimg{
+        position: absolute; 
+        top: 350px; 
+        left: 32%;
+        transform: translateX(-50%); 
+        width: 544px; 
+        height: 363px;
+    }
+
+    .GLANSISimg{
+        position: absolute; 
+        top: 350px; 
+        left: 68%;
+        transform: translateX(-50%); 
+        width: 544px; 
+        height: 363px;
+    }
+
+    .RoosRoastimg{
+        position: absolute; 
+        top: 800px; 
+        left: 32%;
+        transform: translateX(-50%); 
+        width: 544px; 
+        height: 363px;
+    }
+
+    .AmongUsimg{
+        position: absolute; 
+        top: 800px; 
+        left: 68%;
+        transform: translateX(-50%); 
+        width: 544px; 
+        height: 363px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .IFEimg, .FRESHimg, .VENDORSimg, .GLANSISimg, .RoosRoastimg, .AmongUsimg {
+            position: relative; 
+            left: auto;
+            transform: none; 
+            width: 100%; 
+            height: auto; 
+            margin: 0 auto; 
+            top: auto; 
+        }
+
+        .background{
+            width: 0%;
+            height: 0%
+
+        }
+    }
+
+.gallery1des{
+    font-size: 16px;
+    font-family:"Roboto", sans-serif;
+    text-align: center;
+
+
+}
+
+
+    .IFEtitle {
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 29.5%
+    }
+
+    .VENDORStitle {
+        color: white;
+        position: absolute;
+        top: 720px;
+        left: 29.5%
+    }
+
+    .RoosRoasttitle {
+        color: white;
+        position: absolute;
+        top: 1165px;
+        left: 29.5%
+    }
+
+    .FRESHtitle {
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 66.5%;
+    }
+
+    .GLANSIStitle {
+        color: white;
+        position: absolute;
+        top: 720px;
+        left: 66.5%;
+    }
+
+    .AmongUstitle {
+        color: white;
+        position: absolute;
+        top: 1165px;
+        left: 66.5%;
+        text-align: center;
+    }
+
+@media screen and (max-width: 768px) {
+
+    
+    .IFEimg, .FRESHimg, .VENDORSimg, .GLANSISimg, .RoosRoastimg, .AmongUsimg {
+        position: relative; 
+        left: auto; 
+        width: 100%;
+        height: auto; 
+        margin: 0 auto;
+        padding-bottom: 30px;
+        top: auto; 
+    }
+
+}
+
+
+/* Interaction Design */
+
+.IxDtitle{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 600px;
+    text-align: center;
+
+}
+
+.IxDdes{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.IxDimgs {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+    height: 100%; 
+}
+
+.IxDimg1, .IxDimg2, .IxDimg3 {
+    width: 533px;
+    height: 330px;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 800px) {
+    .IxDimgs {
+        flex-direction: column; /* Stack children vertically */
+    }
+
+    .IxDimg1, .IxDimg2, .IxDimg3 {
+        width: 100%; /* Adjust width to fit the container */
+        height: auto; /* Adjust height to maintain aspect ratio */
+        margin-top: 40px;
+    }
+}
+
+.Promo{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.Promotitle{
+    margin-left: 45%;
+    margin-top: 550px;
+    position: absolute;
+
+}
+
+.Promodes{
+    text-align: left;
+    margin-left: 45%;
+    margin-right: 20%;
+
+    margin-top: 580px;
+    position: absolute;
+
+}
+
+
+.Promoimg{
+    width: 100%;
+    height: auto;
+    max-width: 544px;
+    margin-left: 80px;
+    margin-top: 390px;
+    justify-content: center;
+    transition: width 0.2s ease, max-width 0.2s ease;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .Promoimg {
+        position: relative; 
+        left: auto; 
+        width: 100%;
+        height: auto; 
+        margin: 0 auto;
+        padding-top: 50px;
+        top: auto; 
+    }
+
+    .Promotitle, .Promodes{
+        position: relative;
+        text-align: center;
+        margin:0px;
+        padding-top:10px;
+    }
+
+    .Promotitle{
+        margin-top: 150px;
+    }
+
+}
+
+.Etude{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.Etudetitle{
+
+    margin-left: 51.2%;
+    margin-top: 450px;
+    position: absolute; 
+
+}
+
+.Etudedes{
+    text-align: right;
+
+    margin-left: 20.6%;
+    margin-right: 45%;
+    margin-top: 480px;
+    position: absolute; 
+
+}
+
+.Etudeimg{
+    max-width: 544px;
+    height: auto;
+    margin-left: 63%;
+    margin-right: 10%;
+    margin-top: 350px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .Etudeimg {
+        position: relative; 
+        left: auto; 
+        width: 100%;
+        height: auto; 
+        margin: 0 auto;
+        padding-top: 50px;
+        top: auto; 
+    }
+
+    .Etudetitle, .Etudedes{
+        position: relative;
+        text-align: center;
+        margin:0px;
+        padding-top:10px;
+    }
+
+    .Etudetitle{
+        margin-top: 150px;
+    }
+
+}
+
+.AboutMe{
+    margin-top: 300px;
+}
+
+.AboutMedes{
+    color: white;
+    text-align: center;
+}
+
+.AboutMelink a {
+    text-decoration: underline;
+    color:#FF9900;
+}
+
+.AboutMelink {
+    text-align: center;
+}
+
