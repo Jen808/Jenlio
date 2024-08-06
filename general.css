@@ -1,0 +1,99 @@
+body{
+    background-color: #2A2A2A;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 60px; 
+    width: auto; 
+    margin-left: 60px; 
+    margin-top: 60px;
+    filter: invert(100%);
+  }
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A2A2A;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    margin-top: 60px;
+    margin-right: 60px;
+
+}
+
+.navbar_menu li a {
+    font-size: 18px;
+    text-align: right;
+    padding-left: 120px;
+
+
+}
+
+.navbar_menu li a:hover {
+    color: #FF9900;
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo{
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: right;
+        width: 100%;
+        margin-top: 0px;
+        margin-right: 0px;
+
+    
+    }
+
+    .navbar_menu li{
+        width: 100%;
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+} 
+
+
+.block{
+    background-color: rgb(31, 31, 31);
+    width: fill;
+    height: 100px;
+    margin-top: 300px;
+}
+
+.infos{
+    color: white;
+    text-align: center;
+    margin-top: -70px;
+}
+
+.city{
+    margin-top: 5px;
+    color:#5b5b5b;
+}
+
+
+.FooterResume:hover {
+    color:#FF9900;
+}

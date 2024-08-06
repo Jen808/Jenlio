@@ -1,0 +1,34 @@
+.PromoBox {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    margin: 200px 10% 0 10%;
+    gap: 30px;
+
+}
+
+.PromoBoxLogo {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 20px; 
+}
+
+.PromoBoxWords {
+    color: white;
+    text-align: left;
+    flex-grow: 1; 
+    margin-left: 20px; 
+}
+
+.LogoM, .LogoC {
+    width: 100px; 
+    height: auto; 
+    display: inline-block; 
+}
+
+.PromoImg {
+    width: 100%;
+    margin-top: 100px; 
+}

@@ -1,0 +1,33 @@
+.IxDBox{
+    color: white;
+    text-align: center;
+    margin: 100px 20% 0 20%;
+
+}
+
+.IxdContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 50px;
+    margin-top: 100px;
+  }
+  
+  .videoWrapper {
+    width: 560px; 
+    height: 315px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .IxdContainer {
+      justify-content: center;
+    }
+    .videoWrapper {
+      width: 560px; 
+      height: 315px;
+    }
+  }
+  
