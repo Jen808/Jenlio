@@ -19,58 +19,41 @@
     }
 
 
-    /* .sec1 {
-        margin-top: 10vh;
-    } */
 
-    /* Ensure each section (sec1, sec2, etc.) stacks on top of each other */
     .main-container {
         display: flex;
         flex-direction: column;
-        /* Stack sections vertically */
         align-items: center;
         width: 100%;
-        /* Ensure full width for the container */
     }
 
     .container {
         width: 100%;
-        /* Full width for image container */
         height: auto;
         margin-bottom: 2vh;
-        /* Space between image and description */
     }
 
     .des-box {
         width: 100%;
-        /* Full width for description box */
         padding-left: 0;
-        /* Remove padding for mobile */
         padding-top: 2vh;
-        /* Add top padding for spacing */
         text-align: center;
-        /* Center text on mobile */
+        transform: translateX(0);
     }
 
     .title {
         font-size: 5vw;
-        /* Increase font size for mobile */
         padding-top: 2vh;
-        /* Adjust padding for mobile */
     }
 
     .des {
         font-size: 4vw;
-        /* Increase font size for mobile */
         padding-top: 2vh;
-        /* Adjust padding for mobile */
     }
 
     .skill {
         font-size: 4vw;
-        /* Increase font size for mobile */
         padding-top: 2vh;
-        /* Adjust padding for mobile */
     }
 
 
