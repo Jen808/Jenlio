@@ -1,0 +1,267 @@
+html,
+body {
+    /* height: 100%; */
+    background: #FCEDDA;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    /* margin-top: 12vh;
+    margin-bottom: 12vh; */
+
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.logo {
+    width: 10vw;
+    height: 10vw;
+}
+
+.name-des {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+svg {
+    fill: none;
+    height: 10vh;
+    stroke-width: 60px;
+    stroke-linecap: round;
+}
+
+
+
+path {
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+}
+
+.svg-main>path {
+    stroke: #F87474;
+    animation: path var(--duration) ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+@keyframes path {
+    0% {
+        stroke-dashoffset: var(--length);
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+.intro {
+    max-width: 80vw;
+    white-space: pre-line;
+    letter-spacing: 0.1em;
+    font-size: 2vw;
+    font-family: 'VT323', monospace;
+    color: black;
+}
+
+
+
+
+
+
+
+.card-bg {
+    width: 100%;
+    height: 500vh;
+}
+
+.sticky {
+    position: sticky !important;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .sticky-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    background-color: orange;
+  }
+  
+  .card-frame {
+    position: absolute;
+    width: 80vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20vw;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: perspective(100vw)
+    translateX(100vw) 
+    rotateY(180deg);
+    transition: transform 0.1s;
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background-color: #FFF;
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background-color: #E0DED7;
+    background-image: repeating-linear-gradient(0deg, #3B3A38, #3B3A38 33.3%, #ffffff00 0px, #ffffff00 67%);
+    background-size: 100%;
+  }
+  
+  /* @media screen and (orientation:portrait) {
+    .card-frame {
+      display: grid;
+      height: initial;
+      width: initial;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10vw;
+      justify-items: center;
+    }
+  
+    .card {
+      font-size: 20vw;
+      width: 35vw;
+      height: 50vw;
+    }
+  } */
+
+
+.projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec {
+    width: 85vw;
+    max-width: 1510px;
+    height: auto;
+    margin-top: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+
+.container {
+    width: 46.36%;
+    height: auto;
+    overflow: hidden;
+}
+
+.pj {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.pj:hover {
+    transform: scale(1.1);
+}
+
+.des-box {
+    width: 53.64%;
+    height: auto;
+    padding-left: 2vw;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(50%);
+    transition: all 1s;
+}
+
+.title {
+    color: #E2792C;
+    font-family: Inter;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 8vh;
+}
+
+.des {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 2vh;
+}
+
+.skill{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5vh;
+}
+
+
+.des-box.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+
+
+
+ 
