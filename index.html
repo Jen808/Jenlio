@@ -8,13 +8,24 @@
     <!-- <link rel="stylesheet" href="s.css"> -->
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- <div class="social"> -->
+    <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+        <img src="../src/logo-email.png" alt="email" class="email">
+    </a>
+    <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+        <img src="../src/logo-linkedin.png" alt="linked in" class="linkedin">
+    </a>
+    <!-- </div> -->
+    </div>
     <div class="header">
-        <img src="ph.png" class="logo">
+        <img src="../src/me-24.png" class="logo">
+        <p class="touch">touch me!</p>
         <div class="name-des">
             <div class="name">
                 <?xml version="1.0" encoding="UTF-8"?>
@@ -137,29 +148,32 @@
                     </g>
                 </svg>
             </div>
-            <p class="intro">Hello, welcome to my website</p>
+            <p class="intro">Thank you for visiting! I'm entering my senior year at <br> the University of Michigan,
+                majoring in Information Science. <br>Discover who I am, what I do beyond the coursework, <br> and meet
+                your future employee</p>
         </div>
     </div>
     <div class="card-bg">
         <div class="sticky">
-            <div class="sticky-background">
-                SCROLL ANIMATION
+            <div class="sticky-background"> Before <br> the <br> showcase <br> wanna <br> see <br> who I am <br> ?
+                <!-- SCROLL ANIMATION -->
             </div>
             <div class="card-frame">
                 <div class="card">
-                    <div class="front">Education</div>
+                    <img src='../src/card-edu.png' alt="Education" class="front" id="f1">
+                    <!-- <div class="front">Education</div> -->
                     <div class="back"></div>
                 </div>
                 <div class="card">
-                    <div class="front">Work Experience</div>
+                    <img src='../src/card-chs.png' alt="Promotional Materials" class="front" id="f2">
                     <div class="back"></div>
                 </div>
                 <div class="card">
-                    <div class="front">Gallery</div>
+                    <img src='../src/card-art.png' alt="Art Gallery" class="front" id="f3">
                     <div class="back"></div>
                 </div>
                 <div class="card">
-                    <div class="front">Resume & Contact</div>
+                    <img src='../src/card-my.png' alt="Resume and About me" class="front" id="f4">
                     <div class="back"></div>
                 </div>
             </div>
@@ -167,62 +181,131 @@
     </div>
 
     <div class="projects">
-        <div class="sec">
+        <div class="sec" id="s1">
             <div class="container">
-                <img src="ph.png" class="pj">
+                <img src="../src/main-20.png" class="pj">
             </div>
             <div class="des-box">
-                <div class="title">MY Widdy</div>
-                <div class="des">This is desktop widget project </div>
-                <div class="skill">#HTML #CSS #JavaScript #Node.js #Electron</div>
-                <a href="#" id="link">My Widdy</a>
-            </div>
-        </div>
-        <div class="sec">
-            <div class="container">
-                <img src="ph.png" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title">GLANSIS</div>
-                <div class="des">This is desktop widget project </div>
-                <div class="skill">#HTML #CSS #JavaScript #Node.js #Electron</div>
-                <a href="#" id="link">My Widdy</a>
-            </div>
-        </div>
-        <div class="sec">
-            <div class="container">
-                <img src="ph.png" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title">Vendors</div>
-                <div class="des">This is desktop widget project </div>
-                <div class="skill">#HTML #CSS #JavaScript #Node.js #Electron</div>
-                <a href="#" id="link">My Widdy</a>
-            </div>
-        </div>
-        <div class="sec">
-            <div class="container">
-                <img src="ph.png" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title">Fresh</div>
-                <div class="des">This is desktop widget project </div>
-                <div class="skill">#HTML #CSS #JavaScript #Node.js #Electron</div>
-                <a href="#" id="link">My Widdy</a>
-            </div>
-        </div>
-        <div class="sec">
-            <div class="container">
-                <img src="ph.png" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title">IFE System</div>
-                <div class="des">This is desktop widget project </div>
-                <div class="skill">#HTML #CSS #JavaScript #Node.js #Electron</div>
-                <a href="#" id="link">My Widdy</a>
-            </div>
-        </div>
+                <div class="title" id="t1">Jenlio</div>
+                <div class="des" id="d1">
+                    Jennifer's Portfolio is my creature
+                    <span class="bold-text">from design to deploy </span>
+                    everything is up-to-date and more things will comming soon as I work.
+                    <span class="bold-text"> Stay tuned!
+                    </span>
 
+                </div>
+                <div class="skill">
+                    <img src='../src/logo-figma.png' alt="figma" class="skill-logo">
+                    <img src='../src/logo-ai.png' alt="figma" class="skill-logo">
+                    <img src='../src/logo-ps.png' alt="figma" class="skill-logo">
+                    <img src='../src/logo-html.png' alt="html" class="skill-logo">
+                    <img src='../src/logo-css.png' alt="css" class="skill-logo">
+                    <img src='../src/logo-js.png' alt="javascript" class="skill-logo">
+                    <img src='../src/logo-git.png' alt="git" class="skill-logo">
+                    <img src='../src/logo-github.png' alt="github" class="skill-logo">
+                    <img src='../src/logo-netlify.png' alt="netlify" class="skill-logo">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="sec" id="s2">
+            <div class="container">
+                <img src="../src/main-20.png" class="pj">
+            </div>
+            <div class="des-box">
+                <div class="title" id="t2">MY Widdy</div>
+                <div class="des">
+                    <span class="bold-text">Desktop widget app for clock, calendar, todo-list, and weather.</span> Each
+                    function has more than 4-6 designs with 16 different color themes. Users can connect Google account
+                    to fetch events and schedule. Installation file is available. Codes are available on Github.
+                </div>
+                <!-- <div class="des">Desktop widget app for clock, calendar, todo-list, and weather. Each function has more than 4 different design with 16 different color theme. User can connect Google account to fetch events and schedule. Installation file is available. Codes are available in Github </div> -->
+                <div class="skill">
+                    <img src='../src/logo-figma.png' alt="figma" class="skill-logo">
+                    <img src='../src/logo-html.png' alt="html" class="skill-logo">
+                    <img src='../src/logo-css.png' alt="css" class="skill-logo">
+                    <img src='../src/logo-js.png' alt="javascript" class="skill-logo">
+                    <img src='../src/logo-node.png' alt="node.js" class="skill-logo">
+                    <img src='../src/logo-npm.png' alt="npm" class="skill-logo">
+                    <img src='../src/logo-electron.png' alt="electron" class="skill-logo">
+                    <img src='../src/logo-git.png' alt="git" class="skill-logo">
+                    <img src='../src/logo-github.png' alt="github" class="skill-logo">
+
+                </div>
+                <!-- <a href="#" id="link">My Widdy</a> -->
+            </div>
+        </div>
+        <div class="sec" id="s3">
+            <div class="container">
+                <img src="../src/main.png" class="pj">
+            </div>
+            <div class="des-box">
+                <div class="title" id="t3">GLANSIS</div>
+                <div class="des" id="d3">
+                    <span class="bold-text"> NOAA's </span> Great Lakes Aquatic Nonindigenous Species Information System
+                    reconstruction focused on Educator Hub. Requested from Rochelle Sturtevant, GLANSIS Program Manager
+                </div>
+                <div class="skill">
+                    <img src='../src/logo-ai.png' alt="illustrator" class="skill-logo">
+                    <img src='../src/logo-figma.png' alt="figma" class="skill-logo">
+                </div>
+                <!-- <a href="#" id="link">My Widdy</a> -->
+            </div>
+        </div>
+        <div class="sec" id="s4">
+            <div class="container">
+                <img src="../src/main-22.png" class="pj">
+            </div>
+            <div class="des-box">
+                <div class="title" id="t4">Vendors</div>
+                <div class="des" id="d4">
+                    This project makes it easier for street vendors and customers to connect, especially during
+                    <span class="bold-text"> COVID-19 </span>
+                    when finding vendors became more difficult. The goal is to help customers
+                    <span class="bold-text"> find vendors from home </span>
+                    and help sellers boost their sales.
+                </div>
+                <div class="skill">
+                    <img src='../src/logo-ai.png' alt="illustrator" class="skill-logo">
+                    <img src='../src/logo-figma.png' alt="figma" class="skill-logo">
+                </div>
+                <!-- <a href="#" id="link">My Widdy</a> -->
+            </div>
+        </div>
+        <div class="sec" id="s5">
+            <div class="container">
+                <img src="../src/main-23.png" class="pj">
+            </div>
+            <div class="des-box">
+                <div class="title" id="t5">IFE System</div>
+                <div class="des" id="d5">
+                    This project aims to enrich the
+                    <span class="bold-text"> in-flight entertainment (IFE) system </span>
+                    thereby elevating the overall travel experience. Drawing upon feedback from customers of various
+                    airlines, this initiative seeks to
+                    <span class="bold-text"> address their needs and concerns, minimizing inconvenience while maximizing
+                        convenience </span>
+                </div>
+                <div class="skill">
+                    <img src='../src/logo-ai.png' alt="illustrator" class="skill-logo">
+                    <img src='../src/logo-xd.png' alt="figma" class="skill-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ty-text">Thank you for your interest. Let’s keep in touch!</div>
+        <div class="footer-icon">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="../src/logo-email.png" alt="email" class="email-footer">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="../src/logo-linkedin.png" alt="linked in" class="linkedin-footer">
+            </a>
+        </div>
+        <div class="copyright">© 2024 Jennifer Jung: enthusiastic designer, developer, cook, dog sis </div>
     </div>
 
 

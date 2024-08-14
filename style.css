@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import 'attention_seekers/tada.css';
+
+
+
 html,
 body {
     height: 100%;
@@ -9,11 +14,47 @@ body {
 
 }
 
+.touch {
+    display: none;
+}
+
+
+/* .social  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 5vh;
+    padding: 5vh 5vh 0 0;
+    gap: 2vw;
+
+} */
+
+a {
+    text-decoration: none; 
+}
+
+
+
+.email {
+    position: absolute;
+    top: 5vh;
+    right: 15vh;
+    height: 5vh;
+    width: auto;
+}
+
+.linkedin {
+    position: absolute;
+    top: 5vh;
+    right: 7vh;
+    height: 5vh;
+    width: auto;
+}
 
 .header {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 70vh;
     /* margin-top: 12vh;
     margin-bottom: 12vh; */
 
@@ -24,14 +65,42 @@ body {
 
 }
 
+
+@keyframes shake {
+    0%, 100% { transform: translateY(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
+    20%, 40%, 60%, 80% { transform: translateY(10px); }
+}
+
+
+
+
 .logo {
+    /* display: block; */
+    /* margin: 0 auto; */
     width: 10vw;
     height: 10vw;
+    margin-right: 2vw;
 }
+
+
+.logo:hover {
+    animation: tada 1s ease;
+    /* cursor: pointer; */
+}
+
+
+.logo.shake-initial {
+    animation: tada 1s ease forwards;
+}
+
+
+
 
 .name-des {
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -71,10 +140,16 @@ path {
 
 .intro {
     max-width: 80vw;
-    white-space: pre-line;
-    letter-spacing: 0.1em;
-    font-size: 2vw;
+    /* white-space: pre-line; */
+    white-space: normal; 
+    letter-spacing: 0em;
+    line-height: 1.5em;
+    
+    font-size: 1.2vw;
     font-family: 'VT323', monospace;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Inter', monospace; */
+
     color: black;
 }
 
@@ -87,11 +162,12 @@ path {
 .card-bg {
     width: 100%;
     height: 500vh;
+    /* background-color: green; */
 }
 
 .sticky {
     position: sticky !important;
-    top: 0;
+    top: 0vh;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -105,21 +181,28 @@ path {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8vw;
-    background-color: green;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+    color: #E4D1BF;
+    font-size: 7vh;
+    line-height: 10vh;
+    background-color: transparent;
+    background-size: auto 100%; 
+    background-position: center; 
+    
   }
   
   .card-frame {
     position: absolute;
-    width: 80vw;
-    height: 20vw;
+    width: 70vw;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
   .card {
-    width: 24%;
+    width: 22%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -131,31 +214,47 @@ path {
     translateX(100vw) 
     rotateY(180deg);
     transition: transform 0.1s;
+
   }
   
   .front, .back {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 1vw;
+    border-radius: 1.5vw;
     overflow: hidden;
     backface-visibility: hidden;
   }
   
   .front {
-    background-color: #FFF;
-    font-size: 0.5em;
-    display: flex;
+    /* background-image: url('../src/floppy-04.png'); */
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    cursor: pointer;
+    pointer-events: auto;
+
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
   }
   
   .back {
     transform: rotateY(180deg);
-    background-color: #E0DED7;
-    background-image: repeating-linear-gradient(0deg, #3B3A38, #3B3A38 33.3%, #ffffff00 0px, #ffffff00 67%);
+    background-image: url('../src/white-30.png');
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
     background-size: 100%;
+
+
+    
   }
   
   /* @media screen and (orientation:portrait) {
@@ -185,26 +284,30 @@ path {
 
 .sec {
     width: 85vw;
-    max-width: 1510px;
-    height: auto;
-    margin-top: 10vh;
+    /* max-width: 1510px; */
+    height: 60vh;
+    margin-bottom: 10vh;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+    overflow: hidden;
+    pointer-events: auto;
+    cursor: pointer;
+
 }
 
 
 .container {
     width: 46.36%;
-    height: auto;
+    height: 60vh;
     overflow: hidden;
 }
 
 .pj {
     width: 100%;
-    height: auto;
+    height: 60vh;
     transition: transform 0.3s ease-in-out;
     object-fit: cover;
 }
@@ -224,34 +327,56 @@ path {
 }
 
 .title {
-    color: #E2792C;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 3.5vw;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-top: 8vh;
+    font-weight: 600;
+    /* line-height: normal; */
+    /* padding-top: 10vh; */
+}
+
+#t1 {
+    color: #F87474;
+}
+
+#t2 {
+    color: #FF8D3A;
+}
+
+#t3 {
+    color: #0085CA;
+}
+
+#t4 {
+    color: #FEBD41;
+}
+
+#t5 {
+    color: #0E9BA4;
 }
 
 .des {
     color: #000;
-    font-family: Inter;
-    font-size: 1.8vw;
+    font-family: "Inter", sans-serif;
+    font-size: 2.2vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-top: 2vh;
+    padding-top: 5vh;
+    padding-right: 5vw;
+    text-align: left;
 }
 
-.skill{
+/* .skill{
     color: #000;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-top: 5vh;
-}
+    width: 50vw;
+} */
 
 
 .des-box.show {
@@ -264,5 +389,67 @@ path {
 
 
 
+.skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 45vw;
+    height: 5vh;
+    width: auto;
+    gap: 1vw;
+    padding-top: 5vh;
+}
 
+
+.skill-logo {
+    height: 5vh;
+    width: auto;
+}
  
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+
+.footer {
+    height: 30vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ty-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    height: 5vh;
+    width: auto;
+    padding: 5vh 0 5vh 0;
+}
+
+.email-footer,
+.linkedin-footer {
+    height: 5vh;
+    width: auto;
+}
+
+.copyright {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;
+
+}
