@@ -1,21 +1,19 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Debugging: Check if logo exists and shake class is being added/removed
-    const logo = document.querySelector('.logo');
-    if (logo) {
-        console.log('Logo found:', logo);
-        logo.classList.add('shake-initial');
+    // const logo = document.querySelector('.logo');
+    // if (logo) {
+    //     console.log('Logo found:', logo);
+    //     logo.classList.add('shake-initial');
 
-        setTimeout(() => {
-            logo.classList.remove('shake-initial');
-            console.log('Shake-initial class removed');
-        }, 1000);
-    } else {
-        console.log('Logo not found');
-    }
+    //     setTimeout(() => {
+    //         logo.classList.remove('shake-initial');
+    //         console.log('Shake-initial class removed');
+    //     }, 1000);
+    // } else {
+    //     console.log('Logo not found');
+    // }
 
-    // Debugging: Check if back elements exist and click event is being added
     const pageloads = [
 
         { id: 'f1', url: 'edu.html' },
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 's4', url: 'vendors.html' },
         { id: 's5', url: 'ife.html' },
 
-        // Add more as needed
     ];
 
     pageloads.forEach(function (element) {

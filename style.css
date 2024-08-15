@@ -227,7 +227,7 @@ path {
   }
   
   .front {
-    /* background-image: url('../src/floppy-04.png'); */
+    /* background-image: url('src/floppy-04.png'); */
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -246,7 +246,7 @@ path {
   
   .back {
     transform: rotateY(180deg);
-    background-image: url('../src/white-30.png');
+    background-image: url('src/white-30.png');
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
