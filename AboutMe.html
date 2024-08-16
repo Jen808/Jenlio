@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="AboutMe.css">
+
+    <title>About Me</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-name">
+            <a href="jenlio.html">
+                <img src="src/me-24.png" alt="Logo" class="logo">
+            </a>
+            <a href="jenlio.html">
+                <img src="src/name.png" alt="click here to go home" class="name">
+            </a>
+        </div>
+        <nav class="menu">
+            <a href="AboutMe.html" class="AboutMe">About Me</a>
+            <a href="chs.html" class="chs">Promotional Materials</a>
+            <a href="art.html" class="art">Art Gallery</a>
+            <a href="my.html" class="my">About Me</a>
+        </nav>
+        <div class="sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
+    </div>
+    <div class="title">
+        <!-- <div class="iam">I AM</div> -->
+        <!-- <img src="src/mehi.png" class="logo-all"> -->
+
+        <!-- <div class="title-name">About Me</div> -->
+    </div>
+    <!-- <img src="src/AboutMe.png" class="chart"> -->
+    <div class="main-content">
+        <div class="introducing">
+        </div>
+        <div class="card-bg">
+            <!-- <img src="src/me-24.png" class="logo-face"> -->
+
+            <div class="skillset">
+                <!-- <div class="list-background"></div> -->
+                <ul id="list-item-container">
+                    <div class="iam">I AM</div>
+                    <li class="list-item">UX Designer</li>
+                    <li class="list-item">UX Researcher</li>
+                    <li class="list-item">UI Designer</li>
+                    <li class="list-item">Graphic Designer</li>
+                    <li class="list-item">Publication Designer</li>
+                    <li class="list-item">Web Designer</li>
+                    <li class="list-item">Web Developer</li>
+                    <li class="list-item">Interaction Designer</li>
+                    <li class="list-item">Front-end Developer</li>
+                    <li class="list-item">Back-end Developer</li>
+                    <li class="list-item">Marketing and Media Assistant</li>
+                    <li class="list-item">Motion Graphic Designer</li>
+                    <li class="list-item">Video Creator</li>
+                    <li class="list-item">Content Creator</li>
+                    <li class="list-item">Student</li>
+                    <li class="list-item small">Demure</li>
+                    <li class="list-item small">Dog sis</li>
+                    <li class="list-item small">Cook</li>
+                    <li class="list-item small">Pianist</li>
+                    <li class="list-item small">Flutist</li>
+                    <li class="list-item small">Swimmer</li>
+                    <li class="list-item small">Nail Artist</li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="tool-skill">
+            <div class="pie-chart">
+                <!-- <div class="pie animate" style="--p:100;--c:#F87474"></div>
+                <div class="pie animate" style="--p:80;--c:#F89292"></div>
+                <div class="pie animate" style="--p:50;--c:#F8C4C4"></div> -->
+                <canvas class='pie' id="pie" width="50" max-width="300" height="50"></canvas>
+
+
+            </div>
+
+            <!-- <div class="graph">
+                <div class="each-graph">
+                    <div class="mask-full">
+                        <div class="fill"></div>
+                    </div>
+                    <div class="mask-half">
+                        <div class="fill"></div>
+                    </div>
+                    <div class="inside-circle"></div>
+
+                </div>
+            </div> -->
+
+        </div>
+        <div class="languages">
+        </div>
+        <div class="study-flow">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="ty-text">Thank you for your interest. Let’s keep in touch!</div>
+        <div class="footer-icon">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email-footer">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin-footer">
+            </a>
+        </div>
+        <div class="copyright">© 2024 Jennifer Jung: enthusiastic designer, developer, cook, dog sis </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+
+
+
+
+
+
+    class CardFlipOnScroll {
+        constructor(wrapper, sticky) {
+            this.wrapper = wrapper
+            this.sticky = sticky
+            this.cards = sticky.querySelectorAll('.list-item')
+            this.length = this.cards.length
+
+            this.start = 0
+            this.end = 0
+            this.step = 0
+        }
+    }
+
+    const mainContent1 = document.querySelector('.card-bg')
+    const sticky = document.querySelector('.skillset')
+    // const cardFlipOnScroll = new CardFlipOnScroll(mainContent1, sticky)
+    // cardFlipOnScroll.init()
+
+    const listStyleChangeStartY = 20
+    const listStyleChangeEndY = 1585
+    const listItems = document.querySelectorAll('.list-item')
+
+
+    const position = (listStyleChangeEndY - listStyleChangeStartY) / listItems.length
+
+
+    window.addEventListener('scroll', () => {
+
+        // cardFlipOnScroll.animate()
+
+
+
+        if (document.getElementById('on')) document.getElementById('on').removeAttribute('id')
+
+        if (window.scrollY > listStyleChangeStartY && window.scrollY < listStyleChangeEndY) {
+            const targetIndex = Math.round((window.scrollY - listStyleChangeStartY) / position)
+
+            // console.log(targetIndex.value);
+
+            if (listItems[targetIndex]) listItems[targetIndex].id = 'on'
+        }
+    })
+
+
+
+
+
+
+    // Initialize the fill elements to the starting position (0 degrees)
+    // function initializeGauge() {
+    //     const fills = document.querySelectorAll('.fill');
+    //     if (fills.length > 0) {
+    //         fills[0].style.transform = 'rotate(0deg)';
+    //         fills[1].style.transform = 'rotate(0deg)';
+    //         fills[1].style.opacity = 0; // Ensure the second fill is hidden initially
+    //     }
+    // }
+
+    // // Function to animate the gauge based on percentage
+    // function animateGaugeValue(percentage) {
+    //     const degree = percentage * 1.8; // Convert percentage to degrees (100% = 180 degrees)
+    //     const fill1 = document.querySelector('.mask.full .fill');
+    //     const fill2 = document.querySelector('.mask.half .fill');
+
+    //     if (fill1 && fill2) {
+    //         if (percentage <= 50) {
+    //             // Rotate only the first fill element
+    //             fill1.style.transform = `rotate(${degree}deg)`;
+    //             fill2.style.transform = 'rotate(0deg)';
+    //             fill2.style.opacity = 0;
+    //         } else {
+    //             // Rotate the first fill element to 180 degrees
+    //             fill1.style.transform = `rotate(180deg)`;
+    //             // Rotate the second fill element for the remaining degrees
+    //             fill2.style.transform = `rotate(${degree - 180}deg)`;
+    //             fill2.style.opacity = 1; // Ensure the second fill is visible
+    //         }
+    //     } else {
+    //         console.error("Elements not found. Ensure the HTML structure matches the JavaScript selectors.");
+    //     }
+    // }
+
+    // // Function to check if the gauge is in view and trigger the animation
+    // function checkGaugeInView() {
+    //     const gauge = document.querySelector('.graph');
+    //     const rect = gauge.getBoundingClientRect();
+    //     const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+    //     if (isInView) {
+    //         animateGaugeValue(75); // Trigger the animation to 75% when the gauge is in view
+    //         window.removeEventListener('scroll', checkGaugeInView); // Stop listening after animation starts
+    //     }
+    // }
+
+    // // Ensure the script runs after the DOM is fully loaded
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     initializeGauge();
+    //     window.addEventListener('scroll', checkGaugeInView);
+    //     checkGaugeInView();
+    // });
+
+
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                entry.target.classList.add('animate');
+            } else {
+                entry.target.classList.remove('show');
+                entry.target.classList.add('animate');
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    const hidePie = document.querySelectorAll('.pie-chart');
+    hidePie.forEach((el) => observer.observe(el));
+
+
+
+    var ctx = document.getElementById('pie').getContext('2d');
+    var pie = new Chart(ctx, {
+        type: 'doughnut', 
+        data: {
+            datasets: [{
+                data: [1], 
+                backgroundColor: [
+                    '#F87474'
+                ],
+                borderWidth: 0
+
+           
+            }]
+        },
+        options: {
+            responsive: true,
+            circumference: 115 * Math.PI / 1,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: false
+            },
+            cutout: '90%'
+        }
+    });
+
+    
+
+
+</script>
+
+</html>

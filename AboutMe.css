@@ -1,0 +1,464 @@
+
+
+
+html,
+body {
+    /* height: 100%; */
+    width: 100%;
+    background: #FCEDDA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+
+
+
+
+}
+
+.header {
+    width: 95%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FCEDDA;
+    z-index: 10;
+}
+
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 3vw;
+    height: auto;
+
+}
+
+.name {
+    width: 12vw;
+    height: auto;
+    padding-left: 1vw;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    height: auto;
+
+}
+
+
+.AboutMe,
+.chs,
+.art,
+.my {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #F87474;
+
+}
+
+
+.AboutMe {
+    font-weight: 800;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.email {
+    text-decoration: none;
+
+    height: auto;
+    width: 2vw;
+    padding-right: 1vw;
+
+}
+
+.linkedin {
+    text-decoration: none;
+
+
+    height: auto;
+    width: 2vw;
+
+}
+
+
+/* .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13vh;
+    padding-top: 10vh;
+    height: 10vh;
+    width: 100vw;
+
+} */
+
+
+.iam {
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #F87474;
+    text-align: center;
+    padding-bottom: 5vh;
+    animation: flash 1s infinite;
+    /* padding-left: 16vw; */
+
+
+}
+
+
+
+
+
+
+.logo-all {
+    width: 20vw;
+    height: auto;
+}
+
+
+/* .title-name {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 800;
+    color: #F87474;
+    padding-left: 1vw;
+} */
+
+
+/* 
+.chart {
+    width: 80vw;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+} */
+
+/* 
+
+.introducing {
+    height: 40vh;
+    width: auto;
+} */
+
+
+
+.footer {
+    height: 15%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+
+.ty-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    height: 5vh;
+    width: auto;
+    padding: 2.5vh 0 2.5vh 0;
+}
+
+.email-footer,
+.linkedin-footer {
+    height: 5vh;
+    width: auto;
+}
+
+.copyright {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;
+
+}
+
+
+
+
+
+/* 
+.logo-AboutMe{
+    height: 3vw;
+    width: auto;
+} */
+
+.card-bg {
+    width: 100vw;
+    height: 250vh;
+    background-color: #FCEDDA;
+    /* background-image: url('src/me-24.png');
+    background-size: 33.3vw auto;
+    margin-top: 12vh; */
+
+
+
+    /* background-color: green; */
+}
+
+
+
+
+.skillset {
+    position: sticky !important;
+    top: 0vh;
+    margin-top: 0vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.list-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* font-family: "New Amsterdam", sans-serif; */
+    /* color: #E4D1BF; */
+    background-color: white;
+    font-size: 7vh;
+    line-height: 10vh;
+    background-color: transparent;
+    background-size: auto 100%;
+    background-position: center;
+
+}
+
+
+#list-item-container {
+    margin: 0 auto;
+    width: 50vw;
+    margin-top: 20vh;
+    display: block;
+
+
+
+}
+
+.list-item {
+    font-size: 3vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    line-height: 1.8em;
+    display: inline;
+    word-break: break-all;
+    color: #F8E3CA;
+
+
+}
+
+
+.small {
+    font-size: 1.5em;
+}
+
+
+
+
+.list-item#on {
+    color: #F87474;
+}
+
+
+.list-item.small#on {
+    color: #F4B5B5;
+}
+
+
+
+/* 
+.list-item span {
+    display: block;
+} */
+
+
+
+
+.tool-skill {
+    height: 100vh;
+    width: 100%;
+}
+
+
+.pie-chart {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 90vw; */
+
+
+
+    display: flex;
+    /* Or grid if using the grid layout */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Space between the pies */
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 30vw;
+    height: auto;
+    opacity: 0;
+    filter: blur(15px);
+    /* transform: translateX(50%); */
+    
+    transition: all 1s;
+}
+
+.pie {
+    width: 30vw;
+    height: auto;
+}
+
+
+
+.animate:before {
+    animation: p 1s 0.5s both;
+}
+
+
+.pie-chart.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: opacity 1s, filter 1s, transform 1s;
+    animation: p 1s 0.5s both;
+
+}
+
+
+
+/* @property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
+
+.pie {
+    --p: 0;
+    --b: 2vw;
+    --c: darkred;
+    --w: 30vw;
+
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(50%);
+    
+    transition: all 1s;
+
+
+}
+
+.pie:before,
+.pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.pie:before {
+    inset: 0;
+    background:
+        radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+        conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie:after {
+    inset: calc(50% - var(--b)/2);
+    background: var(--c);
+    transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(182% - var(--w)/2));
+}
+
+
+.animate:before {
+    animation: p 1s 0.5s both;
+}
+
+
+.no-round:before {
+    background-size: 0 0, auto;
+}
+
+.no-round:after {
+    content: none;
+
+}
+
+@keyframes p {
+    from {
+        --p: 0;
+    }
+
+}
+
+
+.pie.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: opacity 1s, filter 1s, transform 1s;
+    animation: p 1s 0.5s both;
+
+}
+
+.pie.animate.show {
+    height: 400px;
+    width: 400px;
+} */

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const pageloads = [
 
-        { id: 'f1', url: 'edu.html' },
+        { id: 'f1', url: 'AboutMe.html' },
         { id: 'f2', url: 'chs.html' },
         { id: 'f3', url: 'art.html' },
         { id: 'f4', url: 'my.html' },
@@ -205,17 +205,17 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.1
+    threshold: 0.3
 });
 
-const hiddenElement = document.querySelectorAll('.sticky-background');
-hiddenElement.forEach((el) => observer.observe(el));
 
 
+const hiddenDes = document.querySelectorAll('.des-box');
+hiddenDes.forEach((el) => observer.observe(el));
 
-const hiddenElements = document.querySelectorAll('.des-box');
-hiddenElements.forEach((el) => observer.observe(el));
 
+const hiddenPj = document.querySelectorAll('.pj');
+hiddenPj.forEach((el) => observer.observe(el));
 
 
 
