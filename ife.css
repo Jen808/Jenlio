@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.title {
+    /* height: 70vh;
+    width: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3vh;
+    background-color: white;
+
+}
+
+
+.mainimg {
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+
+}
+
+.tools {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    margin-right: 3vw;
+}
+
+.skill-logo {
+    width: 2vw;
+    height: auto;
+    padding-right: 1vw;
+
+}
+
+.title-box {
+    color: #0e9ba4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+
+
+.title-des {
+    /* list-style: none; */
+    font-family: 'Inter', sans-serif;
+    padding-left: 2vw;
+    line-height: 1.8vw;
+    font-size: 1.2vw;
+    padding-top: 3vh;
+    color: #FF6B00;
+    font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+.brief {
+    width: 40vw;
+    height: 5vw;
+    background-color: #acdee2;
+    border-radius: 1vw 0 0 1vw;
+    margin-top: 5vw;
+}
+
+
+
+#cal-img,
+#group-img {
+    width: auto;
+    height: 2vw;
+}
+
+.cal,
+.group {
+    fill: #0e9ba4;
+}
+
+.brief,
+.cal-box,
+.group-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+
+.group-box {
+    padding: 2vw;
+}
+
+
+.cal-des,
+.group-des {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    padding-left: 0.5vw;
+
+}
+
+.announcement {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    padding: 3vw 0;
+
+}
+
+
+.pdf{
+    width: 15vw;
+    height: 3.5vw;
+    border: none;
+    background-color: #0e9ba4;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    border-radius: 10vw;
+    box-shadow: 0px 10px 20px rgba(10, 0, 0, 0.2);
+    cursor: pointer;
+    
+
+
+
+}
+
+.pdf:hover{
+    animation: heartBeat 1s ease;
+}
+

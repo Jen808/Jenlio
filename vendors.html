@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="ife.css">
+    <link rel="stylesheet" href="vendors.css">
 
     <title>Education</title>
 
@@ -46,25 +46,21 @@
     <!-- <img src="../src/chs.png" class="chart"> -->
     <div class="title">
 
-        <img src="src/main-23.png" alt="IFE Representative Image" class="mainimg">
+        <img src="src/main-22.png" alt="Vendors Representative Image" class="mainimg">
 
         <div class="title-container">
             <div class="tools">
-                <img src='src/logo-xd.png' alt="Adobe-Xd" class="skill-logo">
+                <img src='src/logo-figma.png' alt="figma" class="skill-logo">
                 <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
             </div>
-            <div class="title-box">IFE System</div>
-            <div class="announcement"> This page is currently under renovation. <br><br>Please check out PDF file instead</div>
-            <a href="src/IFE project.pdf" target="_blank">
-                <button class="pdf">Open PDF</button>
-            </a>        
-            <!-- <div class="title-des">
+            <div class="title-box">Vendors</div>
+            <div class="title-des">
                 <li>Final Prototype</li>
                 <li>Objectives</li>
                 <li>Problem statement</li>
                 <li>Lo-Fi Prototype</li>
                 <li>Hi-Fi Prototype</li>
-            </div> -->
+            </div>
             <div class="brief">
                 <div class="cal-box">
                     <svg id="cal-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.2 99.7">
@@ -108,8 +104,63 @@
         </div>
     </div>
 
+    <div class="main-container">
+        <div class="final-prototype">
+            <div class="subtle">Final Prototype</div>
+            <div class="content" id="ob">Click white banner to open in Figma</div>
+            <div class="frame">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="mobile"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNjSkBL872Inc3UhOCa57ij%2FUntitled%3Fnode-id%3D44-434%26t%3D5GHvplB8qqN5DNnv-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D44%253A434"
+                    allowfullscreen></iframe>
 
 
+            </div>
+        </div>
+        <div class="section">
+            <div class="subtle">Objectives</div>
+            <div class="content" id="ob">This project facilitates interaction between street vendors and customers,
+                addressing challenges exacerbated by COVID-19,
+                which reduced street vendor availability and complicated research efforts.</div>
+        </div>
+        <div class="section">
+            <div class="subtle">Problem Statement / Pain Points</div>
+            <div class="content" id="ob">The number of street vendors has markedly decreased due to the impact of
+                COVID-19. <br><br>
+                The pandemic has driven a significant shift towards online shopping and delivery services,
+                leading to a decline in the presence of street vendors at their usual times and locations. <br><br>
+                By enabling vendors to notify their regular customers of their operating hours and locations,
+                there is potential to enhance communication and better meet the needs of both parties.
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="subtle">Lo-Fi Prototype</div>
+            <div class="photos">
+                <img src="src/vl1.jpg" id="vl">
+                <img src="src/vl2.jpg" id="vl">
+                <img src="src/vl3.jpg" id="vl">
+                <img src="src/vl4.jpg" id="vl">
+                <img src="src/vl5.jpg" id="vl">
+                <img src="src/vl6.jpg" id="vl">
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="subtle">Hi-Fi Prototype</div>
+            <div class="photos">
+                <img src="src/v.png" id="v">
+                <img src="src/v1.png" id="v">
+                <img src="src/v2.png" id="v">
+                <img src="src/v3.png" id="v">
+                <img src="src/v4.png" id="v">
+                <img src="src/v5.png" id="v">
+                <img src="src/v6.png" id="v">
+                <img src="src/v7.png" id="v">
+                <img src="src/v8.png" id="v">
+            </div>
+        </div>
+        <div class="end"></div>
+    </div>
 
 
 
@@ -129,5 +180,22 @@
 
 
 </body>
+
+<script>
+    window.addEventListener('scroll', () => {
+
+
+
+        if (document.getElementById('on')) document.getElementById('on').removeAttribute('id')
+
+        if (window.scrollY > listStyleChangeStartY && window.scrollY < listStyleChangeEndY) {
+            const targetIndex = Math.round((window.scrollY - listStyleChangeStartY) / position)
+
+
+            if (listItems[targetIndex]) listItems[targetIndex].id = 'on'
+        }
+    })
+</script>
+
 
 </html>

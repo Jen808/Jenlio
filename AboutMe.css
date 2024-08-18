@@ -702,10 +702,12 @@ span:hover {
 
 .study-flow {
     width: 80vw;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 10vw;
+    position: relative;
 }
 
 
@@ -713,15 +715,50 @@ span:hover {
     fill: none;
     stroke: #F87474;
     stroke-width: 2px;
-    stroke-dasharray: 4177;
-    animation: drawPath1 1s linear, floating 2.2s linear infinite;
+    stroke-dasharray: 5299;
+    animation: drawPath1 0.2s linear, floating 2.2s linear infinite;
     justify-content: center;
     align-items: center;
+    position: absolute;
+
 }
+
+/* .study-container{
+    position: absolute;
+    top:0;
+} */
+
+
+.study-sec{
+    font-size: 2.5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+
+}
+
+.focus{
+    font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+}
+
+#sec1{
+    position: absolute;
+    top:0;
+}
+
+#sec2{
+    position: absolute;
+    top:200vw;
+}
+
+
+
 
 @keyframes drawPath1 {
     0% {
-        stroke-dashoffset: 4177;
+        stroke-dashoffset: 5299;
     }
 
     100% {
