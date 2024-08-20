@@ -21,11 +21,12 @@ body {
     height: 5vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding-top: 2vw;
     padding-bottom: 0.5vw;
     /* margin-top: 5vw; */
+    position: relative;
 }
 
 
@@ -38,22 +39,26 @@ body {
 .logo {
     width: 3vw;
     height: auto;
+    margin-left: 5vw;
 
 }
 
 .name {
     width: 12vw;
     height: auto;
-    padding-left: 1vw;
+    padding-left: 2vw;
+
 
 }
 
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 40vw;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
     height: auto;
+    margin-left: 10vw;
 
 }
 
@@ -67,6 +72,7 @@ body {
     font-size: 1vw;
     font-weight: 400;
     color: #F87474;
+    margin-left: 4vw;
 
 }
 
@@ -145,4 +151,9 @@ a {
     font-weight: 200;
     font-size: 0.9em;
 
+}
+
+
+.sns{
+    margin-left: 16vw;
 }

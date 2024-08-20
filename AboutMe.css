@@ -879,9 +879,220 @@ span:hover {
 
 }
 
+@media (max-width: 768px) {
 
 
-.bottom{
-    height: 10vw;
+    
+.iam {
+    font-size: 4vw;
+    /* padding-left: 16vw; */
+
+
+}
+
+
+
+
+
+
+  .list-item {
+    font-size: 2vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    line-height: 1.8em;
+    display: inline;
+    word-break: break-all;
+    color: #F8E3CA;
+
+
+}
+
+.skillset {
+    position: sticky !important;
+    top: 10vh;
+
+}
+
+#list-item-container{
+    margin-top: 5vh;
+    width: 60vw;
+
+}
+
+
+.card-bg {
+    width: 100vw;
+    height: 300vh;
+}
+
+
+.tool-skill {
+    height: 80vh;
     width: 100%;
+
+}
+
+
+#tool-title{
+    
+    margin-bottom: 2vw;
+    font-size: 4vw;
+
+
+}
+
+.tool-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7vw;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+
+
+}
+
+
+.skill-info {
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+    /* margin-top: 5vh; */
+    line-height: 2vw;
+    text-align: left;
+    font-size: 3vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 40vw;
+    margin-left: 5vw;
+    
+
+}
+
+.skill {
+    width: 40vw;
+}
+
+.each-skill.animate.show,
+.skill-des{
+    width: 40vw;
+    height: 40vw;
+    line-height: 4.5vw;
+    margin-top: 2vw;
+
+}
+
+
+
+.each-skill {
+    width: 20vw;
+    height: auto;
+    overflow: hidden;
+    height: auto;
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+
+}
+
+.skill-title{
+    text-align: left;
+}
+
+
+.languages{
+    margin-top: 5vw;
+    
+}
+
+#lang-title {
+    font-size: 4vw;
+
+}
+
+.study{
+    margin-top: 5vw;
+    font-size: 4vw;
+
+}
+
+
+span {
+
+    -webkit-text-stroke: 0.1vw #f87474;
+    font-size: 8vw;
+
+
+}
+
+#f1{
+    font-size: 3vw;
+    width: 40vw;
+}
+
+
+.years {
+    font-size: 4.5vw;
+    line-height: 4vw;
+
+    /* width: 40vw; */
+
+}
+
+
+.focus {
+    font-size: 3vw;
+    line-height: 3.2vw;
+    /* width: 50vw; */
+
+}
+
+
+.study-detail {
+    font-size: 10px;
+    line-height: 3vw;
+}
+
+#sec1{
+    position: absolute;
+    top: 10vw;
+}
+
+#sec2{
+    position: absolute;
+    top:122vw;
+    right: 0;
+    text-align: right;
+    width: 58vw;
+}
+
+
+
+#sec3{
+    position: absolute;
+    top:136vw;
+    width: 55vw;
+    line-height: 1.8vw;
+}
+
+#sec4{
+    position: absolute;
+    top:170vw;
+    right: 0;
+    text-align: right;
+    width: 35vw;
+    line-height: 1.8vw;
+}
+
+.study-flow {
+    width: 95vw;
+    padding-left: 2.5vw;
+
+}
+
 }
