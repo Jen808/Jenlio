@@ -16,7 +16,7 @@ body {
 
 }
 
-.header {
+/* .header {
     width: 95%;
     height: 5vh;
     display: flex;
@@ -102,7 +102,7 @@ a {
     height: auto;
     width: 2vw;
 
-}
+} */
 
 
 /* .title {
@@ -704,8 +704,8 @@ span:hover {
     width: 80vw;
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     padding-left: 10vw;
     position: relative;
 }
@@ -715,50 +715,21 @@ span:hover {
     fill: none;
     stroke: #F87474;
     stroke-width: 2px;
-    stroke-dasharray: 5299;
+    stroke-dasharray: 5508.6;
     animation: drawPath1 0.2s linear, floating 2.2s linear infinite;
     justify-content: center;
     align-items: center;
     position: absolute;
+    padding-bottom: 5vw;
+    margin-bottom: 5vw;
+    border-bottom: 5vw;
 
 }
-
-/* .study-container{
-    position: absolute;
-    top:0;
-} */
-
-
-.study-sec{
-    font-size: 2.5vw;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-
-}
-
-.focus{
-    font-size: 1.5vw;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-
-}
-
-#sec1{
-    position: absolute;
-    top:0;
-}
-
-#sec2{
-    position: absolute;
-    top:200vw;
-}
-
-
 
 
 @keyframes drawPath1 {
     0% {
-        stroke-dashoffset: 5299;
+        stroke-dashoffset: 5508.6;
     }
 
     100% {
@@ -770,4 +741,147 @@ span:hover {
     50% {
         transform: translate3d(0, 40px, 0);
     }
+}
+
+
+
+/* .study-container{
+    position: absolute;
+    top:0;
+} */
+
+
+.study{
+    margin-bottom: 5vw;
+}
+
+
+.study-sec{
+    font-size: 2.5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    
+
+
+}
+
+
+
+.study-detail{
+    font-size: 1vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.2vw;;
+}
+
+
+#f1 {
+    text-align: left;
+    padding-left: 10vw;
+
+
+}
+
+
+
+.years{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.8vw;
+    color: #F87474;
+
+}
+
+.focus{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: #F87474;
+    padding: 1vw 0;
+
+
+}
+
+#sec1{
+    position: absolute;
+    top: 10vw;
+}
+
+#sec2{
+    position: absolute;
+    top:107vw;
+    right: 0;
+    text-align: right;
+    width: 35vw;
+    line-height: 1.8vw;
+}
+
+
+
+#sec3{
+    position: absolute;
+    top:136vw;
+    width: 40vw;
+    line-height: 1.8vw;
+}
+
+
+
+#sec4{
+    position: absolute;
+    top:170vw;
+    right: 0;
+    text-align: right;
+    width: 35vw;
+    line-height: 1.8vw;
+}
+
+
+.buttons{
+    border: 0.15vw solid #F87474;
+    /* border-color:#F87474; */
+    background-color: transparent;
+    width: 8vw;
+    height: 3vw;
+    position: absolute;
+    top: 107vw;
+    right: 27vw;
+    border-radius: 10vw;
+    color: #F87474;
+    font-family: "Roboto", sans-serif;
+
+    font-size: 1.1vw;
+    font-weight: 500;
+    cursor: pointer;
+
+    
+}
+
+.buttons:hover{
+    background-color: #F87474;
+    color: #FCEDDA;
+
+
+}
+
+
+#chslink{
+    top: 192vw;
+    right: 0;
+    width: 15vw;
+}
+
+
+
+#artlink{
+    top: 136vw;
+    left: 41vw;
+
+}
+
+
+
+.bottom{
+    height: 10vw;
+    width: 100%;
 }

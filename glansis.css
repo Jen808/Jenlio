@@ -159,7 +159,8 @@ body {
 .client-title,
 .problem-statement-title,
 .executive-summary-title,
-.style-guide-title {
+.style-guide-title,
+.key-title {
     font-family: 'Inter', sans-serif;
     font-size: 1.5vw;
     color: #0085FF;
@@ -318,7 +319,7 @@ body {
 }
 
 
-.executive-summary-des span {
+span {
     font-weight: 800;
 }
 
@@ -431,17 +432,17 @@ body {
 
 
 
-.client{
+.client-container{
     opacity: 0;
     filter: blur(15px);
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     transition: all 1s;
 }
 
-.client.show{
+.client-container.show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0); 
+    /* transform: translateX(0);  */
 }
 
 
@@ -451,29 +452,105 @@ body {
 .problem-statement{
     opacity: 0;
     filter: blur(15px);
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
     transition: all 1s;
 }
 
 .problem-statement.show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0); 
+    /* transform: translateX(0);  */
 }
 
 
 
-.executive-summary,
-.style-guide{
+.kd-box,
+.sec,
+.interactive{
     opacity: 0;
     filter: blur(15px);
     /* transform: translateX(50%); */
     transition: all 1s;
 }
 
-.style-guide.show,
-.executive-summary.show{
+.sec.show,
+.interactive.show,
+.kd-box.show{
     opacity: 1;
     filter: blur(0);
+    /* animation: fadeInUp 1s ease; */
     /* transform: translateX(0);  */
+}
+
+
+
+
+.key-design-decision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vw;
+    /* justify-content: center; */
+}
+
+.key-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+
+
+
+}
+
+.key-container.show {
+    opacity: 1;
+    filter: blur(0);
+
+}
+
+
+
+.key-subtitle{
+    width: 20vw;
+    font-weight: 800;
+    color:#003087;
+    /* justify-content: center;
+    align-items: center; */
+
+    
+}
+
+.key-img{
+    width: 25vw;
+    margin: 3vw 0;
+}
+
+.key-des{
+    font-weight: 500;
+    padding-top: 0.5vw;
+    line-height: 1.5vw;
+    color: black;
+}
+
+.key-title{
+    padding-bottom: 5vw;
+}
+
+
+.key-main-des {
+    padding-bottom: 5vw;
+    width: 40vw;
+    line-height: 1.5vw;
+
+
+}
+
+
+.key-main-des{
+    text-align: center;
 }

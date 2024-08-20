@@ -246,7 +246,7 @@ path {
   
 
  #f1 {
-    background-image: url('src/card-edu.png');
+    background-image: url('src/card-aboutme.png');
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,7 +257,7 @@ path {
   }
 
  #f2 {
-    background-image: url('src/card-chs.png');
+    background-image: url('src/card-pm.png');
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -277,7 +277,7 @@ path {
   }
 
  #f4 {
-    background-image: url('src/card-my.png');
+    background-image: url('src/card-resume.png');
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -409,15 +409,21 @@ path {
 }
 
 #t3 {
-    color: #0085CA;
+    color: #CF845F;
 }
 
 #t4 {
-    color: #FEBD41;
+    color: #0085CA;
 }
 
 #t5 {
+    color: #FEBD41;
+}
+
+#t6{
     color: #0E9BA4;
+
+
 }
 
 .des {

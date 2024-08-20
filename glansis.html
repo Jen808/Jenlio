@@ -25,7 +25,7 @@
             </a>
         </div>
         <nav class="menu">
-            <a href="edu.html" class="edu">Education</a>
+            <a href="AboutMe.html" class="ame">About Me</a>
             <a href="chs.html" class="chs">Promotional Materials</a>
             <a href="art.html" class="art">Art Gallery</a>
             <a href="my.html" class="my">About Me</a>
@@ -248,8 +248,98 @@
 
         </div>
     </div>
-    <div class="key-design-decision"></div>
+    <div class="key-design-decision">
+        <div class="key-title">Key Design Decision #1</div>
+        <div class="key-main-des"><span>Easily expectable</span><br><br>
+            If users can't anticipate how something will work, they can easily become confused and find it complicated.
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Buttons
+                <div class="key-des">By giving border and drop shadow, easy to recognize interactive elements</div>
+            </div>
+            <img src="src/kde1.png" class="key-img">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Horizontal Slider
+                <div class="key-des">Showing next page of horizontal slide,
+                    easy to understand it is shiftable. Continuous background keep united
+                </div>
+            </div>
+            <img src="src/kde10-61.png" class="key-img" id="half">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Habergur Menu Icon
+                <div class="key-des">44px by 44px which satisfying WCAG guideline makes intuitive </div>
+            </div>
+            <img src="src/kde10-60.png" class="key-img" id="half">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Scroll bar
+                <div class="key-des">By cutting contents, user can think there is hidden contents without distracting
+                    the page by vulnerable contents </div>
+            </div>
+            <img src="src/kde4.png" class="key-img">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Presentation Slide
+                <div class="key-des">Page indicator at the bottom right with hover effect</div>
+            </div>
+            <img src="src/kde5.png" class="key-img">
+        </div>
     </div>
+    <div class="key-design-decision">
+        <div class="key-title">Key Design Decision #2</div>
+        <div class="key-main-des"><span>Know where they are</span><br><br>
+            Users need to know their current location within the system. If they are about five steps away from the main
+            page, they might lose track of where they are, making it difficult to navigate back to a specific page. By
+            providing a persistent navigation trail, we can guide users and help them become more familiar and
+            comfortable with the system. </div>
+        <div class="key-container">
+            <div class="key-subtitle">Page Name
+                <div class="key-des">For Mobile, all pages title and upper catergory is display. For Desktop, Breadcrumbs are availble</div>
+            </div>
+            <img src="src/kdkd-62.png" class="key-img">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Emphasis page on menu
+                <div class="key-des">For both Mobile and Desktop, tool/page where they exploring is selected
+                </div>
+            </div>
+            <img src="src/kdkd-63.png" class="key-img" id="half">
+        </div>
+    </div>
+    <div class="key-design-decision">
+        <div class="key-title">Key Design Decision #3</div>
+        <div class="key-main-des"><span>Make user to keep explore, keep in touch</span><br><br>
+            Make them to get to know more about GLANSIS, led them to be more interested in by marketing strategies,
+            psychological methods.</div>
+        <div class="key-container">
+            <div class="key-subtitle">Illustrator for sub categories
+                <div class="key-des"> </div>
+            </div>
+            <img src="src/kdkd-64.png" class="key-img" id="half">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Neat research pages with visualized data
+                <div class="key-des"> </div>
+            </div>
+            <img src="src/kdkd-65.png" class="key-img">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Playable video
+                <div class="key-des">Including video player within the page will not require extra step to play</div>
+            </div>
+            <img src="src/kdkd-66.png" class="key-img">
+        </div>
+        <div class="key-container">
+            <div class="key-subtitle">Social Media 
+                <div class="key-des">User can see recent updates and this can make user to follow account, increasing GLANSIS's social media engagement</div>
+            </div>
+            <img src="src/kdkd-67.png" class="key-img">
+        </div>
+    </div>
+
+
     <div class="footer">
         <div class="ty-text">Thank you for your interest. Let’s keep in touch!</div>
         <div class="footer-icon">
@@ -262,6 +352,8 @@
         </div>
         <div class="copyright">© 2024 Jennifer Jung: enthusiastic designer, developer, cook, dog sis </div>
     </div>
+
+
 
 
 
@@ -282,17 +374,24 @@
         threshold: 0.3
     });
 
-    const hiddenDes = document.querySelectorAll('.client');
+    const hiddenDes = document.querySelectorAll('.client-container');
     hiddenDes.forEach((el) => observer.observe(el));
 
     const hiddenDes1 = document.querySelectorAll('.problem-statement');
     hiddenDes1.forEach((el) => observer.observe(el));
 
-    const hiddenDes2 = document.querySelectorAll('.executive-summary');
+    const hiddenDes2 = document.querySelectorAll('.kd-box');
     hiddenDes2.forEach((el) => observer.observe(el));
 
-    const hiddenDes3 = document.querySelectorAll('.style-guide');
+    const hiddenDes3 = document.querySelectorAll('.sec');
     hiddenDes3.forEach((el) => observer.observe(el));
+
+    const hiddenDes5 = document.querySelectorAll('.interactive');
+    hiddenDes5.forEach((el) => observer.observe(el));
+
+    const hiddenDes4 = document.querySelectorAll('.key-container');
+    hiddenDes4.forEach((el) => observer.observe(el));
+
 
 
 </script>

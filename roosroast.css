@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.title {
+    /* height: 70vh;
+    width: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 3vh;
+
+}
+
+
+.mainimg {
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+
+}
+
+.tools {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    margin-right: 3vw;
+}
+
+.skill-logo {
+    width: 2vw;
+    height: auto;
+    padding-right: 1vw;
+
+}
+
+.title-box {
+    color: #CF845F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+
+
+.title-des {
+    /* list-style: none; */
+    font-family: 'Inter', sans-serif;
+    padding-left: 2vw;
+    line-height: 1.8vw;
+    font-size: 1.2vw;
+    padding-top: 3vh;
+    color: #543C32;
+    font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+.brief {
+    width: 40vw;
+    height: 5vw;
+    background-color: #FCEDDA;
+    border-radius: 1vw 0 0 1vw;
+    margin-top: 3vw;
+}
+
+
+
+#cal-img,
+#group-img {
+    width: auto;
+    height: 2vw;
+}
+
+.cal,
+.group {
+    fill: #543C32;
+}
+
+.brief,
+.cal-box,
+.group-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+
+
+
+
+.cal-des,
+.group-des {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    padding-left: 0.5vw;
+
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.rr-1{
+    width: 20vw;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+}
+
+.background{
+    width: 60vw;
+    height: 20vw;
+    background-color: #CF845F;
+    
+}
+
+.full {
+    width: 100%;
+    height: auto;
+}
+
+
+.frame {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    margin-top: 10vh;
+}
+
+
+
+
+.mobile {
+    height: 30vw;
+    width: 15vw;
+    border-style: none;
+
+}
+
+
+.desktop {
+    height: 30vw;
+    width: 40vw;
+    border-style: none;
+
+}
+
+.announcement {
+    font-size: 2vw;
+    margin-top: 5vw;
+    width: 80vw;
+    text-align: center;
+
+}

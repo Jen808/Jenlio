@@ -22,9 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'f4', url: 'my.html' },
         { id: 's1', url: 'jenlio.html' },
         { id: 's2', url: 'my-widdy.html' },
-        { id: 's3', url: 'glansis.html' },
-        { id: 's4', url: 'vendors.html' },
-        { id: 's5', url: 'ife.html' },
+        { id: 's3', url: 'roosroast.html' },
+        { id: 's4', url: 'glansis.html' },
+        { id: 's5', url: 'vendors.html' },
+        { id: 's6', url: 'ife.html' },
 
     ];
 

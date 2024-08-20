@@ -1,0 +1,185 @@
+html,
+body {
+    height: 150w;
+    font-family: 'Space Mono', sans-serif;
+    background-color: #FFF;
+}
+
+
+.header {
+    background-color: #FCEDDA;
+}
+
+.start-screen {
+    padding-top: 4vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.main-content-1 {
+    background-color: #F7F7F7;
+    /* border-top: 1px solid #F87474; */
+    border-bottom: 1px solid #F87474;
+    width: 100%;
+    height: 300vh;
+}
+
+.sticky-title {
+    background-color: #FCEDDA;
+
+
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FCEDDA;
+}
+
+.title {
+    border-top: 1px solid #F87474;
+    border-bottom: 1px solid #F87474;
+    background-color: #FFF;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    font-size: 1vh;
+    padding-left: 3vh;
+}
+
+.content {
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+
+}
+
+.des{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20vw;
+    line-height: 1.2vw;
+
+}
+
+
+.photo-title{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.medium{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.detail{
+    font-size: 1vw;
+    font-weight: 500;
+    padding-top: 1vw;
+    color: grey;
+}
+
+span{
+    font-weight: 700;
+    font-style:italic;
+}
+
+.content>img {
+    /* width: 50vw;
+    height: auto; */
+    /* object-fit: cover; */
+    /* margin: 5vh 20vh 0 0; */
+}
+
+.title {
+
+}
+
+.fa{
+    height: 28vw;
+    width: auto;
+    padding-top: 10vw;
+
+
+}
+
+
+.portrait{
+    width: 30vw;
+    height: 60vh;
+}
+
+
+.cof1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: blur(15px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+}
+
+.cof-back{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+    background-color: #FCEDDA;
+    opacity: 0.2;
+
+}
+
+.cof2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: auto;
+    height: 60vh;
+    box-shadow: 0px 30px 50px 30px rgba(0, 0, 0, 0.9);
+
+}
+
+
+.sticky-title {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
