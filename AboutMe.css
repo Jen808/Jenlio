@@ -884,7 +884,7 @@ span:hover {
 
     
 .iam {
-    font-size: 4vw;
+    font-size: 5vw;
     /* padding-left: 16vw; */
 
 
@@ -896,7 +896,7 @@ span:hover {
 
 
   .list-item {
-    font-size: 2vh;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     line-height: 1.8em;
@@ -915,7 +915,7 @@ span:hover {
 
 #list-item-container{
     margin-top: 5vh;
-    width: 60vw;
+    width: 80vw;
 
 }
 
@@ -1037,8 +1037,8 @@ span {
 
 
 .years {
-    font-size: 4.5vw;
-    line-height: 4vw;
+    font-size: 3vw;
+    line-height: 2.5vw;
 
     /* width: 40vw; */
 
@@ -1046,8 +1046,9 @@ span {
 
 
 .focus {
-    font-size: 3vw;
-    line-height: 3.2vw;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    padding-left: 20%;
     /* width: 50vw; */
 
 }
@@ -1055,7 +1056,7 @@ span {
 
 .study-detail {
     font-size: 10px;
-    line-height: 3vw;
+    line-height: 2.5vw;
 }
 
 #sec1{
@@ -1065,34 +1066,65 @@ span {
 
 #sec2{
     position: absolute;
-    top:122vw;
+    top:90vw;
     right: 0;
     text-align: right;
-    width: 58vw;
+    width: 45vw;
 }
 
 
 
 #sec3{
     position: absolute;
-    top:136vw;
-    width: 55vw;
-    line-height: 1.8vw;
+    top:116vw;
+    width: 50vw;
 }
 
 #sec4{
     position: absolute;
-    top:170vw;
+    top:185vw;
     right: 0;
     text-align: right;
-    width: 35vw;
-    line-height: 1.8vw;
+    width: 50vw;
 }
 
 .study-flow {
-    width: 95vw;
-    padding-left: 2.5vw;
+    width: 80vw;
+    margin-bottom: 10vh;
+    /* padding-left: 2.5vw; */
 
 }
+
+#nopad{
+    padding-left:0;
+}
+
+
+
+
+#chslink{
+    top: 260vw;
+    right: 0;
+    width: 15vw;
+}
+
+
+#artlink1 {
+    display: none;
+}
+
+
+
+#artlink{
+    top: 112vw;
+    left: 50vw;
+    width: 15vw;
+    height: 5vw;
+    font-size: 2vw;
+
+}
+
+
+
 
 }
