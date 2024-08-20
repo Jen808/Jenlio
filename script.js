@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'f1', url: 'AboutMe.html' },
         { id: 'f2', url: 'chs.html' },
         { id: 'f3', url: 'art.html' },
-        { id: 'f4', url: 'my.html' },
+        { id: 'f4', url: 'src/RESUME-Aug.24.pdf' },
         { id: 's1', url: 'jenlio.html' },
         { id: 's2', url: 'my-widdy.html' },
         { id: 's3', url: 'roosroast.html' },
