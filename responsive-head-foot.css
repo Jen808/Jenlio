@@ -51,18 +51,20 @@
         display: none !important;
         flex-direction: column!important;
         position: fixed !important;
-        top: 80px;
-        right: 0px;
-        height: 100%;
-        width: 250px;
-        background-color: #FCEDDA;
+        top: 80px !important;
+        right: 0px !important;
+        height: 100% !important;
+        width: 250px !important;
+        background-color: #FCEDDA !important;
         text-align: left!important;
         align-items: left !important;
         justify-content: flex-start !important;
         align-content: flex-start !important;
         transform: translateX(100%) !important;
         /* Start off-screen */
-        transition: transform 0.3s ease !important;
+        /* transition: transform 1s ease-in-out !important; */
+        /* animation: fadeInRight 0.4s ease !important; */
+
         z-index: 1002 !important;
         /* box-shadow: inset 0 0 10px #F87474; */
         /* box-shadow: -5px 5px 5px rgb(0,0,0,0.5); */
@@ -80,6 +82,9 @@
         justify-content: flex-start !important;
         text-align: left !important;
         align-content: flex-start !important;
+        /* transition: transform 1s ease-in-out !important; */
+
+        animation: fadeInRight 0.4s ease !important;
         
 
 
@@ -100,6 +105,8 @@
         right: 20px !important;
         padding:0 !important;
         margin: 0 !important;
+        /* transition: transform 1s ease-in-out !important;
+        animation: fadeInRight 1s ease !important; */
     }
 
     .menu-toggle .bar {
@@ -128,70 +135,84 @@
 
 
     .menu-toggle.active {
-        width: 40px;
+        width: 40px !important;
     }
 
     .menu-toggle.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(8px, 8px);
+        transform: rotate(45deg) translate(8px, 8px) !important;
     }
 
     .menu-toggle.active .bar:nth-child(2) {
-        opacity: 0;
+        opacity: 0 !important;
     }
 
     .menu-toggle.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(8px, -8px);
+        transform: rotate(-45deg) translate(8px, -8px) !important;
     }
 
-    .sns {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        bottom: 10vh;
-        margin-left: 10vw;
 
-
-    }
 
     .content-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        display: none !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
         /* 10% opacity */
-        z-index: 1000;
+        z-index: 1000 !important;
     }
 
     .content-overlay.active {
-        display: block;
+        display: block !important;
         /* Show overlay when menu is open */
     }
 
 
 
     .menu a {
-        font-size: 20px;
-        margin:20px;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        color: #F87474;
-        font-family: 'Roboto', sans-serif;
-        height: 8vw;
-        justify-content: center;
+        font-size: 20px!important; 
+        margin:20px!important;
+        text-align: left !important;
+        display: flex !important;
+        flex-direction: column!important;
+        color: #F87474!important;
+        font-family: 'Roboto', sans-serif!important;
+        height: 8vw!important;
+        justify-content: center!important;
+        align-items: left !important;
+        border-bottom:1px #F87474 solid !important;
+
+        border-collapse: separate !important;
+
+        border-spacing: 50px !important;
+        padding-bottom: 20px !important;
+        margin-bottom: 0 !important;
+
+    }
+
+    .sns {
+        display: flex !important;
+        flex-direction: row !important;
+        position: absolute !important;
+        bottom: 10vh !important;
+        right: 5vh !important;
+        border-bottom:1px #FCEDDA solid !important;
+        border: 0 !important;
+        border-style: none !important;
+
     }
 
     
 
     .email,
     .linkedin {
-        width: 44px;
-        height: 44px;
-        padding: 0;
-        margin: 0;
+        width: 44px!important;
+        height: 44px!important;
+        padding: 0!important;
+        margin: 0!important;
+
     }
 
 
@@ -200,7 +221,7 @@
 
 
     .footer {
-        padding: 5vw 0;
+        padding: 5vw 0!important;
         height: 120px !important;
     }
 
@@ -230,6 +251,18 @@
     .email-footer{
         width: 44px !important;
         height: 44px !important;
+    }
+
+
+    .ame,
+    .ux,
+    .chs,
+    .art,
+    .my {
+        display: flex !important;
+        width: 75%;
+        border-spacing: 50px !important;
+
     }
 
 

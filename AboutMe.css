@@ -710,6 +710,12 @@ span:hover {
     position: relative;
 }
 
+.svg{
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+}
+
 
 .path1 {
     fill: none;
