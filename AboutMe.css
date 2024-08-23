@@ -506,15 +506,24 @@ span:hover {
 
 }
 
-.study-flow {
+/* .study-flow {
     width: 80vw;
-    /* height: fit-content; */
+    height: auto;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     padding-left: 10vw;
     position: relative;
+} */
+
+.study-flow {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
 }
+
 
 /* svg{
     display: flex;
