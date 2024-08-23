@@ -18,14 +18,14 @@
 
 
 
-    .logo {
-        width: 30vw;
+    #logo {
+        width: 100px;
         height: auto;
         margin-bottom: 5vh;
         white-space: normal;
     }
 
-    .touch {
+    /* .touch {
         display: block;
         position: absolute;
         top: 11vh;
@@ -39,7 +39,7 @@
         height: 3vh;
         width: auto;
 
-    }
+    } */
 
     .email {
         position: absolute;
