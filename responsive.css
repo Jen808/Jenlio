@@ -11,6 +11,7 @@
         height: 70vh;
         justify-content: center;
         align-items: center;
+        margin-top: 85px;
 
 
 
@@ -66,13 +67,26 @@
     svg {
         fill: none;
         height: 6vh;
-        stroke-width: 60px;
+        stroke-width: 100px;
         stroke-linecap: round;
     }
+
+    path {
+        stroke-dasharray: var(--length);
+        stroke-dashoffset: var(--length);
+    }
+    
+    .svg-main>path {
+        stroke: #F87474;
+        animation: path var(--duration) ease-in forwards;
+        animation-delay: var(--delay);
+    }
+    
 
     .index-intro {
         font-size: 4.5vw;
         font-weight: 600;
+        margin-top: 20px;
     }
 
 
