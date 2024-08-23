@@ -710,7 +710,7 @@ span:hover {
     position: relative;
 }
 
-.svg{
+svg{
     display: flex;
     overflow: hidden;
     position: absolute;
