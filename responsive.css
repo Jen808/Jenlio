@@ -67,7 +67,7 @@
     }
 
     .mobile-name {
-        display: flex;
+        display: flex !important;
         /* background-image: url('src/mobile-name.png');
         background-color: transparent;
         background-size: cover;
