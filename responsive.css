@@ -46,7 +46,7 @@
 
     } */
 
-    .email {
+    .index-email {
         position: absolute;
         top: 3vh;
         right: 10vh;
@@ -54,7 +54,7 @@
         width: auto;
     }
 
-    .linkedin {
+    .index-linkedin {
         position: absolute;
         top: 3vh;
         right: 3vh;
@@ -81,7 +81,7 @@
         animation: path var(--duration) ease-in forwards;
         animation-delay: var(--delay);
     }
-    
+
 
     .index-intro {
         font-size: 4.5vw;
@@ -210,6 +210,11 @@
         font-size: 20vw;
         width: 37.02vw;
         height: 47.56vw;
+    }
+
+    .index-email,
+    .index-linkedin{
+        display: none;
     }
 
 

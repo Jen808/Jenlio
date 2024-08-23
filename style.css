@@ -35,7 +35,7 @@ a {
 
 
 
-.email {
+.index-email {
     position: absolute;
     top: 5vh;
     right: 15vh;
@@ -43,7 +43,7 @@ a {
     width: auto;
 }
 
-.linkedin {
+.index-linkedin {
     position: absolute;
     top: 5vh;
     right: 7vh;

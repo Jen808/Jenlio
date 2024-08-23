@@ -218,6 +218,24 @@ hiddenDes.forEach((el) => observer.observe(el));
 const hiddenPj = document.querySelectorAll('.pj');
 hiddenPj.forEach((el) => observer.observe(el));
 
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+const contentOverlay = document.getElementById('contentOverlay');
+
+menuToggle.addEventListener('click', () => {
+    const isOpen = menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('open');
+    contentOverlay.classList.toggle('active');
+    document.body.classList.toggle('menu-open', isOpen);
+});
+
+contentOverlay.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    navMenu.classList.remove('open');
+    contentOverlay.classList.remove('active');
+    document.body.classList.remove('menu-open');
+});
+
 
 
 

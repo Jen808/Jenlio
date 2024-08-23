@@ -4,6 +4,7 @@
 
 
     .header {
+        display: show !important;
         position: fixed !important;
         top: 0 !important;
         z-index: 2000 !important;
@@ -74,12 +75,12 @@
         /* Slide into view */
         display: flex !important;
         /* Ensure it's displayed */
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: left !important;
         justify-content: flex-start !important;
         text-align: left !important;
-        justify-content: flex-start !important;
         align-content: flex-start !important;
+        
 
 
 
@@ -106,7 +107,7 @@
         /* Ensure the bars are not too wide */
         height: 4px !important;
         /* Adjust h eight if necessary */
-        background-color: #F87474;
+        background-color: #F87474 !important;
         margin: 4px 0 !important;
         transition: all 0.3s ease!important;
         z-index: 1100 !important;
@@ -144,8 +145,12 @@
 
     .sns {
         display: flex;
-        flex-direction: column;
-        margin-top: 20px;
+        flex-direction: row;
+        position: absolute;
+        bottom: 10vh;
+        margin-left: 10vw;
+
+
     }
 
     .content-overlay {
@@ -171,7 +176,22 @@
         font-size: 20px;
         margin:20px;
         text-align: left;
-        display:block;
+        display: flex;
+        flex-direction: column;
+        color: #F87474;
+        font-family: 'Roboto', sans-serif;
+        height: 8vw;
+        justify-content: center;
+    }
+
+    
+
+    .email,
+    .linkedin {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        margin: 0;
     }
 
 
