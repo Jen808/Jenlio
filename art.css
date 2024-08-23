@@ -319,3 +319,54 @@ span{
 
 }
 
+
+@media (max-width: 768px) {
+    .cof2{
+        width: 90vw;
+        height: auto;
+    }
+
+    .photos{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        margin-top: 10vw;
+
+    
+    }
+    
+    .des{
+        display: none;
+    }
+
+
+    .fa,
+    .pd,
+    .bd,
+    .ad {
+        width: 80vw;
+        height: auto;
+        /* margin-top: 10vw; */
+    }
+
+    #vid {
+        width: 80vw;
+        height: 25vh;
+
+    }
+
+    .ld {
+        width: 50vw;
+        height: auto;
+
+    }
+
+    .pod {
+        width: 45vw;
+        height: auto;
+    }
+    .td {
+        width: 30vw;
+        height: auto;
+    }
+}

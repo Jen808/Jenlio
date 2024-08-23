@@ -182,7 +182,7 @@
         height: 8vw!important;
         justify-content: center!important;
         align-items: left !important;
-        border-bottom:1px #F87474 solid !important;
+        /* border-bottom:1px #F87474 solid !important; */
 
         border-collapse: separate !important;
 
@@ -199,9 +199,9 @@
         position: absolute !important;
         bottom: 10vh !important;
         right: 5vh !important;
-        border-bottom:1px #FCEDDA solid !important;
         border: 0 !important;
         border-style: none !important;
+        text-decoration: none !important;
 
     }
 
@@ -213,8 +213,11 @@
         height: 44px!important;
         padding: 0!important;
         margin: 0!important;
+        text-decoration: none !important;
+
 
     }
+
 
 
 
@@ -263,6 +266,8 @@
         display: flex !important;
         width: 75%;
         border-spacing: 50px !important;
+        border-bottom:1px #F87474 solid !important;
+
 
     }
 
