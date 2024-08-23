@@ -710,11 +710,11 @@ span:hover {
     position: relative;
 }
 
-svg{
+/* svg{
     display: flex;
     overflow: hidden;
     position: absolute;
-}
+} */
 
 
 .path1 {
@@ -1130,6 +1130,23 @@ span {
     font-size: 2vw;
 
 }
+
+.path1 {
+    fill: none;
+    stroke: #F87474;
+    stroke-width: 2px;
+    stroke-dasharray: 5508.6;
+    animation: drawPath1 0.2s linear, floating 2.2s linear infinite;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 5vw;
+    margin-bottom: 5vw;
+    border-bottom: 5vw;
+
+}
+
+
 
 
 
