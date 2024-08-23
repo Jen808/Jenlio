@@ -59,10 +59,12 @@
         
     }
 
-    .title-des{
+    .title-des,
+    .announcement{
         font-size: 16px;
         line-height: 5vw;
         width: 85%;
+        
 
     }
 
@@ -104,6 +106,7 @@
     .cal-box{
         padding: 0;
     }
+
 
 
 
