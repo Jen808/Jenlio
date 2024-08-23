@@ -579,7 +579,7 @@ a {
 }
 
 
-.bold-text {
+span {
     font-weight: bold;
 }
 
@@ -705,4 +705,96 @@ a {
 
 .hidden-h-group.show .h-group {
     display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    body{
+        margin-top: 20vw;
+
+    }
+   .intro,
+   .company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+   } 
+
+   .logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+   }
+
+   #logo{
+    width: 80px;
+    height: 100%;
+   }
+
+
+   .job-title{
+    font-size: 18px;
+    line-height: 25px;
+   }
+
+   .job-comp{
+    font-size: 16px;
+    line-height: 25px;
+
+   }
+
+   .job-date{
+    font-size: 16px;
+    line-height: 25px;
+
+   }
+
+   .intro-des{
+    font-size: 14px;
+    line-height: 18px;
+    width: 85%;
+    margin-top: 15px;
+   }
+
+   .space{
+    font-size: 18px;
+    height: 30px;
+   }
+
+
+
+
+
+   .visible-content{
+
+    height: 260px;
+    margin: 0;
+    padding: 0;
+   }
+
+
+   .t{
+    height: 80px;
+    margin: 10px;
+   }
+
+   #invisible{
+    display: none;
+   }
+
+   .toggle-button{
+    width: 130px;
+    height: 30px;
+    font-size:16px;
+   }
+
+   
+
+
 }

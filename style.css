@@ -51,7 +51,7 @@ a {
     width: auto;
 }
 
-.header {
+.index-header {
     display: flex;
     flex-direction: row;
     height: 70vh;
@@ -75,7 +75,7 @@ a {
 
 
 
-#logo {
+#index-logo {
     /* display: block; */
     /* margin: 0 auto; */
     width: 10vw;
@@ -84,13 +84,13 @@ a {
 }
 
 
-#logo:hover {
+#index-logo:hover {
     animation: tada 1s ease;
     /* cursor: pointer; */
 }
 
 
-#logo.shake-initial {
+#index-logo.shake-initial {
     animation: tada 1s ease forwards;
 }
 
@@ -138,7 +138,7 @@ path {
 
 
 
-.intro {
+.index-intro {
     max-width: 80vw;
     /* white-space: pre-line; */
     white-space: normal; 

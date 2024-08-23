@@ -16,6 +16,9 @@
         .art {
             font-weight: 800;
         }
+        .menu-toggle {
+            display: none;
+        }
     </style>
 
 
@@ -49,8 +52,8 @@
     </div> -->
 
 
-
     <div class="header">
+
         <div class="logo-name">
             <a href="index.html">
                 <img src="src/me-24.png" alt="Logo" class="logo">
@@ -59,17 +62,21 @@
                 <img src="src/name.png" alt="click here to go home" class="name">
             </a>
         </div>
+
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+
         <nav class="menu" id="navMenu">
             <a href="AboutMe.html" class="ame">About Me</a>
+            <a href="index.html#UX-Design" class="ux">UX Design</a>
             <a href="chs.html" class="chs">Promotional Materials</a>
             <a href="art.html" class="art">Art Gallery</a>
             <a href="src/RESUME-Aug.24.pdf" target="_blank" class="my">Resume</a>
-            <div class="blank-container"></div>
+
             <div class="sns">
                 <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
                     <img src="src/logo-email.png" alt="email" class="email">
@@ -78,10 +85,15 @@
                     <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
                 </a>
             </div>
+
         </nav>
+        
 
     </div>
-    <!-- <div class="start-screen">Start Screen</div> -->
+
+    
+    <div class="content-overlay" id="contentOverlay"></div>
+    
     <div class="main-content-1">
         <div class="sticky">
             <div class="sticky-title">
@@ -252,6 +264,15 @@
         window.addEventListener('scroll', () => {
             folderScroll.animate()
         })
+
+        function scrollToSection() {
+        document.getElementById("UX-Design").scrollIntoView({ behavior: "smooth" });
+    }
+
+
+
+
+
     </script>
 
 

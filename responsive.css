@@ -1,7 +1,11 @@
 @media (max-width: 768px) {
 
+    .header{
+        display: show;
+    }
 
-    .header {
+
+    .index-header {
         display: flex;
         flex-direction: column;
         height: 70vh;
@@ -18,7 +22,7 @@
 
 
 
-    #logo {
+    #index-logo {
         width: 100px;
         height: auto;
         margin-bottom: 5vh;
@@ -66,7 +70,7 @@
         stroke-linecap: round;
     }
 
-    .intro {
+    .index-intro {
         font-size: 4.5vw;
         font-weight: 600;
     }

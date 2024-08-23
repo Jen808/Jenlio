@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="responsive-head-foot.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="jenlio.css">
@@ -16,6 +17,7 @@
 
 <body>
     <div class="header">
+
         <div class="logo-name">
             <a href="index.html">
                 <img src="src/me-24.png" alt="Logo" class="logo">
@@ -24,17 +26,21 @@
                 <img src="src/name.png" alt="click here to go home" class="name">
             </a>
         </div>
+
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+
         <nav class="menu" id="navMenu">
             <a href="AboutMe.html" class="ame">About Me</a>
+            <a href="index.html#UX-Design" class="ux">UX Design</a>
             <a href="chs.html" class="chs">Promotional Materials</a>
             <a href="art.html" class="art">Art Gallery</a>
             <a href="src/RESUME-Aug.24.pdf" target="_blank" class="my">Resume</a>
-            <div class="blank-container"></div>
+
             <div class="sns">
                 <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
                     <img src="src/logo-email.png" alt="email" class="email">
@@ -43,26 +49,38 @@
                     <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
                 </a>
             </div>
+
         </nav>
+        
 
     </div>
+
+    
+    <div class="content-overlay" id="contentOverlay"></div>
+
     <div class="title">
 
-        <img src="src/main.png" alt="GLNASIS Representative Image" class="mainimg">
+        <img src="src/main-jenlio.png" alt="Jenlio Representative Image" class="mainimg">
 
         <div class="title-container">
             <div class="tools">
                 <img src='src/logo-figma.png' alt="figma" class="skill-logo">
                 <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
+                <img src='src/logo-ps.png' alt="photoshop" class="skill-logo">
+                <img src='src/logo-html.png' alt="html" class="skill-logo">
+                <img src='src/logo-css.png' alt="css" class="skill-logo">
+                <img src='src/logo-js.png' alt="javascript" class="skill-logo">
+                <img src='src/logo-git.png' alt="git" class="skill-logo">
+                <img src='src/logo-github.png' alt="github" class="skill-logo">
+                <img src='src/logo-netlify.png' alt="netlify" class="skill-logo">
+
+
             </div>
-            <div class="title-box">GLANSIS</div>
+            <div class="title-box">Jenlio</div>
             <div class="title-des">
-                <li>Final Prototype</li>
-                <li>Client</li>
-                <li>Problem Statement</li>
-                <li>Executive Summary</li>
-                <li>Style Guide</li>
-                <li>Key Deisgn Decision</li>
+                <li>Objective</li>
+                <li>Github link</li>
+
             </div>
             <div class="brief">
                 <div class="cal-box">
@@ -108,7 +126,44 @@
     </div>
 
     <div class="main-container">
+        <div class="sub-container">
+            <div class="sub-title">Objective</div>
+            <div class="sub-content">
+                I used to have portfolio website using Wix studio. <br><br>
+                As I learn coding, I wanted to build my own and I created it early 2023.
+                Over year, I learn other programming languages along with HTML, CSS, Javascript in depth and I wanted to
+                re-build more creativity. <br><br>
+                Jenlio, what you are now exploring, is mobile-friendly, responsive, interactive webiste, showing my passion on both UX design and
+                coding. <br><br>
+                Again, thank you for visiting.
+            </div>
+        </div>
+
+        <div class="sub-container">
+            <div class="sub-title">Git Hub link</div>
+            <div class="sub-content">
+                <a href="https://github.com/Jen808/Jenlio">
+                    <img src='src/logo-github.png' alt="github" class="openlink">
+                </a>
+            </div>
+        </div>
     </div>
+
+
+    <div class="footer">
+        <div class="ty-text">Thank you for your interest. Let’s keep in touch!</div>
+        <div class="footer-icon">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email-footer">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin-footer">
+            </a>
+        </div>
+        <div class="copyright">© 2024 Jennifer Jung: enthusiastic designer, developer, cook, dog sis </div>
+    </div>
+
+
 
 
 
@@ -132,6 +187,14 @@
 
     const hiddenDes = document.querySelectorAll('');
     hiddenDes.forEach((el) => observer.observe(el));
+
+
+    function scrollToSection() {
+        document.getElementById("UX-Design").scrollIntoView({ behavior: "smooth" });
+    }
+
+
+
 
 
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="responsive-head-foot.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="roosroast.css">
@@ -16,6 +17,7 @@
 
 <body>
     <div class="header">
+
         <div class="logo-name">
             <a href="index.html">
                 <img src="src/me-24.png" alt="Logo" class="logo">
@@ -24,17 +26,21 @@
                 <img src="src/name.png" alt="click here to go home" class="name">
             </a>
         </div>
+
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+
         <nav class="menu" id="navMenu">
             <a href="AboutMe.html" class="ame">About Me</a>
+            <a href="index.html#UX-Design" class="ux">UX Design</a>
             <a href="chs.html" class="chs">Promotional Materials</a>
             <a href="art.html" class="art">Art Gallery</a>
             <a href="src/RESUME-Aug.24.pdf" target="_blank" class="my">Resume</a>
-            <div class="blank-container"></div>
+
             <div class="sns">
                 <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
                     <img src="src/logo-email.png" alt="email" class="email">
@@ -43,9 +49,15 @@
                     <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
                 </a>
             </div>
+
         </nav>
+        
 
     </div>
+
+    
+    <div class="content-overlay" id="contentOverlay"></div>
+
     <div class="title">
 
         <img src="src/main-rr.png" alt="GLNASIS Representative Image" class="mainimg">
@@ -121,12 +133,21 @@
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLqMHIEGGDrvuHobcouOIQT%2FRoosRoast-Desktop%3Ft%3DDVoLVdmrbpmdfOWW-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D0-169%26starting-point-node-id%3D0%253A169"
             allowfullscreen></iframe>
     </div>
-
+    <!-- 
     <div class="announcement">This page is under construction. <br><br>Web Interactive / Mobile view is currently limited <br><br> 
-    Estimated. September 2024</div>
+    Estimated. September 2024</div> -->
 
 
-    <img src="src/frame.png" class="full">
+    <img src="src/rr-1.png" class="full">
+    <img src="src/rr-2.png" class="full">
+    <img src="src/rr-22.png" class="full">
+    <img src="src/rr-3.png" class="full">
+    <img src="src/rr-4.png" class="full">
+    <img src="src/rr-5.png" class="full">
+    <img src="src/rr-6.png" class="full">
+    <img src="src/rr-7.png" class="full">
+    <img src="src/rr-8.png" class="full">
+    <img src="src/rr-9.png" class="full" id="last">
     <!-- 
     <div class="main-container">
         <div class="section">
@@ -208,6 +229,14 @@
 
     const hiddenDes = document.querySelectorAll('');
     hiddenDes.forEach((el) => observer.observe(el));
+
+
+
+    function scrollToSection() {
+        document.getElementById("UX-Design").scrollIntoView({ behavior: "smooth" });
+    }
+
+
 
 
 

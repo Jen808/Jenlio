@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="responsive-head-foot.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="my-widdy.css">
@@ -16,6 +17,7 @@
 
 <body>
     <div class="header">
+
         <div class="logo-name">
             <a href="index.html">
                 <img src="src/me-24.png" alt="Logo" class="logo">
@@ -24,17 +26,21 @@
                 <img src="src/name.png" alt="click here to go home" class="name">
             </a>
         </div>
+
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+
         <nav class="menu" id="navMenu">
             <a href="AboutMe.html" class="ame">About Me</a>
+            <a href="index.html#UX-Design" class="ux">UX Design</a>
             <a href="chs.html" class="chs">Promotional Materials</a>
             <a href="art.html" class="art">Art Gallery</a>
             <a href="src/RESUME-Aug.24.pdf" target="_blank" class="my">Resume</a>
-            <div class="blank-container"></div>
+
             <div class="sns">
                 <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
                     <img src="src/logo-email.png" alt="email" class="email">
@@ -43,9 +49,15 @@
                     <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
                 </a>
             </div>
+
         </nav>
+        
 
     </div>
+
+    
+    <div class="content-overlay" id="contentOverlay"></div>
+
     <div class="title">
 
         <img src="src/main-20.png" alt="My-Widdy Representative Image" class="mainimg">
@@ -124,8 +136,10 @@
                     <div class="statement-title">
                         Problem Statement
                     </div>
-                    <div class="summary" id="vulnerable">As Mac OS user for a long time, It was my very first time to have my own Desktop.
-                        There are some pros and cons for both different operating systems, but what big problem of Window
+                    <div class="summary" id="vulnerable">As Mac OS user for a long time, It was my very first time to
+                        have my own Desktop.
+                        There are some pros and cons for both different operating systems, but what big problem of
+                        Window
                         was widget system is pretty different.
                     </div>
                 </div>
@@ -153,7 +167,8 @@
                     </div>
                     <div class="p-statement" id="c2">Cons</div>
                     <div class="proscons">
-                        <li class="porc" id="heyhey">Unable to linked Goolge account, or <br>Icloud account for widgets</li>
+                        <li class="porc" id="heyhey">Unable to linked Goolge account, or <br>Icloud account for widgets
+                        </li>
                     </div>
                 </div>
             </div>
@@ -161,7 +176,7 @@
                 <div class="summary" id="r-vulnerable"><span>Result</span></div>
                 <div class="summary" id="r-vulnerable">User need to set up each different widget if they
                     are
-                    using Mac OS and WIndow OS together</div>
+                    using <br>Mac OS and WIndow OS together</div>
                 <div class="proscons">
                     <li class="porc">Can not use same widget</li>
                     <li class="porc">Have to fetch or put events for both</li>
@@ -174,8 +189,9 @@
                 <div class="statement-title">
                     Executive Summary
                 </div>
-                
-                <div class="summary" id="vulnerable">Create Widget app for both Mac and Window, and make them available to link with
+
+                <div class="summary" id="vulnerable">Create Widget app for both Mac and Window, and make them available
+                    to link with
                     google account will be allow user to control widget not only from both operating system, but also
                     for Any mobile devices since IOS and Android all provides Google Calendar and Task application.
                 </div>
@@ -251,9 +267,9 @@
                     <div class="statement-title">
                         Git Hub link
                     </div>
-                        <a href="https://github.com/Jen808/My-Widdy">
-                            <img src='src/logo-github.png' alt="github" class="openlink">
-                        </a>
+                    <a href="https://github.com/Jen808/My-Widdy">
+                        <img src='src/logo-github.png' alt="github" class="openlink">
+                    </a>
 
                 </div>
                 <div class="statement" id="bottom">
@@ -262,7 +278,7 @@
                     </div>
                     <div class="p11" id="inner">my-Widdy Setup 1.1.5.exe</div>
                     <a href="my-Widdy Setup 1.1.5.exe" download>
-                        <button class="download" >Download</button>
+                        <button class="download">Download</button>
                     </a>
                 </div>
                 <div class="statement" id="bottom">
@@ -311,21 +327,33 @@
 
 
 <script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry)
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
-            }
-        });
-    }, {
-        threshold: 0.3
-    });
 
-    const hiddenDes = document.querySelectorAll('');
-    hiddenDes.forEach((el) => observer.observe(el));
+    function scrollToSection() {
+        document.getElementById("UX-Design").scrollIntoView({ behavior: "smooth" });
+    }
+
+
+
+
+
+    // const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach((entry) => {
+    //         console.log(entry)
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add('show');
+    //         } else {
+    //             entry.target.classList.remove('show');
+    //         }
+    //     });
+    // }, {
+    //     threshold: 0.3
+    // });
+
+    // const hiddenDes = document.querySelectorAll('summary');
+    // hiddenDes.forEach((el) => observer.observe(el));
+
+    // const hiddenDes1 = document.querySelectorAll('prob2');
+    // hiddenDes.forEach((el) => observer.observe(el));
 
 
 

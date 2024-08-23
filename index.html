@@ -6,6 +6,8 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- <link rel="stylesheet" href="path/to/animate.min.css"> -->
+    <link rel="stylesheet" href="responsive-head-foot.css">
+
 
 
     <link rel="stylesheet" href="style.css">
@@ -14,23 +16,80 @@
     <link rel="stylesheet" href="reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .ame {
+            font-weight: 800;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .header{
+            display: none;
+        }
+
+
+    </style>
+
+
 </head>
 
 <body>
-    <!-- <div class="social"> -->
-    <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-        <img src="src/logo-email.png" alt="email" class="email">
-    </a>
-    <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-        <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-    </a>
-    <!-- </div> -->
-    </div>
     <div class="header">
-        <img src="src/me-24.png" class="animate_animated animate_tada" id="logo">
-        <p class="touch">touch me!</p>
+
+        <div class="logo-name">
+            <a href="index.html">
+                <img src="src/me-24.png" alt="Logo" class="logo">
+            </a>
+            <a href="index.html">
+                <img src="src/name.png" alt="click here to go home" class="name">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+
+        <nav class="menu" id="navMenu">
+            <a href="AboutMe.html" class="ame">About Me</a>
+            <a href="index.html#UX-Design" class="ux">UX Design</a>
+            <a href="chs.html" class="chs">Promotional Materials</a>
+            <a href="art.html" class="art">Art Gallery</a>
+            <a href="src/RESUME-Aug.24.pdf" target="_blank" class="my">Resume</a>
+
+            <div class="sns">
+                <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                    <img src="src/logo-email.png" alt="email" class="email">
+                </a>
+                <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                    <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                </a>
+            </div>
+
+        </nav>
+        
+
+    </div>
+    <div class="content-overlay" id="contentOverlay"></div>
+
+
+    
+    <div class="index-header">
+        <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+            <img src="src/logo-email.png" alt="email" class="email">
+        </a>
+        <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+            <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+        </a>
+        <img src="src/me-24.png" class="animate_animated animate_tada" alt="Logo" id="index-logo">
+        <!-- <p class="touch">touch me!</p> -->
         <div class="name-des">
-            <div class="name">
+            <div class="index-name">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1209.9 212.08">
                     <defs>
@@ -151,7 +210,7 @@
                     </g>
                 </svg>
             </div>
-            <p class="intro">Thank you for visiting! I'm entering my senior year at <br> the University of Michigan,
+            <p class="index-intro">Thank you for visiting! I'm entering my senior year at <br> the University of Michigan,
                 majoring in Information Science. <br>Discover who I am, what I do beyond the coursework, <br> and meet
                 your future co-worker</p>
         </div>
@@ -191,10 +250,10 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="UX-Design">
         <div class="sec" id="s1">
             <div class="container">
-                <img src="src/main-20.png" class="pj">
+                <img src="src/main-jenlio.png" class="pj">
             </div>
             <div class="des-box">
                 <div class="title" id="t1">Jenlio</div>

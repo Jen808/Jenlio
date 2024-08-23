@@ -100,7 +100,7 @@ function paragraph(element) {
     }, 100)
 }
 
-const p = document.querySelector('.intro')
+const p = document.querySelector('.index-intro')
 paragraph(p)
 
 
@@ -217,6 +217,8 @@ hiddenDes.forEach((el) => observer.observe(el));
 
 const hiddenPj = document.querySelectorAll('.pj');
 hiddenPj.forEach((el) => observer.observe(el));
+
+
 
 
 

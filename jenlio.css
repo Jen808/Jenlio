@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     background-color: white;
     margin-top: 3vh;
+    height: auto;
 
 }
 
@@ -38,9 +39,10 @@ body {
 
 .tools {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: flex-end;
     margin-top: 3vw;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
     margin-right: 3vw;
 }
 
@@ -52,7 +54,7 @@ body {
 }
 
 .title-box {
-    color: #CF845F;
+    color: #f87474;
     font-family: 'Roboto', sans-serif;
     font-size: 3.5vw;
     font-style: normal;
@@ -69,7 +71,7 @@ body {
     line-height: 1.8vw;
     font-size: 1.2vw;
     padding-top: 3vh;
-    color: #543C32;
+    color: #da5656;
     font-weight: 600;
 
 
@@ -99,7 +101,7 @@ body {
 
 .cal,
 .group {
-    fill: #543C32;
+    fill: #da5656;
 }
 
 .brief,
@@ -129,66 +131,34 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
+    width: 50%;
 
 }
 
 
-.rr-1{
-    width: 20vw;
-}
-
-.section1{
-    display: flex;
-    flex-direction: row;
-}
-
-.background{
-    width: 60vw;
-    height: 20vw;
-    background-color: #CF845F;
-    
-}
-
-.full {
-    width: 100%;
+.sub-container{
+    width: 80%;
     height: auto;
-    margin-top: 10vw;
+    margin: 5vw;
 }
 
-
-.frame {
-    display: flex;
-    flex-direction: row;
-    gap: 5vw;
-    margin-top: 10vh;
-}
-
-
-
-
-.mobile {
-    height: 30vw;
-    width: 15vw;
-    border-style: none;
-
-}
-
-
-.desktop {
-    height: 30vw;
-    width: 40vw;
-    border-style: none;
-
-}
-
-.announcement {
-    font-size: 2vw;
-    margin-top: 5vw;
-    width: 80vw;
+.sub-title{
+    font-size: 1.2vw;
+    font-weight: 800;
+    color: #da5656;
     text-align: center;
+}
+
+.sub-content{
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2vw;
+    padding: 3vw;
+
 
 }
 
-#last {
-    margin-bottom: 10vw;
+.openlink{
+    width: 5vw;
 }

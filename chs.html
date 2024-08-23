@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="responsive-head-foot.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="chs.css">
@@ -17,6 +18,12 @@
         .chs {
             font-weight: 800;
         }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        
     </style>
 
 
@@ -25,6 +32,7 @@
 
 <body>
     <div class="header">
+
         <div class="logo-name">
             <a href="index.html">
                 <img src="src/me-24.png" alt="Logo" class="logo">
@@ -33,17 +41,21 @@
                 <img src="src/name.png" alt="click here to go home" class="name">
             </a>
         </div>
+
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+
         <nav class="menu" id="navMenu">
             <a href="AboutMe.html" class="ame">About Me</a>
+            <a href="index.html#UX-Design" class="ux">UX Design</a>
             <a href="chs.html" class="chs">Promotional Materials</a>
             <a href="art.html" class="art">Art Gallery</a>
             <a href="src/RESUME-Aug.24.pdf" target="_blank" class="my">Resume</a>
-            <div class="blank-container"></div>
+
             <div class="sns">
                 <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
                     <img src="src/logo-email.png" alt="email" class="email">
@@ -52,9 +64,14 @@
                     <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
                 </a>
             </div>
+
         </nav>
+        
 
     </div>
+
+    
+    <div class="content-overlay" id="contentOverlay"></div>
 
 
 
@@ -71,10 +88,9 @@
         <div class="intro-des">As a Marketing and Media Assistant in Community Health Services under UofM Health from
             Michigan Medicine,
             my primary responsibilities encompass two core areas. <br><br>
-            Firstly, I
-            <span class="bold-text">manage Social Media Engagement</span> across platforms such as Facebook, Twitter,
+            Firstly, I <span><nobr>manage Social Media Engagement</nobr></span> across platforms such as Facebook, Twitter,
             and Instagram. <br><br>
-            Secondly, I <span class="bold-text"> create Promotional Materials</span> for CHS, and for our 13 programs
+            Secondly, I <span> create Promotional Materials</span> for CHS, and for our 13 programs
             and partners. <br><br>
             Over the years, I have successfully produced
             over 50 distinct items, ranging from social media graphics, posters, and booklets to advertisements for
@@ -95,7 +111,7 @@
                 <img src="src/chs/t4.jpg" class="t">
                 <img src="src/chs/t47.jpg" class="t">
                 <img src="src/chs/t63.jpg" class="t">
-                <img src="src/chs/t22.jpg" class="t">
+                <img src="src/chs/t22.jpg" class="t" id="invisible">
 
             </div>
             <button class="toggle-button" data-section="1">
@@ -119,7 +135,7 @@
                 <img src="src/chs/hidden/t5.jpg" class="t">
                 <img src="src/chs/hidden/t6.jpg" class="t">
                 <img src="src/chs/hidden/t7.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t8.jpg" class="t">
                 <img src="src/chs/hidden/t9.jpg" class="t">
                 <img src="src/chs/hidden/t10.jpg" class="t">
@@ -127,7 +143,7 @@
                 <img src="src/chs/hidden/t12.jpg" class="t">
                 <img src="src/chs/hidden/t13.jpg" class="t">
                 <img src="src/chs/hidden/t14.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t15.jpg" class="t">
                 <img src="src/chs/hidden/t16.jpg" class="t">
                 <img src="src/chs/hidden/t17.jpg" class="t">
@@ -135,7 +151,7 @@
                 <img src="src/chs/hidden/t19.jpg" class="t">
                 <img src="src/chs/hidden/t20.jpg" class="t">
                 <img src="src/chs/hidden/t21.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t22.jpg" class="t">
                 <img src="src/chs/hidden/t23.jpg" class="t">
                 <img src="src/chs/hidden/t24.jpg" class="t">
@@ -143,7 +159,7 @@
                 <img src="src/chs/hidden/t26.jpg" class="t">
                 <img src="src/chs/hidden/t27.jpg" class="t">
                 <img src="src/chs/hidden/t28.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t29.jpg" class="t">
                 <img src="src/chs/hidden/t30.jpg" class="t">
                 <img src="src/chs/hidden/t31.jpg" class="t">
@@ -151,7 +167,7 @@
                 <img src="src/chs/hidden/t33.jpg" class="t">
                 <img src="src/chs/hidden/t34.jpg" class="t">
                 <img src="src/chs/hidden/t35.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t36.jpg" class="t">
                 <img src="src/chs/hidden/t37.jpg" class="t">
                 <img src="src/chs/hidden/t38.jpg" class="t">
@@ -159,7 +175,7 @@
                 <img src="src/chs/hidden/t40.jpg" class="t">
                 <img src="src/chs/hidden/t41.jpg" class="t">
                 <img src="src/chs/hidden/t42.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t43.jpg" class="t">
                 <img src="src/chs/hidden/t44.jpg" class="t">
                 <img src="src/chs/hidden/t45.jpg" class="t">
@@ -167,7 +183,7 @@
                 <img src="src/chs/hidden/t47.jpg" class="t">
                 <img src="src/chs/hidden/t48.jpg" class="t">
                 <img src="src/chs/hidden/t49.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t50.jpg" class="t">
                 <img src="src/chs/hidden/t51.jpg" class="t">
                 <img src="src/chs/hidden/t52.jpg" class="t">
@@ -175,7 +191,7 @@
                 <img src="src/chs/hidden/t54.jpg" class="t">
                 <img src="src/chs/hidden/t55.jpg" class="t">
                 <img src="src/chs/hidden/t56.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t57.jpg" class="t">
                 <img src="src/chs/hidden/t58.jpg" class="t">
                 <img src="src/chs/hidden/t59.jpg" class="t">
@@ -183,7 +199,7 @@
                 <img src="src/chs/hidden/t61.jpg" class="t">
                 <img src="src/chs/hidden/t62.jpg" class="t">
                 <img src="src/chs/hidden/t63.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t64.jpg" class="t">
                 <img src="src/chs/hidden/t65.jpg" class="t">
                 <img src="src/chs/hidden/t66.jpg" class="t">
@@ -191,7 +207,7 @@
                 <img src="src/chs/hidden/t68.jpg" class="t">
                 <img src="src/chs/hidden/t69.jpg" class="t">
                 <img src="src/chs/hidden/t70.jpg" class="t">
-                <br><br>
+
                 <img src="src/chs/hidden/t71.jpg" class="t">
                 <img src="src/chs/hidden/t72.jpg" class="t">
                 <img src="src/chs/hidden/t73.jpg" class="t">
@@ -584,6 +600,13 @@
             }, 2000);
         });
     }
+
+
+    function scrollToSection() {
+        document.getElementById("UX-Design").scrollIntoView({ behavior: "smooth" });
+    }
+
+
 
 
 
