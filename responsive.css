@@ -76,7 +76,9 @@
         background-size: 100%; */
         height: auto;
         width: 80%;
+        animation: bounceInDown 1s ease;
     }
+
 
     .name-des{
         display: flex;

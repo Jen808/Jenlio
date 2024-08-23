@@ -9,121 +9,9 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
-
-
-
-
-
+    /* height: 100vh; */
 }
 
-/* .header {
-    width: 95%;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 5vh;
-    padding-bottom: 2vh;
-    padding-left: 2vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #FCEDDA;
-    z-index: 10;
-}
-
-
-.logo-name {
-    display: flex;
-    align-items: center;
-}
-
-
-.logo {
-    width: 3vw;
-    height: auto;
-
-}
-
-.name {
-    width: 12vw;
-    height: auto;
-    padding-left: 1vw;
-
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 40vw;
-    height: auto;
-
-}
-
-
-.AboutMe,
-.chs,
-.art,
-.my {
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 1vw;
-    font-weight: 400;
-    color: #F87474;
-
-}
-
-
-.AboutMe {
-    font-weight: 800;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-
-.email {
-    text-decoration: none;
-
-    height: auto;
-    width: 2vw;
-    padding-right: 1vw;
-
-}
-
-.linkedin {
-    text-decoration: none;
-
-
-    height: auto;
-    width: 2vw;
-
-} */
-
-
-/* .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 13vh;
-    padding-top: 10vh;
-    height: 10vh;
-    width: 100vw;
-
-} */
-
-
-/* .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height:fit-content;
-} */
 
 
 
@@ -151,97 +39,13 @@ a {
 }
 
 
-/* .title-name {
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2vw;
-    font-weight: 800;
-    color: #F87474;
-    padding-left: 1vw;
-} */
 
-
-/* 
-.chart {
-    width: 80vw;
-    height: auto;
-    margin-top: 10vh;
-    margin-bottom: 8vh;
-} */
-
-/* 
-
-.introducing {
-    height: 40vh;
-    width: auto;
-} */
-
-
-
-/* .footer {
-    height: 15%;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-} */
-
-
-/* .ty-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
-}
-
-
-.footer-icon {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    height: 5vh;
-    width: auto;
-    padding: 2.5vh 0 2.5vh 0;
-}
-
-.email-footer,
-.linkedin-footer {
-    height: 5vh;
-    width: auto;
-}
-
-.copyright {
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 0.9em;
-
-} */
-
-
-
-
-
-/* 
-.logo-AboutMe{
-    height: 3vw;
-    width: auto;
-} */
 
 .card-bg {
     width: 100vw;
     height: 250vh;
     background-color: #FCEDDA;
-    /* background-image: url('src/me-24.png');
-    background-size: 33.3vw auto;
-    margin-top: 12vh; */
 
-
-
-    /* background-color: green; */
 }
 
 
@@ -704,7 +508,7 @@ span:hover {
 
 .study-flow {
     width: 80vw;
-    height: fit-content;
+    /* height: fit-content; */
     display: flex;
     /* justify-content: center;
     align-items: center; */
@@ -889,6 +693,10 @@ span:hover {
 
 @media (max-width: 768px) {
 
+    .main-content{
+        margin-top: 150px;
+    }
+
 
     
 .iam {
@@ -917,7 +725,7 @@ span:hover {
 
 .skillset {
     position: sticky !important;
-    top: 10vh;
+    top: 5vh;
 
 }
 
@@ -1132,6 +940,7 @@ span {
     font-size: 2vw;
 
 }
+
 
 /* .path1,
 svg {
