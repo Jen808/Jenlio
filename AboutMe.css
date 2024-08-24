@@ -949,7 +949,7 @@ span {
 }
 
 .study-container {
-    height: 140vh;
+    height: 170vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -960,7 +960,7 @@ span {
 
 .history{
     position: absolute;
-    height: 140vh;
+    height: 170vh;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -970,19 +970,19 @@ span {
 
 .years{
     font-size: 18px;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .focus {
     font-size: 14px;
-    padding: 10px 0;
+    padding: 20px 0;
 
 
 }
 
 .study-detail{
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
     width: 85vw;
 }
 
@@ -1092,31 +1092,36 @@ svg{
 
 
 #artlink1 {
-    top: 12vw;
-    left: 67vw;
-    width: 22vw;
-    height: 6vw;
-    font-size: 12px;
+    top: 10vw;
+    left: 62vw;
+    width: 110px;
+    height: 44px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.1);
 
 }
 
 
 
 #artlink{
-    top: 64vw;
-    left: 11vw;
-    width: 22vw;
-    height: 6vw;
+    top: 77vw;
+    left: 10vw;
+    width: 110px;
+    height: 44px;
     font-size: 12px;
+    box-shadow: -2px 2px 5px rgb(0,0,0,0.1);
+
 
 }
 
 #chslink {
-    top: 171.5vw;
-    left: 50vw;
-    width: 40vw;
-    height: 6vw;
+    top: 215vw;
+    left: 70vw;
+    width: 80px;
+    height: 44px;
     font-size: 12px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.1);
+
 
 }
 
