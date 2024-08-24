@@ -710,195 +710,221 @@ span {
 
 
 @media (max-width: 768px) {
-    body{
+    body {
         margin-top: 20vw;
 
     }
-   .intro,
-   .company{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-   } 
 
-   .logos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    .intro,
+    .company {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+    }
 
-   }
+    .logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
 
-   #logo{
-    width: 80px;
-    height: 100%;
-   }
+    }
 
-
-   .job-title{
-    font-size: 18px;
-    line-height: 25px;
-   }
-
-   .job-comp{
-    font-size: 16px;
-    line-height: 25px;
-
-   }
-
-   .job-date{
-    font-size: 16px;
-    line-height: 25px;
-
-   }
-
-   .intro-des{
-    font-size: 14px;
-    line-height: 18px;
-    width: 85%;
-    margin-top: 15px;
-   }
-
-   .space{
-    font-size: 18px;
-    height: 30px;
-   }
-
-   #container{
-    width: 92%;
-   }
+    #logo {
+        width: 80px;
+        height: 100%;
+    }
 
 
+    .job-title {
+        font-size: 18px;
+        line-height: 25px;
+    }
 
+    .job-comp {
+        font-size: 16px;
+        line-height: 25px;
 
+    }
 
-   .visible-content{
-    margin: 0;
-    padding-top: 10px;
-   }
+    .job-date {
+        font-size: 16px;
+        line-height: 25px;
 
+    }
 
-   .t{
-    height: 88px;
-    margin: 10px;
-   }
+    .intro-des {
+        font-size: 14px;
+        line-height: 18px;
+        width: 85%;
+        margin-top: 15px;
+    }
 
-   #invisible{
-    display: none;
-   }
+    .space {
+        font-size: 18px;
+        height: 30px;
+    }
 
-   .toggle-button{
-    width: 130px;
-    height: 30px;
-    font-size:16px;
-   }
-
-   #v1{
-    height: 280px;
-
-   }
-
-   #h1{
-    height: 2720px;
-   }
-
-
-   .f{
-    height: 120px;
-    margin: 10px;
-   }
-
-   #v2{
-    height: 350px;
-
-   }
-
-   #h2{
-    height: 2410px;
-   }
+    #container {
+        width: 92%;
+    }
 
 
 
-   .p{
-    height: 88px;
-    margin: 10px;
-   }
-
-   #v3{
-    height: 290px;
-
-   }
-
-   #h3{
-    height: 700px;
-   }
-
-   
-
-   .b{
-    height: 150px;
-    margin: 10px;
-   }
-
-   #v4{
-    height: 410px;
-
-   }
-
-   #h4{
-    height: 890px;
-   }
 
 
-   .d{
-    height: 88px;
-    margin: 10px;
-   }
-
-   #v5{
-    height: 290px;
+    .visible-content {
+        margin: 0;
+        padding-top: 10px;
+    }
 
 
-   }
+    .t {
+        height: 88px;
+        margin: 10px;
+    }
 
-   #h5{
-    height: 2080px;
-   }
+    #invisible {
+        display: none;
+    }
 
-   .et,
-   #wide{
-    height: 88px;
-    margin: 10px;
-   }
+    .toggle-button {
+        width: 130px;
+        height: 30px;
+        font-size: 16px;
+    }
 
-   #v6{
-    height: 290px;
+    #v1 {
+        height: 300px;
 
+    }
 
-   }
-
-   #h6{
-    height: 2080px;
-   }
-   
-
-   .video-content,
-   .videos {
-    width: 95%;
-    height: 680px;
-    
-   }
+    #h1 {
+        height: 2720px;
+    }
 
 
-.vd{
-    height: 190px;
-    width: 94%;
-    margin: 15px 10px;
+    .f {
+        height: 120px;
+        margin: 10px;
+    }
 
-   }
+    #v2 {
+        height: 370px;
+
+    }
+
+    #h2 {
+        height: 2410px;
+    }
+
+
+
+    .p {
+        height: 88px;
+        margin: 10px;
+    }
+
+    #v3 {
+        height: 305px;
+
+    }
+
+    #h3 {
+        height: 700px;
+    }
+
+
+
+    .b {
+        height: 150px;
+        margin: 10px;
+    }
+
+    #v4 {
+        height: 425px;
+
+    }
+
+    #h4 {
+        height: 890px;
+    }
+
+
+    .d {
+        height: 88px;
+        margin: 10px;
+    }
+
+    #v5 {
+        height: 305px;
+
+
+    }
+
+    #h5 {
+        height: 2080px;
+    }
+
+    .et,
+    #wide {
+        height: 88px;
+        margin: 10px;
+    }
+
+    #v6 {
+        height: 305px;
+
+
+    }
+
+    #h6 {
+        height: 2080px;
+    }
+
+
+    .video-content,
+    .videos {
+        width: 95%;
+        height: 680px;
+
+    }
+
+
+    .vd {
+        height: 190px;
+        width: 94%;
+        margin: 15px 10px;
+
+    }
+
+
+    .arrow {
+        margin-left: 12px;
+        width: auto;
+        height: 10px;
+        transition: transform 0.5s ease;
+
+    }
+
+    .toggle-button {
+
+        width: 150px;
+        height: 44px;
+        font-size: 18px;
+        font-weight: 500;
+        border: 1px #F87474 solid;
+
+    }
+
+    .loading-spinner {
+        width: 100px;
+        height: 100px;
+        top: 100px;
+    }
 
 
 
