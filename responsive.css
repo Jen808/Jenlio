@@ -63,7 +63,14 @@
     }
 
     .index-name{
-        display: none;
+        width: 90%;
+        height: auto;
+    }
+
+
+    svg{
+        width: 70vw;
+        height: auto;
     }
 
     .mobile-name {
