@@ -531,19 +531,22 @@ span:hover {
     position: absolute;
 } */
 
-
-.path1 {
+path {
     fill: none;
     stroke: #F87474;
     stroke-width: 2px;
+}
+
+.path1 {
+
     stroke-dasharray: 5508.6;
     animation: drawPath1 0.2s linear, floating 2.2s linear infinite;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     position: absolute;
     padding-bottom: 5vw;
     margin-bottom: 5vw;
-    border-bottom: 5vw;
+    border-bottom: 5vw; */
 
 }
 
@@ -576,6 +579,14 @@ span:hover {
     margin-bottom: 5vw;
 }
 
+.history {
+    position: absolute;
+    top: 430vh;
+    left: 4%;
+    width: 92%;
+    height: 100%;
+
+}
 
 .study-sec{
     font-size: 2.5vw;
@@ -624,12 +635,12 @@ span:hover {
 }
 
 #sec1{
-    position: absolute;
+    /* position: absolute; */
     top: 10vw;
 }
 
 #sec2{
-    position: absolute;
+    /* position: absolute; */
     top:107vw;
     right: 0;
     text-align: right;
@@ -640,7 +651,7 @@ span:hover {
 
 
 #sec3{
-    position: absolute;
+    /* position: absolute; */
     top:136vw;
     width: 40vw;
     line-height: 1.8vw;
@@ -649,7 +660,7 @@ span:hover {
 
 
 #sec4{
-    position: absolute;
+    /* position: absolute; */
     top:170vw;
     right: 0;
     text-align: right;
@@ -664,7 +675,7 @@ span:hover {
     background-color: transparent;
     width: 8vw;
     height: 3vw;
-    position: absolute;
+    /* position: absolute; */
     top: 107vw;
     right: 27vw;
     border-radius: 10vw;
