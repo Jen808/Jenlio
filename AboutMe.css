@@ -1092,7 +1092,7 @@ svg{
 
 
 
-
+/* 
 #artlink1 {
     top: 10vw;
     left: 62vw;
@@ -1101,13 +1101,22 @@ svg{
 
     box-shadow: 2px 2px 5px rgb(0,0,0,0.1);
 
+} */
+
+#artlink1 {
+    top: 50px;
+    left: 65%;
+    width: 110px;
+    height: 44px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.1);
+
 }
 
 
 
 #artlink{
-    top: 80vw;
-    left: 10vw;
+    top: 315px;
+    left: 8%;
     width: 110px;
     height: 44px;
     box-shadow: -2px 2px 5px rgb(0,0,0,0.1);
@@ -1116,8 +1125,8 @@ svg{
 }
 
 #chslink {
-    top: 222vw;
-    left: 70vw;
+    top: 870px;
+    left: 70%;
     width: 80px;
     height: 44px;
     box-shadow: 2px 2px 5px rgb(0,0,0,0.1);
