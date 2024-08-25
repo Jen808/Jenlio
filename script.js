@@ -237,6 +237,13 @@ contentOverlay.addEventListener('click', () => {
 });
 
 
+var link = document.createElement('link');
+
+link.rel = 'icon';
+link.type = 'image/x-icon';
+link.href = 'src/favicon.ico';
+document.head.appendChild(link);
+
 (function (h, o, t, j, a, r) {
     h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
     h._hjSettings = { hjid: 5106440, hjsv: 6 };

@@ -12,7 +12,7 @@
 
 
 
-    <title>Education</title>
+    <title>Promotional Materials</title>
 
     <style>
         .chs {
@@ -634,89 +634,12 @@
     });
 
 
+    var link = document.createElement('link');
 
-
-
-
-    //     document.querySelectorAll('.t').forEach(image => {
-    //     image.addEventListener('click', function() {
-    //         if (this.classList.contains('expanded')) {
-    //             this.classList.remove('expanded');
-    //         } else {
-    //             document.querySelectorAll('.t.expanded').forEach(img => {
-    //                 img.classList.remove('expanded');
-    //             });
-
-    //             this.classList.add('expanded');
-    //         }
-    //     });
-    // });
-
-
-
-    //             if (content.classList.contains('show')) {
-    //             content.classList.remove('show');
-    //             this.firstChild.nodeValue = 'show more';
-    //             icon.classList.remove('rotate');
-    //             spinner.style.display = 'block';
-    //             actualContent.style.display = 'none';
-    //         } else {
-    //             // content.style.maxHeight = '66.67vw';
-    //             content.classList.add('show');
-    //             this.firstChild.nodeValue = 'show less';
-    //             icon.classList.add('rotate');
-
-    //             setTimeout(() => {
-    //                 spinner.style.display = 'none';
-    //                 actualContent.style.display = 'block';
-    //             }, 2000);
-    //         }
-    //     });
-    // });
-
-
-
-
-    //             if (content.classList.contains('show')) {
-    //                 content.classList.remove('show');
-    //                 setTimeout(() => {
-    //                     content.style.display = 'none';
-    //                 }, 500);
-    //                 this.firstChild.nodeValue = 'show more';
-    //                 icon.classList.remove('rotate');
-
-    //             } else {
-    //                 content.style.display = 'block';
-    //                 setTimeout(() => {
-    //                     content.classList.add('show');
-    //                 }, 10);
-    //                 this.firstChild.nodeValue = 'show less';
-    //                 icon.classList.add('rotate');
-    //             }
-    //         });
-    //     });
-
-
-
-    //     if (content.classList.contains('show')) {
-    //             content.classList.remove('show');
-    //             this.firstChild.nodeValue = 'show more';
-    //             icon.classList.remove('rotate');
-    //             spinner.style.display = 'block';
-    //             actualContent.style.display = 'none';
-    //         } else {
-    //             content.style.maxHeight = '66.67vw';
-    //             content.classList.add('show');
-    //             this.firstChild.nodeValue = 'show less';
-    //             icon.classList.add('rotate');
-
-    //             setTimeout(() => {
-    //                 spinner.style.display = 'none';
-    //                 actualContent.style.display = 'block';
-    //             }, 1000);
-    //         }
-    //     });
-    // });
+    link.rel = 'icon';
+    link.type = 'image/x-icon';
+    link.href = 'src/favicon.ico';
+    document.head.appendChild(link);
 
 
 

@@ -145,7 +145,7 @@ path {
     letter-spacing: 0em;
     line-height: 1.5em;
     
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-family: 'VT323', monospace;
     /* font-family: 'Inter', sans-serif; */
     /* font-family: 'Inter', monospace; */
@@ -566,3 +566,11 @@ path {
 }
 
 
+/* .bold{
+    font-weight: 700;
+}
+ */
+
+/* .colored{
+    color: #F87474 !important;
+} */

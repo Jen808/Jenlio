@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="ux-responsive.css">
 
 
-    <title>Education</title>
+    <title>UX-Design My-Widdy</title>
 
 
     <style>
@@ -374,6 +374,13 @@
         document.body.classList.remove('menu-open');
     });
 
+    var link = document.createElement('link');
+
+    link.rel = 'icon';
+    link.type = 'image/x-icon';
+    link.href = 'src/favicon.ico';
+    document.head.appendChild(link);
+
     (function (h, o, t, j, a, r) {
         h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
         h._hjSettings = { hjid: 5106440, hjsv: 6 };
@@ -387,24 +394,7 @@
 
 
 
-    // const observer = new IntersectionObserver((entries) => {
-    //     entries.forEach((entry) => {
-    //         console.log(entry)
-    //         if (entry.isIntersecting) {
-    //             entry.target.classList.add('show');
-    //         } else {
-    //             entry.target.classList.remove('show');
-    //         }
-    //     });
-    // }, {
-    //     threshold: 0.3
-    // });
 
-    // const hiddenDes = document.querySelectorAll('summary');
-    // hiddenDes.forEach((el) => observer.observe(el));
-
-    // const hiddenDes1 = document.querySelectorAll('prob2');
-    // hiddenDes.forEach((el) => observer.observe(el));
 
 
 
