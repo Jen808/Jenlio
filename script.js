@@ -1,18 +1,6 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // const logo = document.querySelector('.logo');
-    // if (logo) {
-    //     console.log('Logo found:', logo);
-    //     logo.classList.add('shake-initial');
-
-    //     setTimeout(() => {
-    //         logo.classList.remove('shake-initial');
-    //         console.log('Shake-initial class removed');
-    //     }, 1000);
-    // } else {
-    //     console.log('Logo not found');
-    // }
 
     const pageloads = [
 
@@ -130,7 +118,7 @@ class CardFlipOnScroll {
     }
 
     init() {
-        this.start = this.wrapper.offsetTop - 100
+        this.start = 0
         this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
         this.step = (this.end - this.start) / (this.length * 2)
     }
@@ -183,18 +171,6 @@ window.addEventListener('resize', () => {
 })
 
 
-
-
-
-// document.addEventListener('scroll', function() {
-//     const des2 = document.querySelector('.des-box2');
-//     const rect = des2.getBoundingClientRect();
-//     const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-
-//     if (isVisible) {
-//         des2.classList.add('visible');
-//     }
-// });
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

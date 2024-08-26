@@ -81,20 +81,24 @@ a {
     width: 10vw;
     height: 10vw;
     margin-right: 2vw;
+    animation: rubberBand 1s ease;
+
+
 }
 
 
 #index-logo:hover {
-    animation: tada 1s ease;
-    /* cursor: pointer; */
+        animation: tada 1s ease;
+
+    /* cursor: pointer !important; */
 }
 
 
-#index-logo.shake-initial {
+/* #index-logo.shake-initial {
     animation: tada 1s ease forwards;
 }
 
-
+ */
 
 
 .name-des {

@@ -41,12 +41,13 @@ body {
 
 
 
-.card-bg {
+/* .card-bg {
     width: 100vw;
-    height: 250vh;
+    height: 900vh;
     background-color: #FCEDDA;
 
-}
+
+} */
 
 
 
@@ -62,22 +63,10 @@ body {
     overflow: hidden;
 }
 
-.list-background {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* font-family: "New Amsterdam", sans-serif; */
-    /* color: #E4D1BF; */
-    background-color: white;
-    font-size: 7vh;
-    line-height: 10vh;
-    background-color: transparent;
-    background-size: auto 100%;
-    background-position: center;
-
+.list-bg{
+    width: 100vw;
+    height: 900vh;
+    background-color: #FCEDDA;
 }
 
 
@@ -632,7 +621,7 @@ span:hover {
 
 .history{
     position: absolute;
-    top: 450vh;
+    top: 1095vh;
     left: 0;
     z-index: 100;
     height: 250vw;
@@ -810,9 +799,9 @@ span:hover {
 }
 
 
-.card-bg {
+.list-bg {
     width: 100vw;
-    height: 300vh;
+    height: 1000vh;
 }
 
 
@@ -966,7 +955,7 @@ span {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    top: 435vh;
+    top: 1150vh;
 }
 
 
