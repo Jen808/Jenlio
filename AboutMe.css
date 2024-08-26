@@ -41,15 +41,6 @@ body {
 
 
 
-/* .card-bg {
-    width: 100vw;
-    height: 900vh;
-    background-color: #FCEDDA;
-
-
-} */
-
-
 
 
 .skillset {
@@ -801,7 +792,7 @@ span:hover {
 
 .list-bg {
     width: 100vw;
-    height: 1000vh;
+    height: 1150vh;
 }
 
 
@@ -955,7 +946,7 @@ span {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    top: 1150vh;
+    top: 1280vh;
 }
 
 
