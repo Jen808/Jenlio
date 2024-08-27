@@ -931,7 +931,7 @@ span {
 }
 
 .study-container {
-    height: 190vh;
+    height: 210vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -947,6 +947,7 @@ span {
     flex-direction: column;
     width: 100vw;
     top: 1280vh;
+    margin-top: 10vh;
 }
 
 
