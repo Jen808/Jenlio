@@ -350,6 +350,21 @@ path {
 }
 
 
+#s7{
+    background-color: #dccfbc;
+    cursor: auto;
+}
+
+
+.coming-soon{
+    font-weight: 700;
+    font-size: 3vw;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2vw;
+}
+
+
 .container {
     width: 46.36%;
     height: 60vh;
@@ -406,6 +421,18 @@ path {
     /* padding-top: 10vh; */
 }
 
+.title2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 1vw;
+    /* line-height: normal; */
+    /* padding-top: 10vh; */
+}
+
+
+
 #t1 {
     color: #F87474;
 }
@@ -428,9 +455,14 @@ path {
 
 #t6{
     color: #0E9BA4;
-
-
 }
+
+
+#t7,
+#d7{
+    color: #8c7f6c;
+}
+
 
 .des {
     color: #000;
@@ -455,6 +487,10 @@ path {
     width: 50vw;
 } */
 
+
+#hidden-skill{
+    opacity: 50%;
+}
 
 
 .des-box {
