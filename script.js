@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'f2', url: 'chs.html' },
         { id: 'f3', url: 'art.html' },
         { id: 'f4', url: 'src/Resume-Jennifer Jung-Sep.24.pdf' },
-        { id: 's1', url: 'jenlio.html' },
+        // { id: 's1', url: 'jenlio.html' },
         { id: 's2', url: 'my-widdy.html' },
         { id: 's3', url: 'roosroast.html' },
         { id: 's4', url: 'glansis.html' },

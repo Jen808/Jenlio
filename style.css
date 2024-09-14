@@ -30,7 +30,7 @@ body {
 } */
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 
@@ -67,9 +67,26 @@ a {
 
 
 @keyframes shake {
-    0%, 100% { transform: translateY(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
-    20%, 40%, 60%, 80% { transform: translateY(10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateY(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateY(10px);
+    }
 }
 
 
@@ -88,7 +105,7 @@ a {
 
 
 #index-logo:hover {
-        animation: tada 1s ease;
+    animation: tada 1s ease;
 
     /* cursor: pointer !important; */
 }
@@ -104,7 +121,7 @@ a {
 .name-des {
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
@@ -145,10 +162,10 @@ path {
 .index-intro {
     max-width: 80vw;
     /* white-space: pre-line; */
-    white-space: normal; 
+    white-space: normal;
     letter-spacing: 0em;
     line-height: 1.5em;
-    
+
     font-size: 1vw;
     font-family: 'VT323', monospace;
     /* font-family: 'Inter', sans-serif; */
@@ -179,9 +196,9 @@ path {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-  
-  .sticky-background {
+}
+
+.sticky-background {
     width: 100%;
     height: 100%;
     display: flex;
@@ -193,21 +210,21 @@ path {
     font-size: 7vh;
     line-height: 10vh;
     background-color: transparent;
-    background-size: auto 100%; 
-    background-position: center; 
-    
-  }
-  
-  .card-frame {
+    background-size: auto 100%;
+    background-position: center;
+
+}
+
+.card-frame {
     position: absolute;
     width: 85vw;
     height: 21vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .card {
+}
+
+.card {
     width: 20%;
     height: 100%;
     display: flex;
@@ -216,23 +233,22 @@ path {
     font-size: 20vw;
     transform-style: preserve-3d;
     position: relative;
-    transform: perspective(100vw)
-    translateX(100vw) 
-    rotateY(180deg);
+    transform: perspective(100vw) translateX(100vw) rotateY(180deg);
     transition: transform 0.1s;
 
-  }
-  
-  .front, .back {
+}
+
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 1.5vw;
     overflow: hidden;
     backface-visibility: hidden;
-  }
-  
-  .front {
+}
+
+.front {
     /* background-image: url('src/floppy-04.png'); */
     background-color: transparent;
     /* background-size: cover; */
@@ -248,10 +264,10 @@ path {
     align-items: center;
     justify-content: center;
     text-align: center; */
-  }
-  
+}
 
- #f1 {
+
+#f1 {
     background-image: url('src/card-aboutme.png');
     background-color: transparent;
     background-size: cover;
@@ -260,9 +276,9 @@ path {
     background-size: 100%;
 
 
-  }
+}
 
- #f2 {
+#f2 {
     background-image: url('src/card-pm.png');
     background-color: transparent;
     background-size: cover;
@@ -270,9 +286,9 @@ path {
     border: none;
     background-size: 100%;
 
-  }
+}
 
- #f3 {
+#f3 {
     background-image: url('src/card-art.png');
     background-color: transparent;
     background-size: cover;
@@ -280,9 +296,9 @@ path {
     border: none;
     background-size: 100%;
 
-  }
+}
 
- #f4 {
+#f4 {
     background-image: url('src/card-resume.png');
     background-color: transparent;
     background-size: cover;
@@ -290,12 +306,12 @@ path {
     border: none;
     background-size: 100%;
 
-  }
+}
 
 
 
 
-  .back {
+.back {
     transform: rotateY(180deg);
     background-image: url('src/white-30.png');
     background-color: transparent;
@@ -305,10 +321,10 @@ path {
     background-size: 100%;
 
 
-    
-  }
-  
-  /* @media screen and (orientation:portrait) {
+
+}
+
+/* @media screen and (orientation:portrait) {
     .card-frame {
       display: grid;
       height: initial;
@@ -350,13 +366,51 @@ path {
 }
 
 
-#s7{
+#s7 {
     background-color: #dccfbc;
     cursor: auto;
 }
 
+.jenlio {
+    width: 85vw;
+    height: auto;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    overflow: hidden;
+    pointer-events: auto;
+    cursor: auto;
 
-.coming-soon{
+
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 1vw 2vw;
+    border-radius: 5vw;
+    margin: 3vw 0vw;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.sub-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F87474;
+}
+
+
+.coming-soon {
     font-weight: 700;
     font-size: 3vw;
     color: #FFF;
@@ -371,6 +425,12 @@ path {
     overflow: hidden;
 }
 
+#jenlio-container {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+}
 
 
 /* 
@@ -453,13 +513,13 @@ path {
     color: #FEBD41;
 }
 
-#t6{
+#t6 {
     color: #0E9BA4;
 }
 
 
 #t7,
-#d7{
+#d7 {
     color: #8c7f6c;
 }
 
@@ -476,6 +536,28 @@ path {
     text-align: left;
 }
 
+
+.jenlio-des {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 500;
+    line-height: 1.8vw;
+    padding-top: 5vh;
+    text-align: center;
+    width: 60%;
+}
+
+.jenbold{
+    font-weight: 700;
+}
+
+
+.openlink {
+    width: 5vw;
+}
+
+
 /* .skill{
     color: #000;
     font-family: "Roboto", sans-serif;
@@ -488,7 +570,7 @@ path {
 } */
 
 
-#hidden-skill{
+#hidden-skill {
     opacity: 50%;
 }
 
@@ -557,7 +639,7 @@ path {
     height: 5vh;
     width: auto;
 }
- 
+
 
 .bold-text {
     font-weight: bold;
