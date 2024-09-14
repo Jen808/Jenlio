@@ -185,11 +185,10 @@ body {
 .problem {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    margin-right: 35vw;
+    width: 40vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
     height: auto;
-    margin-top: 10vw;
-    margin-left: 5vw;
     padding: 3vw;
     align-items: center;
 
@@ -229,7 +228,7 @@ body {
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 50vw;
+    width: 40vw;
     padding-bottom: 3vw;
     background-color: white;
     border-radius: 5vw;
@@ -247,7 +246,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 25vw;
+    width: 20vw;
     justify-content: center;
 
 
@@ -345,22 +344,24 @@ body {
 
 
 #vulnerable{
-    line-height: 2vw;
+    line-height: 1.4vw;
     font-weight: 600;
     padding: 3vw 0;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: black;
+    width: 40vw;
 
 
 }
 
 #r-vulnerable{
-    line-height: 2vw;
+    line-height: 1.4vw;
     font-weight: 600;
     padding: 1vw 0;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1vw;
+
 
 
 
@@ -373,8 +374,9 @@ body {
 }
 
 .porc{
-    line-height: 2vw;
+    line-height: 1.5vw;
     text-align: center;
+    font-size: 0.8vw;
 }
 
 .proscons {
@@ -542,6 +544,17 @@ span{
 }
 
 
+/* .p7-5{
+    background-color: white;
+} */
+
+
+.white{
+    background-color: #FFF;
+    margin-top: 2vw;
+    padding-bottom: 3vw;
+    border-radius: 0.8vw;
+}
 
 @media (max-width: 768px) {
     .main-container{
