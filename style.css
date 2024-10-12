@@ -38,16 +38,23 @@ a {
 .index-email {
     position: absolute;
     top: 5vh;
-    right: 15vh;
-    height: 5vh;
+    right: 9em;
+    height: 3em;
     width: auto;
+
+}
+
+a:focus .index-email,
+a:focus .index-linkedin {
+    border: 2px solid black;  
+    border-radius: 15px;      
 }
 
 .index-linkedin {
     position: absolute;
     top: 5vh;
     right: 7vh;
-    height: 5vh;
+    height: 3em;
     width: auto;
 }
 
@@ -55,9 +62,6 @@ a {
     display: flex;
     flex-direction: row;
     height: 70vh;
-    /* margin-top: 12vh;
-    margin-bottom: 12vh; */
-
     justify-content: center;
     align-items: center;
 
@@ -99,6 +103,8 @@ a {
     height: 10vw;
     margin-right: 2vw;
     animation: rubberBand 1s ease;
+    cursor: pointer;
+
 
 
 }
@@ -121,6 +127,7 @@ a {
 .name-des {
     display: flex;
     flex-direction: column;
+    margin-left: 2vw;
 
 
 }
@@ -166,7 +173,7 @@ path {
     letter-spacing: 0em;
     line-height: 1.5em;
 
-    font-size: 1vw;
+    font-size: 1em;
     font-family: 'VT323', monospace;
     /* font-family: 'Inter', sans-serif; */
     /* font-family: 'Inter', monospace; */
@@ -402,11 +409,11 @@ path {
 
 .sub-title{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.2em;
     font-weight: 600;
     text-decoration: underline;
     cursor: pointer;
-    color: #F87474;
+    color: black;
 }
 
 
@@ -474,7 +481,7 @@ path {
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.5em;
     font-style: normal;
     font-weight: 600;
     /* line-height: normal; */
@@ -527,7 +534,7 @@ path {
 .des {
     color: #000;
     font-family: "Inter", sans-serif;
-    font-size: 2.2vh;
+    font-size: 1.2em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -540,9 +547,9 @@ path {
 .jenlio-des {
     color: #000;
     font-family: "Inter", sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.2em;
     font-weight: 500;
-    line-height: 1.8vw;
+    line-height: 1.8em;
     padding-top: 5vh;
     text-align: center;
     width: 60%;
@@ -636,14 +643,14 @@ path {
 
 
 .skill-logo {
-    height: 5vh;
-    width: auto;
+    width: 3em;
+    height: 3em;
 }
 
 
 .skill-logo2 {
-    width: 3vw;
-    height: 3vw;
+    width: 3em;
+    height: 3em;
 }
 
 
@@ -655,7 +662,7 @@ path {
 
 
 .footer {
-    height: 30vh;
+    height: 25vh;
     width: 100%;
     background-color: white;
     display: flex;
@@ -679,7 +686,7 @@ path {
     gap: 2vw;
     height: 5vh;
     width: auto;
-    padding: 5vh 0 5vh 0;
+    padding: 2em 0;
 }
 
 .email-footer,

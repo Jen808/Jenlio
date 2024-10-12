@@ -64,7 +64,7 @@ function paragraph(element) {
 
     const numArray = []
     array.forEach(char => {
-        const num = random(5, 40)
+        const num = random(1, 10)
         numArray.push(num)
     })
 

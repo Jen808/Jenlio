@@ -33,12 +33,143 @@
         .mobile-name {
             display: none;
         }
+
+        #feedbackBtn {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+            border-radius: 5px 0 0 5px;
+        }
+
+        /* Feedback Form Container (Initially Hidden) */
+        #feedbackFormContainer {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Satisfaction Icons */
+        .satisfaction-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .satisfaction-icons span {
+            font-size: 32px;
+            cursor: pointer;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+
+        .satisfaction-icons span:hover {
+            transform: scale(1.2);
+        }
+
+        .selected {
+            border: 2px solid #4CAF50;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        /* Form Elements */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 
 
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>We Value Your Feedback</h2>
+        <form name="feedback" method="POST" data-netlify="true">
+
+            <div class="satisfaction-icons">
+                <span data-level="1">😠</span>
+                <span data-level="2">😕</span>
+                <span data-level="3">😐</span>
+                <span data-level="4">🙂</span>
+                <span data-level="5">😁</span>
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>Feedback: <textarea name="feedback" required></textarea></label>
+            </p>
+
+            <p>
+                <button type="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById("feedbackBtn").addEventListener("click", function() {
+          var formContainer = document.getElementById("feedbackFormContainer");
+          if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block"; 
+          } else {
+            formContainer.style.display = "none"; 
+          }
+        });
+      
+        const icons = document.querySelectorAll('.satisfaction-icons span');
+        const hiddenInput = document.getElementById('satisfaction_level');
+      
+        icons.forEach(icon => {
+          icon.addEventListener('click', function() {
+            icons.forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            hiddenInput.value = this.getAttribute('data-level');
+          });
+        });
+      
+        document.querySelector('form').addEventListener('submit', function(e) {
+          if (!hiddenInput.value) {
+            alert('Please select a satisfaction level.');
+            e.preventDefault(); 
+          }
+        });
+      </script>
+      
+
+
     <div class="header">
 
         <div class="logo-name">
@@ -92,13 +223,14 @@
 
 
     <div class="index-header">
-        <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+        <a href="mailto:chorong@umich.edu?subject=Regarding to your website" tabindex="0">
             <img src="src/logo-email.png" alt="email" class="index-email">
         </a>
-        <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+        <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank" tabindex="0">
             <img src="src/logo-linkedin.png" alt="linked in" class="index-linkedin">
         </a>
-        <img src="src/me-24.png" class="animate_animated animate_tada" alt="Portfolio website logo (smile icon)"  id="index-logo">
+        <img src="src/me-24.png" class="animate_animated animate_tada" alt="Portfolio website logo (smile icon)"
+            id="index-logo">
         <!-- <p class="touch">touch me!</p> -->
         <div class="name-des">
             <!-- <div class="index-name">
@@ -375,8 +507,8 @@
 
 
             <!-- <img src="src/mobile-name.png" class="mobile-name"></p> -->
-            <p class="index-intro">Welcome to My Custom-Built Portfolio <br><br> I'm a UX Designer
-                passionate about creating user-centered digital experiences. <br><br> Discover my work and why I could be
+            <p class="index-intro">Welcome to My Custom-Built Portfolio <br> I'm a UX Designer
+                passionate about creating user-centered digital experiences. <br> Discover my work and why I could be
                 your
                 next essential team member.</p>
         </div>
@@ -435,7 +567,8 @@
 
             </div>
             <div class="jenlio-des" id="d1">
-                This portfolio website is <span class="jenbold">entirely self-designed and developed</span>, highlighting my journey from UX design
+                This portfolio website is <span class="jenbold">entirely self-designed and developed</span>,
+                highlighting my journey from UX design
                 to Fine Arts. It reflects my work from concept to deployment, with regular updates and more content to
                 come. Stay tuned for future developments!
 
@@ -459,7 +592,7 @@
 
 
 
-        <div class="sec" id="s2">
+        <div class="sec" id="s2" tabindex="0">
             <div class="container">
                 <img src="src/main-20.png" alt="MY Widdy Image: Clock, Calendar, To-do list" class="pj">
             </div>
@@ -486,7 +619,7 @@
                 <!-- <a href="#" id="link">My Widdy</a> -->
             </div>
         </div>
-        <div class="sec" id="s3">
+        <div class="sec" id="s3" tabindex="0">
             <div class="container">
                 <img src="src/main-rr.png" alt="RoosRoast Project Image: Desktop / Mobile" class="pj">
             </div>
@@ -504,9 +637,9 @@
                 <!-- <a href="#" id="link">My Widdy</a> -->
             </div>
         </div>
-        <div class="sec"  alt="Glansis Project Image: Desktop / Mobile" id="s4">
+        <div class="sec" alt="Glansis Project Image: Desktop / Mobile" id="s4" tabindex="0">
             <div class="container">
-                <img src="src/main.png" class="pj">
+                <img src="src/main.png" class="pj" alt="Glansis Project Prototype Image: Mobile and Desktop">
             </div>
             <div class="des-box">
                 <div class="title" id="t4">GLANSIS</div>
@@ -521,9 +654,9 @@
                 <!-- <a href="#" id="link">My Widdy</a> -->
             </div>
         </div>
-        <div class="sec" id="s5">
+        <div class="sec" id="s5" tabindex="0">
             <div class="container">
-                <img src="src/main-22.png"  alt="Vendors Project Image: Mobile" class="pj">
+                <img src="src/main-22.png" alt="Vendors Project Prototype Image: Mobile" class="pj">
             </div>
             <div class="des-box">
                 <div class="title" id="t5">Vendors</div>
@@ -541,9 +674,9 @@
                 <!-- <a href="#" id="link">My Widdy</a> -->
             </div>
         </div>
-        <div class="sec" id="s6">
+        <div class="sec" id="s6" tabindex="0">
             <div class="container">
-                <img src="src/main-23.png" alt="IFE System Project Image: screen" class="pj">
+                <img src="src/main-23.png" alt="IFE System Project Prototype Image: Mobile and Desktop" class="pj">
             </div>
             <div class="des-box">
                 <div class="title" id="t6">IFE System</div>
@@ -563,9 +696,10 @@
         </div>
 
 
-        <div class="sec" id="s7">
+        <div class="sec" id="s7" tabindex="0">
             <div class="container">
-                <img src="src/main-vol.png" alt="Volunteer connection program Ideation (Miro Board: Stickey Notes)" class="pj">
+                <img src="src/main-vol.png" alt="Volunteer connection program Ideation (Miro Board: Stickey Notes)"
+                    class="pj">
             </div>
             <div class="des-box">
                 <div class="coming-soon">Coming Soon!</div>
@@ -609,9 +743,10 @@
 
 
 
-        <div class="sec" id="s7">
+        <div class="sec" id="s7" tabindex="0">
             <div class="container">
-                <img src="src/main-umrec.png" alt="U-M Rec Sports project: Current app screen (Mobile application)" class="pj">
+                <img src="src/main-umrec.png" alt="U-M Rec Sports project: Current app screen (Mobile application)"
+                    class="pj">
             </div>
             <div class="des-box">
                 <div class="coming-soon">Coming!</div>
@@ -640,10 +775,10 @@
         <div class="ty-text">Thank you for your interest. Let’s keep in touch!</div>
         <div class="footer-icon">
             <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                <img src="src/logo-email.png" alt="email" class="email-footer">
+                <img src="src/logo-email.png" alt="email" class="email-footer" tabindex="0">
             </a>
             <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin-footer">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin-footer" tabindex="0">
             </a>
         </div>
         <div class="copyright">© 2024 Jennifer Jung: enthusiastic designer, developer, cook, dog sis </div>
