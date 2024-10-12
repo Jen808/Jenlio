@@ -116,7 +116,7 @@
 
     <div id="feedbackFormContainer">
         <h2>We Value Your Feedback</h2>
-        <form name="feedback" method="POST" data-netlify="true">
+        <form name="feedback" method="POST" netlify>
 
             <div class="satisfaction-icons">
                 <span data-level="1">😠</span>
@@ -140,34 +140,60 @@
 
 
     <script>
-        document.getElementById("feedbackBtn").addEventListener("click", function() {
-          var formContainer = document.getElementById("feedbackFormContainer");
-          if (formContainer.style.display === "none" || formContainer.style.display === "") {
-            formContainer.style.display = "block"; 
-          } else {
-            formContainer.style.display = "none"; 
-          }
+
+        window.onload = function () {
+            const token = 'b77c38bbd2bd22';  
+            fetch(`https://ipinfo.io?token=${token}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('IP Geolocation Data:', data);
+
+                    fetch('/.netlify/functions/store-geo', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    }).then(response => response.json())
+                        .then(data => console.log('Geolocation data stored:', data))
+                        .catch(error => console.error('Error storing geolocation data:', error));
+                })
+                .catch(error => console.error('Error fetching geolocation data:', error));
+        };
+
+
+        document.getElementById("feedbackBtn").addEventListener("click", function () {
+            var formContainer = document.getElementById("feedbackFormContainer");
+            if (formContainer.style.display === "none" || formContainer.style.display === "") {
+                formContainer.style.display = "block";
+            } else {
+                formContainer.style.display = "none";
+            }
         });
-      
+
         const icons = document.querySelectorAll('.satisfaction-icons span');
         const hiddenInput = document.getElementById('satisfaction_level');
-      
+
         icons.forEach(icon => {
-          icon.addEventListener('click', function() {
-            icons.forEach(i => i.classList.remove('selected'));
-            this.classList.add('selected');
-            hiddenInput.value = this.getAttribute('data-level');
-          });
+            icon.addEventListener('click', function () {
+                icons.forEach(i => i.classList.remove('selected'));
+                this.classList.add('selected');
+                hiddenInput.value = this.getAttribute('data-level');
+            });
         });
-      
-        document.querySelector('form').addEventListener('submit', function(e) {
-          if (!hiddenInput.value) {
-            alert('Please select a satisfaction level.');
-            e.preventDefault(); 
-          }
+
+        document.querySelector('form').addEventListener('submit', function (e) {
+            if (!hiddenInput.value) {
+                alert('Please select a satisfaction level.');
+                e.preventDefault();
+            }
         });
-      </script>
-      
+
+
+
+
+    </script>
+
 
 
     <div class="header">
