@@ -419,7 +419,7 @@ path {
 
 .coming-soon {
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 3em;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 2vw;
@@ -490,7 +490,7 @@ path {
 
 .title2 {
     font-family: "Roboto", sans-serif;
-    font-size: 2vw;
+    font-size: 2em;
     font-style: normal;
     font-weight: 600;
     padding-top: 1vw;

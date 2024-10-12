@@ -163,6 +163,36 @@ body {
 }
 
 
+.srcIfe{
+    margin: 2vw;
+}
+
+
+
+
+.linkXd{
+    width: 10vw;
+    height: 3vw;
+    background-color: #0BAEB3;
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .pdf{

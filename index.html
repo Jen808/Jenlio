@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- <link rel="stylesheet" href="path/to/animate.min.css"> -->
     <link rel="stylesheet" href="responsive-head-foot.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
 
@@ -33,78 +35,6 @@
         .mobile-name {
             display: none;
         }
-
-        #feedbackBtn {
-            position: fixed;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            z-index: 1000;
-            border-radius: 5px 0 0 5px;
-        }
-
-        /* Feedback Form Container (Initially Hidden) */
-        #feedbackFormContainer {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 300px;
-            padding: 20px;
-            background-color: #f1f1f1;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        /* Satisfaction Icons */
-        .satisfaction-icons {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-
-        .satisfaction-icons span {
-            font-size: 32px;
-            cursor: pointer;
-            padding: 10px;
-            transition: transform 0.2s;
-        }
-
-        .satisfaction-icons span:hover {
-            transform: scale(1.2);
-        }
-
-        .selected {
-            border: 2px solid #4CAF50;
-            border-radius: 50%;
-            padding: 10px;
-        }
-
-        /* Form Elements */
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        button {
-            margin-top: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
     </style>
 
 
@@ -115,25 +45,41 @@
     <button id="feedbackBtn">Feedback</button>
 
     <div id="feedbackFormContainer">
-        <h2>We Value Your Feedback</h2>
+        <h2>How was your experience?</h2>
         <form name="feedback" method="POST" netlify>
 
             <div class="satisfaction-icons">
-                <span data-level="1">😠</span>
-                <span data-level="2">😕</span>
-                <span data-level="3">😐</span>
-                <span data-level="4">🙂</span>
-                <span data-level="5">😁</span>
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry" >
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
             </div>
 
             <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
 
             <p>
-                <label>Feedback: <textarea name="feedback" required></textarea></label>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
             </p>
 
             <p>
-                <button type="submit">Submit Feedback</button>
+                <button type="submit" class="submit">Submit Feedback</button>
             </p>
         </form>
     </div>
@@ -141,8 +87,10 @@
 
     <script>
 
+        "use strict";
+
         window.onload = function () {
-            const token = 'b77c38bbd2bd22';  
+            const token = 'b77c38bbd2bd22';
             fetch(`https://ipinfo.io?token=${token}`)
                 .then(response => response.json())
                 .then(data => {
@@ -775,7 +723,7 @@
                     class="pj">
             </div>
             <div class="des-box">
-                <div class="coming-soon">Coming!</div>
+                <div class="coming-soon">Coming later!</div>
                 <div class="title" id="t7">University of Michigan: </div>
                 <div class="title2" id="t7">Recreational Sports Department</div>
                 <div class="des" id="d7">

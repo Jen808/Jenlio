@@ -113,9 +113,9 @@ body {
 }
 
 
-.group-box{
+/* .group-box{
     padding: 2vw;
-}
+} */
 
 
 .cal-des,
@@ -209,6 +209,19 @@ body {
 .end{
     height: 10vw;
 }
+
+
+li a {
+    color: #FF6B00;
+    text-decoration: underline;
+}
+
+li a:hover {
+    color: #FFBE41;
+    text-decoration: underline;
+}
+
+
 
 
 @media (max-width: 768px) {

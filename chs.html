@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="chs.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
 
@@ -29,6 +31,50 @@
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>How was your experience?</h2>
+        <form name="feedback" method="POST" netlify>
+
+            <div class="satisfaction-icons">
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry">
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit" class="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
+
     <div class="header">
 
         <div class="logo-name">
@@ -75,6 +121,16 @@
 
 
         </nav>
+
+        <div class="desktop-sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
+    </div>
 
 
     </div>
@@ -640,6 +696,34 @@
     link.type = 'image/x-icon';
     link.href = 'src/favicon.ico';
     document.head.appendChild(link);
+
+    document.getElementById("feedbackBtn").addEventListener("click", function () {
+        var formContainer = document.getElementById("feedbackFormContainer");
+        if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block";
+        } else {
+            formContainer.style.display = "none";
+        }
+    });
+
+    const icons = document.querySelectorAll('.satisfaction-icons span');
+    const hiddenInput = document.getElementById('satisfaction_level');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            icons.forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            hiddenInput.value = this.getAttribute('data-level');
+        });
+    });
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        if (!hiddenInput.value) {
+            alert('Please select a satisfaction level.');
+            e.preventDefault();
+        }
+    });
+
 
 
 

@@ -1,0 +1,130 @@
+#feedbackBtn {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 50%;
+    right: -40px;
+    transform: rotate(-90deg);
+    background-color: #F87474;
+    box-shadow: -5px -5px 5px rgba(228,209,191, 1);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+#feedbackBtn:hover{
+    background-color: white;
+    color: #F87474;
+
+}
+
+/* Feedback Form Container (Initially Hidden) */
+#feedbackFormContainer {
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20em;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #F87474;
+    border-radius: 2em 2em 0 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    min-height: 300px;
+}
+
+h2{
+    padding: 0.4vw !important;
+}
+
+/* Satisfaction Icons */
+.satisfaction-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 8px;
+
+}
+
+.satisfaction-icons span {
+    padding: 5px;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.emoji{
+    width: 35px;
+    height: auto;
+}
+
+.satisfaction-icons span:hover {
+    transform: scale(1.2);
+}
+
+.selected {
+    border: 4px solid #F87474;
+    border-radius: 50%;
+    padding: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+/* Form Elements */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 8em;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+    margin-bottom: 50px; /* Space between the text area and the button */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    overflow: auto;
+    
+}
+
+
+textarea:focus {
+    background-color: #FCEDDA;
+    border: 1px solid #F87474;
+
+}
+
+.submit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #F87474;
+    border: 1px solid #F87474;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    width: 10em;
+
+
+}
+
+button:hover {
+    background-color: #F87474;
+    color: white;
+}

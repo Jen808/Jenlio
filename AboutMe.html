@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="AboutMe.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
 
@@ -33,6 +35,49 @@
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>How was your experience?</h2>
+        <form name="feedback" method="POST" netlify>
+
+            <div class="satisfaction-icons">
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry">
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit" class="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
     <!-- <div class="header">
         <div class="logo-name">
             <a href="index.html">
@@ -105,6 +150,16 @@
 
         </nav>
 
+        <div class="desktop-sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
+    </div>
+
 
     </div>
     <div class="content-overlay" id="contentOverlay"></div>
@@ -120,7 +175,7 @@
 
             <div class="skillset">
                 <ul id="list-item-container">
-                    <div class="iam">I AM</div>
+                    <div class="iam" tabindex="0">I AM</div>
                     <li class="list-item">UX Designer</li>
                     <li class="list-item">UX Researcher</li>
                     <li class="list-item">UI Designer</li>
@@ -148,12 +203,12 @@
 
         </div>
         <div class="tool-skill">
-            <div class="skill" id="tool-title">SKILLS</div>
+            <div class="skill" id="tool-title" tabindex="0">SKILLS</div>
             <div class="tool-container">
                 <div class="skill-img">
-                    <img src="src/skill-54.png" class="skill" id="s1">
-                    <img src="src/skill-55.png" class="skill" id="s2">
-                    <img src="src/skill-56.png" class="skill" id="s3">
+                    <img src="src/skill-54.png" alt="my-skill-100" class="skill" id="s1" tabindex="0">
+                    <img src="src/skill-55.png" alt="my-skill-85" class="skill" id="s2" tabindex="0">
+                    <img src="src/skill-56.png" alt="my-skill-50" class="skill" id="s3" tabindex="0">
                 </div>
                 <div class="skill-info">
                     <div class="each-skill">
@@ -189,13 +244,13 @@
 
         </div>
         <div class="languages">
-            <div class="skill" id="lang-title">LANGUAGES</div>
+            <div class="skill" id="lang-title" tabindex="0">LANGUAGES</div>
             <div class="langs-type">
                 <span class="Eng">ENGLISH</span>
                 <span class="Kor">KOREAN</span>
             </div>
         </div>
-        <div class="study">STUDY FLOW</div>
+        <div class="study" tabindex="0">STUDY FLOW</div>
 
         <div class="study-container">
             <div class="study-flow">
@@ -219,7 +274,7 @@
 
                 <div class="study-sec" id="sec2">
                     <div class="years">2005-2016</div>
-                    <div class="focus">Fine Art</div>
+                    <div class="focus" tabindex="0">Fine Art</div>
                     <div class="study-detail">There was not specific point I decided to learn Art in depth,
                         There was plenty of opportunities to find what I like, and my favorite was drawing, coloring
                         from
@@ -232,7 +287,7 @@
 
                 <div class="study-sec" id="sec3">
                     <div class="years">2017-2020</div>
-                    <div class="focus" id="nopad">Graphic Design / Motion Graphic</div>
+                    <div class="focus" id="nopad" tabindex="0">Graphic Design / Motion Graphic</div>
                     <div class="study-detail">As I explored art, graphic design caught my eye. I started with Photoshop
                         and
                         Illustrator, then learned After Effects and Procreate to add interactivity.
@@ -255,7 +310,7 @@
                 </a>
                 <div class="study-sec" id="sec4">
                     <div class="years">2022-Current</div>
-                    <div class="focus">UX Design, Interaction Design, Software engineering</div>
+                    <div class="focus" tabindex="0">UX Design, Interaction Design, Software engineering</div>
                     <div class="study-detail">Right after I transfer to University, I got a Marketing and Media
                         Assistant
                         job as
@@ -428,6 +483,34 @@
     link.type = 'image/x-icon';
     link.href = 'src/favicon.ico';
     document.head.appendChild(link);
+
+    document.getElementById("feedbackBtn").addEventListener("click", function () {
+        var formContainer = document.getElementById("feedbackFormContainer");
+        if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block";
+        } else {
+            formContainer.style.display = "none";
+        }
+    });
+
+    const icons = document.querySelectorAll('.satisfaction-icons span');
+    const hiddenInput = document.getElementById('satisfaction_level');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            icons.forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            hiddenInput.value = this.getAttribute('data-level');
+        });
+    });
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        if (!hiddenInput.value) {
+            alert('Please select a satisfaction level.');
+            e.preventDefault();
+        }
+    });
+
 
 
     (function (h, o, t, j, a, r) {

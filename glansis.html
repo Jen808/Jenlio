@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="glansis.css">
     <link rel="stylesheet" href="ux-responsive.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
     <title>UX Design - GLANSIS</title>
@@ -31,6 +33,49 @@
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>How was your experience?</h2>
+        <form name="feedback" method="POST" netlify>
+
+            <div class="satisfaction-icons">
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry">
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit" class="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
     <div class="header">
 
         <div class="logo-name">
@@ -74,9 +119,18 @@
                 </div>
 
             </div>
-
-
         </nav>
+
+        <div class="desktop-sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
+    </div>
+
 
 
     </div>
@@ -97,12 +151,12 @@
             </div>
             <div class="title-box">GLANSIS</div>
             <div class="title-des">
-                <li>Final Prototype</li>
-                <li>Client</li>
-                <li>Problem Statement</li>
-                <li>Executive Summary</li>
-                <li>Style Guide</li>
-                <li>Key Deisgn Decision</li>
+                <li><a href=#fp>Final Prototype</a></li>
+                <li><a href=#cl>Client</a></li>
+                <li><a href=#ps>Problem Statement</a></li>
+                <li><a href=#es>Executive Summary</a></li>
+                <li><a href=#sg>Style Guide</a></li>
+                <li><a href=#kd>Key Deisgn Decision</a></li>
             </div>
             <div class="brief">
                 <div class="cal-box">
@@ -148,8 +202,8 @@
     </div>
 
     <div class="main-container">
-        <div class="final-prototype">
-            <div class="final-prototype-title">Final Prototype</div>
+        <div class="final-prototype" tabindex="0">
+            <div class="final-prototype-title" id="fp">Final Prototype</div>
             <div class="final-prototype-des">Click white banner to open in Figma</div>
             <div class="frame">
                 <iframe class="mobile"
@@ -161,8 +215,8 @@
 
             </div>
         </div>
-        <div class="client">
-            <div class="client-title">Client</div>
+        <div class="client" tabindex="0">
+            <div class="client-title" id="cl">Client</div>
             <div class="client-container">
 
                 <img src="src/noaa.png" alt="NOAA logo" class="client-photo">
@@ -179,19 +233,20 @@
 
             </div>
         </div>
-        <div class="problem-statement-box">
-            <div class="problem-statement-title">Problem Statement</div>
+        <div class="problem-statement-box" tabindex="0">
+            <div class="problem-statement-title" id="ps">Problem Statement</div>
             <div class="problem-statement">
-                <img src="src/glansis-ps1.png" alt="Problem statement photo" class="problem-statement-photo">
+                <img src="src/glansis-ps1.png" alt="Problem statement photo" class="problem-statement-photo"
+                    tabindex="0">
                 <div class="problem-statement-des">
-                    <div class="user-scenario">User Scenario #1
+                    <div class="user-scenario" tabindex="0">User Scenario #1
                         <div class="us-des">A science teacher needs a lesson for their 8th grade students which is
                             aligned to the next generation science standard on ecosystems.
                             <br><br>
                             They would also like an age appropriate video to accompany their lesson
                         </div>
                     </div>
-                    <div class="problem">Problem 1
+                    <div class="problem" tabindex="0">Problem 1
                         <div class="problem-des">Hard to understand for people especially for 8th grade students due to
                             professional words and complicated datas.
                             <br><br>
@@ -202,14 +257,15 @@
                 </div>
             </div>
             <div class="problem-statement">
-                <img src="src/glansis-ps2.png" alt="Problem statement photo" class="problem-statement-photo">
+                <img src="src/glansis-ps2.png" alt="Problem statement photo" class="problem-statement-photo"
+                    tabindex="0">
                 <div class="problem-statement-des">
-                    <div class="user-scenario">User Scenario #2
+                    <div class="user-scenario" tabindex="0">User Scenario #2
                         <div class="us-des">4th grade student has been assigned to write a paper on a local invasive
                             species (e.g. Zebra Mussels)
                         </div>
                     </div>
-                    <div class="problem">Problem 2
+                    <div class="problem" tabindex="0">Problem 2
                         <div class="problem-des">“Worldwide, invasive species and habitat loss are the top two threats
                             to biodiversity” (slide p.g.4) Hard to make a relationship with what will this affect to
                             future. And there was no video I could watch to understand the data.
@@ -222,8 +278,8 @@
                 </div>
             </div>
         </div>
-        <div class="executive-summary">
-            <div class="executive-summary-title">Executive Summary</div>
+        <div class="executive-summary" tabindex="0">
+            <div class="executive-summary-title" id="es">Executive Summary</div>
             <div class="executive-summary-des">This project is about
                 <span>reconstructing GLANSIS by NOAA </span>for many different
                 reasons. There are lots of categories, and contain big datas.
@@ -239,16 +295,16 @@
             </div>
             <div class="kd-box">
                 <div class="kd1">
-                    <div class="kd-title">1. Easily expectable</div>
+                    <div class="kd-title" tabindex="0">1. Easily expectable</div>
                     <img src="src/kd1.png" class="kd" alt="Key design decision 1">
                 </div>
                 <div class="kd2-3">
                     <div class="kd2">
-                        <div class="kd-title">2. Recognize which section they are exploring</div>
+                        <div class="kd-title" tabindex="0">2. Recognize which section they are exploring</div>
                         <img src="src/kd2.png" class="kd" alt="Key design decision 2">
                     </div>
                     <div class="kd3">
-                        <div class="kd-title">3. Make user to keep explore, keep in touch</div>
+                        <div class="kd-title" tabindex="0">3. Make user to keep explore, keep in touch</div>
                         <img src="src/kd3.png" class="kd" alt="Key design decision 3">
                     </div>
 
@@ -259,31 +315,31 @@
         </div>
     </div>
     <div class="style-guide">
-        <div class="style-guide-title">Style Guide</div>
+        <div class="style-guide-title" id="sg">Style Guide</div>
         <div class="sec">
-            <div class="color">
+            <div class="color" tabindex="0">
                 <div class="color-title">Colors</div>
                 <img src="src/color-re.png" alt="color images" class="color-img">
             </div>
-            <div class="typefaces">
+            <div class="typefaces" tabindex="0">
                 <div class="typefaces-title">Typefaces</div>
                 <img src="src/glansis-05.png" alt="typefaces images" class="typefaces-img">
             </div>
         </div>
         <div class="sec">
-            <div class="icon">
+            <div class="icon" tabindex="0">
                 <div class="icon-title">Icons</div>
                 <img src="src/glansis-06.png" alt="icon images" class="icon-img-blue">
                 <img src="src/glansis-07.png" alt="icon images" class="icon-img-white">
 
             </div>
-            <div class="illustrate">
+            <div class="illustrate" tabindex="0">
                 <div class="illustrate-title">Illustrate</div>
                 <img src="src/illu-re.png" alt="illustrate images" class="illustrate-img">
             </div>
 
         </div>
-        <div class="interactive">
+        <div class="interactive" tabindex="0">
             <div class="interactive-title">Interactive Assests</div>
             <img src="src/IA.png" alt="interactive images" class="interactive-img">
             <!-- <img src="src/lol-09.png" alt="interactive images" class="interactive-img"> -->
@@ -291,17 +347,17 @@
         </div>
     </div>
     <div class="key-design-decision" id="kd-section">
-        <div class="key-title">Key Design Decision #1</div>
+        <div class="key-title" id="kd" tabindex="0">Key Design Decision #1</div>
         <div class="key-main-des"><span>Easily expectable</span><br><br>
             If users can't anticipate how something will work, they can easily become confused and find it complicated.
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Buttons
                 <div class="key-des">By giving border and drop shadow, easy to recognize interactive elements</div>
             </div>
             <img src="src/kde1.png" class="key-img">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Horizontal Slider
                 <div class="key-des">Showing next page of horizontal slide,
                     easy to understand it is shiftable. Continuous background keep united
@@ -309,20 +365,20 @@
             </div>
             <img src="src/kde10-61.png" class="key-img" id="half">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Habergur Menu Icon
                 <div class="key-des">44px by 44px which satisfying WCAG guideline makes intuitive </div>
             </div>
             <img src="src/kde10-60.png" class="key-img" id="half">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Scroll bar
                 <div class="key-des">By cutting contents, user can think there is hidden contents without distracting
                     the page by vulnerable contents </div>
             </div>
             <img src="src/kde4.png" class="key-img">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Presentation Slide
                 <div class="key-des">Page indicator at the bottom right with hover effect</div>
             </div>
@@ -330,20 +386,20 @@
         </div>
     </div>
     <div class="key-design-decision" id="kd-section">
-        <div class="key-title">Key Design Decision #2</div>
+        <div class="key-title" tabindex="0">Key Design Decision #2</div>
         <div class="key-main-des"><span>Know where they are</span><br><br>
             Users need to know their current location within the system. If they are about five steps away from the main
             page, they might lose track of where they are, making it difficult to navigate back to a specific page. By
             providing a persistent navigation trail, we can guide users and help them become more familiar and
             comfortable with the system. </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Page Name
                 <div class="key-des">For Mobile, all pages title and upper catergory is display. For Desktop,
                     Breadcrumbs are availble</div>
             </div>
             <img src="src/kdkd-62.png" class="key-img">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Emphasis page on menu
                 <div class="key-des">For both Mobile and Desktop, tool/page where they exploring is selected
                 </div>
@@ -352,29 +408,29 @@
         </div>
     </div>
     <div class="key-design-decision" id="kd-section">
-        <div class="key-title">Key Design Decision #3</div>
+        <div class="key-title" tabindex="0">Key Design Decision #3</div>
         <div class="key-main-des"><span>Make user to keep explore, keep in touch</span><br><br>
             Make them to get to know more about GLANSIS, led them to be more interested in by marketing strategies,
             psychological methods.</div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Illustrator for sub categories
                 <div class="key-des"> </div>
             </div>
             <img src="src/kdkd-64.png" class="key-img" id="half">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Neat research pages with visualized data
                 <div class="key-des"> </div>
             </div>
             <img src="src/kdkd-65.png" class="key-img">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Playable video
                 <div class="key-des">Including video player within the page will not require extra step to play</div>
             </div>
             <img src="src/kdkd-66.png" class="key-img">
         </div>
-        <div class="key-container">
+        <div class="key-container" tabindex="0">
             <div class="key-subtitle">Social Media
                 <div class="key-des">User can see recent updates and this can make user to follow account, increasing
                     GLANSIS's social media engagement</div>
@@ -465,6 +521,34 @@
     link.type = 'image/x-icon';
     link.href = 'src/favicon.ico';
     document.head.appendChild(link);
+
+
+    document.getElementById("feedbackBtn").addEventListener("click", function () {
+        var formContainer = document.getElementById("feedbackFormContainer");
+        if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block";
+        } else {
+            formContainer.style.display = "none";
+        }
+    });
+
+    const icons = document.querySelectorAll('.satisfaction-icons span');
+    const hiddenInput = document.getElementById('satisfaction_level');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            icons.forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            hiddenInput.value = this.getAttribute('data-level');
+        });
+    });
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        if (!hiddenInput.value) {
+            alert('Please select a satisfaction level.');
+            e.preventDefault();
+        }
+    });
 
 
 

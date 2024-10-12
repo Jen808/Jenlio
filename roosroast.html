@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="roosroast.css">
     <link rel="stylesheet" href="ux-responsive.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
     <title>UX Design - Roosroast</title>
@@ -30,6 +32,50 @@
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>How was your experience?</h2>
+        <form name="feedback" method="POST" netlify>
+
+            <div class="satisfaction-icons">
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry">
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit" class="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
+
     <div class="header">
 
         <div class="logo-name">
@@ -73,9 +119,20 @@
                 </div>
 
             </div>
-
-
         </nav>
+
+        <div class="desktop-sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
+    </div>
+
+
+
 
 
     </div>
@@ -92,13 +149,13 @@
             </div>
             <div class="title-box">RoosRoast</div>
             <div class="title-des">
-                <li class="index">Final Prototype</li>
-                <li class="index">Executive Summary</li>
-                <li class="index">Competitive Analysis </li>
-                <li class="index">Problem Statement</li>
-                <li class="index">Before / After</li>
-                <li class="index">Key Design Decisions</li>
-                <li class="index">Style Guide </li>
+                <li class="index"><a href=#top>Final Prototype</a></li>
+                <li class="index"><a href=#es>Executive Summary</a></li>
+                <li class="index"><a href=#ca>Competitive Analysis</a></li>
+                <li class="index"><a href=#ps>Problem Statement</a></li>
+                <li class="index"><a href=#ba>Before / After</a></li>
+                <li class="index"><a href=#kd>Key Design Decisions</a></li>
+                <li class="index"><a href=#sg>Style Guide</a></li>
 
 
 
@@ -172,9 +229,9 @@
 
 
     <div class="container">
-        <div class="sub-title">Executive Summary</div>
+        <div class="sub-title" id="es" tabindex="0">Executive Summary</div>
         <div class="row">
-            <img src="src/photo1-1.png" class="photo1-1">
+            <img src="src/photo1-1.png" class="photo1-1" tabindex="0">
             <div class="column">
                 <div class="des" id="left">RoosRoast Coffee, an iconic Ann Arbor coffee shop, aims to revamp its digital
                     presence through
@@ -185,7 +242,7 @@
                     current website falls short of capturing the in-store experience's quirkiness, community spirit, and
                     spontaneous culture.</div>
                 <div class="core-vision">
-                    <div class="a-1">Core Vision</div>
+                    <div class="a-1" tabindex="0">Core Vision</div>
                     <div class="a-2">The redesign aims to enhance overall user experience by:</div>
                     <ul class="a-3">
                         <li>Emphasizing storytelling and community building to reflect the RoosRoast charm</li>
@@ -205,7 +262,7 @@
     </div>
 
     <div class="container">
-        <div class="sub-title">Competitive Analysis #1</div>
+        <div class="sub-title" id="ca" tabindex="0">Competitive Analysis #1</div>
         <div class="question">How did competitors leverage their home page?</div>
         <div class="des2">"Initial landing screens are a great place to highlight what makes a business memorable,
             <br><br>which
@@ -213,7 +270,7 @@
         </div>
 
         <div class="container2">
-            <div class="b-1">
+            <div class="b-1" tabindex="0">
                 <a href="https://www.commoncupcoffee.com/" class="under-name" target="_blank">The Common Cup</a>
                 <img src="src/common.png" alt="The Common Cup Website" class="bimg">
                 <ul class="b-1-1">
@@ -221,14 +278,14 @@
                     <li>Call to action button guides user to check out the cafe’s about page</li>
                 </ul>
             </div>
-            <div class="b-2">
+            <div class="b-2" tabindex="0">
                 <a href="https://www.bittyandbeauscoffee.com/location/ann-arbor/?srsltid=AfmBOoq9mN9D0tR9hHRLlKl6Wr7cnp8BLi7ooqYsmtgSAsopyVnHovJC"
                     class="under-name" target="_blank">Bitty & Beau's Coffee</a>
                 <img src="src/bitty.png" alt="Bitty & Beau's Coffee Website" class="bimg">
-                <li class="b-2-1">Coffee shop that employs those with intellective & developmental disabilities, shows
+                <div class="b-2-1">Coffee shop that employs those with intellective & developmental disabilities, shows
                     photos and
                     videos
-                    featuring:</li>
+                    featuring:</div>
                 <ul class="b-2-1">
                     <li>Highlights culture first before promoting eGiftcards</li>
                     <li>Call to action button guides user to check out the cafe’s about page</li>
@@ -239,7 +296,7 @@
 
 
     <div class="container">
-        <div class="sub-title">Competitive Analysis #2</div>
+        <div class="sub-title" tabindex="0">Competitive Analysis #2</div>
         <div class="question">How did competitors leverage shopping carts?</div>
         <div class="des2">"Carts can be a shopping tool to compare products, save items for future consideration,
             <br><br> and
@@ -247,7 +304,7 @@
         </div>
 
         <div class="container2">
-            <div class="b-1">
+            <div class="b-1" tabindex="0">
                 <a href="https://www.cariboucoffee.com/?srsltid=AfmBOoqvsm4dg9h3I-MBlzuYC3KGeDLSOBr764U2t7y7uQ3uDLF0gElm"
                     class="under-name" target="_blank">Caribou Coffee</a>
                 <img src="src/caribou.png" alt="Caribou Coffee" class="bimg">
@@ -257,7 +314,7 @@
                         time,” “every month,” “every 2 weeks,” and “every weeks” purchasing frequencies</li>
                 </ul>
             </div>
-            <div class="b-2">
+            <div class="b-2" tabindex="0">
                 <a href="https://www.lacolombe.com/?srsltid=AfmBOordatS9p3RMDtpo-rR4jIkA2_tp0RCUjUH8uT19GoWVY23KdHU9"
                     class="under-name" target="_blank">La Colombe Coffee</a>
                 <img src="src/colombe.png" alt="La Colombe Coffee" class="bimg">
@@ -275,10 +332,10 @@
 
 
     <div class="container">
-        <div class="sub-title">Problem Statement</div>
+        <div class="sub-title" id="ps" tabindex="0">Problem Statement</div>
         <div class="c-1">"The RoosRoast website doesn't capture the essence of in-store experience"</div>
         <div class="container3">
-            <div class="c-2">
+            <div class="c-2" tabindex="0">
                 <div class="inner">The essence of the brand's in-store experience is marked by its:</div>
                 <ul class="c-list">
                     <li class="bold-list" id="no-mark">unique quirkiness</li>
@@ -286,7 +343,7 @@
                     <li class="bold-list" id="no-mark">spontaneous culture</li>
                 </ul>
             </div>
-            <div class="c-3">
+            <div class="c-3" tabindex="0">
                 <div class="c-des">RoosRoast aims to transform its website into an online destination,</div>
                 <div class="c-des-inner">a digital counterpart to the personal and communal experiences of their
                     physical cafés at
@@ -307,7 +364,7 @@
 
 
     <div class="container">
-        <div class="sub-title">Before Our Re-Design</div>
+        <div class="sub-title" id="ba" tabindex="0">Before Our Re-Design</div>
         <ul class="d-list">
             <li class="bold-list">Unclear prominence of various buttons</li>
             <li class="bold-list">Advertisement prioritized</li>
@@ -327,7 +384,7 @@
     </div>
 
     <div class="container">
-        <div class="sub-title">After Our Re-Design</div>
+        <div class="sub-title" id="ba" tabindex="0">After Our Re-Design</div>
         <ul class="d-list">
             <li class="bold-list">Clear button prominence</li>
             <li class="bold-list">Showcasing more of RoosRoast personal touches</li>
@@ -348,11 +405,11 @@
     <div class="container"></div> -->
 
     <div class="container">
-        <div class="sub-title">Key Design Decision #1</div>
+        <div class="sub-title" id="kd" tabindex="0">Key Design Decision #1</div>
         <div class="e-1">Featuring RoosRoast special milestone & team photos initially on home page.</div>
         <div class="e-2">
             <img src="src/rr-m1.png" class="rr-m">
-            <div class="e-3">
+            <div class="e-3" tabindex="0">
                 <div class="e-3-1">Community & moments are <br> at the core of RoosRoast</div>
                 <div class="e-3-2">Displaying an ad here can set a poor first impression for users and become a
                     distraction from exploring the rest of the site (Baymard Reference #240).
@@ -365,11 +422,11 @@
     </div>
 
     <div class="container">
-        <div class="sub-title">Key Design Decision #2</div>
+        <div class="sub-title" tabindex="0">Key Design Decision #2</div>
         <div class="e-1">Making the add to cart button distinguished on the product page.</div>
         <div class="e-2">
             <img src="src/rr-m2.png" class="rr-m">
-            <div class="e-3">
+            <div class="e-3" tabindex="0">
                 <div class="e-3-1">Important buttons need visual prominence</div>
                 <div class="e-3-2">Making the add to cart button blend in with the background here can make it tougher
                     to visually distinguish, where there should be unique styling (Baymard Reference #791). The one-time
@@ -383,11 +440,11 @@
     </div>
 
     <div class="container">
-        <div class="sub-title">Key Design Decision #3</div>
+        <div class="sub-title" tabindex="0">Key Design Decision #3</div>
         <div class="e-1">Including Save for Later, Your Likes, and subscription features into the cart experience</div>
         <div class="e-2">
             <img src="src/rr-m3.png" class="rr-m">
-            <div class="e-3">
+            <div class="e-3" tabindex="0">
                 <div class="e-3-1">Community & moments are <br> at the core of RoosRoast</div>
                 <div class="e-3-2">Understanding users often use the shopping cart for comparison and storage (Baymard
                     #620), we've enhanced its functionality to better serve this purpose.
@@ -403,9 +460,9 @@
 
 
     <div class="container">
-        <div class="sub-title">Rame Styling & Style Guide</div>
+        <div class="sub-title" id="sg" tabindex="0">Styling & Style Guide</div>
         <div class="f-1">Including Save for Later, Your Likes, and subscription features into the cart experience</div>
-        <img src="src/rr-c.png" class="rr-c">
+        <img src="src/rr-c.png" class="rr-c" tabindex="0">
 
 
 
@@ -442,9 +499,10 @@
             console.log(entry)
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
             }
+            // } else {
+            //     entry.target.classList.remove('show');
+            // }
         });
     }, {
         threshold: 0.3
@@ -485,6 +543,34 @@
     link.type = 'image/x-icon';
     link.href = 'src/favicon.ico';
     document.head.appendChild(link);
+
+    document.getElementById("feedbackBtn").addEventListener("click", function () {
+        var formContainer = document.getElementById("feedbackFormContainer");
+        if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block";
+        } else {
+            formContainer.style.display = "none";
+        }
+    });
+
+    const icons = document.querySelectorAll('.satisfaction-icons span');
+    const hiddenInput = document.getElementById('satisfaction_level');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            icons.forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            hiddenInput.value = this.getAttribute('data-level');
+        });
+    });
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        if (!hiddenInput.value) {
+            alert('Please select a satisfaction level.');
+            e.preventDefault();
+        }
+    });
+
 
 
     (function (h, o, t, j, a, r) {

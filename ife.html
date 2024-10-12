@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="ife.css">
     <link rel="stylesheet" href="ux-responsive.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
     <title>UX Design - IFE System</title>
@@ -32,6 +34,49 @@
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>How was your experience?</h2>
+        <form name="feedback" method="POST" netlify>
+
+            <div class="satisfaction-icons">
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry">
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit" class="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
     <div class="header">
 
         <div class="logo-name">
@@ -79,6 +124,16 @@
 
         </nav>
 
+        <div class="desktop-sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
+    </div>
+
 
     </div>
     <div class="content-overlay" id="contentOverlay"></div>
@@ -101,7 +156,7 @@
             <div class="announcement"> This page is currently under renovation. <br><br>Please check out PDF file
                 instead</div>
             <a href="src/IFE project.pdf" target="_blank">
-                <button class="pdf">Open PDF</button>
+                <button class="pdf" tabindex="0">Open PDF</button>
             </a>
             <!-- <div class="title-des">
                 <li>Final Prototype</li>
@@ -155,6 +210,35 @@
 
 
 
+    <img src="src/ife1.jpg" alt="project cover page" class="srcIfe" tabindex="0">
+    <img src="src/ife2.jpg" alt="index page" class="srcIfe" tabindex="0">
+    <img src="src/ife3.jpg" alt="project brief" class="srcIfe" tabindex="0">
+    <img src="src/ife4.jpg" alt="Research-Index" class="srcIfe" tabindex="0">
+    <img src="src/ife5.jpg" alt="Research: Mind Map" class="srcIfe" tabindex="0">
+    <img src="src/ife6.jpg" alt="Research: TV Deconstruction" class="srcIfe" tabindex="0">
+    <img src="src/ife7.jpg" alt="Research: User Surveys" class="srcIfe" tabindex="0">
+    <img src="src/ife8.jpg" alt="Research: User Empathy Map" class="srcIfe" tabindex="0">
+    <img src="src/ife9.jpg" alt="Research: Persona Card" class="srcIfe" tabindex="0">
+    <img src="src/ife10.jpg" alt="Research: User Journey Map" class="srcIfe" tabindex="0">
+    <img src="src/ife11.jpg" alt="Research: Competitive Analysis" class="srcIfe" tabindex="0">
+    <img src="src/ife12.jpg" alt="My Design: Index" class="srcIfe" tabindex="0">
+    <img src="src/ife13.jpg" alt="My Design: My IFE Flowchart" class="srcIfe" tabindex="0">
+    <img src="src/ife14.jpg" alt="My Design: User Case Scenarios" class="srcIfe" tabindex="0">
+    <img src="src/ife15.jpg" alt="My Design: My IFE Assest Inventory" class="srcIfe" tabindex="0">
+    <img src="src/ife16.jpg" alt="My Design: Wireframes" class="srcIfe" tabindex="0">
+    <img src="src/ife17.jpg" alt="My Design: Final UI Screen - Main" class="srcIfe" tabindex="0">
+    <img src="src/ife18.jpg" alt="My Design: Final UI Screen - Chat" class="srcIfe" tabindex="0">
+    <img src="src/ife19.jpg" alt="My Design: Final UI Screen - Device Mirroring" class="srcIfe" tabindex="0">
+    <img src="src/ife20.jpg" alt="My Design: Final UI Screen - Order / Chat" class="srcIfe" tabindex="0">
+    <img src="src/ife21.jpg" alt="My Design: Final UI Screen - Restroom Status" class="srcIfe" tabindex="0">
+    <img src="src/ife22.jpg" alt="My Design: Final UI Screen - Other" class="srcIfe" tabindex="0">
+    <img src="src/ife24.jpg" alt="My Design: Prototype" class="srcIfe" tabindex="0">
+    <a href="https://xd.adobe.com/view/2c810f34-590d-41cb-a823-0c9febb2e8bb-79d2/" class="linkXd" tabindex="0">Open
+        Prototype</a>
+    <img src="src/ife23.jpg" alt="project ending page - 'Thank You'" class="srcIfe" tabindex="0">
+
+
+
 
 
 
@@ -202,6 +286,34 @@
         link.type = 'image/x-icon';
         link.href = 'src/favicon.ico';
         document.head.appendChild(link);
+
+
+        document.getElementById("feedbackBtn").addEventListener("click", function () {
+            var formContainer = document.getElementById("feedbackFormContainer");
+            if (formContainer.style.display === "none" || formContainer.style.display === "") {
+                formContainer.style.display = "block";
+            } else {
+                formContainer.style.display = "none";
+            }
+        });
+
+        const icons = document.querySelectorAll('.satisfaction-icons span');
+        const hiddenInput = document.getElementById('satisfaction_level');
+
+        icons.forEach(icon => {
+            icon.addEventListener('click', function () {
+                icons.forEach(i => i.classList.remove('selected'));
+                this.classList.add('selected');
+                hiddenInput.value = this.getAttribute('data-level');
+            });
+        });
+
+        document.querySelector('form').addEventListener('submit', function (e) {
+            if (!hiddenInput.value) {
+                alert('Please select a satisfaction level.');
+                e.preventDefault();
+            }
+        });
 
 
         (function (h, o, t, j, a, r) {

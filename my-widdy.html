@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="my-widdy.css">
     <link rel="stylesheet" href="ux-responsive.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
     <title>UX-Design My-Widdy</title>
@@ -31,7 +33,51 @@
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>How was your experience?</h2>
+        <form name="feedback" method="POST" netlify>
+
+            <div class="satisfaction-icons">
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry">
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit" class="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
     <div class="header">
+
 
         <div class="logo-name">
             <a href="index.html">
@@ -78,8 +124,17 @@
 
         </nav>
 
-
+        <div class="desktop-sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
     </div>
+
+
     <div class="content-overlay" id="contentOverlay"></div>
 
     <div class="title">
@@ -101,13 +156,12 @@
             </div>
             <div class="title-box">My-Widdy</div>
             <div class="title-des">
-                <li>Problem Statement</li>
-                <li>Executive Summary</li>
-                <li>Processing Steps</li>
-                <li>Style Guide</li>
-                <li>Final Images</li>
-                <li>Github / Installation file</li>
-                <li>Further steps to go</li>
+                <li><a href="#problemStatement">Problem Statement</a></li>
+                <li><a href="#executiveSummary">Executive Summary</a></li>
+                <li><a href="#processingSteps">Processing Steps</a></li>
+                <li><a href="#bottom">Final Images</a></li>
+                <li><a href="#bottom">Github / Installation file</a></li>
+                <li><a href="#bottom">Further steps to go</a></li>
 
             </div>
             <div class="brief">
@@ -154,10 +208,10 @@
     </div>
 
     <div class="main-container">
-        <div class="problem">
+        <div class="problem" id="problemStatement">
             <div class="prob1">
                 <div class="statement">
-                    <div class="statement-title">
+                    <div class="statement-title" tabindex="0">
                         Problem Statement
                     </div>
                     <div class="summary" id="vulnerable">As Mac OS user for a long time, It was my very first time to
@@ -168,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <div class="prob2">
+            <div class="prob2" tabindex="0">
                 <div class="mac">
                     <img src="src/apple.png" id="logoap">
                     <div class="p-statement" id="p1">Pros</div>
@@ -197,20 +251,20 @@
                 </div>
             </div>
             <div class="prob3">
-                <div class="summary" id="r-vulnerable"><span>Result</span></div>
+                <!-- <div class="summary" id="r-vulnerable"><span>Result</span></div> -->
                 <div class="summary" id="r-vulnerable">User need to set up each different widget if they
                     are
                     using <br>Mac OS and WIndow OS together</div>
                 <div class="proscons">
-                    <li class="porc">Can not use same widget</li>
-                    <li class="porc">Have to fetch or put events for both</li>
+                    <li class="porc2">Can not use same widget</li>
+                    <li class="porc2">Have to fetch or put events for both</li>
                 </div>
             </div>
         </div>
 
-        <div class="executive">
+        <div class="executive" id="executiveSummary">
             <div class="statement">
-                <div class="statement-title">
+                <div class="statement-title" tabindex="0">
                     Executive Summary
                 </div>
 
@@ -222,24 +276,24 @@
             </div>
         </div>
 
-        <div class="processing">
+        <div class="processing" id="processingSteps">
             <div class="statement">
-                <div class="statement-title" id="psps">
+                <div class="statement-title" id="psps" tabindex="0">
                     Processing Steps
                 </div>
                 <div class="summary">
-                    <div class="p1" id="element">Decide what features will my app includes
+                    <div class="p1" id="element" tabindex="0">Decide what features will my app includes
                         <img src="src/spdjofq-91.png" id="inner">
 
                     </div>
                 </div>
-                <div class="p2" id="element">Create User Map
+                <div class="p2" id="element" tabindex="0">Create User Map
                     <img src="src/spdjofq-92.png" id="inner">
                 </div>
                 <!-- <div class="p3" id="element">Create color themes for each
 
                 </div> -->
-                <div class="p4" id="element">Construct frame with Javascript with basic features in HTML
+                <div class="p4" id="element" tabindex="0">Construct frame with Javascript with basic features in HTML
                     <div class="p4-container">
                         <img src='src/logo-html.png' alt="html" class="inner-icon">
                         <img src='src/logo-css.png' alt="css" class="inner-icon">
@@ -248,16 +302,18 @@
                     </div>
 
                 </div>
-                <div class="p5" id="element">Bring Google API and make it available to fetch, sync Google Calendar and
+                <div class="p5" id="element" tabindex="0">Bring Google API and make it available to fetch, sync Google
+                    Calendar and
                     Task with my Google Account
                     <img src="src/sergsdlygewsdoub-73.png" id="inner">
                     <img src="src/sergsdlygewsdoub-74.png" id="inner">
                 </div>
-                <div class="p6" id="element">Bring OpenWeather API so that I can bring weather information and forecast
+                <div class="p6" id="element" tabindex="0">Bring OpenWeather API so that I can bring weather information
+                    and forecast
                     by city
                     <img src="src/sergsdlygewsdoub-75.png" id="inner">
                 </div>
-                <div class="p7" id="element">Design 4-6 different designs for each tools
+                <div class="p7" id="element" tabindex="0">Design 4-6 different designs for each tools
                     <div class="inner-title" id="inner">To Do List</div>
                     <img src="src/sergsdlygewsdoub-77.png" id="inner">
                     <div class="inner-title" id="inner">Calendar</div>
@@ -265,11 +321,11 @@
                     <div class="inner-title" id="inner">Weather</div>
                     <img src="src/sergsdlygewsdoub-79.png" id="inner">
                 </div>
-                <div class="p7-5" id="element">Create color themes for each
+                <div class="p7-5" id="element" tabindex="0">Create color themes for each
                     <img src="src/sergsdlygewsdoub-80.png" id="inner" class="white">
                     <img src="src/sergsdlygewsdoub-81.png" id="inner">
                 </div>
-                <div class="p8" id="element">Create Icons and Assests
+                <div class="p8" id="element" tabindex="0">Create Icons and Assests
                     <div class="inner-title" id="inner">Hand drawn weather Icons</div>
 
                     <img src="src/spdjofq-90.png" id="inner" class="smaller">
@@ -277,18 +333,19 @@
 
                     <img src="src/widdyinner-83.png" id="inner" class="smaller">
                 </div>
-                <div class="p9" id="element">Create Main page for app to contain active widgets so that user can change
+                <div class="p9" id="element" tabindex="0">Create Main page for app to contain active widgets so that
+                    user can change
                     size, colors, and more.
                     <img src="src/widdyinner-84.png" id="inner">
                 </div>
-                <div class="p10" id="element">Archietecture
+                <div class="p10" id="element" tabindex="0">Archietecture
                     <img src="src/widdyinner-89.png" id="inner">
                     <img src="src/widdyinner-85.png" id="inner">
                     <img src="src/widdyinner-92.png" id="inner">
 
                 </div>
                 <div class="statement" id="bottom">
-                    <div class="statement-title">
+                    <div class="statement-title" tabindex="0">
                         Git Hub link
                     </div>
                     <a href="https://github.com/Jen808/My-Widdy">
@@ -297,7 +354,7 @@
 
                 </div>
                 <div class="statement" id="bottom">
-                    <div class="statement-title">
+                    <div class="statement-title" tabindex="0">
                         Installation file
                     </div>
                     <div class="p11" id="inner">my-Widdy Setup 1.1.5.exe</div>
@@ -306,7 +363,7 @@
                     </a>
                 </div>
                 <div class="statement" id="bottom">
-                    <div class="statement-title">
+                    <div class="statement-title" tabindex="0">
                         Further steps to go
                     </div>
                     <ol>
@@ -365,6 +422,7 @@
         navMenu.classList.toggle('open');
         contentOverlay.classList.toggle('active');
         document.body.classList.toggle('menu-open', isOpen);
+
     });
 
     contentOverlay.addEventListener('click', () => {
@@ -372,6 +430,7 @@
         navMenu.classList.remove('open');
         contentOverlay.classList.remove('active');
         document.body.classList.remove('menu-open');
+
     });
 
     var link = document.createElement('link');
@@ -380,6 +439,36 @@
     link.type = 'image/x-icon';
     link.href = 'src/favicon.ico';
     document.head.appendChild(link);
+
+    document.getElementById("feedbackBtn").addEventListener("click", function () {
+        var formContainer = document.getElementById("feedbackFormContainer");
+        if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block";
+        } else {
+            formContainer.style.display = "none";
+        }
+    });
+
+    const icons = document.querySelectorAll('.satisfaction-icons span');
+    const hiddenInput = document.getElementById('satisfaction_level');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            icons.forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            hiddenInput.value = this.getAttribute('data-level');
+        });
+    });
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        if (!hiddenInput.value) {
+            alert('Please select a satisfaction level.');
+            e.preventDefault();
+        }
+    });
+
+
+
 
     (function (h, o, t, j, a, r) {
         h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };

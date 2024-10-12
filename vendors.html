@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="vendors.css">
     <link rel="stylesheet" href="ux-responsive.css">
+    <link rel="stylesheet" href="feedback.css">
+
 
 
     <title>UX Design - Vendors</title>
@@ -31,6 +33,49 @@
 </head>
 
 <body>
+
+    <button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackFormContainer">
+        <h2>How was your experience?</h2>
+        <form name="feedback" method="POST" netlify>
+
+            <div class="satisfaction-icons">
+                <span data-level="1">
+                    <img src="src/feedback-02.png" class="emoji" alt="emoji image: Angry">
+                </span>
+                <span data-level="2">
+                    <img src="src/feedback-03.png" class="emoji" alt="emoji image: Dissapointed">
+                </span>
+                <span data-level="3">
+                    <img src="src/feedback-04.png" class="emoji" alt="emoji image: So So">
+                </span>
+                <span data-level="4">
+                    <img src="src/feedback-05.png" class="emoji" alt="emoji image: Excellent">
+                </span>
+                <span data-level="5">
+                    <img src="src/feedback-06.png" class="emoji" alt="emoji image: Nailed It!">
+                </span>
+
+            </div>
+
+            <input type="hidden" name="satisfaction_level" id="satisfaction_level" required>
+
+            <p>
+                <label>
+                    <h2>
+                        Your feedback helps me a lot
+                    </h2>
+                    <textarea name="feedback"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit" class="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </div>
+
     <div class="header">
 
         <div class="logo-name">
@@ -74,9 +119,17 @@
                 </div>
 
             </div>
-
-
         </nav>
+
+        <div class="desktop-sns">
+            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                <img src="src/logo-email.png" alt="email" class="email">
+            </a>
+            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+            </a>
+        </div>
+    </div>
 
 
     </div>
@@ -98,11 +151,11 @@
             </div>
             <div class="title-box">Vendors</div>
             <div class="title-des">
-                <li>Final Prototype</li>
-                <li>Objectives</li>
-                <li>Problem statement</li>
-                <li>Lo-Fi Prototype</li>
-                <li>Hi-Fi Prototype</li>
+                <li><a href=#fp>Final Prototype</a></li>
+                <li><a href=#oj>Objectives</a></li>
+                <li><a href=#ps>Problem statement</a></li>
+                <li><a href=#lf>Lo-Fi Prototype</a></li>
+                <li><a href=#hf>Hi-Fi Prototype</a></li>
             </div>
             <div class="brief">
                 <div class="cal-box">
@@ -149,7 +202,7 @@
 
     <div class="main-container">
         <div class="final-prototype">
-            <div class="subtle">Final Prototype</div>
+            <div class="subtle" id="fp" tabindex="0">Final Prototype</div>
             <div class="content" id="ob">Click white banner to open in Figma</div>
             <div class="frame">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="mobile"
@@ -160,13 +213,13 @@
             </div>
         </div>
         <div class="section">
-            <div class="subtle">Objectives</div>
+            <div class="subtle" id="oj" tabindex="0">Objectives</div>
             <div class="content" id="ob">This project facilitates interaction between street vendors and customers,
                 addressing challenges exacerbated by COVID-19,
                 which reduced street vendor availability and complicated research efforts.</div>
         </div>
         <div class="section">
-            <div class="subtle">Problem Statement / Pain Points</div>
+            <div class="subtle" id="ps" tabindex="0">Problem Statement / Pain Points</div>
             <div class="content" id="ob">The number of street vendors has markedly decreased due to the impact of
                 COVID-19. <br><br>
                 The pandemic has driven a significant shift towards online shopping and delivery services,
@@ -177,29 +230,29 @@
             </div>
         </div>
         <div class="section">
-            <div class="subtle">Lo-Fi Prototype</div>
+            <div class="subtle" id="lf" tabindex="0">Lo-Fi Prototype</div>
             <div class="photos">
-                <img src="src/vl1.jpg" id="vl">
-                <img src="src/vl2.jpg" id="vl">
-                <img src="src/vl3.jpg" id="vl">
-                <img src="src/vl4.jpg" id="vl">
-                <img src="src/vl5.jpg" id="vl">
-                <img src="src/vl6.jpg" id="vl">
+                <img src="src/vl1.jpg" id="vl" tabindex="0">
+                <img src="src/vl2.jpg" id="vl" tabindex="0">
+                <img src="src/vl3.jpg" id="vl" tabindex="0">
+                <img src="src/vl4.jpg" id="vl" tabindex="0">
+                <img src="src/vl5.jpg" id="vl" tabindex="0">
+                <img src="src/vl6.jpg" id="vl" tabindex="0">
             </div>
 
         </div>
         <div class="section">
-            <div class="subtle">Hi-Fi Prototype</div>
+            <div class="subtle" id="hf" tabindex="0">Hi-Fi Prototype</div>
             <div class="photos">
-                <img src="src/v.png" id="v">
-                <img src="src/v1.png" id="v">
-                <img src="src/v2.png" id="v">
-                <img src="src/v3.png" id="v">
-                <img src="src/v4.png" id="v">
-                <img src="src/v5.png" id="v">
-                <img src="src/v6.png" id="v">
-                <img src="src/v7.png" id="v">
-                <img src="src/v8.png" id="v">
+                <img src="src/v.png" id="v" tabindex="0">
+                <img src="src/v1.png" id="v" tabindex="0">
+                <img src="src/v2.png" id="v" tabindex="0">
+                <img src="src/v3.png" id="v" tabindex="0">
+                <img src="src/v4.png" id="v" tabindex="0">
+                <img src="src/v5.png" id="v" tabindex="0">
+                <img src="src/v6.png" id="v" tabindex="0">
+                <img src="src/v7.png" id="v" tabindex="0">
+                <img src="src/v8.png" id="v" tabindex="0">
             </div>
         </div>
         <div class="end"></div>
@@ -268,6 +321,35 @@
     link.type = 'image/x-icon';
     link.href = 'src/favicon.ico';
     document.head.appendChild(link);
+
+
+    document.getElementById("feedbackBtn").addEventListener("click", function () {
+        var formContainer = document.getElementById("feedbackFormContainer");
+        if (formContainer.style.display === "none" || formContainer.style.display === "") {
+            formContainer.style.display = "block";
+        } else {
+            formContainer.style.display = "none";
+        }
+    });
+
+    const icons = document.querySelectorAll('.satisfaction-icons span');
+    const hiddenInput = document.getElementById('satisfaction_level');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            icons.forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            hiddenInput.value = this.getAttribute('data-level');
+        });
+    });
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        if (!hiddenInput.value) {
+            alert('Please select a satisfaction level.');
+            e.preventDefault();
+        }
+    });
+
 
 
     (function (h, o, t, j, a, r) {

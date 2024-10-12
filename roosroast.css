@@ -45,7 +45,7 @@ body {
 }
 
 .skill-logo {
-    width: 2vw;
+    width: 2em;
     height: auto;
     padding-right: 1vw;
 
@@ -54,7 +54,7 @@ body {
 .title-box {
     color: #CF845F;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.5em;
     font-style: normal;
     font-weight: 500;
 
@@ -62,20 +62,18 @@ body {
 
 
 
+
+
 .title-des {
     /* list-style: none; */
     font-family: 'Inter', sans-serif;
     padding-left: 2vw;
-    line-height: 1.8vw;
-    font-size: 1.2vw;
+    line-height: 1.6em;
+    font-size: 1.2em;
     padding-top: 3vh;
-    color: #543C32;
+    color: #543C32;    
     font-weight: 600;
-
-
-
 }
-
 
 
 
@@ -94,7 +92,7 @@ body {
 #cal-img,
 #group-img {
     width: auto;
-    height: 2vw;
+    height: 2em;
 }
 
 .cal,
@@ -112,6 +110,13 @@ body {
 }
 
 
+.group-box{
+    padding-left: 2vw;
+
+}
+
+
+
 
 
 
@@ -119,10 +124,12 @@ body {
 .group-des {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 1em;
     padding-left: 0.5vw;
 
 }
+
+
 
 
 
@@ -167,16 +174,17 @@ body {
 
 
 .mobile {
-    height: 30vw;
-    width: 15vw;
+    width: 15vw !important;
+    height: 30vw !important;
     border-style: none;
 
 }
 
 
 .desktop {
-    height: 30vw;
-    width: 40vw;
+
+    width: 40vw !important;
+    height: 30vw !important;
     border-style: none;
 
 }
@@ -231,7 +239,7 @@ body {
 
 .sub-title {
     font-family: 'Inter', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     color: #CF845F;
     font-weight: 700;
     text-align: center;
@@ -258,14 +266,15 @@ body {
     background-color: #F3DFC9;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     font-weight: 500;
-    font-size: 0.9vw;
+    font-size: 1em;
+    line-height: 1.4em;
 
 
 }
 
 .photo1-1 {
-    height: 31vw;
-    width: auto;
+    width: 31em;
+    height: auto;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 
 }
@@ -278,8 +287,8 @@ body {
     margin-top: -6vw;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     font-weight: 500;
-    font-size: 0.9vw;
-    line-height: 1.4vw;
+    font-size: 1em;
+    line-height: 1.4em;
 
 }
 
@@ -336,7 +345,7 @@ ul.a-3 {
     padding-bottom: 3vw;
     text-align: center;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 1em;
 
 
 }
@@ -351,7 +360,7 @@ ul.a-3 {
 
 
 .under-name {
-    font-size: 1.2vw;
+    font-size: 1.2em;
     padding-bottom: 3vw;
     color: #81A196;
     font-weight: 600;
@@ -361,18 +370,20 @@ ul.a-3 {
 
 
 ul.b-1-1,
-li.b-2-1,
+.b-2-1,
 ul.b-2-1 {
     list-style-type: disc;
     list-style-position: outside;
     padding-left: 1.5vw;
     padding-top: 0.5vw;
     font-weight: 500;
+    line-height: 1.4em;
+    font-size: 1em;
 
 }
 
 li {
-    line-height: 1.5vw;
+    line-height: 1.5em;
     padding: 0.5vw 0;
 
 }
@@ -380,12 +391,13 @@ li {
 
 .c-1 {
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     color: #81A196;
 }
 
 .inner {
-    font-size: 1.2vw;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
 
 
@@ -435,7 +447,8 @@ li {
 .c-des {
     font-weight: 600;
     padding: 0.1vw 0;
-    font-size: 1vw;
+    font-size: 1em;
+    line-height: 1.4em;
 
 }
 
@@ -443,8 +456,8 @@ li {
     padding-left: 0.5vw;
     padding-top: 0.3vw;
     padding-bottom: 0.8vw;
-    line-height: 1.4vw;
-    font-size: 0.9vw;
+    line-height: 1.4em;
+    font-size: 0.9em;
 }
 
 
@@ -471,7 +484,7 @@ li {
 
 
 .e-1 {
-    font-size: 1.1vw;
+    font-size: 1.1em;
     font-weight: 600;
     color: #6E9084;
 
@@ -490,7 +503,7 @@ li {
 
 
 .rr-m {
-    width: 16vw;
+    width: 16em;
     border-radius: 2.8vw;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
@@ -506,7 +519,7 @@ li {
 }
 
 .e-3-1 {
-    font-size: 1.4vw;
+    font-size: 1.4em;
     font-weight: 600;
     color: #CF845F;
     line-height: 2vw;
@@ -519,35 +532,42 @@ li {
     font-weight: 600;
     line-height: 1.2vw;
     font-size: 0.8vw;
+
 }
 
 li {
-    font-size: 0.9vw;
+    font-size: 1em;
 }
 
 .f-1 {
-    font-size: 1.1vw;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
 
 .rr-c {
-    margin-top: 5vw;
+    margin: 5vw 0;
+    width: 60em;
+    height: auto;
+
 }
 
 
 .index {
     padding: 0;
     margin: 0;
-    font-size: 1.2vw;
-    line-height: 1.8vw;
+    font-size: 1em;
+    line-height: 1.6em;
 
 }
 
 
+
+
+
 .frame {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -563,6 +583,20 @@ li {
 }
 
 
+li a {
+    color: #543C32;
+    text-decoration: underline;
+}
+
+li a:hover {
+    color: #CF845F;
+    text-decoration: underline;
+}
+
+
+
+
+
 @media (max-width: 768px) {
 
 
@@ -574,13 +608,13 @@ li {
     }
 
     .mobile {
-        height: 600px;
-        width: 95%;
+        height: 600px !important;
+        width: 95% !important;
     }
 
     .desktop {
-        width: 95%;
-        height: 600px;
+        width: 95% !important;
+        height: 600px !important;
     }
 
     .container2 {
@@ -647,19 +681,50 @@ li {
     .a-2,
     .a-3,
     li {
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .a-1{
+        margin-bottom: 10px;
     }
 
     li {
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 500;
         list-style-position: inside;
     }
+    .a-3 li{
+        font-weight: 700;
+
+    }
+
+
 
     #left {
         padding: 5vw;
 
+    }
+    .b-1,
+    .b-2{
+        margin: 15px 0 ;
+    }
+
+    .b-1-1{
+        margin-left: 10px;
+        width: 94%;
+
+    }
+
+
+    .b-2-1{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+
+    .bimg{
+        margin-bottom: 15px;
     }
 
     .question,
@@ -669,10 +734,14 @@ li {
     .e-1 {
         font-size: 16px;
         text-align: center;
+        line-height: 18px;
     }
+
+
 
     .des2 {
         font-size: 12px;
+        line-height: 16px;
     }
 
     .container {
@@ -688,21 +757,21 @@ li {
     }
 
     .container3 {
+        display: flex;
+        flex-direction: column;
         width: 90vw;
         height: auto;
         margin-top: 10px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .c-2 {
-        width: 40vw;
-        height: 120px;
-    }
-
-    .c-3 {
-
-        width: 40vw;
+    .c-2,
+    .c-3{
+        width: 70vw;
         height: auto;
-
+        margin: 10px;
+        padding: 15px;
     }
 
     .c-list {
@@ -716,17 +785,26 @@ li {
 
     .c-des {
         text-align: left;
-        font-size: 10px;
+        font-size: 14px;
         margin-top: 5px;
 
     }
 
     .bold-list {
-        line-height: 10px;
+        line-height: 16px;
         padding: 5px 0;
         text-align: left;
-        font-size: 10px;
+        font-size: 14px;
+        
+    
     }
+
+    .d-list .bold-list {
+        /* list-style: none; */
+        text-align: center;
+
+    }
+
 
     #no-mark {
         list-style: none;
@@ -735,8 +813,8 @@ li {
 
     .c-des-inner {
         text-align: left;
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 12px;
+        line-height: 18px;
         margin-top: 3px;
     }
 
@@ -746,6 +824,10 @@ li {
         display: flex;
         flex-direction: column;
 
+    }
+
+    .e-1{
+        line-height: 20px;
     }
 
     .e-3 {
@@ -768,14 +850,14 @@ li {
 
     .e-3-1,
     .f-1 {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 18px;
         text-align: center;
     }
 
     .e-3-2 {
         font-size: 12px;
-        line-height: 14px;
+        line-height: 16px;
         padding-top: 10px;
 
 

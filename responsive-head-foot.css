@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
 
 
 
@@ -45,7 +45,7 @@
         font-family: 'Roboto', sans-serif !important;
         font-weight: 500 !important;
         color:#F87474;
-        font-size: 22px;
+        font-size: 1.4em !important;
         line-height: 0 !important;
         text-wrap: nowrap !important;
 
@@ -252,6 +252,10 @@
 
     }
 
+    .desktop-sns {
+        display: none !important;
+    }
+
     
 
     .email,
@@ -281,7 +285,9 @@
 
     .ty-text{
         font-size: 14px !important;
+        line-height: 18px !important;
         font-weight: 600 !important;
+        width: 80%;
     }
 
 
@@ -293,7 +299,7 @@
     
 
     .footer-icon{
-        padding: 20px 0 !important;
+        padding: 10px 0 !important;
         height: 8vw;
         gap: 30px !important;
 
@@ -301,8 +307,8 @@
 
     .linkedin-footer,
     .email-footer{
-        width: 44px !important;
-        height: 44px !important;
+        width: 38px !important;
+        height: 38px !important;
     }
 
 
@@ -359,5 +365,12 @@
 
 
 
+
+}
+
+@media (min-width: 768px) {
+    .sns {
+        display: none !important;
+    }
 
 }
