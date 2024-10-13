@@ -97,7 +97,7 @@
 
 
     .index-intro {
-        font-size: 2vh;
+        font-size: 14px;
         font-weight: 600;
         margin-top: 20px;
         text-align: center;
@@ -233,20 +233,24 @@
 
 
     .skill {
-        padding: 5vh 5vw 0 5vw;
-        max-width: 90vw;
+        padding: 5vw;
+        max-width: 95vw;
+        min-width: 85vw;
         justify-content: center;
         align-items: center;
         gap: 3vw;
         height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
         
     }
 
     .skill-logo,
     .skill-logo2 {
-        height: 3.5vh;
+        height: 20px;
         width: auto;
-        padding-bottom: 5vh;
+        padding-bottom: 10px;
     }
 
 
@@ -282,6 +286,15 @@
         border-radius: 10vh;
         margin-top: 3vh;
     }
+
+
+    #feedbackBtn {
+        font-size: 14px !important;
+        right: -30px !important;
+        padding: 10px 16px !important;
+
+    }
+
 
 
 

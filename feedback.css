@@ -128,3 +128,15 @@ button:hover {
     background-color: #F87474;
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    
+    #feedbackBtn {
+        font-size: 14px !important;
+        right: -30px !important;
+        padding: 10px 16px !important;
+
+    }
+
+}

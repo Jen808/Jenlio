@@ -230,6 +230,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 60vw;
 }
 
 .column {
@@ -273,7 +274,7 @@ body {
 }
 
 .photo1-1 {
-    width: 31em;
+    width: 40em;
     height: auto;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 
@@ -316,6 +317,7 @@ ul.a-3 {
     /* gap: 5vw; */
     background-color: #FFF9F2;
     border-radius: 2vw;
+    width: auto;
 
 
 }
@@ -325,7 +327,7 @@ ul.a-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 30vw;
     padding: 3vw;
 }
 
@@ -356,6 +358,17 @@ ul.a-3 {
 
 .bimg {
     padding-bottom: 3vw;
+    height: 20vw;
+    width: auto;
+}
+
+#commonimg {
+    height: 19.4vw;
+    width: auto;
+    padding-bottom: 0;
+    margin-bottom: 3vw;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -503,8 +516,9 @@ li {
 
 
 .rr-m {
-    width: 16em;
-    border-radius: 2.8vw;
+    width: 20em;
+    height: auto;
+    border-radius: 3.4em;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
 
@@ -623,6 +637,8 @@ li a:hover {
         /* gap: 5vw; */
         background-color: #FFF9F2;
         border-radius: 2vw;
+        width: 88vw;
+        align-items: center;
     }
 
     .rr-c {
@@ -631,13 +647,23 @@ li a:hover {
 
     .b-1,
     .b-2 {
-        width: 70vw;
+        width: 78vw;
     }
 
     .bimg {
         width: 60vw;
         height: auto;
     }
+    
+    #commonimg {
+        width: 60vw;
+        height: auto;
+        /* padding-bottom: 0;
+        margin-bottom: 3vw;
+    
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); */
+    }
+    
 
     .sub-title {
         font-size: 18px;
@@ -660,7 +686,7 @@ li a:hover {
 
     .des,
     .core-vision {
-        width: 60vw;
+        width: 78vw;
         height: auto;
         margin: 0;
         padding: 0;
@@ -672,7 +698,7 @@ li a:hover {
     }
 
     .photo1-1 {
-        width: 70vw;
+        width: 88vw;
         height: auto;
     }
 
@@ -768,7 +794,7 @@ li a:hover {
 
     .c-2,
     .c-3{
-        width: 70vw;
+        width: 80vw;
         height: auto;
         margin: 10px;
         padding: 15px;
@@ -845,7 +871,7 @@ li a:hover {
     .rr-m {
         width: 50vw;
         height: auto;
-        border-radius: 35px;
+        border-radius: 8vw;
     }
 
     .e-3-1,
