@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 's4', url: 'glansis.html' },
         { id: 's5', url: 'vendors.html' },
         { id: 's6', url: 'ife.html' },
+        { id: 's7', url: 'LivMate.html' },
 
     ];
 

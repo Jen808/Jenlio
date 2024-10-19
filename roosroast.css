@@ -54,7 +54,7 @@ body {
 .title-box {
     color: #CF845F;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     font-style: normal;
     font-weight: 500;
 
@@ -68,10 +68,10 @@ body {
     /* list-style: none; */
     font-family: 'Inter', sans-serif;
     padding-left: 2vw;
-    line-height: 1.6em;
-    font-size: 1.2em;
+    line-height: 1.8em;
+    font-size: 1vw;
     padding-top: 3vh;
-    color: #543C32;    
+    color: #543C32;
     font-weight: 600;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 
-.group-box{
+.group-box {
     padding-left: 2vw;
 
 }
@@ -124,7 +124,7 @@ body {
 .group-des {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1vw;
     padding-left: 0.5vw;
 
 }
@@ -163,29 +163,73 @@ body {
 }
 
 
-.frame {
-    display: flex;
-    flex-direction: row;
-    gap: 5vw;
-    margin: 10vh 0vh;
-}
+
 
 
 
 
 .mobile {
-    width: 15vw !important;
-    height: 30vw !important;
+    width: 25em !important;
+    height: 40em !important;
+    border-style: none;
+
+
+}
+
+
+
+
+.desktop {
+
+    width: 55em !important;
+    height: 40em !important;
     border-style: none;
 
 }
 
 
-.desktop {
+.column-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    width: 40vw !important;
-    height: 30vw !important;
-    border-style: none;
+}
+
+
+.column-container2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.oifm,
+.oifd {
+    color: #FFF !important;
+    background-color: #543C32 !important;
+    font-weight: 700;
+    padding: 1.5em 3em;
+    border-radius: 20vw;
+    cursor: pointer;
+}
+
+
+.oifm a,
+.oifd a {
+    color: #FFF !important;
+}
+
+
+
+.oifm:hover {
+    background-color: #CF845F !important;
+}
+
+.oifd:hover {
+    background-color: #CF845F !important;
 
 }
 
@@ -583,18 +627,12 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-bottom: 8em;
+    gap: 5vw;
 }
 
-.mobile {
-    height: 600px;
-    width: 95%;
-}
 
-.desktop {
-    width: 95%;
-    height: 600px;
-}
 
 
 li a {
@@ -607,6 +645,61 @@ li a:hover {
     text-decoration: underline;
 }
 
+
+/* ==============================================
+pj shift button
+============================================== */
+
+.shift-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2.5vw;
+    margin-right: 3vw;
+}
+
+.b-shift-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+
+.shift-previous {
+    background-color: #CF845F;
+    margin-right: 2vw;
+    cursor: pointer;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+}
+
+
+.shift-previous:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+
+.shift-next {
+    border: 1px solid #CF845F;
+    cursor: pointer;
+    color: #543C32;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+
+
+}
+
+
+
+.shift-next:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
 
 
 
@@ -622,14 +715,16 @@ li a:hover {
     }
 
     .mobile {
-        height: 600px !important;
-        width: 95% !important;
+        width: 100vw !important;
+        height: 170vw !important;
+
     }
 
     .desktop {
-        width: 95% !important;
-        height: 600px !important;
+        width: 100vw !important;
+        height: 80vw !important;
     }
+
 
     .container2 {
         display: flex;
@@ -654,7 +749,7 @@ li a:hover {
         width: 60vw;
         height: auto;
     }
-    
+
     #commonimg {
         width: 60vw;
         height: auto;
@@ -663,7 +758,7 @@ li a:hover {
     
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); */
     }
-    
+
 
     .sub-title {
         font-size: 18px;
@@ -711,7 +806,7 @@ li a:hover {
         line-height: 18px;
     }
 
-    .a-1{
+    .a-1 {
         margin-bottom: 10px;
     }
 
@@ -720,7 +815,8 @@ li a:hover {
         font-weight: 500;
         list-style-position: inside;
     }
-    .a-3 li{
+
+    .a-3 li {
         font-weight: 700;
 
     }
@@ -731,25 +827,26 @@ li a:hover {
         padding: 5vw;
 
     }
+
     .b-1,
-    .b-2{
-        margin: 15px 0 ;
+    .b-2 {
+        margin: 15px 0;
     }
 
-    .b-1-1{
+    .b-1-1 {
         margin-left: 10px;
         width: 94%;
 
     }
 
 
-    .b-2-1{
+    .b-2-1 {
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 5px;
     }
 
-    .bimg{
+    .bimg {
         margin-bottom: 15px;
     }
 
@@ -793,7 +890,7 @@ li a:hover {
     }
 
     .c-2,
-    .c-3{
+    .c-3 {
         width: 80vw;
         height: auto;
         margin: 10px;
@@ -821,8 +918,8 @@ li a:hover {
         padding: 5px 0;
         text-align: left;
         font-size: 14px;
-        
-    
+
+
     }
 
     .d-list .bold-list {
@@ -852,7 +949,7 @@ li a:hover {
 
     }
 
-    .e-1{
+    .e-1 {
         line-height: 20px;
     }
 
@@ -889,6 +986,44 @@ li a:hover {
 
 
     }
+
+
+    /* ==============================================
+pj shift button
+============================================== */
+
+    .shift-next,
+    .shift-previous {
+        font-size: 14px;
+        padding: 14px 20px;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+
+    .shift-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .b-shift-container {
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .oifm,
+    .oifd{
+        padding: 20px 30px;
+    }
+
+
+
 
 
 }

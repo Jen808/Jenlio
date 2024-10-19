@@ -60,7 +60,7 @@ body {
 .title-box {
     color: #ff8d3a;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     font-style: normal;
     font-weight: 500;
 
@@ -72,8 +72,8 @@ body {
     /* list-style: none; */
     font-family: 'Inter', sans-serif;
     padding-left: 2vw;
-    line-height: 1.6em;
-    font-size: 1.2em;
+    line-height: 1.8em;
+    font-size: 1vw;
     padding-top: 3vh;
     color: #a14d00;
     font-weight: 600;
@@ -89,7 +89,7 @@ body {
     height: 5vw;
     background-color: #FCEDDA;
     border-radius: 1vw 0 0 1vw;
-    margin-top: 3vw;
+    margin-top: 2.4vw;
 }
 
 
@@ -127,7 +127,7 @@ body {
 .group-des {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1vw;
     padding-left: 0.5vw;
 
 }
@@ -578,6 +578,66 @@ li a:hover {
 
 
 
+/* ==============================================
+pj shift button
+============================================== */
+
+.shift-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2.5vw;
+    margin-right: 3vw;
+}
+
+.b-shift-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+
+.shift-previous {
+    background-color: #ff8d3a;
+    margin-right: 2vw;
+    cursor: pointer;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+}
+
+
+.shift-previous:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+
+.shift-next {
+    border: 1px solid #ff8d3a;
+    cursor: pointer;
+    color: #5b524b;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+
+
+}
+
+
+
+.shift-next:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     .main-container{
         display: flex;
@@ -698,4 +758,35 @@ li a:hover {
         font-size: 14px;
 
     }
+
+     /* ==============================================
+pj shift button
+============================================== */
+
+.shift-next,
+.shift-previous {
+    font-size: 14px;
+    padding: 14px 20px;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.shift-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.b-shift-container {
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+
 }

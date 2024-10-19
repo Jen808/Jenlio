@@ -373,7 +373,9 @@ path {
 }
 
 
-#s7 {
+
+
+#s8 {
     background-color: #dccfbc;
     cursor: auto;
 }
@@ -524,9 +526,13 @@ path {
     color: #0E9BA4;
 }
 
+#t7 {
+    color: #14919B;
+}
 
-#t7,
-#d7 {
+
+#t8,
+#d8 {
     color: #8c7f6c;
 }
 
