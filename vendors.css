@@ -169,7 +169,7 @@ body {
 
 }
 
-.section{
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +180,7 @@ body {
 
 .subtle {
     font-size: 1.5vw;
-    color:#FF6B00;
+    color: #FF6B00;
     margin-top: 5vw;
     margin-bottom: 3vw;
     font-weight: 600;
@@ -194,19 +194,19 @@ body {
     width: 45vw;
 }
 
-#ob{
+#ob {
     text-align: center;
 }
 
 
 #vl,
-#v{
+#v {
     width: 11vw;
-    padding:1vw;
+    padding: 1vw;
 }
 
 
-.end{
+.end {
     height: 10vw;
 }
 
@@ -220,6 +220,64 @@ li a:hover {
     color: #FFBE41;
     text-decoration: underline;
 }
+
+/* ==============================================
+pj shift button
+============================================== */
+
+.shift-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2.5vw;
+    margin-right: 3vw;
+}
+
+.b-shift-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+
+.shift-previous {
+    background-color: #FFBE41;
+    margin-right: 2vw;
+    cursor: pointer;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+}
+
+
+.shift-previous:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+
+.shift-next {
+    border: 1px solid #FFBE41;
+    cursor: pointer;
+    color: #FF6B00;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+
+
+}
+
+
+
+.shift-next:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+
+
 
 
 
@@ -237,13 +295,13 @@ li a:hover {
         width: 95%;
     }
 
-    .subtle{
+    .subtle {
         font-size: 18px;
         margin-top: 40px;
 
     }
 
-    .photos{
+    .photos {
         display: block;
         flex-wrap: wrap;
         width: 90vw;
@@ -255,12 +313,45 @@ li a:hover {
         line-height: 16px;
         width: 85vw;
     }
-    
+
     #vl,
-    #v{
+    #v {
         width: 40vw;
         height: auto;
         padding: 2vw;
 
     }
+
+
+    /* ==============================================
+pj shift button
+============================================== */
+
+    .shift-next,
+    .shift-previous {
+        font-size: 14px;
+        padding: 14px 20px;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+
+    .shift-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .b-shift-container {
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+
+
 }

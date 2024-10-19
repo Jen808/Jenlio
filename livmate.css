@@ -240,11 +240,30 @@ body {
     margin-bottom: 2em;
 }
 
+#es-des{
+    width: 35em;
+    line-height: 2em;
+    background-color: #FFF;
+    padding: 3em 1.5em;
+
+}
+
+
+.esThumb{
+    width: 30em;
+    height: auto;
+    box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.2);
+}
 
 
 /* ====================================================================================== */
 /* User Survey */
 /* ====================================================================================== */
+
+#usersurvey{
+    background-color: #FFF;
+    padding: 3em;
+}
 
 .column-container{
     display: flex;
@@ -356,7 +375,7 @@ body {
     align-items: flex-start;
 }
 
-#persona-contianer{
+#persona-container{
     display: flex;
     align-items: flex-start;
 }
@@ -396,7 +415,7 @@ body {
 
 .persona{
     width: 40em;
-    height:auto;
+    height: auto;
     margin: 2em;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
     border-radius: 1em;
@@ -751,6 +770,8 @@ survery
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        background-color: transparent;
     }
 
     .notes{
@@ -927,6 +948,28 @@ survery
 
     .openInFigma{
         padding: 20px 30px;
+    }
+
+    #es-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .esThumb{
+        width: 70vw;
+        height: auto;
+
+    }
+
+    #es-des{
+        width: 70vw;
+        line-height: 24px;
+        margin-top: -50px;
+        z-index: -1;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        border-radius: 0 0 1em 1em;
+
     }
 
 
