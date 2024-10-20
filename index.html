@@ -94,7 +94,7 @@
             fetch(`https://ipinfo.io?token=${token}`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log('IP Geolocation Data:', data);
+                    console.log('IP Info Data:', data);
 
                     fetch('/.netlify/functions/store-geo', {
                         method: 'POST',
@@ -108,6 +108,10 @@
                 })
                 .catch(error => console.error('Error fetching geolocation data:', error));
         };
+
+
+
+
 
 
         document.getElementById("feedbackBtn").addEventListener("click", function () {
@@ -570,7 +574,8 @@
             <div class="des-box">
                 <div class="title" id="t7">LivMate</div>
                 <div class="des">
-                    Created Mobile Application to <span class="bold-text">find perfect roommates.</span> Finding budgeted room,
+                    Created Mobile Application to <span class="bold-text">find perfect roommates.</span> Finding
+                    budgeted room,
                     know each others living style before live together. No more worries on scam! All users need
                     verification.
 
