@@ -707,6 +707,14 @@ pj shift button
 @media (max-width: 768px) {
 
 
+    html,
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+
+
     .frame {
         display: flex;
         flex-direction: column;
