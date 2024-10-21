@@ -6,7 +6,7 @@
 /* ===================================================================== */
 
 
-:root{
+:root {
     --color-title: #14919B;
     --color-main: #0B6477;
     --color-sub: #C4EBEF;
@@ -18,7 +18,7 @@
 /* ===================================================================== */
 
 
-html{
+html {
     width: 100vw;
 }
 
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    
+
 }
 
 .title {
@@ -95,7 +95,7 @@ body {
     line-height: 1.8em;
     font-size: 1vw;
     padding-top: 2vh;
-    color: #543C32;    
+    color: #543C32;
     font-weight: 600;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 
-.group-box{
+.group-box {
     padding-left: 2vw;
 
 }
@@ -168,7 +168,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 5em ;
+    margin: 5em;
     align-items: center;
     opacity: 0;
     filter: blur(15px);
@@ -210,7 +210,7 @@ body {
     border-style: none;
 }
 
-.openInFigma{
+.openInFigma {
     background-color: var(--color-title);
     font-weight: 700;
     padding: 1.5em 3em;
@@ -218,11 +218,11 @@ body {
     margin-top: 2em;
 }
 
-.openInFigma a{
+.openInFigma a {
     color: #FFF;
 }
 
-.proto-des{
+.proto-des {
     font-weight: 600;
 }
 
@@ -239,13 +239,13 @@ body {
     text-decoration: underline;
 }
 
-.des{
+.des {
     font-size: 1.1em;
     font-weight: 600;
     margin-bottom: 2em;
 }
 
-#es-des{
+#es-des {
     width: 35em;
     line-height: 2em;
     background-color: #FFF;
@@ -254,7 +254,7 @@ body {
 }
 
 
-.esThumb{
+.esThumb {
     width: 30em;
     height: auto;
     box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.2);
@@ -265,19 +265,19 @@ body {
 /* User Survey */
 /* ====================================================================================== */
 
-#usersurvey{
+#usersurvey {
     background-color: #FFF;
     padding: 3em;
 }
 
-.column-container{
+.column-container {
     display: flex;
     flex-direction: column;
     width: auto;
 
 }
 
-.row-container{
+.row-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -285,47 +285,47 @@ body {
 
 }
 
-.ppl-row{
+.ppl-row {
     display: flex;
     flex-direction: row;
-    width: 100em;  
+    width: 100em;
 }
 
-.ppl{
+.ppl {
     width: 50em;
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     justify-content: flex-end;
     margin-right: 1em;
 }
 
-.ppl-des{
+.ppl-des {
     display: flex;
     align-items: center;
     margin-left: 1em;
 
-    
+
 }
 
 
-.person{
+.person {
     width: 3.2em;
     height: auto;
     padding: 0.4em;
 }
 
-.ppl12{
+.ppl12 {
     width: 50em;
     padding: 0 15em;
 }
 
-.notes{
+.notes {
     text-align: right;
     font-size: 0.8em;
 }
 
 
-.people{
+.people {
     width: 20em;
     text-align: center;
     margin: 3em;
@@ -334,59 +334,59 @@ body {
     line-height: 1.5em;
 }
 
-#p10{
+#p10 {
     background-color: #3A82AA;
     color: #FFF;
-    
+
 }
 
-#p2{
+#p2 {
     background-color: #9CC0D4;
 }
 
 
-.bold{
+.bold {
     font-weight: 600;
 }
 
-.pie{
+.pie {
     width: 35em;
     margin: 10em 0;
 }
 
-.inner-title{
+.inner-title {
     text-align: center;
     font-weight: 700;
     font-size: 1.2em;
     margin-bottom: 3em;
 }
 
-#findingroommate{
+#findingroommate {
     color: #008EE4;
 }
 
-#commonproblem{
+#commonproblem {
     color: #004C92;
     margin-top: 8em;
 }
 
-#bdrow{
+#bdrow {
     display: flex;
     align-items: flex-start;
 }
 
-#blue-container{
+#blue-container {
     display: flex;
     align-items: flex-start;
 }
 
-#persona-container{
+#persona-container {
     display: flex;
     align-items: flex-start;
 }
 
 
-.lmheader{
+.lmheader {
     background-color: #004C92;
     display: flex;
     align-items: center;
@@ -399,12 +399,12 @@ body {
     border-radius: 1em;
 }
 
-#blue{
+#blue {
     width: 16em;
     margin: 0 1em;
 }
 
-.problems{
+.problems {
     text-align: center;
     line-height: 2em;
     margin-top: 1.6em;
@@ -418,19 +418,19 @@ body {
 /* User Persona and Journey Map */
 /* ====================================================================================== */
 
-.persona{
+.persona {
     width: 40em;
     height: auto;
     margin: 2em;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 1em;
 }
 
-.journeymap{
+.journeymap {
     width: 70em;
-    height:auto;
+    height: auto;
     margin: 2em;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 1em;
 }
 
@@ -439,20 +439,20 @@ body {
 /* Wireframe */
 /* ====================================================================================== */
 
-.sketch{
+.sketch {
     width: 16em;
     height: auto;
     padding: 1.4em;
 }
 
-.lofi{
+.lofi {
     width: 16em;
     height: auto;
     padding: 1.4em;
 
 }
 
-#spaceEven{
+#spaceEven {
     display: flex;
     align-items: flex-start !important;
     justify-content: flex-start !important;
@@ -465,20 +465,20 @@ body {
 /* Branding Design */
 /* ====================================================================================== */
 
-.brand{
+.brand {
     width: 36em;
     height: auto;
     margin-bottom: 2em;
 }
 
 
-.brandDes{
+.brandDes {
     text-align: center;
     line-height: 1.4em;
 
 }
 
-#half{
+#half {
     width: 36em;
     margin: 2em;
 }
@@ -489,17 +489,17 @@ body {
 /* Hi-Fi */
 /* ====================================================================================== */
 
-.hifi-main{
+.hifi-main {
     width: 18em;
     height: auto;
 
 }
 
-.hifi-sub{
+.hifi-sub {
     width: 8em;
     height: auto;
     margin: 0.4em;
-    box-shadow: 0.2em 0.2em 0.4em rgba(0,0,0,0.2);
+    box-shadow: 0.2em 0.2em 0.4em rgba(0, 0, 0, 0.2);
 
 }
 
@@ -507,7 +507,7 @@ body {
 #hifi-des2,
 #hifi-des3,
 #hifi-des4,
-#hifi-des5{
+#hifi-des5 {
     background-color: #FFF;
     width: 32em;
     height: auto;
@@ -535,13 +535,13 @@ body {
 
 
 
-.icon{
+.icon {
     width: 1.3em;
     height: 100%;
 }
 
 
-#hifi-des-title-container{
+#hifi-des-title-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -551,12 +551,12 @@ body {
 
 }
 
-.hifi-des-title{
+.hifi-des-title {
     margin-left: 0.4em;
 
 }
 
-.hifi-des-detail{
+.hifi-des-detail {
     font-size: 1.1em;
     line-height: 1.6em;
     margin-top: 2em;
@@ -565,7 +565,7 @@ body {
 
 
 
-.hifi-sub-container{
+.hifi-sub-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -575,44 +575,44 @@ body {
 
 }
 
-.hifi-main{
-    box-shadow: -0.4em 0.4em 0.4em rgba(0,0,0,0.2);
+.hifi-main {
+    box-shadow: -0.4em 0.4em 0.4em rgba(0, 0, 0, 0.2);
     border-radius: 3em;
 }
 
 
-.hifi-sub-empty{
+.hifi-sub-empty {
     width: 8em;
     height: 10em;
     margin: 0.4em;
     margin-top: -11em;
 }
 
-#hifi2{
+#hifi2 {
     margin-top: -6.4em;
 
 }
 
-#hifi3{
+#hifi3 {
     margin-top: 5.8em;
 }
 
 
 
 
-.styleguide{
-    box-shadow: 0em 0.4em 1em rgba(0,0,0,0.2);
+.styleguide {
+    box-shadow: 0em 0.4em 1em rgba(0, 0, 0, 0.2);
 
 }
 
 
-#container-no-margin{
-    margin:0;
-    padding:0;
+#container-no-margin {
+    margin: 0;
+    padding: 0;
     margin-top: 2em;
 }
 
-#icon-profile{
+#icon-profile {
     height: 1.5em;
     width: auto;
 }
@@ -667,7 +667,7 @@ pj shift button
 
 }
 
-.shift-next{
+.shift-next {
     display: none;
 }
 
@@ -693,20 +693,48 @@ pj shift button
 
     .frame {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-bottom: 20px;
+        margin-top: 30px;
     }
 
+    .proto-des {
+        display: none;
+
+    }
 
     .mobile {
-        width: 86vw !important;
-        height: 200vw !important;
+        display: none;
+        /* width: 86vw !important;
+        height: 200vw !important; */
 
     }
 
+    .desktop {
+        display: none;
 
-   
+        /* width: 90vw !important;
+        height: 76vw !important; */
+    }
+
+
+.openInFigma{
+        color: #000 !important;
+        background-color: #0AD0C7 !important;
+        font-weight: 700;
+        padding: 16px 20px;
+        border-radius: 20vw;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 0;
+    }
+.openInFigma a{
+        color: #000 !important;
+}
+
+
+
 
     .sub-title {
         font-size: 18px;
@@ -717,13 +745,13 @@ pj shift button
         line-height: 18px;
     }
 
-   
+
 
     .container {
         margin: 45px 0px;
     }
 
-/* ==============================================
+    /* ==============================================
 pj shift button
 ============================================== */
 
@@ -752,40 +780,42 @@ pj shift button
         justify-content: center;
     }
 
-    .shift-next{
+    .shift-next {
         display: none;
     }
 
-/* ==============================================
+    /* ==============================================
 survery
 ============================================== */
 
-    .des{
+    .des {
         text-align: center;
         font-size: 16px;
         line-height: 24px;
         width: 80vw;
     }
 
-    .ppl12{
-        padding:0;
+    .ppl12 {
+        padding: 0;
         width: 300px;
         height: auto;
         margin: 10px 0;
     }
+
     .ppl-row {
-        width: 98%;  
-        overflow-x: hidden; 
+        width: 98%;
+        overflow-x: hidden;
     }
 
-    .people{
+    .people {
         width: 140px;
         height: auto;
         margin: 10px;
         font-size: 14px;
         padding: 15px;
     }
-    #usersurvey{
+
+    #usersurvey {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -793,55 +823,55 @@ survery
         background-color: transparent;
     }
 
-    .notes{
+    .notes {
         text-align: center;
         width: 60vw;
     }
 
-    #pie-container{
+    #pie-container {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
     }
 
-    .pie{
+    .pie {
         width: 340px;
-        height:auto;
+        height: auto;
         margin: 20px;
     }
 
-    #frfr{
+    #frfr {
         margin-top: 60px;
         width: 90vw;
     }
 
-    .person{
+    .person {
         width: 25px;
         padding: 5px;
         height: 33px;
     }
 
-    .ppl{
+    .ppl {
         width: 40vw;
     }
 
-    .ppl-des{
+    .ppl-des {
         font-size: 14px;
         width: 40vw;
     }
 
-    #blue-container{
+    #blue-container {
         display: flex;
         flex-direction: column;
 
 
     }
 
-    #commonproblem{
+    #commonproblem {
         width: 90vw;
     }
 
-    .lmheader{
+    .lmheader {
         padding: 20px 10px;
         text-align: left !important;
         font-size: 14px;
@@ -851,7 +881,7 @@ survery
         width: 150px;
     }
 
-    #blue{
+    #blue {
         display: flex;
         flex-direction: row;
         width: 90vw;
@@ -865,14 +895,14 @@ survery
         width: 160px;
         font-size: 14px;
         line-height: 20px;
-        
+
     }
 
-    #common-container{
+    #common-container {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        
+
     }
 
     .problems {
@@ -885,65 +915,65 @@ survery
 
     }
 
-    #persona-container{
+    #persona-container {
         display: flex;
         flex-direction: column;
     }
 
-    .persona{
+    .persona {
         width: 95vw;
         height: auto;
         margin: 20px 0;
     }
 
-    .journeymap{
+    .journeymap {
         width: 95vw;
         height: auto;
         margin: 20px 0;
 
     }
 
-    #spaceEven{
+    #spaceEven {
         display: flex;
         flex-direction: column;
         align-items: center !important;
         justify-content: center !important;
     }
-    
 
-    #lofi-row-con{
-        display:flex;
+
+    #lofi-row-con {
+        display: flex;
         flex-direction: row;
         width: 95vw;
         align-items: center !important;
         justify-content: center !important;
     }
 
-    .lofi{
+    .lofi {
         width: 40vw;
         height: auto;
         padding: 2vw;
- 
-    
+
+
     }
 
 
-    #bdrow{
+    #bdrow {
         display: flex;
         flex-direction: column;
     }
 
     #half,
-    .brand{
+    .brand {
         width: 90vw;
     }
-    
-    #hifi-container{
+
+    #hifi-container {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .hifi-sub-container{
+    .hifi-sub-container {
         display: none;
     }
 
@@ -952,7 +982,7 @@ survery
     #hifi-des2,
     #hifi-des3,
     #hifi-des4,
-    #hifi-des5{
+    #hifi-des5 {
         width: 70vw;
         padding: 30px;
         border-radius: 0 0 1em 1em;
@@ -962,39 +992,39 @@ survery
 
     }
 
-    .hifi-des-detail{
+    .hifi-des-detail {
         font-size: 15px;
     }
 
-    .hifi-main{
-        box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    .hifi-main {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .styleguide{
+    .styleguide {
         width: 90vw;
         margin-top: 20px;
     }
 
-    #hifi-des-title-container{
+    #hifi-des-title-container {
         font-size: 24px;
     }
 
-    .openInFigma{
+    /* .openInFigma {
         padding: 20px 30px;
-    }
+    } */
 
-    #es-container{
+    #es-container {
         display: flex;
         flex-direction: column;
     }
 
-    .esThumb{
+    .esThumb {
         width: 70vw;
         height: auto;
 
     }
 
-    #es-des{
+    #es-des {
         width: 70vw;
         line-height: 24px;
         margin-top: -50px;
@@ -1005,7 +1035,7 @@ survery
 
     }
 
-    .containers{
+    .containers {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1013,23 +1043,29 @@ survery
         justify-content: center;
 
 
-        
+
     }
 
-    .ppl, .persona, .journeymap {
-        width: 100%;  /* Ensures these elements don't exceed the screen width */
-        max-width: 100%;  /* Prevents them from being larger than the viewport */
+    .ppl,
+    .persona,
+    .journeymap {
+        width: 100%;
+        /* Ensures these elements don't exceed the screen width */
+        max-width: 100%;
+        /* Prevents them from being larger than the viewport */
         overflow-x: hidden;
     }
-    
+
     img {
-        max-width: 100%;  /* Ensures images don't overflow */
-        height: auto;  /* Maintains aspect ratio */
+        max-width: 100%;
+        /* Ensures images don't overflow */
+        height: auto;
+        /* Maintains aspect ratio */
     }
 
 
 
-   
+
 
 
 }

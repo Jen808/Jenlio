@@ -285,14 +285,41 @@ pj shift button
 @media (max-width: 768px) {
     .frame {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .proto-des {
+        display: none;
+
     }
 
     .mobile {
-        height: 600px;
-        width: 95%;
+        display: none;
+        /* width: 86vw !important;
+        height: 200vw !important; */
+
+    }
+
+    .desktop {
+        display: none;
+
+        /* width: 90vw !important;
+        height: 76vw !important; */
+    }
+
+
+    .oifm,
+    .oifd {
+        color: #FFF !important;
+        background-color: #FF6B00 !important;
+        font-weight: 700;
+        padding: 16px 10px;
+        border-radius: 20vw;
+        cursor: pointer;
+        font-size: 14px;
     }
 
     .subtle {
