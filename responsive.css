@@ -151,15 +151,15 @@
 
 
     .des-box {
-        width: auto;
+        width: 90vw;
         height: 55vh;
-        padding-left: 0;
+        padding:0;
         /* display: flex;
         flex-direction: column; */
         text-align: center;
         transform: translateX(0);
-        align-items: center;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
     .title {
@@ -183,12 +183,15 @@
 
     .des {
         font-size: 1em;
+        padding: 0;
         padding-top: 2vh;
-        padding-left: 8vw;
+        padding-left: 6vw;
         font-weight: 500;
-        width: 75vw;
+        width: 78vw;
         text-align: center;
         line-height: 2.5vh;
+
+
 
 
 
@@ -293,6 +296,18 @@
         right: -30px !important;
         padding: 10px 16px !important;
 
+    }
+
+    .ux-sort{
+        text-align: center;
+        width: 70vw;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        margin-bottom: 3em;
+        line-height: 26px;
+
+    
     }
 
 

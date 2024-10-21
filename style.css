@@ -717,3 +717,12 @@ path {
 /* .colored{
     color: #F87474 !important;
 } */
+
+
+.ux-sort{
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-bottom: 3em;
+
+}
