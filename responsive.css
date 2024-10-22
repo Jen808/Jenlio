@@ -101,6 +101,7 @@
         font-weight: 600;
         margin-top: 20px;
         text-align: center;
+        line-height: 22px;
     }
 
 
@@ -189,7 +190,7 @@
         font-weight: 500;
         width: 78vw;
         text-align: center;
-        line-height: 2.5vh;
+        line-height: 22px;
 
 
 
