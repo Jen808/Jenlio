@@ -137,7 +137,7 @@ a:focus .index-linkedin {
 
 svg {
     fill: none;
-    height: 10vh;
+    height: vh;
     stroke-width: 60px;
     stroke-linecap: round;
 }
@@ -419,7 +419,7 @@ path {
     font-weight: 600;
     text-decoration: underline;
     cursor: pointer;
-    color: black;
+    color: #F87474;
 }
 
 
