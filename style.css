@@ -8,6 +8,7 @@ body {
     height: 100%;
     width: 100%;
     background: #FCEDDA;
+    /* cursor: none; */
     /* display: flex;
     align-items: center;
     flex-direction: column; */
@@ -46,8 +47,8 @@ a {
 
 a:focus .index-email,
 a:focus .index-linkedin {
-    border: 2px solid black;  
-    border-radius: 15px;      
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 .index-linkedin {
@@ -58,13 +59,13 @@ a:focus .index-linkedin {
     width: auto;
 }
 
-.index-header {
+.index-main {
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    height: 10vw;
     justify-content: center;
     align-items: center;
-
+    margin: 20vw;
 
 
 }
@@ -381,7 +382,7 @@ path {
 }
 
 .jenlio {
-    width: 85vw;
+    width: 100vw;
     height: auto;
     margin-bottom: 10vh;
     display: flex;
@@ -396,7 +397,9 @@ path {
 
 }
 
-.sub-container {
+.index-github {
+    width: 14em;
+    height: 2em;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -404,12 +407,13 @@ path {
     border-radius: 5vw;
     margin: 3vw 0vw;
     align-items: center;
+    justify-content: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
 
 }
 
-.sub-title{
+.sub-title {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     font-weight: 600;
@@ -561,7 +565,7 @@ path {
     width: 60%;
 }
 
-.jenbold{
+.jenbold {
     font-weight: 700;
 }
 
@@ -632,7 +636,13 @@ path {
 
 
 
-
+.ux-pj-intro{
+    font-size: 2em;
+    font-weight: 700;
+    color:#F87474;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5em;
+}
 
 
 
@@ -642,7 +652,7 @@ path {
     flex-wrap: wrap;
     max-width: 45vw;
     height: 5vh;
-    width: auto;
+    width: 90vw;
     gap: 1vw;
     padding-top: 5vh;
 }
@@ -719,10 +729,33 @@ path {
 } */
 
 
-.ux-sort{
+.ux-sort {
     font-size: 1.4em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     margin-bottom: 3em;
 
 }
+
+/* img,
+a,
+.sec{
+    cursor: none;
+} */
+
+
+
+
+/* .custom-cursor {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to top left, #0062bE, #00A2FE);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 2000;
+} */
