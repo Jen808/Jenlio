@@ -129,6 +129,7 @@ a:focus .index-linkedin {
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+    align-items: left;
 
 
 }
@@ -137,7 +138,7 @@ a:focus .index-linkedin {
 
 svg {
     fill: none;
-    height: vh;
+    height: 5vh;
     stroke-width: 60px;
     stroke-linecap: round;
 }
@@ -397,21 +398,6 @@ path {
 
 }
 
-.index-github {
-    width: 14em;
-    height: 2em;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 1vw 2vw;
-    border-radius: 5vw;
-    margin: 3vw 0vw;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-
-
-}
 
 .sub-title {
     font-family: 'Roboto', sans-serif;
