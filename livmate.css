@@ -308,6 +308,10 @@ body {
     text-decoration: underline;
 }
 
+.index a:hover{
+    color: var(--color-title);
+}
+
 .des {
     font-size: 1.1em;
     font-weight: 600;
