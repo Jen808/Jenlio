@@ -1,8 +1,32 @@
+/* ========================================
+root
+========================================  */
+
+:root {
+
+    --pink: #FFDFDF;
+    --teal: #005E70;
+    --teal-light: #D9E7EA;
+    --pink-original: #F87474;
+    --pink-light: #FEECEC;
+    --teal-superlight: #F2F7F8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 html,
 body {
-    /* height: 100%; */
     width: 100%;
-    background: #FCEDDA;
+    background: #FFF;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -20,114 +44,6 @@ body {
 
 }
 
-/* 
-.header {
-    width: 95%;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5vh;
-}
-
-
-.logo-name {
-    display: flex;
-    align-items: center;
-}
-
-
-.logo {
-    width: 3vw;
-    height: auto;
-
-}
-
-.name {
-    width: 12vw;
-    height: auto;
-    padding-left: 1vw;
-
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 40vw;
-    height: auto;
-
-}
-
-
-.edu,
-.chs,
-.art,
-.my {
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 1vw;
-    font-weight: 400;
-    color: #F87474;
-
-}
-
-
-.chs {
-    font-weight: 800;
-}
-
-
-a {
-    text-decoration: none; 
-}
-
-
-.email {
-    text-decoration: none;
-
-    height: auto;
-    width: 3vw;
-    padding-right: 3vw;
-
-}
-
-.linkedin {
-    text-decoration: none;
-
-
-    height: auto;
-    width: 3vw;
-
-} */
-
-
-/* .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10vh;
-    position: absolute;
-    left: 10vw;
-    top: 20vh;
-
-}
-
-.logo-edu {
-    width: 5vw;
-    height: auto;
-}
-
-.title-name {
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2vw;
-    font-weight: 800;
-    color: #F87474;
-    padding-left: 1vw;
-} */
-
 
 
 .chart {
@@ -138,54 +54,9 @@ a {
 }
 
 
-.footer {
-    height: 15%;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-
-.ty-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
-}
-
-
-.footer-icon {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    height: 5vh;
-    width: auto;
-    padding: 2.5vh 0 2.5vh 0;
-}
-
-.email-footer,
-.linkedin-footer {
-    height: 5vh;
-    width: auto;
-}
-
-.copyright {
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 0.9em;
-
-}
-
-
 
 #container {
     width: 80vw;
-    /* Full-width container */
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -199,8 +70,7 @@ a {
 .visible-content {
     width: 100%;
     height: 20vw;
-    /* 1000px in vw */
-    background-color: white;
+    background-color: var(--teal-light);
     text-align: center;
     padding-top: 3vw;
     box-sizing: border-box;
@@ -208,8 +78,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* border-bottom: 1px solid #ddd; */
 }
 
 
@@ -223,11 +91,9 @@ a {
 .hidden-content {
     width: 100%;
     height: 20vw;
-    background-color: #FFF8EE;
+    background-color: var(--teal-superlight);
     display: none;
-    /* Hidden by default */
     text-align: center;
-    /* margin-top: 30vw; */
     box-sizing: border-box;
     border-bottom: 1px solid #ddd;
     position: relative;
@@ -235,20 +101,12 @@ a {
     z-index: 0;
     padding-top: 3vw;
     box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.5);
-
-
-    /* opacity: 0; */
-
-    /* transition: height 0.5s ease, margin-top 0.5s ease; */
 }
 
 .hidden-content.show {
     display: block;
     animation: slideInDown 1s ease-in;
-    /* animation: slideInUp 1s ease-out; */
 
-    /* margin-top: 30vw; */
-    /* opacity: 1;  */
 }
 
 
@@ -305,28 +163,28 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 8vw;
+    width: 9vw;
     height: 2.5vw;
-    /* padding: 1vw; */
     font-size: 1vw;
     font-weight: 500;
 
     cursor: pointer;
-    background-color: transparent;
-    color: #F87474;
+    background-color: #FFF;
+    color: var(--teal);
     border: none;
     text-align: center;
-    border: 1px #F87474 solid;
+    border: 1px var(--teal) solid;
     border-radius: 10vw;
     z-index: 10;
     margin-top: 2.5vw;
-    /* border-bottom: 1px solid #ddd; */
 }
 
 
 .toggle-button:hover {
     font-weight: 600;
     text-decoration: underline;
+    background-color: var(--pink-light);
+    color: var(--teal);
 }
 
 .arrow {
@@ -349,22 +207,12 @@ a {
     margin: 0.7vw;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-    /* cursor: pointer; */
     position: relative;
     z-index: 1;
 
 
 }
 
-/* .t.expanded {
-    position: fixed;
-    width: 300px;
-    height: auto;
-    transform: scale(1.5); 
-    z-index: 100; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    background-color: white;
-} */
 
 
 #v2 {
@@ -390,29 +238,6 @@ a {
     height: 100%;
 }
 
-
-/* #v1{
-    z-index:8;
-}
-
-#v2{
-    z-index:7;
-}
-#v3{
-    z-index:6;
-}
-#v4{
-    z-index:5;
-}
-#v5{
-    z-index:4;
-}
-#v6{
-    z-index:3;
-}
-#v7{
-    z-index:2;
-} */
 
 .cb0 {
     width: 39%;
@@ -599,7 +424,6 @@ span {
 .company {
     display: flex;
     flex-direction: column;
-    /* align-items: right; */
     width: 30%;
 }
 
@@ -657,11 +481,11 @@ span {
 .space {
     font-size: 1.5vw;
     font-weight: 600;
-    color: #F87474;
+    color: var(--teal);
     padding-top: 7vw;
     padding-bottom: 3vw;
     width: 100%;
-    background-color: #FCEDDA;
+    background-color: #FFF;
     display: flex;
     justify-content: center;
     z-index: 5;
@@ -672,8 +496,6 @@ span {
 .loading-spinner {
     width: 5vw;
     height: 5vw;
-    /* border: 5px solid #ccc;
-    border-top: 5px solid #333; */
     background-image: url('src/me-24.png');
     background-color: transparent;
     background-repeat: no-repeat;
@@ -706,6 +528,18 @@ span {
 .hidden-h-group.show .h-group {
     display: block;
 }
+
+
+
+@media (max-width: 1000px) {
+
+    .intro {
+        margin-top: 15vw;
+    }
+
+}
+
+
 
 
 

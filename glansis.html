@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="responsive-head-foot.css">
+    <!-- <link rel="stylesheet" href="responsive-head-foot.css"> -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="glansis.css">
     <link rel="stylesheet" href="ux-responsive.css">
     <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="cursor.css">
+
 
 
 
@@ -19,12 +21,15 @@
 
     <style>
         .ux {
-            font-weight: 800 !important;
+            background-color: #FFDFDF !important;
+            color: #005E70 !important;
+            padding: 15px !important;
+            border-radius: 30px !important;
         }
 
-        .menu-toggle {
+        /* .menu-toggle {
             display: none;
-        }
+        } */
     </style>
 
 
@@ -34,7 +39,7 @@
 
 <body>
 
-    <button id="feedbackBtn">Feedback</button>
+    <button id="feedbackBtn" class="feedbackBtn">Feedback</button>
 
     <div id="feedbackFormContainer">
         <h2>How was your experience?</h2>
@@ -76,16 +81,348 @@
         </form>
     </div>
 
+    <script>
+
+        "use strict";
+        // =========================
+        // Cursor
+        // =========================
+
+
+
+        window.onload = function () {
+            const customCursor = document.createElement('div');
+            customCursor.classList.add('custom-cursor');
+            document.body.appendChild(customCursor);
+
+            document.addEventListener('mousemove', (e) => {
+                customCursor.style.left = `${e.clientX}px`;
+                customCursor.style.top = `${e.clientY}px`;
+            });
+
+            const secElements = document.querySelectorAll('.sec');
+            const secingElements = document.querySelectorAll('.sec-ing');
+            const ameElements = document.querySelectorAll('.ame');
+            const uxElements = document.querySelectorAll('.ux');
+            const chsElements = document.querySelectorAll('.chs');
+            const artElements = document.querySelectorAll('.art');
+            const myElements = document.querySelectorAll('.my');
+            const emailElements = document.querySelectorAll('.email');
+            const emailfooterElements = document.querySelectorAll('.email-footer');
+            const linkedinElements = document.querySelectorAll('.linkedin');
+            const linkedinfooterElements = document.querySelectorAll('.linkedin-footer');
+            const logoElements = document.querySelectorAll('.logo');
+            const gitElements = document.querySelectorAll('.github-button');
+            const fbElements = document.querySelectorAll('.feedbackBtn');
+            const lastpElements = document.querySelectorAll('.shift-previous');
+            const nextpElements = document.querySelectorAll('.shift-next');
+            const openfElements = document.querySelectorAll('.oifm');
+            const openfdElements = document.querySelectorAll('.oifd');
+            const indexElements = document.querySelectorAll('.index a');
+
+
+
+
+
+
+
+
+
+
+            secElements.forEach(sec => {
+                sec.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.backgroundColor = 'black';
+                    customCursor.style.borderColor = 'white';
+                    customCursor.style.borderWidth = '4px';
+                    customCursor.style.fontSize = '50px';
+                    customCursor.style.width = '80px';
+                    customCursor.style.height = '80px';
+
+
+                });
+
+                sec.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '#FFDFDF';
+                    customCursor.style.borderWidth = '2px';
+                    customCursor.style.fontSize = '32px';
+                    customCursor.style.width = '50px';
+                    customCursor.style.height = '50px';
+
+
+                });
+            });
+
+
+            secingElements.forEach(secing => {
+                secing.addEventListener('mouseover', () => {
+                    customCursor.textContent = '⛔';
+                    customCursor.style.backgroundColor = 'black';
+                    customCursor.style.borderColor = 'white';
+                    customCursor.style.fontSize = '50px';
+
+
+
+                });
+
+                secing.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '#FFDFDF';
+                    customCursor.style.fontSize = '32px';
+
+
+
+                });
+            });
+
+            ameElements.forEach(ame => {
+                ame.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖐️';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ame.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            uxElements.forEach(ux => {
+                ux.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👩‍💻';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ux.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            chsElements.forEach(chs => {
+                chs.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎯';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                chs.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            artElements.forEach(art => {
+                art.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎨';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                art.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            myElements.forEach(my => {
+                my.addEventListener('mouseover', () => {
+                    customCursor.textContent = '😊';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                my.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            emailElements.forEach(email => {
+                email.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                email.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            emailfooterElements.forEach(emailfooter => {
+                emailfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                emailfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            linkedinElements.forEach(linkedin => {
+                linkedin.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedin.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            linkedinfooterElements.forEach(linkedinfooter => {
+                linkedinfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedinfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+            logoElements.forEach(logo => {
+                logo.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🏠';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                logo.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            gitElements.forEach(git => {
+                git.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖥️';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                git.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            fbElements.forEach(fb => {
+                fb.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔔';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                fb.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            lastpElements.forEach(lastp => {
+                lastp.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                lastp.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            nextpElements.forEach(nextp => {
+                nextp.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                nextp.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+            openfElements.forEach(openf => {
+                openf.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🗝️';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                openf.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            openfdElements.forEach(openfd => {
+                openfd.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🗝️';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                openfd.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            indexElements.forEach(index => {
+                index.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👁️';
+                    customCursor.style.fontSize = '32px';
+                    customCursor.style.backgroundColor = 'transparent';
+                    customCursor.style.borderColor = 'transparent';
+                });
+
+                index.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
+
+                });
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        };
+
+
+    </script>
+
+
+
+
+
+
+
+    <!-- ================================
+Header
+================================ -->
+
+
+
     <div class="header">
 
-        <div class="logo-name">
-            <a href="index.html">
-                <img src="src/me-24.png" alt="Logo" class="logo">
-            </a>
-            <a href="index.html">
-                <div class="name">Jennifer Jung</div>
-            </a>
-        </div>
+        <a href="index.html">
+            <img src="src/me-24.png" alt="Logo" class="logo">
+        </a>
+
 
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
@@ -94,43 +431,51 @@
         </div>
 
 
-        <nav class="menu" id="navMenu">
-            <a href="AboutMe.html" class="ame">About Me</a>
-            <a href="index.html#UX-Design" class="ux">UX Design</a>
-            <a href="chs.html" class="chs">Promotional Materials</a>
-            <a href="art.html" class="art">Art Gallery</a>
-            <a href="src/Resume-Jennifer Jung-Sep.24.pdf" target="_blank" class="my">Resume</a>
+        <div class="header-right">
 
-            <div class="burger-footer">
+            <nav class="menu" id="navMenu">
+                <a href="AboutMe.html" class="ame">About Me</a>
+                <a href="index.html#UX-Design" class="ux">UX Design</a>
+                <a href="chs.html" class="chs">Promotional Materials</a>
+                <a href="art.html" class="art">Art Gallery</a>
+                <a href="src/JenniferJung_UXDesignerResume(Nov.24)_Digital.pdf" target="_blank" class="my">Resume</a>
 
-                <div class="burger-info">
-                    <div class="burger-name">Jennifer Jung</div>
-                    <div class="burger-short">Thanks for visiting and please come again</div>
-                    <div class="burger-copy">© 2024 Jennifer Jung</div>
+                <div class="burger-footer">
+
+                    <div class="burger-info">
+                        <div class="burger-name">Jennifer Jung</div>
+                        <div class="burger-short">Thanks for visiting and please come again</div>
+                        <div class="burger-copy">© 2024 Jennifer Jung</div>
+                    </div>
+
+                    <div class="sns">
+                        <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                            <img src="src/logo-email.png" alt="email" class="email">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                            <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                        </a>
+                    </div>
+
                 </div>
 
-                <div class="sns">
-                    <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                        <img src="src/logo-email.png" alt="email" class="email">
-                    </a>
-                    <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                        <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-                    </a>
-                </div>
 
+            </nav>
+
+            <div class="desktop-sns">
+                <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                    <img src="src/logo-email.png" alt="email" class="email">
+                </a>
+                <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                    <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                </a>
             </div>
-        </nav>
 
-        <div class="desktop-sns">
-            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                <img src="src/logo-email.png" alt="email" class="email">
-            </a>
-            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-            </a>
         </div>
-    </div>
 
+
+
+    </div>
 
 
     </div>
@@ -142,7 +487,35 @@
     <!-- <img src="src/chs.png" class="chart"> -->
     <div class="title">
 
-        <img src="src/main.png" alt="GLNASIS Representative Image" class="mainimg">
+        <!-- <img src="src/main.png" alt="GLNASIS Representative Image" class="mainimg"> -->
+
+        <div class="mainimg-container">
+            <video controls autoplay muted class="mainimg1" id="video1">
+                <source src="src/vid/glansis-m.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+
+            <video controls autoplay muted class="mainimg2" id="video2">
+                <source src="src/vid/glansis-d.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+<!-- 
+
+        <script>
+            const video1 = document.getElementById('video1');
+            const video2 = document.getElementById('video2');
+
+            video2.pause();
+
+            video1.addEventListener('ended', function () {
+                video2.play();
+            });
+        </script> -->
+
 
         <div class="title-container">
             <div class="tools">
@@ -151,12 +524,13 @@
             </div>
             <div class="title-box">GLANSIS</div>
             <div class="title-des">
-                <li><a href=#fp>Final Prototype</a></li>
-                <li><a href=#cl>Client</a></li>
-                <li><a href=#ps>Problem Statement</a></li>
-                <li><a href=#es>Executive Summary</a></li>
-                <li><a href=#sg>Style Guide</a></li>
-                <li><a href=#kd>Key Deisgn Decision</a></li>
+                <li class="index"><a href=#cl>Client</a></li>
+                <li class="index"><a href=#ps>Problem Statement</a></li>
+                <li class="index"><a href=#es>Executive Summary</a></li>
+                <li class="index"><a href=#sg>Style Guide</a></li>
+                <li class="index"><a href=#kd>Key Deisgn Decision</a></li>
+                <li class="index"><a href=#fp>Final Prototype</a></li>
+
             </div>
             <div class="brief">
                 <div class="cal-box">
@@ -199,13 +573,13 @@
 
             </div>
             <div class="shift-container">
-                <a href="vendors.html" class="shift-previous"> Previous Project</a>
+                <a href="my-widdy.html" class="shift-previous"> Previous Project</a>
                 <a href="roosroast.html" class="shift-next"> Next Project</a>
             </div>
         </div>
     </div>
 
-    <div class="main-container">
+    <!-- <div class="main-container">
         <div class="final-prototype" tabindex="0">
             <div class="final-prototype-title" id="fp">Final Prototype</div>
             <div class="proto-des">Try scroll & click over screen below!</div>
@@ -213,7 +587,8 @@
             <div class="frame">
                 <div class="column-container1">
                     <iframe class="mobile"
-                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSKT391YXwEUY5eWtpfm4jG%2FGLANSIS-Mobile%3Ft%3Dxx1pgbE5PK129zeW-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D1-1235" allowfullscreen></iframe>
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSKT391YXwEUY5eWtpfm4jG%2FGLANSIS-Mobile%3Ft%3Dxx1pgbE5PK129zeW-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D1-1235"
+                        allowfullscreen></iframe>
                     <div class="oifm">
                         <a
                             href="https://www.figma.com/proto/SKT391YXwEUY5eWtpfm4jG/GLANSIS-Mobile?content-scaling=fixed&kind=proto&node-id=1-1235&page-id=0%3A1&scaling=scale-down&t=FdABPKadPi2PWwwp-1">
@@ -223,7 +598,8 @@
                 </div>
                 <div class="column-container2">
                     <iframe class="desktop"
-                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqT8DPucO8VBYbWS7EgO7yP%2FGLANSIS-Desktop%3Ft%3Dpnzr4uE4TvvCChrY-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D0-574" allowfullscreen></iframe>
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqT8DPucO8VBYbWS7EgO7yP%2FGLANSIS-Desktop%3Ft%3Dpnzr4uE4TvvCChrY-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D0-574"
+                        allowfullscreen></iframe>
                     <div class="oifd">
                         <a
                             href="https://www.figma.com/proto/qT8DPucO8VBYbWS7EgO7yP/GLANSIS-Desktop?content-scaling=fixed&kind=proto&node-id=0-574&page-id=0%3A1&scaling=scale-down&t=WpNkHSceHDTc2sMN-1">
@@ -231,105 +607,103 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="client" tabindex="0">
-            <div class="client-title" id="cl">Client</div>
-            <div class="client-container">
+        </div> -->
+    <div class="client" tabindex="0">
+        <div class="client-title" id="cl">Client</div>
+        <div class="client-container">
 
-                <img src="src/noaa.png" alt="NOAA logo" class="client-photo">
+            <img src="src/noaa.png" alt="NOAA logo" class="client-photo">
 
-                <div class="client-des-container">
-                    <div class="client-name">Rochelle Sturtevant, Ph.D.</div>
-                    <div class="client-des">
-                        GLANSIS Program Manager
-                        <li>Michigan Sea GRant, Michigan State University Extension</li>
-                        <li>NOAA Great Lakes Environmental Research Laboratory</li>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="problem-statement-box" tabindex="0">
-            <div class="problem-statement-title" id="ps">Problem Statement</div>
-            <div class="problem-statement">
-                <img src="src/glansis-ps1.png" alt="Problem statement photo" class="problem-statement-photo"
-                    tabindex="0">
-                <div class="problem-statement-des">
-                    <div class="user-scenario" tabindex="0">User Scenario #1
-                        <div class="us-des">A science teacher needs a lesson for their 8th grade students which is
-                            aligned to the next generation science standard on ecosystems.
-                            <br><br>
-                            They would also like an age appropriate video to accompany their lesson
-                        </div>
-                    </div>
-                    <div class="problem" tabindex="0">Problem 1
-                        <div class="problem-des">Hard to understand for people especially for 8th grade students due to
-                            professional words and complicated datas.
-                            <br><br>
-                            GLANSIS needs more graphic elements to make a wide age range of users, what each word
-                            represents, what all figures represent, and what is expected to be based on the data.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="problem-statement">
-                <img src="src/glansis-ps2.png" alt="Problem statement photo" class="problem-statement-photo"
-                    tabindex="0">
-                <div class="problem-statement-des">
-                    <div class="user-scenario" tabindex="0">User Scenario #2
-                        <div class="us-des">4th grade student has been assigned to write a paper on a local invasive
-                            species (e.g. Zebra Mussels)
-                        </div>
-                    </div>
-                    <div class="problem" tabindex="0">Problem 2
-                        <div class="problem-des">“Worldwide, invasive species and habitat loss are the top two threats
-                            to biodiversity” (slide p.g.4) Hard to make a relationship with what will this affect to
-                            future. And there was no video I could watch to understand the data.
-                            <br><br>
-                            To learn about Zebra Mussels, there is a video inside the Educator Hub, but user need to get
-                            through 3 steps. Also first step (Educator Hub) is only menu which is not in the main page
-                            in the middle. People may not expect it contain video materials.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="executive-summary" tabindex="0">
-            <div class="executive-summary-title" id="es">Executive Summary</div>
-            <div class="executive-summary-des">This project is about
-                <span>reconstructing GLANSIS by NOAA </span>for many different
-                reasons. There are lots of categories, and contain big datas.
-                <br><br>
-                Rochelle Sturtevant, our client visited us to convey their information, structures, and what they needs.
-                Supporting materials with their existing website was main resource of my research.
-                <br><br>
-                My focus of this reconstruction was <span>
-                    Educator Hub.
-                </span>
-                <br><br>
-                Key design decisions were following below.
-            </div>
-            <div class="kd-box">
-                <div class="kd1">
-                    <div class="kd-title" tabindex="0">1. Easily expectable</div>
-                    <img src="src/kd1.png" class="kd" alt="Key design decision 1">
-                </div>
-                <div class="kd2-3">
-                    <div class="kd2">
-                        <div class="kd-title" tabindex="0">2. Recognize which section they are exploring</div>
-                        <img src="src/kd2.png" class="kd" alt="Key design decision 2">
-                    </div>
-                    <div class="kd3">
-                        <div class="kd-title" tabindex="0">3. Make user to keep explore, keep in touch</div>
-                        <img src="src/kd3.png" class="kd" alt="Key design decision 3">
-                    </div>
-
+            <div class="client-des-container">
+                <div class="client-name">Rochelle Sturtevant, Ph.D.</div>
+                <div class="client-des">
+                    GLANSIS Program Manager
+                    <li>Michigan Sea GRant, Michigan State University Extension</li>
+                    <li>NOAA Great Lakes Environmental Research Laboratory</li>
                 </div>
 
             </div>
 
         </div>
+    </div>
+    <div class="problem-statement-box" tabindex="0">
+        <div class="problem-statement-title" id="ps">Problem Statement</div>
+        <div class="problem-statement">
+            <img src="src/glansis-ps1.png" alt="Problem statement photo" class="problem-statement-photo" tabindex="0">
+            <div class="problem-statement-des">
+                <div class="user-scenario" tabindex="0">User Scenario #1
+                    <div class="us-des">A science teacher needs a lesson for their 8th grade students which is
+                        aligned to the next generation science standard on ecosystems.
+                        <br><br>
+                        They would also like an age appropriate video to accompany their lesson
+                    </div>
+                </div>
+                <div class="problem" tabindex="0">Problem 1
+                    <div class="problem-des">Hard to understand for people especially for 8th grade students due to
+                        professional words and complicated datas.
+                        <br><br>
+                        GLANSIS needs more graphic elements to make a wide age range of users, what each word
+                        represents, what all figures represent, and what is expected to be based on the data.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="problem-statement">
+            <img src="src/glansis-ps2.png" alt="Problem statement photo" class="problem-statement-photo" tabindex="0">
+            <div class="problem-statement-des">
+                <div class="user-scenario" tabindex="0">User Scenario #2
+                    <div class="us-des">4th grade student has been assigned to write a paper on a local invasive
+                        species (e.g. Zebra Mussels)
+                    </div>
+                </div>
+                <div class="problem" tabindex="0">Problem 2
+                    <div class="problem-des">“Worldwide, invasive species and habitat loss are the top two threats
+                        to biodiversity” (slide p.g.4) Hard to make a relationship with what will this affect to
+                        future. And there was no video I could watch to understand the data.
+                        <br><br>
+                        To learn about Zebra Mussels, there is a video inside the Educator Hub, but user need to get
+                        through 3 steps. Also first step (Educator Hub) is only menu which is not in the main page
+                        in the middle. People may not expect it contain video materials.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="executive-summary" tabindex="0">
+        <div class="executive-summary-title" id="es">Executive Summary</div>
+        <div class="executive-summary-des">This project is about
+            <span>reconstructing GLANSIS by NOAA </span>for many different
+            reasons. There are lots of categories, and contain big datas.
+            <br><br>
+            Rochelle Sturtevant, our client visited us to convey their information, structures, and what they needs.
+            Supporting materials with their existing website was main resource of my research.
+            <br><br>
+            My focus of this reconstruction was <span>
+                Educator Hub.
+            </span>
+            <br><br>
+            Key design decisions were following below.
+        </div>
+        <div class="kd-box">
+            <div class="kd1">
+                <div class="kd-title" tabindex="0">1. Easily expectable</div>
+                <img src="src/kd1.png" class="kd" alt="Key design decision 1">
+            </div>
+            <div class="kd2-3">
+                <div class="kd2">
+                    <div class="kd-title" tabindex="0">2. Recognize which section they are exploring</div>
+                    <img src="src/kd2.png" class="kd" alt="Key design decision 2">
+                </div>
+                <div class="kd3">
+                    <div class="kd-title" tabindex="0">3. Make user to keep explore, keep in touch</div>
+                    <img src="src/kd3.png" class="kd" alt="Key design decision 3">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     </div>
     <div class="style-guide">
         <div class="style-guide-title" id="sg">Style Guide</div>
@@ -456,10 +830,7 @@
         </div>
     </div>
 
-    <div class="b-shift-container">
-        <a href="vendors.html" class="shift-previous"> Previous Project</a>
-        <a href="roosroast.html" class="shift-next"> Next Project</a>
-    </div>
+
 
 
     <div class="final-prototype" tabindex="0">
@@ -467,7 +838,8 @@
         <div class="frame">
             <div class="column-container1">
                 <iframe class="mobile"
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSKT391YXwEUY5eWtpfm4jG%2FGLANSIS-Mobile%3Ft%3Dxx1pgbE5PK129zeW-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D1-1235" allowfullscreen></iframe>
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSKT391YXwEUY5eWtpfm4jG%2FGLANSIS-Mobile%3Ft%3Dxx1pgbE5PK129zeW-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D1-1235"
+                    allowfullscreen></iframe>
                 <div class="oifm">
                     <a
                         href="https://www.figma.com/proto/SKT391YXwEUY5eWtpfm4jG/GLANSIS-Mobile?content-scaling=fixed&kind=proto&node-id=1-1235&page-id=0%3A1&scaling=scale-down&t=FdABPKadPi2PWwwp-1">
@@ -477,7 +849,8 @@
             </div>
             <div class="column-container2">
                 <iframe class="desktop"
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqT8DPucO8VBYbWS7EgO7yP%2FGLANSIS-Desktop%3Ft%3Dpnzr4uE4TvvCChrY-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D0-574" allowfullscreen></iframe>
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqT8DPucO8VBYbWS7EgO7yP%2FGLANSIS-Desktop%3Ft%3Dpnzr4uE4TvvCChrY-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D0-574"
+                    allowfullscreen></iframe>
                 <div class="oifd">
                     <a
                         href="https://www.figma.com/proto/qT8DPucO8VBYbWS7EgO7yP/GLANSIS-Desktop?content-scaling=fixed&kind=proto&node-id=0-574&page-id=0%3A1&scaling=scale-down&t=WpNkHSceHDTc2sMN-1">
@@ -485,6 +858,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="b-shift-container">
+        <a href="my-widdy.html" class="shift-previous"> Previous Project</a>
+        <a href="roosroast.html" class="shift-next"> Next Project</a>
     </div>
 
 
@@ -515,7 +893,7 @@
             console.log(entry)
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-            } 
+            }
             // else {
             //     entry.target.classList.remove('show');
             // }

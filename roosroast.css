@@ -8,6 +8,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.index a {
+    cursor: none;
+}
+
 .title {
     /* height: 70vh;
     width: 100%; */
@@ -20,13 +24,27 @@ body {
 
 }
 
+.mainimg-container{
+    margin-top: 10vw;
+}
 
-.mainimg {
-    width: 50vw;
+
+.mainimg1 {
+    width: 10vw;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    margin-left: 8vw;
 
 }
+
+
+.mainimg2 {
+    width: 32vw;
+    height: auto;
+    object-fit: contain;
+
+}
+
 
 .title-container {
     display: flex;
@@ -172,6 +190,7 @@ body {
     width: 25em !important;
     height: 40em !important;
     border-style: none;
+    cursor: none;
 
 
 }
@@ -184,8 +203,17 @@ body {
     width: 55em !important;
     height: 40em !important;
     border-style: none;
+    cursor: none;
+
 
 }
+
+
+.oifm a,
+.oifd a{
+    cursor: none;
+}
+
 
 
 .column-container1 {
@@ -213,7 +241,7 @@ body {
     font-weight: 700;
     padding: 1.5em 3em;
     border-radius: 20vw;
-    cursor: pointer;
+    cursor: none;
 }
 
 
@@ -570,7 +598,7 @@ li {
 
 
 .e-3 {
-    background-color: #FFF;
+    background-color: #FFF9F2;
     width: 25vw;
     padding: 3vw;
     border-radius: 0 2vw 2vw 0;
@@ -669,7 +697,7 @@ pj shift button
 .shift-previous {
     background-color: #CF845F;
     margin-right: 2vw;
-    cursor: pointer;
+    cursor: none;
     color: white;
     font-size: 1vw;
     font-weight: 600;
@@ -685,7 +713,7 @@ pj shift button
 
 .shift-next {
     border: 1px solid #CF845F;
-    cursor: pointer;
+    cursor: none;
     color: #543C32;
     font-size: 1vw;
     font-weight: 600;
@@ -750,7 +778,7 @@ pj shift button
         font-weight: 700;
         padding: 16px 20px;
         border-radius: 20vw;
-        cursor: pointer;
+        cursor: none;
         font-size: 14px;
     }
 

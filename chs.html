@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="responsive-head-foot.css">
+    <!-- <link rel="stylesheet" href="responsive-head-foot.css"> -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="chs.css">
     <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="cursor.css">
+
 
 
 
@@ -19,6 +21,10 @@
     <style>
         .chs {
             font-weight: 800;
+            background-color: #FFDFDF !important;
+            color: #005E70 !important;
+            padding: 15px !important;
+            border-radius: 30px !important;
         }
 
         .menu-toggle {
@@ -32,7 +38,7 @@
 
 <body>
 
-    <button id="feedbackBtn">Feedback</button>
+    <button id="feedbackBtn" class="feedbackBtn">Feedback</button>
 
     <div id="feedbackFormContainer">
         <h2>How was your experience?</h2>
@@ -75,16 +81,234 @@
     </div>
 
 
+    <script>
+
+        "use strict";
+
+        // =========================
+        // Cursor
+        // =========================
+
+
+
+        window.onload = function () {
+            const customCursor = document.createElement('div');
+            customCursor.classList.add('custom-cursor');
+            document.body.appendChild(customCursor);
+
+            document.addEventListener('mousemove', (e) => {
+                customCursor.style.left = `${e.clientX}px`;
+                customCursor.style.top = `${e.clientY}px`;
+            });
+
+            const secElements = document.querySelectorAll('.toggle-button');
+            const ameElements = document.querySelectorAll('.ame');
+            const uxElements = document.querySelectorAll('.ux');
+            const chsElements = document.querySelectorAll('.chs');
+            const artElements = document.querySelectorAll('.art');
+            const myElements = document.querySelectorAll('.my');
+            const emailElements = document.querySelectorAll('.email');
+            const emailfooterElements = document.querySelectorAll('.email-footer');
+            const linkedinElements = document.querySelectorAll('.linkedin');
+            const linkedinfooterElements = document.querySelectorAll('.linkedin-footer');
+            const logoElements = document.querySelectorAll('.logo');
+            const gitElements = document.querySelectorAll('.github-button');
+            const fbElements = document.querySelectorAll('.feedbackBtn');
+
+
+
+
+
+
+
+            secElements.forEach(sec => {
+                sec.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.backgroundColor = 'black';
+                    customCursor.style.borderColor = 'white';
+                    customCursor.style.fontSize = '32px';
+
+
+
+                });
+
+                sec.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '#FFDFDF';
+
+
+                });
+            });
+
+
+
+            ameElements.forEach(ame => {
+                ame.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖐️';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ame.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            uxElements.forEach(ux => {
+                ux.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👩‍💻';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ux.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            chsElements.forEach(chs => {
+                chs.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎯';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                chs.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            artElements.forEach(art => {
+                art.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎨';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                art.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            myElements.forEach(my => {
+                my.addEventListener('mouseover', () => {
+                    customCursor.textContent = '😊';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                my.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            emailElements.forEach(email => {
+                email.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                email.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            emailfooterElements.forEach(emailfooter => {
+                emailfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                emailfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            linkedinElements.forEach(linkedin => {
+                linkedin.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedin.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            linkedinfooterElements.forEach(linkedinfooter => {
+                linkedinfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedinfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+            logoElements.forEach(logo => {
+                logo.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🏠';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                logo.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            gitElements.forEach(git => {
+                git.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖥️';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                git.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            fbElements.forEach(fb => {
+                fb.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔔';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                fb.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+
+
+
+
+        };
+
+
+    </script>
+
+    <!-- ================================
+Header
+================================ -->
+
+
+
     <div class="header">
 
-        <div class="logo-name">
-            <a href="index.html">
-                <img src="src/me-24.png" alt="Logo" class="logo">
-            </a>
-            <a href="index.html">
-                <div class="name">Jennifer Jung</div>
-            </a>
-        </div>
+        <a href="index.html">
+            <img src="src/me-24.png" alt="Logo" class="logo">
+        </a>
+
 
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
@@ -93,49 +317,61 @@
         </div>
 
 
-        <nav class="menu" id="navMenu">
-            <a href="AboutMe.html" class="ame">About Me</a>
-            <a href="index.html#UX-Design" class="ux">UX Design</a>
-            <a href="chs.html" class="chs">Promotional Materials</a>
-            <a href="art.html" class="art">Art Gallery</a>
-            <a href="src/Resume-Jennifer Jung-Sep.24.pdf" target="_blank" class="my">Resume</a>
+        <div class="header-right">
 
-            <div class="burger-footer">
+            <nav class="menu" id="navMenu">
+                <a href="AboutMe.html" class="ame">About Me</a>
+                <a href="index.html#UX-Design" class="ux">UX Design</a>
+                <a href="chs.html" class="chs">Promotional Materials</a>
+                <a href="art.html" class="art">Art Gallery</a>
+                <a href="src/JenniferJung_UXDesignerResume(Nov.24)_Digital.pdf" target="_blank" class="my">Resume</a>
 
-                <div class="burger-info">
-                    <div class="burger-name">Jennifer Jung</div>
-                    <div class="burger-short">Thanks for visiting and please come again</div>
-                    <div class="burger-copy">© 2024 Jennifer Jung</div>
+                <div class="burger-footer">
+
+                    <div class="burger-info">
+                        <div class="burger-name">Jennifer Jung</div>
+                        <div class="burger-short">Thanks for visiting and please come again</div>
+                        <div class="burger-copy">© 2024 Jennifer Jung</div>
+                    </div>
+
+                    <div class="sns">
+                        <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                            <img src="src/logo-email.png" alt="email" class="email">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                            <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                        </a>
+                    </div>
+
                 </div>
 
-                <div class="sns">
-                    <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                        <img src="src/logo-email.png" alt="email" class="email">
-                    </a>
-                    <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                        <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-                    </a>
-                </div>
 
+            </nav>
+
+            <div class="desktop-sns">
+                <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                    <img src="src/logo-email.png" alt="email" class="email">
+                </a>
+                <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                    <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                </a>
             </div>
 
-
-        </nav>
-
-        <div class="desktop-sns">
-            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                <img src="src/logo-email.png" alt="email" class="email">
-            </a>
-            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-            </a>
         </div>
+
+
+
     </div>
 
 
     </div>
     <div class="content-overlay" id="contentOverlay"></div>
 
+
+
+    <!-- ================================
+Main
+================================ -->
 
 
     <div class="intro">

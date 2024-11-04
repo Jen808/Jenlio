@@ -8,6 +8,18 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.index a {
+    cursor: none;
+}
+
+
+.oifm a,
+.oifd a {
+    cursor: none;
+}
+
+
+
 
 .title {
     /* height: 70vh;
@@ -22,7 +34,7 @@ body {
 }
 
 
-.mainimg {
+.mainimg-still {
     width: 50vw;
     height: auto;
     object-fit: cover;
@@ -221,6 +233,42 @@ li a:hover {
     text-decoration: underline;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+#bgsection{
+    background-color: #fff5cf;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-bottom: 5vw;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==============================================
 pj shift button
 ============================================== */
@@ -244,7 +292,7 @@ pj shift button
 .shift-previous {
     background-color: #FFBE41;
     margin-right: 2vw;
-    cursor: pointer;
+    cursor: none;
     color: white;
     font-size: 1vw;
     font-weight: 600;
@@ -260,7 +308,7 @@ pj shift button
 
 .shift-next {
     border: 1px solid #FFBE41;
-    cursor: pointer;
+    cursor: none;
     color: #FF6B00;
     font-size: 1vw;
     font-weight: 600;
@@ -318,7 +366,7 @@ pj shift button
         font-weight: 700;
         padding: 16px 10px;
         border-radius: 20vw;
-        cursor: pointer;
+        cursor: none;
         font-size: 14px;
     }
 

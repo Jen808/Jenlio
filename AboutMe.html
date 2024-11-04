@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="responsive-head-foot.css">
+    <!-- <link rel="stylesheet" href="responsive-head-foot.css"> -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="AboutMe.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="cursor.css">
+
 
 
 
@@ -20,16 +22,21 @@
     <style>
         .ame {
             font-weight: 800 !important;
+            background-color: #FFDFDF !important;
+            color: #005E70 !important;
+            padding: 15px !important;
+            border-radius: 30px !important;
+            /* color: #E8934A !important; */
         }
 
-        .menu-toggle {
+        /* .menu-toggle {
             display: none;
         }
 
 
         .burger-info {
             display: none;
-        }
+        } */
     </style>
 
 </head>
@@ -103,16 +110,249 @@
         </div>
     </div> -->
 
+
+    <script>
+
+        "use strict";
+
+        // =========================
+        // Cursor
+        // =========================
+
+
+
+        window.onload = function () {
+            const customCursor = document.createElement('div');
+            customCursor.classList.add('custom-cursor');
+            document.body.appendChild(customCursor);
+
+            document.addEventListener('mousemove', (e) => {
+                customCursor.style.left = `${e.clientX}px`;
+                customCursor.style.top = `${e.clientY}px`;
+            });
+
+            const secElements = document.querySelectorAll('.sec');
+            const secingElements = document.querySelectorAll('.sec-ing');
+            const ameElements = document.querySelectorAll('.ame');
+            const uxElements = document.querySelectorAll('.ux');
+            const chsElements = document.querySelectorAll('.chs');
+            const artElements = document.querySelectorAll('.art');
+            const myElements = document.querySelectorAll('.my');
+            const emailElements = document.querySelectorAll('.email');
+            const emailfooterElements = document.querySelectorAll('.email-footer');
+            const linkedinElements = document.querySelectorAll('.linkedin');
+            const linkedinfooterElements = document.querySelectorAll('.linkedin-footer');
+            const logoElements = document.querySelectorAll('.logo');
+            const gitElements = document.querySelectorAll('.github-button');
+
+
+
+
+
+
+            secElements.forEach(sec => {
+                sec.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.backgroundColor = 'black';
+                    customCursor.style.borderColor = 'white';
+                    customCursor.style.borderWidth = '4px';
+                    customCursor.style.fontSize = '50px';
+                    customCursor.style.width = '80px';
+                    customCursor.style.height = '80px';
+
+
+                });
+
+                sec.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '#FFDFDF';
+                    customCursor.style.borderWidth = '2px';
+                    customCursor.style.fontSize = '32px';
+                    customCursor.style.width = '50px';
+                    customCursor.style.height = '50px';
+
+
+                });
+            });
+
+
+            secingElements.forEach(secing => {
+                secing.addEventListener('mouseover', () => {
+                    customCursor.textContent = '⛔';
+                    customCursor.style.backgroundColor = 'black';
+                    customCursor.style.borderColor = 'white';
+                    customCursor.style.fontSize = '50px';
+
+
+
+                });
+
+                secing.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '#FFDFDF';
+                    customCursor.style.fontSize = '32px';
+
+
+
+                });
+            });
+
+            ameElements.forEach(ame => {
+                ame.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖐️';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ame.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            uxElements.forEach(ux => {
+                ux.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👩‍💻';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ux.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            chsElements.forEach(chs => {
+                chs.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎯';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                chs.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            artElements.forEach(art => {
+                art.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎨';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                art.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            myElements.forEach(my => {
+                my.addEventListener('mouseover', () => {
+                    customCursor.textContent = '😊';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                my.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            emailElements.forEach(email => {
+                email.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                email.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            emailfooterElements.forEach(emailfooter => {
+                emailfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                emailfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            linkedinElements.forEach(linkedin => {
+                linkedin.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedin.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            linkedinfooterElements.forEach(linkedinfooter => {
+                linkedinfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedinfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+            logoElements.forEach(logo => {
+                logo.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🏠';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                logo.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            gitElements.forEach(git => {
+                git.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖥️';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                git.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+
+
+
+        };
+
+
+    </script>
+
+    <!-- ================================
+Header
+================================ -->
+
+
+
     <div class="header">
 
-        <div class="logo-name">
-            <a href="index.html">
-                <img src="src/me-24.png" alt="Logo" class="logo">
-            </a>
-            <a href="index.html">
-                <div class="name">Jennifer Jung</div>
-            </a>
-        </div>
+        <a href="index.html">
+            <img src="src/me-24.png" alt="Logo" class="logo">
+        </a>
+
 
         <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
@@ -121,43 +361,50 @@
         </div>
 
 
-        <nav class="menu" id="navMenu">
-            <a href="AboutMe.html" class="ame">About Me</a>
-            <a href="index.html#UX-Design" class="ux">UX Design</a>
-            <a href="chs.html" class="chs">Promotional Materials</a>
-            <a href="art.html" class="art">Art Gallery</a>
-            <a href="src/Resume-Jennifer Jung-Sep.24.pdf" target="_blank" class="my">Resume</a>
+        <div class="header-right">
 
-            <div class="burger-footer">
+            <nav class="menu" id="navMenu">
+                <a href="AboutMe.html" class="ame">About Me</a>
+                <a href="index.html#UX-Design" class="ux">UX Design</a>
+                <a href="chs.html" class="chs">Promotional Materials</a>
+                <a href="art.html" class="art">Art Gallery</a>
+                <a href="src/JenniferJung_UXDesignerResume(Nov.24)_Digital.pdf" target="_blank" class="my">Resume</a>
 
-                <div class="burger-info">
-                    <div class="burger-name">Jennifer Jung</div>
-                    <div class="burger-short">Thanks for visiting and please come again</div>
-                    <div class="burger-copy">© 2024 Jennifer Jung</div>
+                <div class="burger-footer">
+
+                    <div class="burger-info">
+                        <div class="burger-name">Jennifer Jung</div>
+                        <div class="burger-short">Thanks for visiting and please come again</div>
+                        <div class="burger-copy">© 2024 Jennifer Jung</div>
+                    </div>
+
+                    <div class="sns">
+                        <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                            <img src="src/logo-email.png" alt="email" class="email">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                            <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                        </a>
+                    </div>
+
                 </div>
 
-                <div class="sns">
-                    <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                        <img src="src/logo-email.png" alt="email" class="email">
-                    </a>
-                    <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                        <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-                    </a>
-                </div>
 
+            </nav>
+
+            <div class="desktop-sns">
+                <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                    <img src="src/logo-email.png" alt="email" class="email">
+                </a>
+                <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                    <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                </a>
             </div>
 
-
-        </nav>
-
-        <div class="desktop-sns">
-            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                <img src="src/logo-email.png" alt="email" class="email">
-            </a>
-            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-            </a>
         </div>
+
+
+
     </div>
 
 
@@ -165,40 +412,111 @@
     <div class="content-overlay" id="contentOverlay"></div>
 
 
+    <!-- ================================
+Home Content - Main
+================================ -->
+
+
 
     <div class="title">
     </div>
     <div class="main-content">
         <div class="introducing">
-        </div>
-        <div class="list-bg">
+            <div class="p-img-section">
+                <img src="src/profile/profile-index.png" class="p0" id="profile-index">
+                <div class="empty" id="e1"></div>
+                <img src="src/profile/profile1.jpg" class="p1" id="profile-img">
+                <div class="empty" id="e2"></div>
 
-            <div class="skillset">
-                <ul id="list-item-container">
-                    <div class="iam" tabindex="0">I AM</div>
-                    <li class="list-item">UX Designer</li>
-                    <li class="list-item">UX Researcher</li>
-                    <li class="list-item">UI Designer</li>
-                    <li class="list-item">Graphic Designer</li>
-                    <li class="list-item">Publication Designer</li>
-                    <li class="list-item">Web Designer</li>
-                    <li class="list-item">Web Developer</li>
-                    <li class="list-item">Interaction Designer</li>
-                    <li class="list-item">Front-end Developer</li>
-                    <li class="list-item">Back-end Developer</li>
-                    <li class="list-item">Marketing and Media Assistant</li>
-                    <li class="list-item">Motion Graphic Designer</li>
+
+
+                <div class="empty" id="e3"></div>
+                <img src="src/profile/profile2.jpg" class="p2" id="profile-img">
+                <img src="src/profile/profile3.jpg" class="p3" id="profile-img-s">
+                <div class="empty" id="e3-1">🎨</div>
+
+
+
+                <div class="empty" id="e4"></div>
+                <img src="src/profile/profile4.jpg" class="p4" id="profile-img">
+                <img src="src/profile/profile5.jpg" class="p5" id="profile-img-s">
+                <div class="empty" id="e4-1">🖌️</div>
+
+
+
+                <div class="empty" id="e5"></div>
+                <img src="src/profile/profile6.jpg" class="p6" id="profile-img">
+                <img src="src/profile/profile8.jpg" class="p8" id="profile-img">
+                <div class="empty" id="e5-1"></div>
+
+
+
+                <!-- <img src="src/profile/profile9.jpg" class="p9" id="profile-img-s"> -->
+
+                <div class="empty" id="e6-1"></div>
+                <div class="empty" id="e6"></div>
+
+                <img src="src/profile/profile10.jpg" class="p10" id="profile-img">
+                <img src="src/profile/profile12.jpg" class="p12" id="profile-img">
+                <img src="src/profile/profile13.jpg" class="p13" id="profile-img">
+                <div class="empty" id="e6-2">❤️</div>
+
+
+
+
+                <div class="empty" id="e7"></div>
+                <!-- <img src="src/profile/profile14.jpg" class="p14" id="profile-img"> -->
+                <img src="src/profile/profile15.jpg" class="p15" id="profile-img-s">
+                <!-- <img src="src/profile/profile16.jpg" class="p16" id="profile-img-s">
+                <img src="src/profile/profile17.jpg" class="p17" id="profile-img-s"> -->
+                <img src="src/profile/profile18.jpg" class="p18" id="profile-img-s">
+                <img src="src/profile/profile19.jpg" class="p19" id="profile-img-s">
+                <div class="empty" id="e7-1">🍳</div>
+
+
+
+                <div class="empty" id="e8"></div>
+                <img src="src/profile/profile20.jpg" class="p20" id="profile-img-n">
+                <!-- <div class="empty" id="e8-1">💅</div> -->
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="list-bg">
+
+                <div class="skillset">
+                    <ul id="list-item-container">
+                        <div class="iam" tabindex="0">I AM</div>
+                        <li class="list-item">UX Designer</li>
+                        <li class="list-item">UX Researcher</li>
+                        <li class="list-item">UI Designer</li>
+                        <li class="list-item">Graphic Designer</li>
+                        <!-- <li class="list-item">Publication Designer</li> -->
+                        <!-- <li class="list-item">Web Designer</li>
+                    <li class="list-item">Web Developer</li> -->
+                        <li class="list-item">Interaction Designer</li>
+                        <li class="list-item">Front-end Developer</li>
+                        <!-- <li class="list-item">Front-end Designer</li> -->
+                        <li class="list-item">Marketing and Media Assistant</li>
+                        <!-- <li class="list-item">Motion Graphic Designer</li>
                     <li class="list-item">Video Creator</li>
-                    <li class="list-item">Content Creator</li>
-                    <li class="list-item">Student</li>
-                    <li class="list-item small">Demure</li>
-                    <li class="list-item small">Dog sis</li>
-                    <li class="list-item small">Cook</li>
-                    <li class="list-item small">Pianist</li>
-                    <li class="list-item small">Flutist</li>
-                    <li class="list-item small">Swimmer</li>
-                    <li class="list-item small">Nail Artist</li>
-                </ul>
+                    <li class="list-item">Content Creator</li> -->
+                        <li class="list-item">Student</li>
+                        <!-- <li class="list-item small">Demure</li> -->
+                        <li class="list-item small">Dog sis</li>
+                        <li class="list-item small">Cook</li>
+                        <li class="list-item small">Pianist</li>
+                        <!-- <li class="list-item small">Flutist</li> -->
+                        <li class="list-item small">Swimmer</li>
+                        <li class="list-item small">Nail Artist</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -223,7 +541,7 @@
                     <div class="each-skill">
                         <div class="skill-title" id="s85">85%</div>
                         <div class="skill-des">
-                            <ol>Javascript | Python | Django</ol>
+                            <ol>Javascript | Adobe Premiere Pro </ol>
                             <ol>Git | Node.js | npm | Electron</ol>
                             <ol>Github | Netlify</ol>
                         </div>
@@ -231,7 +549,7 @@
                     <div class="each-skill">
                         <div class="skill-title" id="s70">70%</div>
                         <div class="skill-des">
-                            <ol>Adobe Premiere Pro</ol>
+                            <ol>Python | Django </ol>
                             <ol>jQuery | React | SCSS</ol>
                             <ol>Sketch | Zeplin</ol>
                         </div>
@@ -288,20 +606,25 @@
                 <div class="study-sec" id="sec3">
                     <div class="years">2017-2020</div>
                     <div class="focus" id="nopad" tabindex="0">Graphic Design / Motion Graphic</div>
-                    <div class="study-detail">As I explored art, graphic design caught my eye. I started with Photoshop
+                    <div class="study-detail">As I explored art, graphic design caught my eye. I started with
+                        Photoshop
                         and
                         Illustrator, then learned After Effects and Procreate to add interactivity.
                         <br><br>
-                        I began at a community college to explore different courses before choosing a major. In my last
+                        I began at a community college to explore different courses before choosing a major. In my
+                        last
                         semester, I took a UX Design class and knew it was exactly what I wanted to do.
                         <br><br>
-                        Transferring to a UX Design program was tough since most undergrad majors were in general art,
+                        Transferring to a UX Design program was tough since most undergrad majors were in general
+                        art,
                         and
-                        close major, Human-Computer Interaction was mostly offered at the graduate level. So, I studied
+                        close major, Human-Computer Interaction was mostly offered at the graduate level. So, I
+                        studied
                         Fine
                         Art, planning to pursue HCI later.
                         <br><br>
-                        Although I didn’t expect to get degrees at the community college, but I obtained those by taking
+                        Although I didn’t expect to get degrees at the community college, but I obtained those by
+                        taking
                         numerous design courses.
                     </div>
                 </div>
@@ -323,10 +646,12 @@
                         school
                         only has UX Design program.
                         <br><br>
-                        Of course, I decided to change my major, and I did it. Since this major is not fully focusing on
+                        Of course, I decided to change my major, and I did it. Since this major is not fully
+                        focusing on
                         UX
                         Design, I had to take some programming classes too. Combinging Design and Programming was so
-                        exicited and It makes me to want create actual product. By making, developing my own designed
+                        exicited and It makes me to want create actual product. By making, developing my own
+                        designed
                         project made me so happy and this is what I am focusing on nowadays.
                     </div>
                 </div>
@@ -367,31 +692,30 @@
 
 
 
-    class CardFlipOnScroll {
-        constructor(wrapper, sticky) {
-            this.wrapper = wrapper
-            this.sticky = sticky
-            this.cards = sticky.querySelectorAll('.list-item')
-            this.length = this.cards.length
+    // class CardFlipOnScroll {
+    //     constructor(wrapper, sticky) {
+    //         this.wrapper = wrapper
+    //         this.sticky = sticky
+    //         this.cards = sticky.querySelectorAll('.list-item')
+    //         this.length = this.cards.length
 
-            this.start = 0
-            this.end = 0
-            this.step = 0
-        }
-    }
+    //         this.start = 0
+    //         this.end = 0
+    //         this.step = 0
+    //     }
+    // }
 
-    const mainContent1 = document.querySelector('.card-bg')
-    const sticky = document.querySelector('.skillset')
+    // const mainContent1 = document.querySelector('.card-bg')
+    // const sticky = document.querySelector('.skillset')
     // const cardFlipOnScroll = new CardFlipOnScroll(mainContent1, sticky)
     // cardFlipOnScroll.init()
 
-    const listStyleChangeStartY = 20
-    const listStyleChangeEndY = 8000
+    const listStyleChangeStartY = 30
+    const listStyleChangeEndY = 16000
     const listItems = document.querySelectorAll('.list-item')
 
 
-    const position = (listStyleChangeEndY - listStyleChangeStartY) / listItems.length
-
+    const position = (listStyleChangeEndY - listStyleChangeStartY) / listItems.length * 0.5
 
     window.addEventListener('scroll', () => {
 
@@ -407,6 +731,10 @@
         }
     })
 
+
+    // ============================
+    // Scroll Fade
+    // ============================
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -428,6 +756,10 @@
     const hideDes = document.querySelectorAll('.each-skill');
     hideDes.forEach((el) => observer.observe(el));
 
+
+    // ============================
+    // Study flow path
+    // ============================
 
 
 
@@ -452,6 +784,14 @@
 
     window.addEventListener('scroll', scrollHandler);
 
+
+
+    // ============================
+    // Toggle Menu
+    // ============================
+
+
+
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     const contentOverlay = document.getElementById('contentOverlay');
@@ -472,17 +812,26 @@
 
 
 
-    function scrollToSection() {
-        document.getElementById("UX-Design").scrollIntoView({ behavior: "smooth" });
-    }
+    // function scrollToSection() {
+    //     document.getElementById("UX-Design").scrollIntoView({ behavior: "smooth" });
+    // }
 
 
-    var link = document.createElement('link');
+    // var link = document.createElement('link');
 
-    link.rel = 'icon';
-    link.type = 'image/x-icon';
-    link.href = 'src/favicon.ico';
-    document.head.appendChild(link);
+    // link.rel = 'icon';
+    // link.type = 'image/x-icon';
+    // link.href = 'src/favicon.ico';
+    // document.head.appendChild(link);
+
+
+
+
+
+
+    // =========================
+    // Feedback
+    // =========================
 
     document.getElementById("feedbackBtn").addEventListener("click", function () {
         var formContainer = document.getElementById("feedbackFormContainer");
@@ -510,6 +859,12 @@
             e.preventDefault();
         }
     });
+
+
+
+    // =========================
+    // hotjar
+    // =========================    
 
 
 

@@ -6,11 +6,25 @@
 /* ===================================================================== */
 
 
+
 :root {
+
+    --pink: #FFDFDF;
+    --teal: #005E70;
+    --teal-light: #D9E7EA;
+    --pink-original: #F87474;
+    --pink-light: #FEECEC;
+    --teal-superlight: #F2F7F8;
     --color-title: #14919B;
     --color-main: #0B6477;
     --color-sub: #C4EBEF;
 }
+
+
+.index a{
+    cursor: none;
+}
+
 
 
 /* ===================================================================== */
@@ -45,12 +59,60 @@ body {
 }
 
 
+
 .mainimg {
-    width: 50vw;
+    width: 18vw;
     height: auto;
     object-fit: cover;
+    margin-left: 20%;
+    margin-top: 3vw;
+    display: block;
+    border-radius: 60px;
 
 }
+
+
+@media (max-width: 1200px) {
+
+    .mainimg {
+        width: 18vw;
+
+        margin-left: 12%;
+
+        border-radius: 30px;
+    
+    }
+
+
+}
+
+
+
+@media (max-width: 756px) {
+
+    .mainimg {
+        width: 18vw;
+
+        margin-left: 12%;
+
+        border-radius: 30px;
+    
+    }
+
+
+}
+
+
+
+
+
+
+/* .empty{
+    background-color: var(--color-sub);
+    width: 800px;
+    height: 400px;
+    margin-top: 200px;
+} */
 
 .title-container {
     display: flex;
@@ -197,6 +259,12 @@ body {
 }
 
 
+.proto-des {
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+}
+
 
 
 /* ====================================================================================== */
@@ -220,6 +288,7 @@ body {
 
 .openInFigma a {
     color: #FFF;
+    cursor: none;
 }
 
 .proto-des {
@@ -248,7 +317,7 @@ body {
 #es-des {
     width: 35em;
     line-height: 2em;
-    background-color: #FFF;
+    background-color: var(--teal-light);
     padding: 3em 1.5em;
 
 }
@@ -508,7 +577,7 @@ body {
 #hifi-des3,
 #hifi-des4,
 #hifi-des5 {
-    background-color: #FFF;
+    background-color: var(--teal-superlight);
     width: 32em;
     height: auto;
     border-radius: 2em 0 0 2em;
@@ -641,12 +710,13 @@ pj shift button
 .shift-previous {
     background-color: var(--color-title);
     /* margin-right: 2vw; */
-    cursor: pointer;
+    cursor: none;
     color: white;
     font-size: 1vw;
     font-weight: 600;
     padding: 1vw 2vw;
     border-radius: 10vw;
+
 }
 
 
@@ -657,7 +727,7 @@ pj shift button
 
 .shift-next {
     border: 1px solid var(--color-title);
-    cursor: pointer;
+    cursor: none;
     color: var(--color-main);
     font-size: 1vw;
     font-weight: 600;
@@ -697,6 +767,7 @@ pj shift button
         align-items: center;
         margin-bottom: 20px;
         margin-top: 30px;
+
     }
 
     .proto-des {
@@ -705,9 +776,9 @@ pj shift button
     }
 
     .mobile {
-        display: none;
-        /* width: 86vw !important;
-        height: 200vw !important; */
+        /* display: none; */
+        width: 86vw !important;
+        height: 200vw !important;
 
     }
 
@@ -719,19 +790,20 @@ pj shift button
     }
 
 
-.openInFigma{
+    .openInFigma {
         color: #000 !important;
         background-color: #0AD0C7 !important;
         font-weight: 700;
         padding: 16px 20px;
         border-radius: 20vw;
-        cursor: pointer;
+        cursor: none;
         font-size: 14px;
         margin-top: 0;
     }
-.openInFigma a{
+
+    .openInFigma a {
         color: #000 !important;
-}
+    }
 
 
 
@@ -1046,7 +1118,7 @@ survery
 
     }
 
-    .ppl,
+    /* .ppl, */
     .persona,
     .journeymap {
         width: 100%;

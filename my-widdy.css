@@ -8,6 +8,18 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.index a {
+    cursor: none;
+}
+
+
+.oifm a,
+.oifd a {
+    cursor: none;
+}
+
+
+
 .title {
     /* height: 70vh;
     width: 100%; */
@@ -22,7 +34,7 @@ body {
 }
 
 
-.mainimg {
+.mainimg-still {
     width: 50vw;
     height: auto;
     object-fit: cover;
@@ -114,7 +126,7 @@ body {
     padding-left: 1vw;
 }
 
-.group-box{
+.group-box {
     padding-left: 2vw;
 
 }
@@ -142,20 +154,20 @@ body {
 }
 
 
-.rr-1{
+.rr-1 {
     width: 20vw;
 }
 
-.section1{
+.section1 {
     display: flex;
     flex-direction: row;
 }
 
-.background{
+.background {
     width: 60vw;
     height: 20vw;
     background-color: #ff8d3a;
-    
+
 }
 
 .full {
@@ -172,7 +184,7 @@ body {
 }
 
 
-.main-conatiner{
+.main-conatiner {
     width: 100%;
     height: 100%;
     display: flex;
@@ -195,7 +207,7 @@ body {
 }
 
 
-.p1{
+.p1 {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -214,7 +226,7 @@ body {
 }
 
 
-.prob1{
+.prob1 {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -223,7 +235,7 @@ body {
 
 }
 
-.prob2{
+.prob2 {
     display: flex;
     flex-direction: row;
     height: auto;
@@ -235,7 +247,7 @@ body {
 }
 
 
-.prob3{
+.prob3 {
     margin-top: 2vw;
 }
 
@@ -251,7 +263,7 @@ body {
 
 }
 
-.p3{
+.p3 {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -261,20 +273,20 @@ body {
 
 }
 
-#logoap{
+#logoap {
     width: 7em;
     padding-top: 2.5vw;
 
 }
 
 
-#logowi{
+#logowi {
     width: 6em;
     padding-top: 3.5vw;
 }
 
 
-#p1{
+#p1 {
     margin-top: 3vw;
     justify-content: flex-start;
 
@@ -297,13 +309,13 @@ body {
     justify-content: flex-start;
 }
 
-#heyhey{
+#heyhey {
     padding-bottom: 2.1vw;
 
 }
 
 
-.executive{
+.executive {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -318,7 +330,7 @@ body {
 }
 
 
-.processing{
+.processing {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,7 +352,7 @@ body {
 }
 
 
-#vulnerable{
+#vulnerable {
     line-height: 1.4em;
     font-weight: 600;
     padding: 3vw 0;
@@ -352,7 +364,7 @@ body {
 
 }
 
-#r-vulnerable{
+#r-vulnerable {
     line-height: 1.4em;
     font-weight: 600;
     padding: 1vw 0;
@@ -366,20 +378,20 @@ body {
 
 
 
-.p-statement{
+.p-statement {
     font-weight: 600;
     font-size: 0.8em;
 
 }
 
-.porc{
+.porc {
     line-height: 1.5em;
     text-align: center;
     font-size: 0.8rem;
 }
 
 
-.porc2{
+.porc2 {
     line-height: 1.5em;
     text-align: center;
     font-size: 1rem;
@@ -417,9 +429,9 @@ body {
 
 }
 
-#inner{
+#inner {
     font-size: 0.9em;
-    color:black;
+    color: black;
     width: 50em;
     padding-top: 3vw;
     text-align: center;
@@ -430,27 +442,27 @@ body {
 
 }
 
-.smaller{
+.smaller {
     width: 80%;
     height: auto;
 }
 
 .statement {
-    color:black;
+    color: black;
     font-weight: 700;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 
 
 }
 
-.statement-title{
-    color:#FCEDDA;
+.statement-title {
+    color: #FCEDDA;
     background-color: #ff8d3a;
-    width:fit-content;
+    width: fit-content;
     text-align: center;
     padding: 1vw 2vw;
     border-radius: 10vw;
@@ -460,7 +472,7 @@ body {
 
 }
 
-#bottom{
+#bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,13 +481,13 @@ body {
     width: 100%;
 
     /* font-weight: 600; */
-    
+
 
 }
 
-.openlink{
+.openlink {
     width: 5em;
-    cursor: pointer;
+    cursor: none;
     padding-top: 4vw;
 }
 
@@ -486,7 +498,7 @@ body {
 
 }
 
-.inner-icon{
+.inner-icon {
     width: 5em;
     padding: 4vw 1vw;
 
@@ -502,7 +514,7 @@ body {
 }
 
 
-.download{
+.download {
     border: 0.18vw solid #ff8d3a;
     /* border-color:#F87474; */
     background-color: transparent;
@@ -515,33 +527,33 @@ body {
 
     font-size: 1.1em;
     font-weight: 500;
-    cursor: pointer;
+    cursor: none;
     margin-top: 1vw;
 
-    
+
 }
 
-.download:hover{
+.download:hover {
     background-color: #ff8d3a;
     color: #FCEDDA;
 
 
 }
 
-ol{
+ol {
     font-weight: 500;
     color: black;
     margin: 3vw 0;
 }
 
-.steps{
+.steps {
     margin: 1vw 0;
     text-align: left;
     font-size: 1em;
 
 }
 
-span{
+span {
     font-weight: 700;
     padding-right: 0.5vw;
 }
@@ -549,7 +561,7 @@ span{
 
 
 
-#psps{
+#psps {
     margin-bottom: 3vw;
 }
 
@@ -559,7 +571,7 @@ span{
 } */
 
 
-.white{
+.white {
     background-color: #FFF;
     margin-top: 2vw;
     padding-bottom: 3vw;
@@ -601,7 +613,7 @@ pj shift button
 .shift-previous {
     background-color: #ff8d3a;
     margin-right: 2vw;
-    cursor: pointer;
+    cursor: none;
     color: white;
     font-size: 1vw;
     font-weight: 600;
@@ -617,7 +629,7 @@ pj shift button
 
 .shift-next {
     border: 1px solid #ff8d3a;
-    cursor: pointer;
+    cursor: none;
     color: #5b524b;
     font-size: 1vw;
     font-weight: 600;
@@ -639,7 +651,7 @@ pj shift button
 
 
 @media (max-width: 768px) {
-    .main-container{
+    .main-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -647,11 +659,11 @@ pj shift button
         margin-top: 30px;
     }
 
-    .statement{
+    .statement {
         width: 80vw;
     }
 
-    .statement-title{
+    .statement-title {
         font-size: 16px;
         font-weight: 600;
         padding: 8px 20px;
@@ -662,17 +674,17 @@ pj shift button
     .executive {
         margin: 0;
         width: 85%;
-        
+
     }
 
-    .prob2{
-        display:flex;
+    .prob2 {
+        display: flex;
         flex-direction: column;
     }
 
     .mac,
-    .window{
-        width:100%;
+    .window {
+        width: 100%;
         margin: 20px 0;
     }
 
@@ -685,20 +697,20 @@ pj shift button
         width: 80vw;
     }
 
-    #r-vulnerable{
+    #r-vulnerable {
 
         width: 80vw;
         padding: 10px 0;
 
     }
 
-    .prob2{
+    .prob2 {
         width: 90%;
         gap: 4%;
         padding: 15px;
     }
 
-    .prob3{
+    .prob3 {
         margin-bottom: 20px;
     }
 
@@ -708,37 +720,38 @@ pj shift button
         padding: 5px;
     } */
 
-    .porc{
+    .porc {
         font-size: 12px;
         line-height: 15px;
     }
 
-    .porc2{
+    .porc2 {
         font-size: 12px;
         line-height: 15px;
     }
 
 
-    #p2{
+    #p2 {
         padding-top: 10px;
     }
 
 
-    #c2{
+    #c2 {
         padding-top: 40px;
     }
 
 
     #element,
     #inner,
-    #bottom{
+    #bottom {
         width: 95%;
     }
 
-    #element{
+    #element {
         font-size: 14px;
         line-height: 18px;
     }
+
     .openlink {
         width: 50px;
         height: 50px;
@@ -751,7 +764,7 @@ pj shift button
 
     }
 
-    .download{
+    .download {
         width: 120px;
         height: 30px;
         margin-top: 20px;
@@ -759,34 +772,34 @@ pj shift button
 
     }
 
-     /* ==============================================
+    /* ==============================================
 pj shift button
 ============================================== */
 
-.shift-next,
-.shift-previous {
-    font-size: 14px;
-    padding: 14px 20px;
-    margin: 0;
-    margin-bottom: 18px;
-}
+    .shift-next,
+    .shift-previous {
+        font-size: 14px;
+        padding: 14px 20px;
+        margin: 0;
+        margin-bottom: 18px;
+    }
 
-.shift-container {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-content: space-between;
-    margin: 0;
-}
+    .shift-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0;
+    }
 
-.b-shift-container {
-    margin: 0;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-content: space-between;
-}
+    .b-shift-container {
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+    }
 
 
 }

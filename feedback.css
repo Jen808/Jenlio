@@ -1,24 +1,44 @@
+/* 
+========================================
+root
+======================================== 
+*/
+
+:root 
+{
+
+  --pink:#FFDFDF;
+  --teal:#005E70;
+}
+
+
+
+
 #feedbackBtn {
     font-family: 'Roboto', sans-serif;
     position: fixed;
     top: 50%;
     right: -40px;
     transform: rotate(-90deg);
-    background-color: #F87474;
-    box-shadow: -5px -5px 5px rgba(228,209,191, 1);
-    color: white;
+    background-color: var(--teal);
+    /* box-shadow: -5px -5px 5px rgba(228,209,191, 1); */
+    color: var(--pink);
     border: none;
     padding: 12px 20px;
     font-size: 1.2rem;
-    cursor: pointer;
+    cursor: none;
     z-index: 1000;
     border-radius: 10px 10px 0 0;
     margin: 0;
+    border: 1px solid var(--pink);
 }
 
 #feedbackBtn:hover{
-    background-color: white;
-    color: #F87474;
+    background-color: var(--pink);
+    color: var(--teal);
+    border: 1px solid var(--teal);
+    font-weight:600;
+
 
 }
 

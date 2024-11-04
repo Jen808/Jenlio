@@ -3,29 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- <link rel="stylesheet" href="path/to/animate.min.css"> -->
-    <link rel="stylesheet" href="responsive-head-foot.css">
     <link rel="stylesheet" href="feedback.css">
 
 
 
 
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="s.css"> -->
-    <link rel="stylesheet" href="responsive.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="cursor.css">
+    
+
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
     <style>
-        /* .ame {
-            font-weight: 800;
-        } */
-
-        .menu-toggle {
+        /* .menu-toggle {
             display: none;
         }
 
@@ -35,45 +32,8 @@
         }
 
 
-
-        .index-header {
-            width: 100%;
-            height: 3em;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding-top: 2vw;
-            padding-bottom: 0.5vw;
-            /* margin-top: 5vw; */
-            position: relative;
-        }
-
-
-        .logo-name {
-            position: absolute;
-            left: 5vw;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            width: auto;
-            /* justify-content: center; */
-        }
-
-
-        .logo {
-            width: 3.2em;
-            height: auto;
-
-
-        }
-
         .name {
-            /* top: 28px;
-    left: 80px; */
             margin: 0;
-            /* height: 25px; */
             width: auto;
             margin-left: 1.5vw;
             font-family: 'Roboto', sans-serif;
@@ -108,7 +68,6 @@
             font-size: 1.2em;
             font-weight: 400;
             color: #F87474;
-            /* margin-left: 4vw; */
             text-align: center;
             padding: 0 1.5vw;
 
@@ -208,23 +167,12 @@
             height: auto;
         }
 
-        .index-main {
-            width: auto;
-            height: auto;
-        }
 
         .index-name {
             display: flex;
             flex-direction: row;
             align-items: left;
             justify-content: left;
-        }
-
-        #index-logo {
-            width: 5em;
-            height: 5em;
-            margin: 0;
-            margin-right: 2em;
         }
 
         .index-github {
@@ -241,13 +189,17 @@
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
 
-        }
+        } */
 
 
 
 
 
-        @media (max-width: 1500px) {
+
+
+
+
+        /* @media (max-width: 1500px) {
 
             .ame,
             .ux,
@@ -259,29 +211,18 @@
                 font-size: 1em;
                 font-weight: 400;
                 color: #F87474;
-                /* margin-left: 4vw; */
                 text-align: center;
                 padding: 0 1.5vw;
 
             }
 
 
-
-            .name-des {
-                display: flex;
-                flex-direction: column;
-                margin-left: 2vw;
-                align-items: center;
-
-
-            }
-
-            .desktop-sns .linkedin{
+            .desktop-sns .linkedin {
                 width: 2.2em;
                 height: 2.2em;
             }
 
-            .desktop-sns .email{
+            .desktop-sns .email {
                 width: 2.2em;
                 height: 2.2em;
             }
@@ -308,26 +249,11 @@
 
             }
 
-            .index-main {
-                width: auto;
-                height: auto;
-                margin: 0;
-                margin-top: 30vw;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-            }
+
 
             #jenpj {
                 width: 90vw;
                 height: auto;
-            }
-
-            #index-logo {
-                width: 3em;
-                height: 3em;
-                margin: 0;
-                margin-right: 1em;
             }
 
             .sub-title {
@@ -339,7 +265,6 @@
                 height: 50px;
                 margin-top: 30px;
                 border-radius: 35px;
-                /* border: solid 1px #F87474; */
 
 
             }
@@ -349,18 +274,10 @@
                 justify-content: center;
             }
 
-            .name-des {
-                display: flex;
-                flex-direction: column;
-                margin-left: 2vw;
-                align-items: center;
-
-
-            }
 
 
 
-        }
+        } */
     </style>
 
 
@@ -371,7 +288,15 @@
 
 
 
-    <button id="feedbackBtn">Feedback</button>
+
+
+
+    <!-- ================================
+Feedback
+================================ -->
+
+
+    <button id="feedbackBtn" class="feedbackBtn">Feedback</button>
 
     <div id="feedbackFormContainer">
         <h2>How was your experience?</h2>
@@ -420,6 +345,11 @@
 
         "use strict";
 
+
+        // =========================
+        // netlify
+        // =========================
+
         window.onload = function () {
             const token = 'b77c38bbd2bd22';
             fetch(`https://ipinfo.io?token=${token}`)
@@ -440,6 +370,11 @@
                 .catch(error => console.error('Error fetching geolocation data:', error));
         };
 
+
+
+        // =========================
+        // Feedback
+        // =========================
 
         document.getElementById("feedbackBtn").addEventListener("click", function () {
             var formContainer = document.getElementById("feedbackFormContainer");
@@ -469,6 +404,242 @@
         });
 
 
+        // =========================
+        // Cursor
+        // =========================
+
+
+
+        window.onload = function () {
+            const customCursor = document.createElement('div');
+            customCursor.classList.add('custom-cursor');
+            document.body.appendChild(customCursor);
+
+            document.addEventListener('mousemove', (e) => {
+                customCursor.style.left = `${e.clientX}px`;
+                customCursor.style.top = `${e.clientY}px`;
+            });
+
+            const secElements = document.querySelectorAll('.sec');
+            const secingElements = document.querySelectorAll('.sec-ing');
+            const ameElements = document.querySelectorAll('.ame');
+            const uxElements = document.querySelectorAll('.ux');
+            const chsElements = document.querySelectorAll('.chs');
+            const artElements = document.querySelectorAll('.art');
+            const myElements = document.querySelectorAll('.my');
+            const emailElements = document.querySelectorAll('.email');
+            const emailfooterElements = document.querySelectorAll('.email-footer');
+            const linkedinElements = document.querySelectorAll('.linkedin');
+            const linkedinfooterElements = document.querySelectorAll('.linkedin-footer');
+            const logoElements = document.querySelectorAll('.logo');
+            const gitElements = document.querySelectorAll('.github-button');
+            const fbElements = document.querySelectorAll('.feedbackBtn');
+
+
+
+
+
+
+            secElements.forEach(sec => {
+                sec.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.backgroundColor = 'black';
+                    customCursor.style.borderColor = 'white';
+                    customCursor.style.borderWidth = '4px';
+                    customCursor.style.fontSize = '50px';
+                    customCursor.style.width = '80px';
+                    customCursor.style.height = '80px';
+
+
+                });
+
+                sec.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '#FFDFDF';
+                    customCursor.style.borderWidth = '2px';
+                    customCursor.style.fontSize = '32px';
+                    customCursor.style.width = '50px';
+                    customCursor.style.height = '50px';
+
+
+                });
+            });
+
+
+            secingElements.forEach(secing => {
+                secing.addEventListener('mouseover', () => {
+                    customCursor.textContent = '⛔';
+                    customCursor.style.backgroundColor = 'black';
+                    customCursor.style.borderColor = 'white';
+                    customCursor.style.fontSize = '50px';
+
+
+
+                });
+
+                secing.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '#FFDFDF';
+                    customCursor.style.fontSize = '32px';
+
+
+
+                });
+            });
+
+            ameElements.forEach(ame => {
+                ame.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖐️';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ame.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            uxElements.forEach(ux => {
+                ux.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👩‍💻';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                ux.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            chsElements.forEach(chs => {
+                chs.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎯';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                chs.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            artElements.forEach(art => {
+                art.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🎨';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                art.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            myElements.forEach(my => {
+                my.addEventListener('mouseover', () => {
+                    customCursor.textContent = '😊';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                my.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            emailElements.forEach(email => {
+                email.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                email.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            emailfooterElements.forEach(emailfooter => {
+                emailfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '💌';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                emailfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            linkedinElements.forEach(linkedin => {
+                linkedin.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedin.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+            linkedinfooterElements.forEach(linkedinfooter => {
+                linkedinfooter.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔗';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                linkedinfooter.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+            logoElements.forEach(logo => {
+                logo.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🏠';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                logo.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            gitElements.forEach(git => {
+                git.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🖥️';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                git.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+            fbElements.forEach(fb => {
+                fb.addEventListener('mouseover', () => {
+                    customCursor.textContent = '🔔';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                fb.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
+
+
+
+
+        };
 
 
     </script>
@@ -479,19 +650,17 @@
 
 
 
+    <!-- ================================
+Header
+================================ -->
 
-    <div class="content-overlay" id="contentOverlay"></div>
 
 
-    <div class="index-header">
-        <div class="logo-name">
-            <a href="index.html">
-                <img src="src/me-24.png" alt="Logo" class="logo">
-            </a>
-            <a href="index.html">
-                <div class="name">Jennifer Jung</div>
-            </a>
-        </div>
+    <div class="header">
+
+        <a href="index.html">
+            <img src="src/me-24.png" alt="Logo" class="logo">
+        </a>
 
 
         <div class="menu-toggle" id="menuToggle">
@@ -501,214 +670,74 @@
         </div>
 
 
-        <nav class="menu" id="navMenu">
-            <a href="AboutMe.html" class="ame">About Me</a>
-            <a href="index.html#UX-Design" class="ux">UX Design</a>
-            <a href="chs.html" class="chs">Promotional Materials</a>
-            <a href="art.html" class="art">Art Gallery</a>
-            <a href="src/Resume-CV.pdf" target="_blank" class="my">Resume</a>
+        <div class="header-right">
 
-            <div class="burger-footer">
+            <nav class="menu" id="navMenu">
+                <a href="AboutMe.html" class="ame">About Me</a>
+                <a href="index.html#UX-Design" class="ux">UX Design</a>
+                <a href="chs.html" class="chs">Promotional Materials</a>
+                <a href="art.html" class="art">Art Gallery</a>
+                <a href="src/JenniferJung_UXDesignerResume(Nov.24)_Digital.pdf" target="_blank" class="my">Resume</a>
 
-                <div class="burger-info">
-                    <div class="burger-name">Jennifer Jung</div>
-                    <div class="burger-short">Thanks for visiting and please come again</div>
-                    <div class="burger-copy">© 2024 Jennifer Jung</div>
+                <div class="burger-footer">
+
+                    <div class="burger-info">
+                        <div class="burger-name">Jennifer Jung</div>
+                        <div class="burger-short">Thanks for visiting and please come again</div>
+                        <div class="burger-copy">© 2024 Jennifer Jung</div>
+                    </div>
+
+                    <div class="sns">
+                        <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                            <img src="src/logo-email.png" alt="email" class="email">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                            <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                        </a>
+                    </div>
+
                 </div>
 
-                <div class="sns">
-                    <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                        <img src="src/logo-email.png" alt="email" class="email">
-                    </a>
-                    <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                        <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-                    </a>
-                </div>
 
+            </nav>
+
+            <div class="desktop-sns">
+                <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
+                    <img src="src/logo-email.png" alt="email" class="email">
+                </a>
+                <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
+                    <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
+                </a>
             </div>
-        </nav>
 
-        <div class="desktop-sns">
-            <a href="mailto:chorong@umich.edu?subject=Regarding to your website">
-                <img src="src/logo-email.png" alt="email" class="email">
-            </a>
-            <a href="https://www.linkedin.com/in/jennifer-jung-b78b18203/" target="_blank">
-                <img src="src/logo-linkedin.png" alt="linked in" class="linkedin">
-            </a>
         </div>
-        <!-- <p class="touch">touch me!</p> -->
+
+
+
     </div>
-    <div class="index-main">
-        <div class="index-main-logo">
 
-            <img src="src/main-jenlio.png" alt="Portfolio Website in Desktop / Mobile" class="pj" id="jenpj">
 
+    </div>
+    <div class="content-overlay" id="contentOverlay"></div>
+
+
+
+
+
+
+    <!-- ================================
+Home Content - Main
+================================ -->
+
+
+    <div class="home-main">
+        <div class="intro-overlay">
+            <div class="intro-name">Jennifer Jung</div>
+            <div class="intro-me">Hello, I'm Jennifer, a curous UX / product desginer, who is passionate about creating
+                useful and intuitive experiences for people</div>
+            <button type="button" class="github-button">Open github</button>
+            <div class="intro-github">This website is hand coded and deployed through github & netlify</div>
         </div>
-
-
-        <div class="name-des">
-
-
-            <div class="index-name">
-                <img src="src/me-24.png" class="animate_animated animate_tada" alt="Portfolio website logo (smile icon)"
-                    id="index-logo">
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1253.1 212.1">
-
-                    <defs>
-                        <clipPath id="01">
-                            <path
-                                d="M77.6,18.5h25v101.1c0,13.8-4.3,24.8-12.9,32.9-8.6,8.1-20,12.2-34.1,12.2s-26.7-3.8-34.9-11.4c-8.2-7.6-12.3-18.2-12.3-31.7h25c0,7.7,1.9,13.4,5.7,17.3,3.8,3.9,9.3,5.8,16.5,5.8s12.1-2.2,16.1-6.7c4-4.5,6-10.6,6-18.5V18.5Z" />
-                        </clipPath>
-
-                        <clipPath id="02">
-                            <path
-                                d="M176,164.6c-15.2,0-27.6-4.8-37.1-14.4-9.5-9.6-14.2-22.4-14.2-38.4v-3c0-10.7,2.1-20.2,6.2-28.7,4.1-8.4,9.9-15,17.4-19.7,7.5-4.7,15.8-7,25-7,14.6,0,25.9,4.7,33.8,14,8,9.3,11.9,22.5,11.9,39.5v9.7h-70c.7,8.8,3.7,15.8,8.9,21,5.2,5.1,11.7,7.7,19.6,7.7s20-4.5,26.9-13.4l13,12.4c-4.3,6.4-10,11.4-17.2,14.9-7.2,3.5-15.2,5.3-24.1,5.3ZM173.1,72.9c-6.6,0-11.9,2.3-16,6.9-4.1,4.6-6.7,11.1-7.8,19.3h45.8v-1.8c-.5-8.1-2.7-14.1-6.4-18.3-3.8-4.1-9-6.2-15.6-6.2Z" />
-                        </clipPath>
-
-                        <clipPath id="03">
-                            <path
-                                d="M260,55.5l.7,12.4c7.9-9.6,18.3-14.4,31.2-14.4,22.3,0,33.7,12.8,34.1,38.3v70.8h-24.1v-69.4c0-6.8-1.5-11.8-4.4-15.1-2.9-3.3-7.7-4.9-14.4-4.9-9.7,0-16.9,4.4-21.7,13.2v76.2h-24.1V55.5h22.7Z" />
-                        </clipPath>
-
-                        <clipPath id="04">
-                            <path
-                                d="M372.7,55.5l.7,12.4c7.9-9.6,18.3-14.4,31.2-14.4,22.3,0,33.7,12.8,34.1,38.3v70.8h-24.1v-69.4c0-6.8-1.5-11.8-4.4-15.1-2.9-3.3-7.7-4.9-14.4-4.9-9.7,0-16.9,4.4-21.7,13.2v76.2h-24.1V55.5h22.7Z" />
-                        </clipPath>
-
-                        <clipPath id="05">
-                            <path
-                                d="M463.2,27.7c0-3.7,1.2-6.8,3.5-9.2,2.3-2.4,5.7-3.7,10.1-3.7s7.7,1.2,10.1,3.7c2.4,2.4,3.6,5.5,3.6,9.2s-1.2,6.7-3.6,9.1c-2.4,2.4-5.7,3.6-10.1,3.6s-7.7-1.2-10.1-3.6c-2.3-2.4-3.5-5.4-3.5-9.1ZM488.8,162.7h-24.1V55.5h24.1v107.1Z" />
-                        </clipPath>
-
-                        <clipPath id="06">
-                            <path
-                                d="M523.5,162.7v-89.3h-16.3v-17.8h16.3v-9.8c0-11.9,3.3-21.1,9.9-27.5,6.6-6.5,15.8-9.7,27.7-9.7s8.7.6,13.5,1.8l-.6,18.8c-2.6-.5-5.7-.8-9.2-.8-11.5,0-17.2,5.9-17.2,17.7v9.5h21.8v17.8h-21.8v89.3h-24.1Z" />
-                        </clipPath>
-
-                        <clipPath id="07">
-                            <path
-                                d="M631.7,164.6c-15.2,0-27.6-4.8-37.1-14.4-9.5-9.6-14.2-22.4-14.2-38.4v-3c0-10.7,2.1-20.2,6.2-28.7,4.1-8.4,9.9-15,17.4-19.7,7.5-4.7,15.8-7,25-7,14.6,0,25.9,4.7,33.8,14s11.9,22.5,11.9,39.5v9.7h-70c.7,8.8,3.7,15.8,8.9,21,5.2,5.1,11.7,7.7,19.6,7.7s20-4.5,26.9-13.4l13,12.4c-4.3,6.4-10,11.4-17.2,14.9-7.2,3.5-15.2,5.3-24.1,5.3ZM628.8,72.9c-6.6,0-11.9,2.3-16,6.9-4.1,4.6-6.7,11.1-7.8,19.3h45.8v-1.8c-.5-8.1-2.7-14.1-6.4-18.3-3.8-4.1-9-6.2-15.6-6.2Z" />
-                        </clipPath>
-
-                        <clipPath id="08">
-                            <path
-                                d="M749.4,77.5c-3.2-.5-6.4-.8-9.8-.8-11,0-18.5,4.2-22.3,12.7v73.3h-24.1V55.5h23l.6,12c5.8-9.3,13.9-14,24.2-14s6.3.5,8.5,1.4v22.6Z" />
-                        </clipPath>
-
-                        <clipPath id="09">
-                            <path
-                                d="M876.5,18.5h25v101.1c0,13.8-4.3,24.8-12.9,32.9-8.6,8.1-20,12.2-34.1,12.2s-26.7-3.8-34.9-11.4c-8.2-7.6-12.3-18.2-12.3-31.7h25c0,7.7,1.9,13.4,5.7,17.3,3.8,3.9,9.3,5.8,16.5,5.8s12.1-2.2,16.1-6.7,6-10.6,6-18.5V18.5Z" />
-                        </clipPath>
-
-                        <clipPath id="10">
-                            <path
-                                d="M992.6,152.2c-7.1,8.3-17.1,12.5-30.1,12.5s-20.4-3.4-26.4-10.2c-6-6.8-9-16.6-9-29.5V55.5h24.1v69.1c0,13.6,5.6,20.4,16.9,20.4s19.6-4.2,23.7-12.6V55.5h24.1v107.1h-22.7l-.6-10.5Z" />
-                        </clipPath>
-
-                        <clipPath id="11">
-                            <path
-                                d="M1062.7,55.5l.7,12.4c7.9-9.6,18.3-14.4,31.2-14.4,22.3,0,33.7,12.8,34.1,38.3v70.8h-24.1v-69.4c0-6.8-1.5-11.8-4.4-15.1-2.9-3.3-7.7-4.9-14.4-4.9-9.7,0-16.9,4.4-21.7,13.2v76.2h-24.1V55.5h22.7Z" />
-                        </clipPath>
-
-                        <clipPath id="12">
-                            <path
-                                d="M1149,108.3c0-16.6,3.9-29.9,11.7-39.9,7.8-9.9,18.2-14.9,31.1-14.9s21.8,4.3,28.8,12.8l1.1-10.8h21.7v103.9c0,14.1-4.4,25.2-13.1,33.3-8.7,8.1-20.5,12.2-35.4,12.2s-15.5-1.6-23-4.9c-7.5-3.3-13.2-7.5-17.1-12.8l11.4-14.5c7.4,8.8,16.5,13.2,27.3,13.2s14.3-2.2,18.9-6.5c4.6-4.3,6.9-10.7,6.9-19.1v-7.2c-6.9,7.7-16.2,11.6-27.7,11.6s-22.8-5-30.7-15c-8-10-11.9-23.8-11.9-41.4ZM1172.9,110.4c0,10.8,2.2,19.2,6.6,25.4,4.4,6.2,10.5,9.3,18.3,9.3s16.9-4.2,21.6-12.5v-47.1c-4.6-8.1-11.7-12.2-21.4-12.2s-14.1,3.1-18.5,9.4c-4.4,6.3-6.6,15.5-6.6,27.7Z" />
-                        </clipPath>
-
-                    </defs>
-
-
-                    <g class="svg-bg">
-                        <path clip-path="url(#01)"
-                            d="M88,17c-2.9,74.8-2.1,108.9-1,117,0,.3.2,1.5,0,3-1.4,10.2-17.1,17.9-30,19-4.5.4-15.3,1.3-25-6-13-9.8-15-28.1-15-30" />
-                        <path clip-path="url(#02)"
-                            d="M134.5,107.5h70c.7,0,4.2,1.6,6,0,1.2-1,1.1-2.9,1-4-1.4-17.2-10-27-10-27-2.2-2.5-6.9-7.7-15-11-3.5-1.4-16.2-6-29,0-11.7,5.5-16.3,16.4-19,23-2.6,6.3-11.5,27.7,1,47,9.1,14.1,26.5,22.8,44,20,16.2-2.6,25.6-14,28-17" />
-                        <path clip-path="url(#03)"
-                            d="M247.5,55.5c1.1,82.5.8,107,0,107-1,0,2.1-42.1,4-67,.2-3.1.8-9.6,5-16,6.7-10.3,18.1-13.3,21-14,9.5-2.4,24.9-2.2,32,7,3.7,4.8,3.9,10.4,4,13,.9,35.1,1,70.8,1,77" />
-                        <path clip-path="url(#04)"
-                            d="M359.5,55.5c.4,86.1,1.2,107,2,107,.7,0,4.2-18.7,3-42-.9-17.1-3.8-26,2-36,4.5-7.8,11.7-11.7,16-14,7.1-3.9,20.5-11.8,31-6,7.6,4.2,10.3,13.6,11,16,1.7,5.8,1.1,10.7,1,12-.9,9.2-2,32.5,1.5,73.5" />
-                        <path clip-path="url(#05)" d="M476.5,14.5v26" />
-                        <path clip-path="url(#05)" d="M476.5,55.5v107" />
-                        <path clip-path="url(#06)"
-                            d="M577,19c-3.5-.5-13.2-3.9-22.5-.5-.8.3-12,4.5-17,16-1.7,4-1.9,6.9-2,22,0,13.1-.1,19.6,0,22,1.1,26.8,1.9,84,1,84-.8,0-3.6-31.6-5-64-.7-15,5.6-26.6-1-33-7.4-7.1-23-3-23-2,0,.9,13.5,1.5,62,1" />
-                        <path clip-path="url(#07)"
-                            d="M589.5,107.5c45.2-2.7,63.4-1.9,69,0,.6.2,2.6.9,4,0,4.4-2.9-1.4-18.4-2-20-3.1-8.2-5.5-14.5-12-19-10.8-7.5-23.9-4.1-28-3-3,.8-12.4,3.6-20,12-12.7,14.1-15.3,38.2-4,56,2,3.1,13,19.7,34,21,21.4,1.3,35.2-15.9,36.5-17.5" />
-                        <path clip-path="url(#08)"
-                            d="M702.5,55.5c-2,86.5-1.3,106.9,0,107,1.2,0,5.9-18.2,5-40-.8-19.9-5.8-29.8,1-40,4.3-6.5,11.1-9.7,16-12,10.2-4.8,19.7-5.2,25-5" />
-                        <path clip-path="url(#09)"
-                            d="M888.5,18.5c-1.3,70.4-.9,98.1,0,106,0,.7.4,3,0,6-1.4,11.7-10.9,19.2-12,20-10.4,7.9-22.4,6.4-26,6-2.9-.4-18.5-2.3-27-16-4.8-7.7-5.1-15.4-5-19" />
-                        <path clip-path="url(#10)"
-                            d="M938,52c2.2,47.6,1.6,71,.5,77.5-.1.8-.7,4,0,8,.1.7,1.5,7.7,7,13,8.8,8.5,21.8,6.5,25,6,11.5-1.8,18.7-8.8,23-13,3.2-3.1,9.3-9.3,12-19,1.9-6.8,1.3-12.4,1-15-3-29-1.8-54-3-54-1.5,0-1.6,38.1-1,63,.4,18.5.8,36.2,1.5,46.5" />
-                        <path clip-path="url(#11)"
-                            d="M1052,54c4.3,81.6,3.6,108.3,1.5,108.5-2.7.2-9.2-42,2-72,1.2-3.3,4.2-10.5,11-17,3.5-3.3,14.1-13.4,28-11,8.7,1.5,16.6,7.4,20,15,2,4.5,2,8.6,2,10,0,12.7.8,39.3,2,75" />
-                        <path clip-path="url(#12)"
-                            d="M1227.5,84.5c-1.7-2.7-11-16.9-27-19-6.4-.8-12,.5-14,1-3.1.8-11.9,3-18,10-5.2,5.9-6,12.5-7,22-1.4,13.4-2.8,26.3,5,39,2.2,3.6,8.6,13.9,21,17,12.5,3.1,22.9-3,28-6,4.9-2.9,13.2-7.7,17-18,2.8-7.5,1.4-13.7,0-22-4.4-26-5.2-52.6-3-53,1.1-.2,3.6,6.4,5,12,2.7,10.9,1.4,19.9,1,23-2.4,18.5-2.7,43.9-3,74,0,1.9,0,6.1-2,11-3.9,9.9-12.6,14.7-15,16-9.1,4.8-17.8,3.7-24,3-15.2-1.8-26.2-9.2-32-14" />
-
-                    </g>
-
-
-
-
-
-
-                    <g class="svg-main">
-                        <path clip-path="url(#01)"
-                            d="M88,17c-2.9,74.8-2.1,108.9-1,117,0,.3.2,1.5,0,3-1.4,10.2-17.1,17.9-30,19-4.5.4-15.3,1.3-25-6-13-9.8-15-28.1-15-30" />
-                        <path clip-path="url(#02)"
-                            d="M134.5,107.5h70c.7,0,4.2,1.6,6,0,1.2-1,1.1-2.9,1-4-1.4-17.2-10-27-10-27-2.2-2.5-6.9-7.7-15-11-3.5-1.4-16.2-6-29,0-11.7,5.5-16.3,16.4-19,23-2.6,6.3-11.5,27.7,1,47,9.1,14.1,26.5,22.8,44,20,16.2-2.6,25.6-14,28-17" />
-                        <path clip-path="url(#03)"
-                            d="M247.5,55.5c1.1,82.5.8,107,0,107-1,0,2.1-42.1,4-67,.2-3.1.8-9.6,5-16,6.7-10.3,18.1-13.3,21-14,9.5-2.4,24.9-2.2,32,7,3.7,4.8,3.9,10.4,4,13,.9,35.1,1,70.8,1,77" />
-                        <path clip-path="url(#04)"
-                            d="M359.5,55.5c.4,86.1,1.2,107,2,107,.7,0,4.2-18.7,3-42-.9-17.1-3.8-26,2-36,4.5-7.8,11.7-11.7,16-14,7.1-3.9,20.5-11.8,31-6,7.6,4.2,10.3,13.6,11,16,1.7,5.8,1.1,10.7,1,12-.9,9.2-2,32.5,1.5,73.5" />
-                        <path clip-path="url(#05)" d="M476.5,14.5v26" />
-                        <path clip-path="url(#05)" d="M476.5,55.5v107" />
-                        <path clip-path="url(#06)"
-                            d="M577,19c-3.5-.5-13.2-3.9-22.5-.5-.8.3-12,4.5-17,16-1.7,4-1.9,6.9-2,22,0,13.1-.1,19.6,0,22,1.1,26.8,1.9,84,1,84-.8,0-3.6-31.6-5-64-.7-15,5.6-26.6-1-33-7.4-7.1-23-3-23-2,0,.9,13.5,1.5,62,1" />
-                        <path clip-path="url(#07)"
-                            d="M589.5,107.5c45.2-2.7,63.4-1.9,69,0,.6.2,2.6.9,4,0,4.4-2.9-1.4-18.4-2-20-3.1-8.2-5.5-14.5-12-19-10.8-7.5-23.9-4.1-28-3-3,.8-12.4,3.6-20,12-12.7,14.1-15.3,38.2-4,56,2,3.1,13,19.7,34,21,21.4,1.3,35.2-15.9,36.5-17.5" />
-                        <path clip-path="url(#08)"
-                            d="M702.5,55.5c-2,86.5-1.3,106.9,0,107,1.2,0,5.9-18.2,5-40-.8-19.9-5.8-29.8,1-40,4.3-6.5,11.1-9.7,16-12,10.2-4.8,19.7-5.2,25-5" />
-                        <path clip-path="url(#09)"
-                            d="M888.5,18.5c-1.3,70.4-.9,98.1,0,106,0,.7.4,3,0,6-1.4,11.7-10.9,19.2-12,20-10.4,7.9-22.4,6.4-26,6-2.9-.4-18.5-2.3-27-16-4.8-7.7-5.1-15.4-5-19" />
-                        <path clip-path="url(#10)"
-                            d="M938,52c2.2,47.6,1.6,71,.5,77.5-.1.8-.7,4,0,8,.1.7,1.5,7.7,7,13,8.8,8.5,21.8,6.5,25,6,11.5-1.8,18.7-8.8,23-13,3.2-3.1,9.3-9.3,12-19,1.9-6.8,1.3-12.4,1-15-3-29-1.8-54-3-54-1.5,0-1.6,38.1-1,63,.4,18.5.8,36.2,1.5,46.5" />
-                        <path clip-path="url(#11)"
-                            d="M1052,54c4.3,81.6,3.6,108.3,1.5,108.5-2.7.2-9.2-42,2-72,1.2-3.3,4.2-10.5,11-17,3.5-3.3,14.1-13.4,28-11,8.7,1.5,16.6,7.4,20,15,2,4.5,2,8.6,2,10,0,12.7.8,39.3,2,75" />
-                        <path clip-path="url(#12)"
-                            d="M1227.5,84.5c-1.7-2.7-11-16.9-27-19-6.4-.8-12,.5-14,1-3.1.8-11.9,3-18,10-5.2,5.9-6,12.5-7,22-1.4,13.4-2.8,26.3,5,39,2.2,3.6,8.6,13.9,21,17,12.5,3.1,22.9-3,28-6,4.9-2.9,13.2-7.7,17-18,2.8-7.5,1.4-13.7,0-22-4.4-26-5.2-52.6-3-53,1.1-.2,3.6,6.4,5,12,2.7,10.9,1.4,19.9,1,23-2.4,18.5-2.7,43.9-3,74,0,1.9,0,6.1-2,11-3.9,9.9-12.6,14.7-15,16-9.1,4.8-17.8,3.7-24,3-15.2-1.8-26.2-9.2-32-14" />
-
-                    </g>
-
-
-                </svg>
-            </div>
-
-            <p class="index-intro">
-
-                <!-- Welcome, I am senior year student at UofM, studying Information Science (UX Design) <br><br> -->
-
-                This portfolio website is self-designed and hand-coded, highlighting my journey from UX design
-                to Fine Arts. It reflects my work from concept to deployment, with regular updates and more content to
-                come.
-            </p>
-
-
-            <!-- Welcome to My Custom-Built Portfolio <br> I'm a UX Designer
-                passionate about creating user-centered digital experiences. <br> Discover my work and why I could
-                be
-                your
-                next essential team member.</p> -->
-
-            <div class="index-github">
-                <a href="https://github.com/Jen808/Jenlio" class="sub-title" target="_blank">Open Github
-                    Repository</a>
-
-            </div>
-
-        </div>
-
-
     </div>
 
 
@@ -716,6 +745,103 @@
 
 
 
+    <!-- ================================
+Home Content - UX
+================================ -->
+
+
+
+    <div class="pj-center">
+
+
+
+
+
+        <div class="projects" id="UX-Design">
+
+
+            <div class="sec" id="sec-livmate" tabindex="0">
+                <div class="container">
+                    <img src="src/main-livmate.png" alt="MY Widdy Image: Mobile application" class="pj">
+                    <div class="overlay" id="o-livmate">
+                        <h1>LivMate</h1>
+                        <p1>Roommate finding app</p1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec" id="sec-roosroast" tabindex="0">
+                <div class="container">
+                    <img src="src/main-rr.png" alt="RoosRoast Project Image: Desktop / Mobile" class="pj">
+                    <div class="overlay" id="o-roosroast">
+                        <h1>RoosRoast</h1>
+                        <p1>Ann Arbor local coffee shop website redesign</p1>
+                    </div>
+                </div>
+            </div>
+            <div class="sec" alt="Glansis Project Image: Desktop / Mobile" id="sec-glansis" tabindex="0">
+                <div class="container">
+                    <img src="src/main.png" class="pj" alt="Glansis Project Prototype Image: Mobile and Desktop">
+                    <div class="overlay" id="o-glansis">
+                        <h1>NOAA: Great Lakes Environmental Research Laboratory</h1>
+                        <p1>Redeisgn GLANSIS Education Hub</p1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec" id="sec-mywiddy" tabindex="0">
+                <div class="container">
+                    <img src="src/main-20.png" alt="MY Widdy Image: Clock, Calendar, To-do list" class="pj">
+                    <div class="overlay" id="o-mywiddy">
+                        <h1>My-Widdy</h1>
+                        <p1>Desktop widget application</p1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec" id="sec-vendors" tabindex="0">
+                <div class="container">
+                    <img src="src/main-22.png" alt="Vendors Project Prototype Image: Mobile" class="pj">
+                    <div class="overlay" id="o-vendors">
+                        <h1>Vendors</h1>
+                        <p1>Finding street vendors</p1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec" id="sec-ife" tabindex="0">
+                <div class="container">
+                    <img src="src/main-23.png" alt="IFE System Project Prototype Image: Mobile and Desktop" class="pj">
+                    <div class="overlay" id="o-ife">
+                        <h1>IFE System</h1>
+                        <p1>Create In Flight Entertainment system</p1>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sec-ing" id="sec-ing" tabindex="0">
+                <div class="container">
+                    <img src="src/main-vol.png" alt="Volunteer connection program Ideation (Miro Board: Stickey Notes)"
+                        class="pj">
+                    <div class="overlay" id="o-ing">
+                        <h1>Project: UN sustainability goal</h1>
+                        <p1>Volunteer connect & community</p1>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sec-ing" id="sec-ing" tabindex="0">
+                <div class="container">
+                    <img src="src/main-umrec.png" alt="U-M Rec Sports project: Current app screen (Mobile application)"
+                        class="pj">
+                    <div class="overlay" id="o-ing">
+                        <h1>U-M Rec Sports</h1>
+                        <p1>Capstone project: 1 on 1 client based redesign mobile app</p1>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -723,305 +849,14 @@
 
 
 
-
-
-
-
-    <!-- <img src="src/mobile-name.png" class="mobile-name"></p> -->
+        </div>
 
     </div>
-    </div>
-    <div class="card-bg">
-        <div class="sticky">
-            <div class="sticky-background"> Before <br> the <br> showcase <br> wanna <br> see <br> who I am <br> ?
-                <!-- SCROLL ANIMATION -->
-            </div>
-            <div class="card-frame">
-                <div class="card">
-                    <!-- <img src='src/card-edu.png' alt="Education" class="front" id="f1"> -->
-                    <div class="front" id="f1"></div>
 
-                    <!-- <div class="front">Education</div> -->
-                    <div class="back"></div>
-                </div>
-                <div class="card">
-                    <div class="front" id="f2"></div>
-                    <!-- <img src='src/card-chs.png' alt="Promotional Materials" class="front" id="f2"> -->
+    <!-- ================================
+Footer
+================================ -->
 
-                    <div class="back"></div>
-                </div>
-                <div class="card">
-                    <div class="front" id="f3"></div>
-                    <!-- <img src='src/card-art.png' alt="Art Gallery" class="front" id="f3"> -->
-
-                    <div class="back"></div>
-                </div>
-                <div class="card">
-                    <div class="front" id="f4"></div>
-                    <!-- <img src='src/card-my.png' alt="Resume and About me" class="front" id="f4"> -->
-
-                    <div class="back"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="projects" id="UX-Design">
-        <!-- <div class="jenlio" id="s1">
-            <div class="container" id="jenlio-container">
-                <img src="src/main-jenlio.png" alt="Portfolio Website in Desktop / Mobile" class="pj" id="jenpj">
-            </div>
-            <div class="skill">
-                <img src='src/logo-figma.png' alt="figma" class="skill-logo2">
-                <img src='src/logo-ai.png' alt="figma" class="skill-logo2">
-                <img src='src/logo-ps.png' alt="figma" class="skill-logo2">
-                <img src='src/logo-html.png' alt="html" class="skill-logo2">
-                <img src='src/logo-css.png' alt="css" class="skill-logo2">
-                <img src='src/logo-js.png' alt="javascript" class="skill-logo2">
-                <img src='src/logo-git.png' alt="git" class="skill-logo2">
-                <img src='src/logo-github.png' alt="github" class="skill-logo2">
-                <img src='src/logo-netlify.png' alt="netlify" class="skill-logo2">
-
-
-            </div>
-            <div class="jenlio-des" id="d1">
-                This portfolio website is <span class="jenbold">entirely self-designed and developed</span>,
-                highlighting my journey from UX design
-                to Fine Arts. It reflects my work from concept to deployment, with regular updates and more content
-                to
-                come. Stay tuned for future developments!
-
-            </div>
-
-            <div class="sub-container">
-                <a href="https://github.com/Jen808/Jenlio" class="sub-title" target="_blank">Open Github
-                    Repository</a>
-
-            </div>
-
-        </div> -->
-
-        <div class="ux-pj-intro">UX Research & Design</div>
-
-
-        <div class="ux-sort">UX Projects are sorted by most recent projects</div>
-
-
-
-
-
-
-
-
-
-        <div class="sec" id="s7" tabindex="0">
-            <div class="container">
-                <img src="src/main-livmate.png" alt="MY Widdy Image: Mobile application" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title" id="t7">LivMate</div>
-                <div class="des">
-                    Created Mobile Application to <span class="bold-text">find perfect roommates.</span> Finding
-                    budgeted room,
-                    know each others living style before live together. No more worries on scam! All users need
-                    verification.
-
-                </div>
-                <!-- <div class="des">Desktop widget app for clock, calendar, todo-list, and weather. Each function has more than 4 different design with 16 different color theme. User can connect Google account to fetch events and schedule. Installation file is available. Codes are available in Github </div> -->
-                <div class="skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-
-                </div>
-                <!-- <a href="#" id="link">My Widdy</a> -->
-            </div>
-        </div>
-
-
-        <div class="sec" id="s2" tabindex="0">
-            <div class="container">
-                <img src="src/main-20.png" alt="MY Widdy Image: Clock, Calendar, To-do list" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title" id="t2">My-Widdy</div>
-                <div class="des">
-                    <span class="bold-text">Desktop widget app for clock, calendar, todo-list, and weather.</span>
-                    Each
-                    function has more than 4-6 designs with 16 different color themes. Users can connect Google
-                    account
-                    to fetch events and schedule. Installation file is available. Codes are available on Github.
-                </div>
-                <!-- <div class="des">Desktop widget app for clock, calendar, todo-list, and weather. Each function has more than 4 different design with 16 different color theme. User can connect Google account to fetch events and schedule. Installation file is available. Codes are available in Github </div> -->
-                <div class="skill">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-                    <img src='src/logo-html.png' alt="html" class="skill-logo">
-                    <img src='src/logo-css.png' alt="css" class="skill-logo">
-                    <img src='src/logo-js.png' alt="javascript" class="skill-logo">
-                    <img src='src/logo-node.png' alt="node.js" class="skill-logo">
-                    <img src='src/logo-npm.png' alt="npm" class="skill-logo">
-                    <img src='src/logo-electron.png' alt="electron" class="skill-logo">
-                    <img src='src/logo-git.png' alt="git" class="skill-logo">
-                    <img src='src/logo-github.png' alt="github" class="skill-logo">
-
-                </div>
-                <!-- <a href="#" id="link">My Widdy</a> -->
-            </div>
-        </div>
-        <div class="sec" id="s3" tabindex="0">
-            <div class="container">
-                <img src="src/main-rr.png" alt="RoosRoast Project Image: Desktop / Mobile" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title" id="t3">RoosRoast</div>
-                <div class="des" id="d3">
-                    <span class="bold-text">RoosRoast Coffee</span>, a beloved Ann Arbor shop, is redesigning its
-                    website, roosroast.com, to better showcase
-                    its quirky vibe and boost user engagement.
-                </div>
-                <div class="skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-                </div>
-                <!-- <a href="#" id="link">My Widdy</a> -->
-            </div>
-        </div>
-        <div class="sec" alt="Glansis Project Image: Desktop / Mobile" id="s4" tabindex="0">
-            <div class="container">
-                <img src="src/main.png" class="pj" alt="Glansis Project Prototype Image: Mobile and Desktop">
-            </div>
-            <div class="des-box">
-                <div class="title" id="t4">GLANSIS</div>
-                <div class="des" id="d4">
-                    <span class="bold-text"> NOAA's </span> Great Lakes Aquatic Nonindigenous Species Information
-                    System
-                    reconstruction focused on Educator Hub. Requested from Rochelle Sturtevant, GLANSIS Program
-                    Manager
-                </div>
-                <div class="skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-                </div>
-                <!-- <a href="#" id="link">My Widdy</a> -->
-            </div>
-        </div>
-        <div class="sec" id="s5" tabindex="0">
-            <div class="container">
-                <img src="src/main-22.png" alt="Vendors Project Prototype Image: Mobile" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title" id="t5">Vendors</div>
-                <div class="des" id="d5">
-                    This project makes it easier for street vendors and customers to connect, especially during
-                    <span class="bold-text"> COVID-19 </span>
-                    when finding vendors became more difficult. The goal is to help customers
-                    <span class="bold-text"> find vendors from home </span>
-                    and help sellers boost their sales.
-                </div>
-                <div class="skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-                </div>
-                <!-- <a href="#" id="link">My Widdy</a> -->
-            </div>
-        </div>
-        <div class="sec" id="s6" tabindex="0">
-            <div class="container">
-                <img src="src/main-23.png" alt="IFE System Project Prototype Image: Mobile and Desktop" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="title" id="t6">IFE System</div>
-                <div class="des" id="d6">
-                    This project aims to enrich the
-                    <span class="bold-text"> in-flight entertainment (IFE) system </span>
-                    thereby elevating the overall travel experience. Drawing upon feedback from customers of various
-                    airlines, this initiative seeks to
-                    <span class="bold-text"> address their needs and concerns, minimizing inconvenience while
-                        maximizing
-                        convenience </span>
-                </div>
-                <div class="skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-xd.png' alt="figma" class="skill-logo">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="sec" id="s8" tabindex="0">
-            <div class="container">
-                <img src="src/main-vol.png" alt="Volunteer connection program Ideation (Miro Board: Stickey Notes)"
-                    class="pj">
-            </div>
-            <div class="des-box">
-                <div class="coming-soon">Coming Soon!</div>
-                <div class="title" id="t8">Untitled: </div>
-                <div class="title2" id="t8">Volunteer connection program</div>
-                <div class="des" id="d7">
-                    Creating Volunteer connect website/app based on UN Sustainability goals, Focusing on "Quality
-                    Education" and "Reduced Ineqaulity"
-
-                </div>
-                <div class="skill" id="hidden-skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="sec" id="s7">
-            <div class="container">
-                <img src="src/main-cc.png" alt="Atheletic.net project: Current Website screen (Desktop)" class="pj">
-            </div>
-            <div class="des-box">
-                <div class="coming-soon">Coming Soon!</div>
-                <div class="title" id="t7">Atheletic.net</div>
-                <div class="title2" id="t7">Cross Country Coaching Team</div>
-                <div class="des" id="d7">
-                    Creating new website to better help coaches monitor and analyze athlete development over multiple
-                    years for cross country coaching team.
-
-                </div>
-                <div class="skill" id="hidden-skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-                    <img src='src/logo-html.png' alt="html" class="skill-logo">
-                    <img src='src/logo-css.png' alt="css" class="skill-logo">
-                    <img src='src/logo-js.png' alt="javascript" class="skill-logo">
-
-                </div>
-            </div>
-        </div> -->
-
-
-
-        <div class="sec" id="s8" tabindex="0">
-            <div class="container">
-                <img src="src/main-umrec.png" alt="U-M Rec Sports project: Current app screen (Mobile application)"
-                    class="pj">
-            </div>
-            <div class="des-box">
-                <div class="coming-soon">Coming later!</div>
-                <div class="title" id="t8">University of Michigan: </div>
-                <div class="title2" id="t8">Recreational Sports Department</div>
-                <div class="des" id="d7">
-                    Creating an engaging and compelling customer experience that supports connection, community and
-                    well-being through the Recreational Sports app.
-
-                </div>
-                <div class="skill" id="hidden-skill">
-                    <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
-                    <img src='src/logo-figma.png' alt="figma" class="skill-logo">
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-    </div>
     <div class="footer">
         <div class="ty-text">Thank you for your interest. Let’s keep in touch!</div>
         <div class="footer-icon">
@@ -1035,7 +870,9 @@
         <div class="copyright">© 2024 Jennifer Jung: enthusiastic designer, developer, cook, dog sis </div>
     </div>
 
-    <!-- <div class="custom-cursor"></div> -->
+    <div id="circle"></div>
+
+
 
 
 
@@ -1047,8 +884,6 @@
     <script src="script.js"></script>
 
     <script>
-
-
 
 
     </script>
