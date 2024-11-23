@@ -32,6 +32,7 @@ body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    cursor: none;
 }
 
 
@@ -176,7 +177,17 @@ Home - Main
     font-weight: 600;
     cursor: none;
     animation: fadeIn 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+
+a.github-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 16px;
+    text-decoration: none;
 }
 
 
