@@ -1017,7 +1017,7 @@ Profile background
 }
 
 span {
-    /* cursor: pointer; */
+    /* cursor: none; */
     -webkit-text-stroke: 0.1vw var(--pink-original);
     background-image: linear-gradient(0deg, var(--pink-original), var(--pink-original));
     -webkit-background-clip: text;
@@ -1063,16 +1063,6 @@ span:hover {
     padding-left: 10vw;
     position: relative;
 } */
-
-.study-flow {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10vw;
-    position: relative;
-    z-index: 50;
-}
 
 
 /* svg{
@@ -1139,11 +1129,11 @@ span:hover {
 
 
 .study-detail {
-    font-size: 1vw;
+    font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    line-height: 1.2vw;
-    ;
+    line-height: 20px;
+    
 }
 
 
@@ -1159,7 +1149,7 @@ span:hover {
 .years {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    font-size: 1.8vw;
+    font-size: 26px;
     color: var(--pink-original);
 
 }
@@ -1167,7 +1157,7 @@ span:hover {
 .focus {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 1.2vw;
+    font-size: 22px;
     color: var(--pink-original);
     padding: 1vw 0;
 
@@ -1175,33 +1165,50 @@ span:hover {
 }
 
 .study-container {
-    height: auto;
+    height: 215vw;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.study-flow {
+    width: 70vw;
+    height: 215vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+}
+
+
 
 .history {
     position: absolute;
-    top: 1095vh;
+    top: 0;
     left: 0;
     z-index: 100;
-    height: 250vw;
-    width: 100vw;
+    height: 215vw;
+    width: 100%;
     font-size: 2vw;
 
 
 }
 
+
 #sec1 {
     position: absolute;
-    top: 15vw;
+    top: 20vw;
 
 
 }
 
 #sec2 {
     position: absolute;
-    top: 110vw;
-    right: 10vw;
+    top: 92vw;
+    right: 0;
     text-align: right;
     width: 35vw;
     line-height: 1.8vw;
@@ -1211,9 +1218,9 @@ span:hover {
 
 #sec3 {
     position: absolute;
-    top: 142vw;
-    left: 10vw;
-    width: 40vw;
+    top: 118vw;
+    left: 0;
+    width: 35vw;
     line-height: 1.8vw;
     z-index: 100;
 }
@@ -1222,10 +1229,10 @@ span:hover {
 
 #sec4 {
     position: absolute;
-    top: 190vw;
-    right: 10vw;
+    top: 150vw;
+    right: 0;
     text-align: right;
-    width: 35vw;
+    width: 30vw;
     line-height: 1.8vw;
 }
 
@@ -1234,8 +1241,8 @@ span:hover {
     border: 0.15vw solid var(--pink-original);
     /* border-color:var(--pink-original); */
     background-color: transparent;
-    width: 8vw;
-    height: 3vw;
+    width: 140px;
+    height: 55px;
     position: absolute;
     top: 100vw;
     right: 27vw;
@@ -1243,9 +1250,9 @@ span:hover {
     color: var(--pink-original);
     font-family: "Roboto", sans-serif;
 
-    font-size: 1.1vw;
+    font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: none;
 
 
 }
@@ -1289,9 +1296,9 @@ span:hover {
 
 #artlink1 {
     position: absolute;
-    top: 110vw;
-    left: 54vw;
-    cursor: pointer;
+    top: 92vw;
+    left: 37vw;
+    cursor: none;
     z-index: 100;
 
 }
@@ -1300,19 +1307,17 @@ span:hover {
 
 #artlink {
     position: absolute;
-
-    top: 142vw;
-    left: 40vw;
-    cursor: pointer;
+    top: 118vw;
+    left: 26vw;
+    cursor: none;
     z-index: 100;
 
 }
 
 #chslink {
     position: absolute;
-    top: 212vw;
-    right: 10vw;
-    ;
+    top: 150vw;
+    right: 24vw;
     width: 6vw;
 }
 

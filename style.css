@@ -641,3 +641,26 @@ Footer
     margin-bottom: 3em;
 
 }
+
+
+
+
+/* ===============================================
+Reduce Motion
+=============================================== */
+
+@media (prefers-reduced-motion) {
+
+    .intro-name,
+    .intro-overlay,
+    .intro-me,
+    .intro-github,
+    .github-button{
+        animation: none;
+        transition: none;
+    }
+
+}
+
+
+
