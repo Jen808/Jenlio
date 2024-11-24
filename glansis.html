@@ -32,6 +32,14 @@
         } */
     </style>
 
+    <style>
+        @media (max-width: 756px) {
+            .custom-cursor {
+                display: hidden;
+            }
+        }
+    </style>
+
 
 
 
@@ -68,9 +76,9 @@
 
             <p>
                 <label>
-                    <h2>
-                        Your feedback helps me a lot
-                    </h2>
+
+                    Your feedback helps me a lot
+
                     <textarea name="feedback"></textarea>
                 </label>
             </p>
@@ -94,6 +102,17 @@
             const customCursor = document.createElement('div');
             customCursor.classList.add('custom-cursor');
             document.body.appendChild(customCursor);
+
+            const updateCursorVisibility = () => {
+                if (window.innerWidth < 769) {
+                    customCursor.style.display = 'hidden';
+                } else {
+                    customCursor.style.display = 'visible';
+                }
+            };
+
+            updateCursorVisibility();
+            window.addEventListener('resize', updateCursorVisibility);
 
             document.addEventListener('mousemove', (e) => {
                 customCursor.style.left = `${e.clientX}px`;
@@ -503,7 +522,7 @@ Header
             </video>
 
         </div>
-<!-- 
+        <!-- 
 
         <script>
             const video1 = document.getElementById('video1');
@@ -746,7 +765,7 @@ Header
             <div class="key-subtitle">Buttons
                 <div class="key-des">By giving border and drop shadow, easy to recognize interactive elements</div>
             </div>
-            <img src="src/kde1.png" class="key-img">
+            <img src="src/kde1.png" class="key-img" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Horizontal Slider
@@ -754,26 +773,26 @@ Header
                     easy to understand it is shiftable. Continuous background keep united
                 </div>
             </div>
-            <img src="src/kde10-61.png" class="key-img" id="half">
+            <img src="src/kde10-61.png" class="key-img" id="half" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Habergur Menu Icon
                 <div class="key-des">44px by 44px which satisfying WCAG guideline makes intuitive </div>
             </div>
-            <img src="src/kde10-60.png" class="key-img" id="half">
+            <img src="src/kde10-60.png" class="key-img" id="half" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Scroll bar
                 <div class="key-des">By cutting contents, user can think there is hidden contents without distracting
                     the page by vulnerable contents </div>
             </div>
-            <img src="src/kde4.png" class="key-img">
+            <img src="src/kde4.png" class="key-img" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Presentation Slide
                 <div class="key-des">Page indicator at the bottom right with hover effect</div>
             </div>
-            <img src="src/kde5.png" class="key-img">
+            <img src="src/kde5.png" class="key-img" alt="Design Asset images">
         </div>
     </div>
     <div class="key-design-decision" id="kd-section">
@@ -788,14 +807,14 @@ Header
                 <div class="key-des">For Mobile, all pages title and upper catergory is display. For Desktop,
                     Breadcrumbs are availble</div>
             </div>
-            <img src="src/kdkd-62.png" class="key-img">
+            <img src="src/kdkd-62.png" class="key-img" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Emphasis page on menu
                 <div class="key-des">For both Mobile and Desktop, tool/page where they exploring is selected
                 </div>
             </div>
-            <img src="src/kdkd-63.png" class="key-img" id="half">
+            <img src="src/kdkd-63.png" class="key-img" id="half" alt="Design Asset images">
         </div>
     </div>
     <div class="key-design-decision" id="kd-section">
@@ -807,26 +826,26 @@ Header
             <div class="key-subtitle">Illustrator for sub categories
                 <div class="key-des"> </div>
             </div>
-            <img src="src/kdkd-64.png" class="key-img" id="half">
+            <img src="src/kdkd-64.png" class="key-img" id="half" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Neat research pages with visualized data
                 <div class="key-des"> </div>
             </div>
-            <img src="src/kdkd-65.png" class="key-img">
+            <img src="src/kdkd-65.png" class="key-img" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Playable video
                 <div class="key-des">Including video player within the page will not require extra step to play</div>
             </div>
-            <img src="src/kdkd-66.png" class="key-img">
+            <img src="src/kdkd-66.png" class="key-img" alt="Design Asset images">
         </div>
         <div class="key-container" tabindex="0">
             <div class="key-subtitle">Social Media
                 <div class="key-des">User can see recent updates and this can make user to follow account, increasing
                     GLANSIS's social media engagement</div>
             </div>
-            <img src="src/kdkd-67.png" class="key-img">
+            <img src="src/kdkd-67.png" class="key-img" alt="Design Asset images">
         </div>
     </div>
 

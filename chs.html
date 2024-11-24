@@ -30,6 +30,12 @@
         .menu-toggle {
             display: none;
         }
+
+        @media (max-width: 756px) {
+            .custom-cursor {
+                display: hidden;
+            }
+        }
     </style>
 
 
@@ -95,6 +101,17 @@
             const customCursor = document.createElement('div');
             customCursor.classList.add('custom-cursor');
             document.body.appendChild(customCursor);
+
+            const updateCursorVisibility = () => {
+                if (window.innerWidth < 769) {
+                    customCursor.style.display = 'hidden';
+                } else {
+                    customCursor.style.display = 'visible';
+                }
+            };
+
+            updateCursorVisibility();
+            window.addEventListener('resize', updateCursorVisibility);
 
             document.addEventListener('mousemove', (e) => {
                 customCursor.style.left = `${e.clientX}px`;

@@ -26,6 +26,12 @@
             padding: 15px !important;
             border-radius: 30px !important;
         }
+
+        @media (max-width: 756px) {
+            .custom-cursor {
+                display: hidden;
+            }
+        }
     </style>
 
 
@@ -91,10 +97,22 @@
             customCursor.classList.add('custom-cursor');
             document.body.appendChild(customCursor);
 
+            const updateCursorVisibility = () => {
+                if (window.innerWidth < 769) {
+                    customCursor.style.display = 'hidden';
+                } else {
+                    customCursor.style.display = 'visible';
+                }
+            };
+
+            updateCursorVisibility();
+            window.addEventListener('resize', updateCursorVisibility);
+
             document.addEventListener('mousemove', (e) => {
                 customCursor.style.left = `${e.clientX}px`;
                 customCursor.style.top = `${e.clientY}px`;
             });
+
 
             const secElements = document.querySelectorAll('.sec');
             const secingElements = document.querySelectorAll('.sec-ing');
@@ -118,7 +136,7 @@
             const downElements = document.querySelectorAll('.download');
 
 
-            
+
 
 
 
@@ -374,7 +392,7 @@
             });
 
 
-            
+
             downElements.forEach(down => {
                 down.addEventListener('mouseover', () => {
                     customCursor.textContent = '💾';
