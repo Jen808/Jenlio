@@ -325,9 +325,9 @@ Feedback
 
             <p>
                 <label>
-                    
-                        Your feedback helps me a lot
-                    
+
+                    Your feedback helps me a lot
+
                     <textarea name="feedback"></textarea>
                 </label>
             </p>
@@ -414,6 +414,17 @@ Feedback
             const customCursor = document.createElement('div');
             customCursor.classList.add('custom-cursor');
             document.body.appendChild(customCursor);
+
+            const updateCursorVisibility = () => {
+                if (window.innerWidth < 769) {
+                    customCursor.style.display = 'none';
+                } else {
+                    customCursor.style.display = 'block';
+                }
+            };
+
+            updateCursorVisibility();
+            window.addEventListener('resize', updateCursorVisibility);
 
             document.addEventListener('mousemove', (e) => {
                 customCursor.style.left = `${e.clientX}px`;
