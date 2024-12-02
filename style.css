@@ -414,6 +414,16 @@ Home - UX
 
 }
 
+#sec-herohub {
+    border: solid 3px #3BABD8;
+
+}
+
+#sec-legwork {
+    border: solid 3px #5BBA6F;
+
+}
+
 #sec-livmate {
     border: solid 3px #0AD0C7;
 
@@ -491,6 +501,31 @@ Home - UX
     width: 340px;
 
 }
+
+
+#o-herohub {
+    background-color: rgba(246, 110, 60, 0.9);
+    color: white;
+}
+
+#sec-herohub:hover .overlay {
+    opacity: 1;
+
+}
+
+
+#o-legwork {
+    background-color: rgba(19, 117, 71, 0.9);
+    color: white;
+}
+
+#sec-legwork:hover .overlay {
+    opacity: 1;
+
+}
+
+
+
 
 
 #o-livmate {

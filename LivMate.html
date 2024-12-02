@@ -134,6 +134,7 @@
             const gitElements = document.querySelectorAll('.github-button');
             const fbElements = document.querySelectorAll('.feedbackBtn');
             const lastpElements = document.querySelectorAll('.shift-previous');
+            const nextpElements = document.querySelectorAll('.shift-next');
             // const nextpElements = document.querySelectorAll('.feedbackBtn');
             const openfElements = document.querySelectorAll('.openInFigma');
             const indexElements = document.querySelectorAll('.index a');
@@ -350,6 +351,20 @@
             });
 
 
+            nextpElements.forEach(nextp => {
+                nextp.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                nextp.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+
+
+
             openfElements.forEach(openf => {
                 openf.addEventListener('mouseover', () => {
                     customCursor.textContent = '🗝️';
@@ -555,8 +570,8 @@ Header
             </div>
 
             <div class="shift-container">
+                <a href="legwork.html" class="shift-next"> Next Project</a>
                 <a href="roosroast.html" class="shift-previous"> Previous Project</a>
-                <a href="LivMate.html" class="shift-next"> Next Project</a>
             </div>
         </div>
     </div>
@@ -722,7 +737,7 @@ Header
 
 
     </div>
-    <!-- <div class="containers">
+    <div class="containers">
         <div class="sub-title" id="wl" tabindex="0">Wireframe and Lo-Fi Prototype</div>
         <div class="des">Started from Site map, create wireframe and initial Lo-Fi Prototype.</div>
         <div class="row-container" id="spaceEven">
@@ -743,7 +758,7 @@ Header
 
 
         </div>
-    </div> -->
+    </div>
     <div class="container">
         <div class="sub-title" id="bd" tabindex="0">Branding Design</div>
         <div class="row-container" id="bdrow">
@@ -943,8 +958,9 @@ Header
     </div>
 
     <div class="b-shift-container">
+        <a href="legwork.html" class="shift-next"> Next Project</a>
         <a href="roosroast.html" class="shift-previous"> Previous Project</a>
-        <a href="LivMate.html" class="shift-next"> Next Project</a>
+
     </div>
 
 

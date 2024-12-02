@@ -21,7 +21,7 @@
 }
 
 
-.index a{
+.index a {
     cursor: none;
 }
 
@@ -80,7 +80,7 @@ body {
         margin-left: 12%;
 
         border-radius: 30px;
-    
+
     }
 
 
@@ -96,7 +96,7 @@ body {
         margin-left: 12%;
 
         border-radius: 30px;
-    
+
     }
 
 
@@ -308,7 +308,7 @@ body {
     text-decoration: underline;
 }
 
-.index a:hover{
+.index a:hover {
     color: var(--color-title);
 }
 
@@ -712,24 +712,7 @@ pj shift button
 
 
 .shift-previous {
-    background-color: var(--color-title);
-    /* margin-right: 2vw; */
-    cursor: none;
-    color: white;
-    font-size: 1vw;
-    font-weight: 600;
-    padding: 1vw 2vw;
-    border-radius: 10vw;
 
-}
-
-
-.shift-previous:hover {
-    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
-}
-
-
-.shift-next {
     border: 1px solid var(--color-title);
     cursor: none;
     color: var(--color-main);
@@ -739,12 +722,37 @@ pj shift button
     border-radius: 10vw;
 
 
+
 }
 
+
+.shift-previous:hover,
+.shift-next:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+
+.shift-next {
+
+    background-color: var(--color-title);
+    /* margin-right: 2vw; */
+    cursor: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+    margin-right: 2vw;
+
+
+
+}
+
+/* 
 .shift-next {
     display: none;
 }
-
+ */
 
 
 

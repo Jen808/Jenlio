@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'sec-vendors', url: 'vendors.html' },
         { id: 'sec-ife', url: 'ife.html' },
         { id: 'sec-livmate', url: 'LivMate.html' },
+        { id: 'sec-legwork', url: 'legwork.html' },
+        { id: 'sec-herohub', url: 'herohub.html' },
 
     ];
 
