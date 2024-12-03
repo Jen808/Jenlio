@@ -36,6 +36,17 @@
 
     }
 
+    .mainimg-dt {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
 
     .mainimg-still {
         width: 100vw;

@@ -17,7 +17,7 @@
     --teal-superlight: #F2F7F8;
     --color-title: #054A29;
     --color-main: #2A9134;
-    --color-sub: #DEFFE5;
+    --color-sub: #EAFAED;
 }
 
 
@@ -60,7 +60,7 @@ body {
 
 
 
-.mainimg {
+.mainimg-dt {
     width: 36vw;
     height: 100%;
     object-fit: cover;
@@ -74,12 +74,12 @@ body {
 
 @media (max-width: 1200px) {
 
-    .mainimg {
-        width: 18vw;
+    .mainimg-dt {
+        width: 42vw;
 
         margin-left: 12%;
 
-        border-radius: 30px;
+        border-radius: 10px;
 
     }
 
@@ -87,11 +87,11 @@ body {
 }
 
 
-
+/* 
 @media (max-width: 756px) {
 
     .mainimg {
-        width: 18vw;
+        width: 10vw;
 
         margin-left: 12%;
 
@@ -102,7 +102,7 @@ body {
 
 }
 
-
+ */
 
 
 
@@ -272,10 +272,9 @@ body {
 /* ====================================================================================== */
 
 
-.mobile {
-    width: 30em !important;
-    height: 50em !important;
-    border-style: none;
+iframe{
+    width: 70vw;
+    height: 44vw;
 }
 
 .openInFigma {
@@ -315,16 +314,20 @@ body {
 .des {
     font-size: 1.1em;
     font-weight: 600;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 #es-des {
     width: 35em;
     line-height: 2em;
-    background-color: var(--teal-light);
+    background-color: var(--color-sub);
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
     padding: 3em 1.5em;
+    color: var(--color-title);
 
 }
+
+
 
 
 .esThumb {
@@ -332,6 +335,73 @@ body {
     height: auto;
     box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.2);
 }
+
+
+/* ====================================================================================== */
+/* Objectives */
+/* ====================================================================================== */
+
+#max-container{
+    width: 100%;
+}
+
+.cross-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.deco1{
+    width: 50%;
+    height: 200px;
+    background-color: var(--color-title);
+    z-index: 1;
+    margin-top: 55px;
+}
+
+@media (max-width: 768px) {
+    .deco1{
+        display: none;
+    }
+
+}
+
+
+/* ====================================================================================== */
+/* Objectives */
+/* ====================================================================================== */
+
+.oj {
+    list-style-type: disc;
+    border: 1px solid var(--color-main);
+    padding: 80px;
+    border-radius: 20px;
+    background-color: #FFF;
+    z-index: 3;
+    width: 740px;
+    
+}
+
+
+.oj li {
+    line-height: 30px;
+}
+
+.oj li span{
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .oj{
+        width: 70%;
+        padding: 40px;
+    }
+
+}
+
+
 
 
 /* ====================================================================================== */
@@ -563,8 +633,12 @@ body {
 /* ====================================================================================== */
 
 .hifi-main {
-    width: 18em;
-    height: auto;
+    width: 36em;
+    height: 100%;
+    z-index: 1;
+    /* box-shadow: -0.4em 0.4em 0.4em rgba(0, 0, 0, 0.2); */
+    /* background-color: transparent; */
+
 
 }
 
@@ -581,11 +655,12 @@ body {
 #hifi-des3,
 #hifi-des4,
 #hifi-des5 {
-    background-color: var(--teal-superlight);
-    width: 32em;
+    background-color: var(--color-sub);
+    width: 38em;
     height: auto;
-    border-radius: 2em 0 0 2em;
+    border-radius: 2em;
     padding: 3em 4em;
+    margin-left: -120px;
 }
 
 #hifi-des1 {
@@ -621,6 +696,8 @@ body {
     font-size: 1.8em;
     font-weight: 600;
     margin-top: 0.6em;
+    margin-left: 100px;
+
 
 }
 
@@ -633,6 +710,8 @@ body {
     font-size: 1.1em;
     line-height: 1.6em;
     margin-top: 2em;
+    padding-left: 100px;
+    z-index: 0;
 
 }
 
@@ -648,10 +727,7 @@ body {
 
 }
 
-.hifi-main {
-    box-shadow: -0.4em 0.4em 0.4em rgba(0, 0, 0, 0.2);
-    border-radius: 3em;
-}
+
 
 
 .hifi-sub-empty {
@@ -712,25 +788,8 @@ pj shift button
 
 
 .shift-previous {
-    background-color: var(--color-title);
-    /* margin-right: 2vw; */
-    cursor: none;
-    color: white;
-    font-size: 1vw;
-    font-weight: 600;
-    padding: 1vw 2vw;
-    border-radius: 10vw;
-    margin-right: 2vw;
-
-}
 
 
-.shift-previous:hover {
-    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
-}
-
-
-.shift-next {
     border: 1px solid var(--color-title);
     cursor: none;
     color: var(--color-main);
@@ -740,6 +799,25 @@ pj shift button
     border-radius: 10vw;
 
 
+}
+
+.shift-next:hover,
+.shift-previous:hover {
+    box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+
+.shift-next {
+
+    background-color: var(--color-title);
+    /* margin-right: 2vw; */
+    cursor: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    border-radius: 10vw;
+    margin-right: 2vw;
 }
 
 /* .shift-next {
@@ -766,7 +844,10 @@ pj shift button
     }
 
 
-    .frame {
+
+    iframe {
+        width: 95vw !important;
+        height: 70vw !important;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -775,29 +856,21 @@ pj shift button
 
     }
 
+    iframe canvas{
+        width: 90%;
+        height: auto;
+    }
+
     .proto-des {
         display: none;
 
     }
 
-    .mobile {
-        /* display: none; */
-        width: 86vw !important;
-        height: 200vw !important;
-
-    }
-
-    .desktop {
-        display: none;
-
-        /* width: 90vw !important;
-        height: 76vw !important; */
-    }
 
 
     .openInFigma {
         color: #000 !important;
-        background-color: #0AD0C7 !important;
+        background-color: var(--color-sub) !important;
         font-weight: 700;
         padding: 16px 20px;
         border-radius: 20vw;
@@ -858,7 +931,7 @@ pj shift button
     }
 
     .shift-next {
-        display: none;
+        margin-right: 20px;
     }
 
     /* ==============================================
@@ -1047,7 +1120,7 @@ survery
 
     #hifi-container {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .hifi-sub-container {
@@ -1060,22 +1133,25 @@ survery
     #hifi-des3,
     #hifi-des4,
     #hifi-des5 {
-        width: 70vw;
-        padding: 30px;
-        border-radius: 0 0 1em 1em;
-        margin-top: -200px;
-        padding-top: 230px;
+        width: 95%;
+        padding: 28px;
+        border-radius: 1em;
+        margin-top: -100px !important;
+        padding-top: 130px;
         z-index: -1;
+        margin: 0;
 
     }
 
     .hifi-des-detail {
         font-size: 15px;
+        padding-left: 0;
+
     }
 
-    .hifi-main {
+    /* .hifi-main {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-    }
+    } */
 
     .styleguide {
         width: 90vw;
@@ -1084,6 +1160,8 @@ survery
 
     #hifi-des-title-container {
         font-size: 24px;
+        margin-left: 0;
+
     }
 
     /* .openInFigma {

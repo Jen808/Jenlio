@@ -133,6 +133,7 @@
             const gitElements = document.querySelectorAll('.github-button');
             const fbElements = document.querySelectorAll('.feedbackBtn');
             const lastpElements = document.querySelectorAll('.shift-previous');
+            const nextpElements = document.querySelectorAll('.shift-next');
             // const nextpElements = document.querySelectorAll('.feedbackBtn');
             const openfElements = document.querySelectorAll('.openInFigma');
             const indexElements = document.querySelectorAll('.index a');
@@ -349,6 +350,20 @@
             });
 
 
+            nextpElements.forEach(nextp => {
+                nextp.addEventListener('mouseover', () => {
+                    customCursor.textContent = '👀';
+                    customCursor.style.fontSize = '32px';
+                });
+
+                nextp.addEventListener('mouseout', () => {
+                    customCursor.textContent = '';
+                });
+            });
+
+        
+
+
             openfElements.forEach(openf => {
                 openf.addEventListener('mouseover', () => {
                     customCursor.textContent = '🗝️';
@@ -478,7 +493,7 @@ Header
     <div class="title">
 
 
-        <video controls autoplay muted class="mainimg" id="video">
+        <video controls autoplay muted class="mainimg-dt" id="video">
             <source src="src/vid/legwork-desk.mp4" type="video/mp4" alt="Your browser does not support the video tag.">
 
 
@@ -495,7 +510,7 @@ Header
                 <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
             </div>
             <div class="title-box">legwork</div>
-            <div class="title-des">
+            <ol class="title-des">
                 <li class="index"><a href=#es>Executive Summary</a></li>
                 <li class="index"><a href=#us>User Survey</a></li>
                 <li class="index"><a href=#up>User Persona</a></li>
@@ -509,7 +524,7 @@ Header
 
 
 
-            </div>
+            </ol>
             <div class="brief">
                 <div class="cal-box">
                     <svg id="cal-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.2 99.7">
@@ -552,8 +567,8 @@ Header
             </div>
 
             <div class="shift-container">
-                <a href="LivMate.html" class="shift-previous"> Previous Project</a>
                 <a href="herohub.html" class="shift-next"> Next Project</a>
+                <a href="LivMate.html" class="shift-previous"> Previous Project</a>
             </div>
         </div>
     </div>
@@ -576,12 +591,12 @@ Header
 
     </div> -->
 
-
+    <!-- ========Executive Summary========== -->
 
     <div class="container">
         <div class="sub-title" id="es" tabindex="0">Executive Summary</div>
         <div class="row-container" id="es-container">
-            <img src="src/LivMate/es-thumb.jpg" class="esThumb" alt="photo of livingroom">
+            <img src="src/legwork/executive summary.jpg" class="esThumb" alt="photo of livingroom">
             <div class="des" id="es-des">
                 This project tackles key challenges in online shopping: trust issues, inefficient price comparisons, and
                 reliance on reviews. We created a platform with transparent pricing, verified sellers, and an intuitive
@@ -590,144 +605,95 @@ Header
             </div>
         </div>
     </div>
-    <div class="container">
+
+    <!-- ========Objectives========== -->
+
+    <div class="container" id="max-container">
         <div class="sub-title" id="us" tabindex="0">Objectives</div>
-    </div>
-    <div class="container">
-        <div class="sub-title" id="bd" tabindex="0">Branding Design</div>
-        <div class="row-container" id="bdrow">
-            <div class="column-container" id="half">
-                <img src="src/LivMate/brand-name.png" class="brand" alt="branding design: Name ideation">
-                <div class="brandDes">I came up with 12 different names and my finalist were Roomify and LivMate. To
-                    highlight the goal is not just for find home, find a place with roommate, I decided to go with
-                    LivMate</div>
-            </div>
-            <div class="column-container" id="half">
-                <img src="src/LivMate/brand-ty.png" class="brand" alt="branding design: Typeface Ideation">
-                <div class="brandDes">The reason I choose to go with Top middle font is it has vertical component but
-                    also
-                    have square shape. In addiiton, mixed of diagonal line on 'e' makes 'LivMate' more inclusive for all
-                    different type of people </div>
-            </div>
-        </div>
-        <div class="row-container" id="bdrow">
-            <div class="column-container" id="half">
-                <img src="src/LivMate/brand-color.png" class="brand" alt="branding design: Choice of colors">
-                <div class="brandDes">Choose Green to give peaceful, refreshment. Among three color palettes, vivid
-                    group looks most engaging</div>
-            </div>
-            <div class="column-container" id="half">
-                <img src="src/LivMate/brand-final.png" class="brand" alt="branding design: Final Logo">
-                <div class="brandDes">From the alignment of the logo, typeface, and colors, I designed the 'M' to convey
-                    a deeper message. There were two symoblized meaning, one is shaking hands and another is opened
-                    doors for everyone.</div>
-            </div>
+        <div class="cross-container">
+            <div class="deco1"></div>
+            <ul class="oj">
+                <li><span>Simplify Price Comparisons:</span> Provide real-time cost breakdowns, including taxes and
+                    shipping.</li>
+                <li><span>Build Trust:</span> Ensure seller and product authenticity with verification and reviews.</li>
+                <li><span>Save Time:</span> Minimize effort in finding the best deals across platforms.</li>
+                <li><span>Enhance Usability:</span> Offer a clean, easy-to-navigate interface.</li>
+                <li><span>Boost Confidence:</span> Help users make informed decisions with clear, detailed information.
+                </li>
+            </ul>
+            <div class="deco1"></div>
+
         </div>
 
-
     </div>
+    <!-- ========User Research========== -->
+
+    <div class="container" id="max-container">
+        <div class="sub-title" id="ur" tabindex="0">User Research</div>
+        <!-- img -->
+    </div>
+
+
+
+    <!-- ========Hi-Fi Prototype========== -->
+
     <div class="container" id="container-no-margin">
         <div class="sub-title" id="hf" tabindex="0">Hi-Fi Prototype</div>
     </div>
     <div class="container">
         <div class="row-container" id="hifi-container">
+            <img src="src/legwork/home.png" class="hifi-main" alt="Hi-Fi prototype mock up: Home">
             <div class="column-container" id="hifi-des1">
                 <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/LivMate/icon-home.png" class="icon" alt="Icon: Home">
+                    <img src="src/legwork/icon-home.png" class="icon" alt="Icon: Home">
                     <div class="hifi-des-title">Home</div>
                 </div>
                 <div class="hifi-des-detail">
-                    The Home page in the LivMate app allows users to browse available housing and roommate listings.
-                    Users can toggle between “List” and “Map” views, apply filters for price, room type, and
-                    features, and use the search bar to find listings by city or address. Listings are displayed as
-                    scrollable cards with key details like price, location, and room type, along with save options.
-                    The bottom navigation bar provides easy access to Saved, Chat, and Profile pages.
+                    The Home Page offers users an intuitive interface to explore products. It showcases personalized
+                    sections like "Deals from Your Favorite Sellers," "Weekly Most Clicked Items," and "Recommended for
+                    You." Users can seamlessly toggle between categories, search for items, and access key deals, all
+                    while enjoying a clean, visually engaging layout. The focus is on creating a personalized and
+                    efficient browsing experience.
                 </div>
-            </div>
-            <img src="src/LivMate/home1.png" class="hifi-main" alt="Hi-Fi prototype mock up: Home">
-            <div class="hifi-sub-container">
-                <img src="src/LivMate/home2.png" class="hifi-sub" alt="Hi-Fi prototype mock up: Home">
-
-                <img src="src/LivMate/home3.png" class="hifi-sub" alt="Hi-Fi prototype mock up: Home">
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row-container" id="hifi-container">
-            <div class="column-container" id="hifi-des2">
-                <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/LivMate/icon-home.png" class="icon" alt="Icon: Home">
-                    <div class="hifi-des-title">Listing Detail Page</div>
-                </div>
-                <div class="hifi-des-detail">
-                    The Listing Detail page in the LivMate app provides key information about a housing option,
-                    including the number of rooms, bathrooms, and amenities like A/C, parking, and pet policies. Users
-                    can view room availability, pricing, and whether the room is shared or furnished. <br><br>
-
-                    The resident's profile shows personal preferences like guest policies and noise tolerance. Users can
-                    save the listing, send a message, or view the location on a map.
-                </div>
-            </div>
-            <img src="src/LivMate/listing1.png" class="hifi-main" alt="Hi-Fi prototype mock up: Home > Listing detail">
-            <div class="hifi-sub-container" id="hifi2">
-                <img src="src/LivMate/listing2.png" class="hifi-sub"
-                    alt="Hi-Fi prototype mock up: Home > Listing detail">
-
-                <img src="src/LivMate/listing3.png" class="hifi-sub"
-                    alt="Hi-Fi prototype mock up: Home > Listing detail">
-            </div>
-        </div>
-    </div>
-
 
 
     <div class="container">
         <div class="row-container" id="hifi-container">
-            <div class="column-container" id="hifi-des3">
+            <img src="src/legwork/search-filter.png" class="hifi-main" alt="Hi-Fi prototype mock up: Home">
+            <div class="column-container" id="hifi-des1">
                 <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/LivMate/icon-home.png" class="icon" alt="Icon: Home">
-                    <div class="hifi-des-title">Map</div>
+                    <img src="src/legwork/icon-search.png" class="icon" alt="Icon: Search Filter">
+                    <div class="hifi-des-title">Search Filter</div>
                 </div>
                 <div class="hifi-des-detail">
-                    The Map View in the LivMate app lets users explore housing listings by location. Icons on the map
-                    represent listings, which users can tap to view details like price and room type. Users can switch
-                    between "List" and "Map" views and apply filters to refine the results. Clicking a listing shows a
-                    preview with key details.
+                    The Search and Filter functionality allows users to refine their search effortlessly. With smart
+                    filters for price, brand, customer ratings, and benefit programs, users can quickly find the best
+                    deals. The search bar includes auto-suggestions and categories to improve discovery, ensuring users
+                    save time while locating their desired products.
                 </div>
-            </div>
-            <img src="src/LivMate/map1.png" class="hifi-main" alt="Hi-Fi prototype mock up: map">
-            <div class="hifi-sub-container">
-                <img src="src/LivMate/map2.png" class="hifi-sub" alt="Hi-Fi prototype mock up: map">
-                <div class="hifi-sub-empty"></div>
-
             </div>
         </div>
     </div>
-
-
 
 
     <div class="container">
         <div class="row-container" id="hifi-container">
-            <div class="column-container" id="hifi-des4">
+            <img src="src/legwork/product-detail.png" class="hifi-main"
+                alt="Hi-Fi prototype mock up: Product Listing Page">
+            <div class="column-container" id="hifi-des1">
                 <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/LivMate/icon-chat.png" class="icon" alt="Icon: Chat">
-                    <div class="hifi-des-title">Chat</div>
+                    <img src="src/legwork/icon-sort.png" class="icon" alt="Icon: Listing Page">
+                    <div class="hifi-des-title">Product Listing Page</div>
                 </div>
                 <div class="hifi-des-detail">
-                    The Chat feature in LivMate lets users communicate directly with homeowners or roommates, view
-                    ongoing conversations, and inquire about listings. <br><br>
-
-                    In the Chat Detail view, users can easily send messages while seeing key listing info at the top.
-                    Clicking on the profile photo brings up the homeowner or roommate's profile details, and clicking on
-                    the background or room photo opens the full listing details.
+                    The Product Detail Page provides a comprehensive view of each product, featuring high-quality
+                    images, detailed descriptions, and user reviews. Transparent pricing shows the full cost, including
+                    taxes and shipping, alongside comparison tools that highlight pricing across multiple platforms.
+                    Trust indicators, like seller verification badges, add credibility to the shopping experience.
                 </div>
-            </div>
-            <img src="src/LivMate/chat1.png" class="hifi-main" alt="Hi-Fi prototype mock up: chat">
-            <div class="hifi-sub-container">
-                <img src="src/LivMate/chat2.png" class="hifi-sub" alt="Hi-Fi prototype mock up: chat">
-                <div class="hifi-sub-empty"></div>
-
             </div>
         </div>
     </div>
@@ -735,38 +701,11 @@ Header
 
 
 
-    <div class="container">
-        <div class="row-container" id="hifi-container">
-            <div class="column-container" id="hifi-des5">
-                <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/LivMate/icon-profile.png" class="icon" alt="Icon: profile" id="icon-profile">
-                    <div class="hifi-des-title">Profile</div>
-                </div>
-                <div class="hifi-des-detail">
-                    The Profile page in LivMate allows users to manage their personal information and listing
-                    preferences. Users can edit contact details, control the visibility of their profile photo, sex, and
-                    age, and add housing listings under the "My Listing" section. The page also provides access to
-                    customize home features, room availability, and personal preferences, making it easy for users to
-                    tailor their profile and listings to attract potential roommates.
-                </div>
-            </div>
-            <img src="src/LivMate/profile1.png" class="hifi-main" alt="Hi-Fi prototype mock up: profile">
-            <div class="hifi-sub-container" id="hifi3">
-                <img src="src/LivMate/profile2.png" class="hifi-sub" alt="Hi-Fi prototype mock up: profile">
-                <img src="src/LivMate/profile3.png" class="hifi-sub" alt="Hi-Fi prototype mock up: profile">
-
-            </div>
-        </div>
-    </div>
-
-
-
-
-
+    <!-- ==========Style Guide=========== -->
 
     <div class="container">
         <div class="sub-title" id="sg" tabindex="0">Style Guide</div>
-        <img src="src/LivMate/styleguide.png" class="styleguide"
+        <img src="src/legwork/styleguide.png" class="styleguide"
             alt="styleguide image: Colors, Typefaces, Font, Icons, and Sizing">
     </div>
 
@@ -774,10 +713,9 @@ Header
         <div class="sub-title" id="top">Final Prototype</div>
         <div class="frame">
 
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" class="mobile"
-                src="https://embed.figma.com/proto/JDy0X55qfEb9ZxnzobURV0/ENTR390?node-id=102-4589&embed-host=share"
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                src="https://embed.figma.com/proto/suWcHnpTKmbQYcQJdyWWk6/ENTR-390---PJ%232?node-id=38-1565&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=32%3A168&starting-point-node-id=38%3A1565&embed-host=share"
                 allowfullscreen></iframe>
-
 
 
         </div>
@@ -785,15 +723,15 @@ Header
         <div class="openInFigma">
 
             <a
-                href="https://www.figma.com/proto/JDy0X55qfEb9ZxnzobURV0/ENTR390?node-id=102-4589&content-scaling=fixed&t=oYUcnJJIO8iOoHWk-1">
+                href="https://www.figma.com/proto/suWcHnpTKmbQYcQJdyWWk6/ENTR-390---PJ%232?node-id=38-1565&node-type=canvas&t=Or9N89ewApbZDOFR-1&scaling=scale-down&content-scaling=fixed&page-id=32%3A168&starting-point-node-id=38%3A1565">
                 Open in Figma </a>
         </div>
 
     </div>
 
     <div class="b-shift-container">
-        <a href="LivMate.html" class="shift-previous"> Previous Project</a>
         <a href="herohub.html" class="shift-next"> Next Project</a>
+        <a href="LivMate.html" class="shift-previous"> Previous Project</a>
     </div>
 
 
