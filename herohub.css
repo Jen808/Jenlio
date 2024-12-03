@@ -15,9 +15,9 @@
     --pink-original: #F87474;
     --pink-light: #FEECEC;
     --teal-superlight: #F2F7F8;
-    --color-title: #054A29;
-    --color-main: #2A9134;
-    --color-sub: #EAFAED;
+    --color-title: #F66E3C;
+    --color-main: #3BABD8;
+    --color-sub: #FFE7DE;
 }
 
 
@@ -60,26 +60,26 @@ body {
 
 
 
-.mainimg-dt {
-    width: 36vw;
-    height: 100%;
+.mainimg {
+    width: 18vw;
+    height: auto;
     object-fit: cover;
-    margin-left: 10%;
-    margin-top: 8%;
+    margin-left: 20%;
+    margin-top: 3vw;
     display: block;
-    border-radius: 10px;
+    border-radius: 60px;
 
 }
 
 
 @media (max-width: 1200px) {
 
-    .mainimg-dt {
-        width: 42vw;
+    .mainimg {
+        width: 18vw;
 
         margin-left: 12%;
 
-        border-radius: 10px;
+        border-radius: 30px;
 
     }
 
@@ -272,7 +272,7 @@ body {
 /* ====================================================================================== */
 
 
-iframe{
+iframe {
     width: 70vw;
     height: 44vw;
 }
@@ -341,19 +341,19 @@ iframe{
 /* Objectives */
 /* ====================================================================================== */
 
-#max-container{
+#max-container {
     width: 100%;
 }
 
-.cross-container{
+.cross-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    
+
 }
 
-.deco1{
+.deco1 {
     height: 200px;
     background-color: var(--color-title);
     z-index: 1;
@@ -365,15 +365,15 @@ iframe{
     .deco1 {
 
         height: 300px;
-    
-        
+
+
     }
 
 }
 
 
 @media (max-width: 768px) {
-    .deco1{
+    .deco1 {
         display: none;
     }
 
@@ -393,21 +393,21 @@ iframe{
     z-index: 3;
     min-width: 740px;
 
-    
+
 }
 
 @media (max-width: 1000px) {
     .oj {
 
         min-width: 540px;
-    
-        
+
+
     }
 
 }
 
 @media (max-width: 768px) {
-    .oj{
+    .oj {
         min-width: 100px;
     }
 
@@ -418,12 +418,12 @@ iframe{
     line-height: 30px;
 }
 
-.oj li span{
+.oj li span {
     font-weight: 800;
 }
 
 @media (max-width: 768px) {
-    .oj{
+    .oj {
         width: 70%;
         padding: 40px;
     }
@@ -885,7 +885,7 @@ pj shift button
 
     }
 
-    iframe canvas{
+    iframe canvas {
         width: 90%;
         height: auto;
     }
