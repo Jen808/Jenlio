@@ -17,7 +17,8 @@
     --teal-superlight: #F2F7F8;
     --color-title: #F66E3C;
     --color-main: #3BABD8;
-    --color-sub: #FFE7DE;
+    --color-sub: #FFF5F1;
+    --color-sublue: #eff8fc;
 }
 
 
@@ -273,8 +274,8 @@ body {
 
 
 iframe {
-    width: 70vw;
-    height: 44vw;
+    width: 30vw;
+    height: 50vw;
 }
 
 .openInFigma {
@@ -318,13 +319,15 @@ iframe {
 }
 
 #es-des {
-    width: 35em;
+    width: 30vw;
     line-height: 1.4em;
-    /* background-color: var(--color-sub); */
+    background-color: var(--color-sublue);
+    /* border: 1px solid var(--color-main); */
     /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
     padding: 3em 2em;
     color: #000;
-    margin-top: 4em;
+    margin-top: 1em;
+    border-radius: 0 20px 20px 0;
 
 }
 
@@ -332,11 +335,32 @@ iframe {
 
 
 .esThumb {
-    width: 30em;
+    width: 26vw;
     height: auto;
-    /* box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.2); */
+    padding: 20px;
+    box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.2);
 }
 
+
+/* ====================================================================================== */
+/* es */
+/* ====================================================================================== */
+
+.num4 {
+    color: #BD052D;
+    text-decoration: underline;
+    cursor: none;
+
+}
+
+.num10 {
+    color: #D4005E;
+    text-decoration: underline;
+    cursor: none;
+
+
+
+}
 
 /* ====================================================================================== */
 /* Objectives */
@@ -354,23 +378,7 @@ iframe {
 
 }
 
-.deco1 {
-    height: 200px;
-    background-color: var(--color-title);
-    z-index: 1;
-    margin-top: 55px;
-    width: 50%;
-}
 
-@media (max-width: 1000px) {
-    .deco1 {
-
-        height: 300px;
-
-
-    }
-
-}
 
 
 @media (max-width: 768px) {
@@ -385,16 +393,31 @@ iframe {
 /* Objectives */
 /* ====================================================================================== */
 
+
+.oj-img {
+    width: 60vw;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+
+
 .oj {
+    width: 50vw;
     list-style-type: disc;
-    border: 1px solid var(--color-main);
+    /* border: 1px solid var(--color-main); */
     padding: 80px;
     border-radius: 20px;
-    background-color: #FFF;
+    /* background-color: var(--color-sub); */
     z-index: 3;
     min-width: 740px;
+    border: 2px solid var(--color-title);
 
 
+}
+
+.oj li {
+    font-weight: 600;
 }
 
 @media (max-width: 1000px) {
@@ -431,7 +454,22 @@ iframe {
 
 }
 
+/* ====================================================================================== */
+/* User Research */
+/* ====================================================================================== */
 
+
+.persona-img {
+    width: 56vw;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+
+.storyboard-img {
+    width: 60vw;
+    height: 100%;
+}
 
 
 /* ====================================================================================== */
@@ -458,54 +496,6 @@ iframe {
 
 }
 
-.ppl-row {
-    display: flex;
-    flex-direction: row;
-    width: 100em;
-}
-
-.ppl {
-    width: 50em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 1em;
-}
-
-.ppl-des {
-    display: flex;
-    align-items: center;
-    margin-left: 1em;
-
-
-}
-
-
-.person {
-    width: 3.2em;
-    height: auto;
-    padding: 0.4em;
-}
-
-.ppl12 {
-    width: 50em;
-    padding: 0 15em;
-}
-
-.notes {
-    text-align: right;
-    font-size: 0.8em;
-}
-
-
-.people {
-    width: 20em;
-    text-align: center;
-    margin: 3em;
-    padding: 2em;
-    border-radius: 1em;
-    line-height: 1.5em;
-}
 
 #p10 {
     background-color: #3A82AA;
@@ -532,6 +522,7 @@ iframe {
     font-weight: 700;
     font-size: 1.2em;
     margin-bottom: 3em;
+    color: var(--color-title);
 }
 
 #findingroommate {
@@ -663,12 +654,21 @@ iframe {
 /* ====================================================================================== */
 
 .hifi-main {
-    width: 36em;
+    width: 18em;
     height: 100%;
     z-index: 1;
-    /* box-shadow: -0.4em 0.4em 0.4em rgba(0, 0, 0, 0.2); */
-    /* background-color: transparent; */
+    box-shadow: -0.4em 0.4em 0.4em rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border-radius: 50px;
 
+
+}
+
+
+#hifi-half{
+    width: 12em;
+    height: 100%;
+    border-radius: 30px;
 
 }
 
@@ -683,8 +683,7 @@ iframe {
 #hifi-des1,
 #hifi-des2,
 #hifi-des3,
-#hifi-des4,
-#hifi-des5 {
+#hifi-des4 {
     background-color: var(--color-sub);
     width: 38em;
     height: auto;
@@ -694,19 +693,25 @@ iframe {
 }
 
 #hifi-des1 {
-    padding: 4.2em 4em;
+    margin-top: 14px;
+    padding: 4.6em 4em;
 }
 
 #hifi-des2 {
-    padding: 3.3em 4em;
+    margin-top: 14px;
+    padding: 4.6em 4em;
 }
 
 #hifi-des3 {
-    padding: 6em 4em;
+    margin-top: 10px;
+    padding: 5.5em 4em;
 }
 
-#hifi-des5 {
-    padding: 4em 4em;
+
+#hifi-des4 {
+    margin-top: 10px;
+    padding: 5.5em 4em;
+    background-color: var(--color-sublue);
 
 }
 
@@ -714,8 +719,8 @@ iframe {
 
 
 .icon {
-    width: 1.3em;
-    height: 100%;
+    height: 1.3em;
+    width: auto;
 }
 
 
@@ -780,9 +785,17 @@ iframe {
 
 
 .styleguide {
+    width: 60vw;
+    height: 100%;
     box-shadow: 0em 0.4em 1em rgba(0, 0, 0, 0.2);
 
 }
+
+
+#sg1 {
+    margin-bottom: 150px;
+}
+
 
 
 #container-no-margin {
@@ -795,6 +808,29 @@ iframe {
     height: 1.5em;
     width: auto;
 }
+
+
+
+@media (max-width: 1300px) {
+
+    #hifi-container {
+        width: 80%;
+    }
+
+
+    #hifi-half {
+
+        width: 10em;
+        border-radius: 26px;
+    }
+
+
+    #hifi-des3 {
+        padding-right: 3em;
+    }
+}
+
+
 
 
 /* ==============================================
@@ -865,7 +901,9 @@ pj shift button
 /* ====================================================================================== */
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 1000px) {
 
     html,
     body {
@@ -975,183 +1013,21 @@ survery
         width: 80vw;
     }
 
-    .ppl12 {
-        padding: 0;
-        width: 300px;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .ppl-row {
-        width: 98%;
-        overflow-x: hidden;
-    }
-
-    .people {
-        width: 140px;
-        height: auto;
-        margin: 10px;
-        font-size: 14px;
-        padding: 15px;
-    }
-
-    #usersurvey {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        background-color: transparent;
-    }
-
-    .notes {
-        text-align: center;
-        width: 60vw;
-    }
-
-    #pie-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-    }
-
-    .pie {
-        width: 340px;
-        height: auto;
-        margin: 20px;
-    }
-
-    #frfr {
-        margin-top: 60px;
-        width: 90vw;
-    }
-
-    .person {
-        width: 25px;
-        padding: 5px;
-        height: 33px;
-    }
-
-    .ppl {
-        width: 40vw;
-    }
-
-    .ppl-des {
-        font-size: 14px;
-        width: 40vw;
-    }
-
-    #blue-container {
-        display: flex;
-        flex-direction: column;
 
 
-    }
-
-    #commonproblem {
-        width: 90vw;
-    }
-
-    .lmheader {
-        padding: 20px 10px;
-        text-align: left !important;
-        font-size: 14px;
-        justify-content: flex-start;
-        line-height: 18px;
-        height: inherit;
-        width: 150px;
-    }
-
-    #blue {
-        display: flex;
-        flex-direction: row;
-        width: 90vw;
-        align-items: flex-start;
-        margin: 20px 0px;
-        height: auto;
-    }
-
-    #blue li {
-        text-align: left;
-        width: 160px;
-        font-size: 14px;
-        line-height: 20px;
-
-    }
-
-    #common-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-    }
-
-    .problems {
-        font-size: 14px;
-        line-height: 18px;
-        white-space: nowrap;
-        margin: 0;
-        margin-left: 30px;
 
 
-    }
+    /* ==============================================
+hifi
+============================================== */
 
-    #persona-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .persona {
-        width: 95vw;
-        height: auto;
-        margin: 20px 0;
-    }
-
-    .journeymap {
-        width: 95vw;
-        height: auto;
-        margin: 20px 0;
-
-    }
-
-    #spaceEven {
-        display: flex;
-        flex-direction: column;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-
-    #lofi-row-con {
-        display: flex;
-        flex-direction: row;
-        width: 95vw;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .lofi {
-        width: 40vw;
-        height: auto;
-        padding: 2vw;
-
-
-    }
-
-
-    #bdrow {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #half,
-    .brand {
-        width: 90vw;
-    }
 
     #hifi-container {
         display: flex;
         flex-direction: column;
     }
+
+
 
     .hifi-sub-container {
         display: none;
@@ -1173,15 +1049,20 @@ survery
 
     }
 
+    #hifi-half {
+        border-radius: 30px;
+    }
+
     .hifi-des-detail {
         font-size: 15px;
         padding-left: 0;
 
     }
 
-    /* .hifi-main {
+    .hifi-main {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-    } */
+    }
+
 
     .styleguide {
         width: 90vw;
@@ -1252,5 +1133,17 @@ survery
 
 
 
+
+}
+
+
+
+
+@media (max-width: 756px) {
+
+    #hifi-half {
+
+        border-radius: 20px;
+    }
 
 }

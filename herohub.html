@@ -16,7 +16,7 @@
 
 
 
-    <title>UX Design - herohub</title>
+    <title>UX Design - Hero Hub</title>
 
 
     <style>
@@ -137,6 +137,9 @@
             // const nextpElements = document.querySelectorAll('.feedbackBtn');
             const openfElements = document.querySelectorAll('.openInFigma');
             const indexElements = document.querySelectorAll('.index a');
+            const numElements = document.querySelectorAll('.num4, .num10');
+
+
 
 
 
@@ -176,8 +179,8 @@
             secingElements.forEach(secing => {
                 secing.addEventListener('mouseover', () => {
                     customCursor.textContent = '⛔';
-                    customCursor.style.backgroundColor = 'black';
-                    customCursor.style.borderColor = 'white';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '50px';
 
 
@@ -187,7 +190,7 @@
                 secing.addEventListener('mouseout', () => {
                     customCursor.textContent = '';
                     customCursor.style.backgroundColor = '';
-                    customCursor.style.borderColor = '#FFDFDF';
+                    customCursor.style.borderColor = '';
                     customCursor.style.fontSize = '32px';
 
 
@@ -198,23 +201,32 @@
             ameElements.forEach(ame => {
                 ame.addEventListener('mouseover', () => {
                     customCursor.textContent = '🖐️';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
 
                 });
 
                 ame.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
+
                 });
             });
 
             uxElements.forEach(ux => {
                 ux.addEventListener('mouseover', () => {
                     customCursor.textContent = '👩‍💻';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
 
                 });
 
                 ux.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -222,11 +234,16 @@
             chsElements.forEach(chs => {
                 chs.addEventListener('mouseover', () => {
                     customCursor.textContent = '🎯';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
 
                 });
 
+
                 chs.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -234,11 +251,15 @@
             artElements.forEach(art => {
                 art.addEventListener('mouseover', () => {
                     customCursor.textContent = '🎨';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
 
                 });
 
                 art.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -246,10 +267,14 @@
             myElements.forEach(my => {
                 my.addEventListener('mouseover', () => {
                     customCursor.textContent = '😊';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 my.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -258,10 +283,14 @@
             emailElements.forEach(email => {
                 email.addEventListener('mouseover', () => {
                     customCursor.textContent = '💌';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 email.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -269,10 +298,14 @@
             emailfooterElements.forEach(emailfooter => {
                 emailfooter.addEventListener('mouseover', () => {
                     customCursor.textContent = '💌';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 emailfooter.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -281,10 +314,14 @@
             linkedinElements.forEach(linkedin => {
                 linkedin.addEventListener('mouseover', () => {
                     customCursor.textContent = '🔗';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 linkedin.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -292,10 +329,14 @@
             linkedinfooterElements.forEach(linkedinfooter => {
                 linkedinfooter.addEventListener('mouseover', () => {
                     customCursor.textContent = '🔗';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 linkedinfooter.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -303,13 +344,19 @@
 
 
 
+
+
             logoElements.forEach(logo => {
                 logo.addEventListener('mouseover', () => {
                     customCursor.textContent = '🏠';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 logo.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -318,10 +365,14 @@
             gitElements.forEach(git => {
                 git.addEventListener('mouseover', () => {
                     customCursor.textContent = '🖥️';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 git.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -330,10 +381,14 @@
             fbElements.forEach(fb => {
                 fb.addEventListener('mouseover', () => {
                     customCursor.textContent = '🔔';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 fb.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -341,10 +396,14 @@
             lastpElements.forEach(lastp => {
                 lastp.addEventListener('mouseover', () => {
                     customCursor.textContent = '👀';
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.style.fontSize = '32px';
                 });
 
                 lastp.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -366,11 +425,15 @@
 
             openfElements.forEach(openf => {
                 openf.addEventListener('mouseover', () => {
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
                     customCursor.textContent = '🗝️';
                     customCursor.style.fontSize = '32px';
                 });
 
                 openf.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
                     customCursor.textContent = '';
                 });
             });
@@ -386,6 +449,7 @@
                 });
 
                 index.addEventListener('mouseout', () => {
+
                     customCursor.textContent = '';
                     customCursor.style.backgroundColor = '';
                     customCursor.style.borderColor = '';
@@ -393,6 +457,23 @@
                 });
             });
 
+            numElements.forEach(num => {
+                num.addEventListener('mouseover', () => {
+                    customCursor.style.backgroundColor = '#FFF';
+                    customCursor.style.borderColor = 'transparent';
+                    customCursor.textContent = '🌍';
+                    customCursor.style.fontSize = '32px';
+
+                });
+
+                num.addEventListener('mouseout', () => {
+                    customCursor.style.backgroundColor = '';
+                    customCursor.style.borderColor = '';
+                    customCursor.textContent = '';
+                    customCursor.style.fontSize = '32px';
+
+                });
+            });
 
 
 
@@ -510,13 +591,11 @@ Header
                 <img src='src/logo-figma.png' alt="figma" class="skill-logo">
                 <img src='src/logo-ai.png' alt="illustrator" class="skill-logo">
             </div>
-            <div class="title-box">legwork</div>
+            <div class="title-box">Hero Hub</div>
             <ol class="title-des">
                 <li class="index"><a href=#es>Executive Summary</a></li>
-                <li class="index"><a href=#us>User Survey</a></li>
-                <li class="index"><a href=#up>User Persona</a></li>
-                <li class="index"><a href=#uj>User Journey Map</a></li>
-                <li class="index"><a href=#bd>Branding Design</a></li>
+                <li class="index"><a href=#oj>Objectives</a></li>
+                <li class="index"><a href=#ur>User Research</a></li>
                 <li class="index"><a href=#hf>Hi-Fi Prototype</a></li>
                 <li class="index"><a href=#sg>Style Guide</a></li>
                 <li class="index"><a href=#top>Final Prototype</a></li>
@@ -568,7 +647,7 @@ Header
             </div>
 
             <div class="shift-container">
-                <a href="herohub.html" class="shift-next"> Next Project</a>
+                <!-- <a href="herohub.html" class="shift-next"> Next Project</a> -->
                 <a href="LivMate.html" class="shift-previous"> Previous Project</a>
             </div>
         </div>
@@ -600,9 +679,12 @@ Header
             <img src="src/herohub/executive summary.png" class="esThumb" alt="photo of livingroom">
             <div class="des" id="es-des">
                 Team Cedar Point, a group of 3 people created a platform to connect volunteers
-                with opportunities, advancing the UN goals of <span class=num44.Quality Education, and 10.Reducing Inequality. The platform
-                integrates diverse opportunities, uses gamified badges to reward contributions, and simplifies
-                navigation to create an accessible, engaging, and impactful user experience.
+                with opportunities, advancing the UN goals of <a href="https://sdgs.un.org/goals/goal4"
+                    class="num4">4.Quality Education</a>, and <a a href="https://sdgs.un.org/goals/goal10"
+                    class="num10">10.Reducing
+                    Inequality</a>. The platform integrates diverse opportunities, uses gamified badges to reward
+                contributions, and simplifies navigation to create an accessible, engaging, and impactful user
+                experience.
             </div>
         </div>
     </div>
@@ -610,19 +692,22 @@ Header
     <!-- ========Objectives========== -->
 
     <div class="container" id="max-container">
-        <div class="sub-title" id="us" tabindex="0">Objectives</div>
+        <div class="sub-title" id="oj" tabindex="0">Objectives</div>
+        <img src="src/herohub/objective.png" class="oj-img" alt="objective brainstorming MiroBoard">
         <div class="cross-container">
-            <div class="deco1"></div>
             <ul class="oj">
-                <li><span>Simplify Price Comparisons:</span> Provide real-time cost breakdowns, including taxes and
-                    shipping.</li>
-                <li><span>Build Trust:</span> Ensure seller and product authenticity with verification and reviews.</li>
-                <li><span>Save Time:</span> Minimize effort in finding the best deals across platforms.</li>
-                <li><span>Enhance Usability:</span> Offer a clean, easy-to-navigate interface.</li>
-                <li><span>Boost Confidence:</span> Help users make informed decisions with clear, detailed information.
+                <li>Promote the UN’s Reducing Inequality and Quality Education goals by enabling equitable access to
+                    volunteer opportunities.</li>
+                <li>Simplify the process of finding and posting opportunities through intuitive navigation and
+                    integrated information.
+                </li>
+                <li>Encourage sustained volunteer engagement with gamification features like skill-based badges.</li>
+                <li>Address usability issues to ensure a seamless experience for both volunteers and opportunity
+                    seekers.</li>
+                <li>Create a safe and inclusive platform that accommodates diverse user needs and reduces barriers to
+                    participation
                 </li>
             </ul>
-            <div class="deco1"></div>
 
         </div>
 
@@ -631,7 +716,10 @@ Header
 
     <div class="container" id="max-container">
         <div class="sub-title" id="ur" tabindex="0">User Research</div>
-        <!-- img -->
+        <div class="inner-title">Persona</div>
+        <img src="src/herohub/persona.png" class="persona-img" alt="Persona Imgae: Miranda">
+        <div class="inner-title">Stroyboard</div>
+        <img src="src/herohub/storyboard.jpg" class="storyboard-img" alt="Story Board Image">
     </div>
 
 
@@ -643,18 +731,19 @@ Header
     </div>
     <div class="container">
         <div class="row-container" id="hifi-container">
-            <img src="src/legwork/home.png" class="hifi-main" alt="Hi-Fi prototype mock up: Home">
+            <img src="src/herohub/home.png" class="hifi-main" alt="Hi-Fi prototype mock up: Home">
             <div class="column-container" id="hifi-des1">
                 <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/legwork/icon-home.png" class="icon" alt="Icon: Home">
+                    <img src="src/herohub/icon-home.png" class="icon" alt="Icon: Home">
                     <div class="hifi-des-title">Home</div>
                 </div>
                 <div class="hifi-des-detail">
-                    The Home Page offers users an intuitive interface to explore products. It showcases personalized
-                    sections like "Deals from Your Favorite Sellers," "Weekly Most Clicked Items," and "Recommended for
-                    You." Users can seamlessly toggle between categories, search for items, and access key deals, all
-                    while enjoying a clean, visually engaging layout. The focus is on creating a personalized and
-                    efficient browsing experience.
+                    The Home page provides users with a clear and engaging interface to explore volunteer opportunities.
+                    It features category-based navigation, a prominent search bar, and a curated list of recommended
+                    opportunities based on user preferences. The intuitive layout ensures users can quickly browse local
+                    opportunities, explore popular categories, and access key features like filters and map views.
+
+
                 </div>
             </div>
         </div>
@@ -663,17 +752,18 @@ Header
 
     <div class="container">
         <div class="row-container" id="hifi-container">
-            <img src="src/legwork/search-filter.png" class="hifi-main" alt="Hi-Fi prototype mock up: Home">
-            <div class="column-container" id="hifi-des1">
+            <img src="src/herohub/detail.png" class="hifi-main" alt="Hi-Fi prototype mock up: Product Listing Page">
+            <div class="column-container" id="hifi-des2">
                 <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/legwork/icon-search.png" class="icon" alt="Icon: Search Filter">
-                    <div class="hifi-des-title">Search Filter</div>
+                    <img src="src/herohub/icon-detail.png" class="icon" alt="Icon: Opprtunity Detail (file Icon)">
+                    <div class="hifi-des-title">Opportunity Details</div>
                 </div>
                 <div class="hifi-des-detail">
-                    The Search and Filter functionality allows users to refine their search effortlessly. With smart
-                    filters for price, brand, customer ratings, and benefit programs, users can quickly find the best
-                    deals. The search bar includes auto-suggestions and categories to improve discovery, ensuring users
-                    save time while locating their desired products.
+                    The Opportunity Description page offers a detailed view of each listing, including the host’s
+                    profile, location, schedule, and specific requirements. Users can see availability in both list and
+                    calendar formats, ensuring they find a time that suits their schedule. Trust indicators, such as
+                    host ratings and verified profiles, provide credibility, while the clear “Apply” button streamlines
+                    engagement.
                 </div>
             </div>
         </div>
@@ -682,22 +772,50 @@ Header
 
     <div class="container">
         <div class="row-container" id="hifi-container">
-            <img src="src/legwork/product-detail.png" class="hifi-main"
-                alt="Hi-Fi prototype mock up: Product Listing Page">
-            <div class="column-container" id="hifi-des1">
+            <div class="row-container" id="hifi-half-container">
+                <img src="src/herohub/volunteer.png" class="hifi-main"
+                    alt="Hi-Fi prototype mock up: Product Listing Page" id="hifi-half">
+                <img src="src/herohub/seeker.png" class="hifi-main" alt="Hi-Fi prototype mock up: Product Listing Page"
+                    id="hifi-half">
+            </div>
+            <div class="column-container" id="hifi-des3">
                 <div class="row-container" id="hifi-des-title-container">
-                    <img src="src/legwork/icon-sort.png" class="icon" alt="Icon: Listing Page">
-                    <div class="hifi-des-title">Product Listing Page</div>
+                    <img src="src/herohub/icon-profile.png" class="icon" alt="Icon: Profile Icon">
+                    <div class="hifi-des-title">Dual Profile</div>
                 </div>
-                <div class="hifi-des-detail">
-                    The Product Detail Page provides a comprehensive view of each product, featuring high-quality
-                    images, detailed descriptions, and user reviews. Transparent pricing shows the full cost, including
-                    taxes and shipping, alongside comparison tools that highlight pricing across multiple platforms.
-                    Trust indicators, like seller verification badges, add credibility to the shopping experience.
+                <div class="hifi-des-detail" id="hifi-des-detail">
+                    The Profile page offers two modes: Volunteer and Seeker. It provides users with a comprehensive view
+                    of their activities, such as pending applications, upcoming events, and badges earned for completed
+                    tasks. This personalized dashboard ensures users can track their progress and engagement, fostering
+                    a sense of accomplishment.
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row-container" id="hifi-container">
+            <img src="src/herohub/post.png" class="hifi-main" alt="Hi-Fi prototype mock up: Product Listing Page">
+            <div class="column-container" id="hifi-des4">
+                <div class="row-container" id="hifi-des-title-container">
+                    <img src="src/herohub/icon-post.png" class="icon" alt="Icon: Add Posting Icon">
+                    <div class="hifi-des-title">Post Opportunity</div>
+                </div>
+                <div class="hifi-des-detail">
+                    The New Post screen simplifies the process for opportunity seekers to create listings. Users can
+                    upload images, specify requirements, and set schedules. Step-by-step inputs ensure clarity, while
+                    optional tags and descriptions allow users to personalize their listings, making them more appealing
+                    to potential volunteers.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -706,16 +824,16 @@ Header
 
     <div class="container">
         <div class="sub-title" id="sg" tabindex="0">Style Guide</div>
-        <img src="src/legwork/styleguide.png" class="styleguide"
-            alt="styleguide image: Colors, Typefaces, Font, Icons, and Sizing">
+        <img src="src/herohub/styleguide.png" class="styleguide" id="sg1"
+            alt="styleguide image: Colors, Icons, and Sizing">
+        <img src="src/herohub/styleguide2.png" class="styleguide" alt="styleguide image: Typefaces, Font, and Sizing">
     </div>
 
     <div class="container">
         <div class="sub-title" id="top">Final Prototype</div>
         <div class="frame">
-
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"
-                src="https://embed.figma.com/proto/suWcHnpTKmbQYcQJdyWWk6/ENTR-390---PJ%232?node-id=38-1565&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=32%3A168&starting-point-node-id=38%3A1565&embed-host=share"
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                src="https://embed.figma.com/proto/NFhLa3zDg5unkAynXBRbob/SI482?node-id=504-3251&starting-point-node-id=504%3A3251&embed-host=share"
                 allowfullscreen></iframe>
 
 
@@ -724,14 +842,14 @@ Header
         <div class="openInFigma">
 
             <a
-                href="https://www.figma.com/proto/suWcHnpTKmbQYcQJdyWWk6/ENTR-390---PJ%232?node-id=38-1565&node-type=canvas&t=Or9N89ewApbZDOFR-1&scaling=scale-down&content-scaling=fixed&page-id=32%3A168&starting-point-node-id=38%3A1565">
+                href="https://www.figma.com/proto/NFhLa3zDg5unkAynXBRbob/SI482?node-id=504-3251&starting-point-node-id=504%3A3251&t=3PBu8p3MaWzpZU4U-1">
                 Open in Figma </a>
         </div>
 
     </div>
 
     <div class="b-shift-container">
-        <a href="herohub.html" class="shift-next"> Next Project</a>
+        <!-- <a href="herohub.html" class="shift-next"> Next Project</a> -->
         <a href="LivMate.html" class="shift-previous"> Previous Project</a>
     </div>
 
