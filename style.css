@@ -163,9 +163,16 @@ Home - Main
 }
 
 
+.cta-button{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 30px;
+}
+
 
 .github-button{
-    width: 160px;
+    width: 200px;
     height: 50px;
     background-color: #FFF;
     color: var(--teal);
@@ -203,6 +210,8 @@ a.github-button{
 
 
 
+
+
 .intro-github{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -212,6 +221,12 @@ a.github-button{
 
 
 }
+
+
+
+
+
+
 
 
 @media (max-width: 1000px) {
