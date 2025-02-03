@@ -272,7 +272,7 @@ body {
 /* ====================================================================================== */
 
 
-iframe{
+iframe {
     width: 70vw;
     height: 44vw;
 }
@@ -341,19 +341,19 @@ iframe{
 /* Objectives */
 /* ====================================================================================== */
 
-#max-container{
+#max-container {
     width: 100%;
 }
 
-.cross-container{
+.cross-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    
+
 }
 
-.deco1{
+.deco1 {
     height: 200px;
     background-color: var(--color-title);
     z-index: 1;
@@ -365,15 +365,15 @@ iframe{
     .deco1 {
 
         height: 300px;
-    
-        
+
+
     }
 
 }
 
 
 @media (max-width: 768px) {
-    .deco1{
+    .deco1 {
         display: none;
     }
 
@@ -393,21 +393,21 @@ iframe{
     z-index: 3;
     min-width: 740px;
 
-    
+
 }
 
 @media (max-width: 1000px) {
     .oj {
 
         min-width: 540px;
-    
-        
+
+
     }
 
 }
 
 @media (max-width: 768px) {
-    .oj{
+    .oj {
         min-width: 100px;
     }
 
@@ -418,12 +418,12 @@ iframe{
     line-height: 30px;
 }
 
-.oj li span{
+.oj li span {
     font-weight: 800;
 }
 
 @media (max-width: 768px) {
-    .oj{
+    .oj {
         width: 70%;
         padding: 40px;
     }
@@ -479,11 +479,12 @@ iframe{
 
 }
 
-.research-des{
+.research-des {
     text-align: right;
     width: 50vw;
 }
-.research-img{
+
+.research-img {
     width: 40vw;
     height: 100%;
     margin-bottom: 100px;
@@ -627,7 +628,7 @@ iframe{
     background-color: var(--color-main);
     color: #FFF;
     text-align: center;
-    padding:18px;
+    padding: 18px;
     border-radius: 18px 18px 0 0;
     margin-bottom: 10px;
 
@@ -868,6 +869,78 @@ pj shift button
 /* Responsive */
 /* ====================================================================================== */
 
+@media (max-width: 1300px) {
+    #bdrow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hifi-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hifi-sub-container {
+        display: none;
+    }
+
+
+    #hifi-des1,
+    #hifi-des2,
+    #hifi-des3,
+    #hifi-des4,
+    #hifi-des5 {
+        width: 95%;
+        padding: 28px;
+        border-radius: 1em;
+        margin-top: -100px !important;
+        padding-top: 130px;
+        z-index: -1;
+        margin: 0;
+
+    }
+
+    .hifi-des-detail {
+        font-size: 15px;
+        padding-left: 0;
+
+    }
+
+    #hifi-des-title-container {
+        font-size: 24px;
+        margin-left: 0;
+
+    }
+
+    .styleguide {
+        width: 80vw;
+        margin-top: 20px;
+    }
+
+    #cal-img,
+    #group-img {
+        width: auto;
+        height: 1em;
+    }
+
+    
+    #es-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .research-img {
+        width: 70vw;
+        height: 100%;
+        margin-bottom: 100px;
+    }
+
+
+
+
+
+}
+
 
 @media (max-width: 768px) {
 
@@ -890,7 +963,7 @@ pj shift button
 
     }
 
-    iframe canvas{
+    iframe canvas {
         width: 90%;
         height: auto;
     }
@@ -1142,70 +1215,28 @@ survery
     }
 
 
-    #bdrow {
-        display: flex;
-        flex-direction: column;
-    }
+
 
     #half,
     .brand {
         width: 90vw;
     }
 
-    #hifi-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hifi-sub-container {
-        display: none;
-    }
 
 
-    #hifi-des1,
-    #hifi-des2,
-    #hifi-des3,
-    #hifi-des4,
-    #hifi-des5 {
-        width: 95%;
-        padding: 28px;
-        border-radius: 1em;
-        margin-top: -100px !important;
-        padding-top: 130px;
-        z-index: -1;
-        margin: 0;
 
-    }
-
-    .hifi-des-detail {
-        font-size: 15px;
-        padding-left: 0;
-
-    }
 
     /* .hifi-main {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
     } */
 
-    .styleguide {
-        width: 90vw;
-        margin-top: 20px;
-    }
 
-    #hifi-des-title-container {
-        font-size: 24px;
-        margin-left: 0;
 
-    }
+
 
     /* .openInFigma {
         padding: 20px 30px;
     } */
-
-    #es-container {
-        display: flex;
-        flex-direction: column;
-    }
 
     .esThumb {
         width: 70vw;
