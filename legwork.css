@@ -296,7 +296,7 @@ iframe {
 
 
 /* ====================================================================================== */
-/* Styles only for LivMate */
+/* 
 /* ====================================================================================== */
 
 
@@ -317,16 +317,17 @@ iframe {
     margin-bottom: 1em;
 }
 
+
 #es-des {
-    width: 35em;
+    width: 40em;
+    font-size: 16px;
     line-height: 2em;
-    background-color: var(--color-sub);
+    /* background-color: var(--color-sub); */
     /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
     padding: 3em 1.5em;
     color: var(--color-title);
 
 }
-
 
 
 
@@ -1047,7 +1048,7 @@ survery
 
     .des {
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         width: 80vw;
     }
