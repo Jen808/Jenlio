@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="herohub.css">
     <link rel="stylesheet" href="ux-responsive.css">
     <link rel="stylesheet" href="feedback.css">
-    <link rel="stylesheet" href="cursor.css">
+    <!-- <link rel="stylesheet" href="cursor.css"> -->
 
 
 
@@ -28,11 +28,11 @@
             border-radius: 30px !important;
         }
 
-        @media (max-width: 756px) {
+        /* @media (max-width: 756px) {
             .custom-cursor {
                 display: hidden;
             }
-        }
+        } */
 
         /* .menu-toggle {
             display: none;
@@ -87,7 +87,7 @@
         </form>
     </div>
 
-    <script>
+    <!-- <script>
 
         "use strict";
         // =========================
@@ -133,8 +133,6 @@
             const gitElements = document.querySelectorAll('.github-button');
             const fbElements = document.querySelectorAll('.feedbackBtn');
             const lastpElements = document.querySelectorAll('.shift-previous');
-            // const nextpElements = document.querySelectorAll('.shift-next');
-            // const nextpElements = document.querySelectorAll('.feedbackBtn');
             const openfElements = document.querySelectorAll('.openInFigma');
             const indexElements = document.querySelectorAll('.index a');
             const numElements = document.querySelectorAll('.num4, .num10');
@@ -409,16 +407,6 @@
             });
 
 
-            // nextpElements.forEach(nextp => {
-            //     nextp.addEventListener('mouseover', () => {
-            //         customCursor.textContent = '👀';
-            //         customCursor.style.fontSize = '32px';
-            //     });
-
-            //     nextp.addEventListener('mouseout', () => {
-            //         customCursor.textContent = '';
-            //     });
-            // });
 
 
 
@@ -491,7 +479,7 @@
         };
 
 
-    </script>
+    </script> -->
 
 
 
@@ -596,8 +584,9 @@ Header
                 <li class="index"><a href=#es>Executive Summary</a></li>
                 <li class="index"><a href=#oj>Objectives</a></li>
                 <li class="index"><a href=#ur>User Research</a></li>
-                <li class="index"><a href=#hf>Hi-Fi Prototype</a></li>
+                <li class="index"><a href=#dp>Design Phase</a></li>
                 <li class="index"><a href=#sg>Style Guide</a></li>
+                <li class="index"><a href=#hf>Hi-Fi Prototype</a></li>
                 <li class="index"><a href=#top>Final Prototype</a></li>
 
 
@@ -677,7 +666,7 @@ Header
         <div class="sub-title" id="es" tabindex="0">Executive Summary</div>
         <div class="row-container" id="es-container">
             <img src="src/herohub/executive summary.png" class="esThumb" alt="photo of livingroom">
-            <div class="des" id="es-des">
+            <!-- <div class="des" id="es-des">
                 Many volunteers struggle to find meaningful opportunities due to fragmented platforms and inefficient
                 navigation. Through user research, I identified that 70% of potential volunteers hesitate due to a lack
                 of clear information and engagement incentives. <br><br>
@@ -692,8 +681,21 @@ Header
                     href="https://sdgs.un.org/goals/goal4" class="num4">Goals 4. (Quality Education)</a> and <a
                     href="https://sdgs.un.org/goals/goal10" class="num10"> Goals 10. (Reducing Inequality)</a>, making social impact
                     more accessible and engaging.
+            </div> -->
+            <div class="des" id="es-des">
+
+                This project was developed as part of a class assignment. Our team selected two goals <a
+                    href="https://sdgs.un.org/goals/goal4" class="num4">Goal 4</a>, <a
+                    href="https://sdgs.un.org/goals/goal10" class="num10">Goal 10</a> from the UN
+                Sustainable Development Goals after group discussions. <br><br>
+
+
+                Considering how volunteer experience is highly valued in college admissions and job applications,
+                we chose to create a volunteer community platform that aligns with those expectations.
             </div>
+
         </div>
+
     </div>
 
     <!-- ========Objectives========== -->
@@ -703,19 +705,19 @@ Header
         <img src="src/herohub/objective.png" class="oj-img" alt="objective brainstorming MiroBoard">
         <div class="cross-container">
             <ul class="oj">
-                <li>Promote the UN’s Reducing Inequality and Quality Education goals by enabling equitable access to
-                    volunteer opportunities.</li>
-                <li>Simplify the process of finding and posting opportunities through intuitive navigation and
-                    integrated information.
-                </li>
-                <li>Encourage sustained volunteer engagement with gamification features like skill-based badges.</li>
-                <li>Address usability issues to ensure a seamless experience for both volunteers and opportunity
-                    seekers.</li>
-                <li>Create a safe and inclusive platform that accommodates diverse user needs and reduces barriers to
-                    participation
-                </li>
+                <li>Support UN goals on reducing inequality and promoting quality education through accessible
+                    volunteering.</li>
+                <li>Streamline opportunity discovery and posting with intuitive navigation.</li>
+                <li>Boost long-term engagement using gamified features like skill badges.</li>
             </ul>
 
+        </div>
+        <div class="inner-title" id="rs1">Responsibilities</div>
+
+        <div class="column-container" id="es-rs-container">
+            <div class="rs2">Project Manager & Design Lead</div>
+            <div class="rs3">All three team members actively contributed throughout the process, each taking on
+                different responsibilities. I served as the Project Manager and Design Lead.</div>
         </div>
 
     </div>
@@ -723,12 +725,67 @@ Header
 
     <div class="container" id="max-container">
         <div class="sub-title" id="ur" tabindex="0">User Research</div>
-        <div class="inner-title">Persona</div>
+        <div class="inner-title">Competitive Analysis</div>
+        <div class="row-container" id="ur-container">
+            <img src="src/herohub/ca_direct.png" class="ca-img">
+            <img src="src/herohub/ca_ana.png" class="ca-img">
+        </div>
+    </div>
+    <div class="container" id="container-no-margin">
+
+        <div class="inner-title">User Interview</div>
+        <div class="row-container" id="ur-container">
+            <img src="src/herohub/user_interview-04.png" class="ui-img">
+            <img src="src/herohub/user_interview-05.png" class="ui-img">
+        </div>
+    </div>
+
+    <div class="container" id="container-no-margin">
+        <div class="inner-title">User Persona</div>
+        <div class="ur-des">Miranda Gonzales, a homemaker living in rural Michigan, is seeking a reliable English
+            tutor for her Spanish-speaking children. However, limited local information and high tutoring costs make it
+            difficult for her to get the support they need.</div>
         <img src="src/herohub/persona.png" class="persona-img" alt="Persona Imgae: Miranda">
-        <div class="inner-title">Stroyboard</div>
+    </div>
+
+    <div class="container" id="container-no-margin">
+        <div class="inner-title">Storyboard</div>
+        <div class="ur-des">Miranda&#39s daughter struggles to make friends at school due to her limited English
+            skills and often cries, saying she wants to return to her home country. Miranda searches for a volunteer
+            tutor, and through this support, her daughter quickly improves her English. Eventually, she makes many
+            friends and even brings them home.</div>
         <img src="src/herohub/storyboard.jpg" class="storyboard-img" alt="Story Board Image">
     </div>
 
+
+
+
+
+
+    <!-- =======Design========== -->
+    <div class="container" id="max-container">
+        <div class="sub-title" id="dp" tabindex="0">Design phase</div>
+        <div class="inner-title">Information Archietecture</div>
+        <div class="ur-des">This information architecture maps out the user flow for a volunteer platform, covering key
+            paths for volunteers, organizations, and admins. It includes searching and applying for opportunities,
+            creating and managing posts, and user onboarding with login/signup flows. The structure emphasizes intuitive
+            navigation, engagement features, and role-specific actions.</div>
+        <img src="src/herohub/ai.png" class="information-architecture-img" alt="Information Architecture Image">
+        <a href="https://www.figma.com/board/tvYDWqVrttY0xKpiEqEcnM/SI482-User-Flows?node-id=0-1&t=qC9gi0OJ1YUGcojM-1" class="des-link"> See detail in FigJam</a>
+
+        <div class="inner-title">Branding Design</div>
+        <div class="ur-des">Process of create branding identity</div>
+        <img src="src/herohub/branding-09.png" class="branding-img" alt="Branding Design Image1">
+        <img src="src/herohub/branding-10.png" class="branding-img" id="end-margin" alt="Branding Design Image2">
+
+    </div>
+
+    <div class="container" id="container-no-margin">
+        <div class="sub-title" id="sg" tabindex="0">Style Guide</div>
+        <img src="src/herohub/styleguide2.png" class="styleguide" id="sg1" alt="styleguide image: Typefaces, Font, and Sizing">
+        <img src="src/herohub/styleguide.png" id="end-margin" class="styleguide"
+            alt="styleguide image: Colors, Icons, and Sizing">
+    </div>
 
 
     <!-- ========Hi-Fi Prototype========== -->
@@ -745,9 +802,11 @@ Header
                     <div class="hifi-des-title">Home</div>
                 </div>
                 <div class="hifi-des-detail">
-                    The Home page provides users with a clear and engaging interface to explore volunteer opportunities.
+                    The Home page provides users with a clear and engaging interface to explore volunteer
+                    opportunities.
                     It features category-based navigation, a prominent search bar, and a curated list of recommended
-                    opportunities based on user preferences. The intuitive layout ensures users can quickly browse local
+                    opportunities based on user preferences. The intuitive layout ensures users can quickly browse
+                    local
                     opportunities, explore popular categories, and access key features like filters and map views.
 
 
@@ -767,9 +826,11 @@ Header
                 </div>
                 <div class="hifi-des-detail">
                     The Opportunity Description page offers a detailed view of each listing, including the host’s
-                    profile, location, schedule, and specific requirements. Users can see availability in both list and
+                    profile, location, schedule, and specific requirements. Users can see availability in both list
+                    and
                     calendar formats, ensuring they find a time that suits their schedule. Trust indicators, such as
-                    host ratings and verified profiles, provide credibility, while the clear “Apply” button streamlines
+                    host ratings and verified profiles, provide credibility, while the clear “Apply” button
+                    streamlines
                     engagement.
                 </div>
             </div>
@@ -791,9 +852,12 @@ Header
                     <div class="hifi-des-title">Dual Profile</div>
                 </div>
                 <div class="hifi-des-detail" id="hifi-des-detail">
-                    The Profile page offers two modes: Volunteer and Seeker. It provides users with a comprehensive view
-                    of their activities, such as pending applications, upcoming events, and badges earned for completed
-                    tasks. This personalized dashboard ensures users can track their progress and engagement, fostering
+                    The Profile page offers two modes: Volunteer and Seeker. It provides users with a comprehensive
+                    view
+                    of their activities, such as pending applications, upcoming events, and badges earned for
+                    completed
+                    tasks. This personalized dashboard ensures users can track their progress and engagement,
+                    fostering
                     a sense of accomplishment.
                 </div>
             </div>
@@ -814,8 +878,10 @@ Header
                 </div>
                 <div class="hifi-des-detail">
                     The New Post screen simplifies the process for opportunity seekers to create listings. Users can
-                    upload images, specify requirements, and set schedules. Step-by-step inputs ensure clarity, while
-                    optional tags and descriptions allow users to personalize their listings, making them more appealing
+                    upload images, specify requirements, and set schedules. Step-by-step inputs ensure clarity,
+                    while
+                    optional tags and descriptions allow users to personalize their listings, making them more
+                    appealing
                     to potential volunteers.
                 </div>
             </div>
@@ -827,14 +893,11 @@ Header
 
 
 
-    <!-- ==========Style Guide=========== -->
 
-    <div class="container">
-        <div class="sub-title" id="sg" tabindex="0">Style Guide</div>
-        <img src="src/herohub/styleguide.png" class="styleguide" id="sg1"
-            alt="styleguide image: Colors, Icons, and Sizing">
-        <img src="src/herohub/styleguide2.png" class="styleguide" alt="styleguide image: Typefaces, Font, and Sizing">
-    </div>
+
+
+
+
 
     <div class="container">
         <div class="sub-title" id="top">Final Prototype</div>
