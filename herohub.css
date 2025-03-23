@@ -77,7 +77,7 @@ body {
 }
 
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
 
     .mainimg {
         width: 18vw;
@@ -89,7 +89,7 @@ body {
     }
 
 
-}
+} */
 
 
 /* 
@@ -1170,13 +1170,14 @@ pj shift button
         padding: 14px 20px;
         margin: 0;
         margin-bottom: 18px;
+        margin-top: 20px;
     }
 
     .shift-container {
         display: flex;
         flex-direction: row;
-        width: 80%;
-        justify-content: center;
+        width: 100%;
+        justify-content: flex-end;
         margin: 0;
     }
 
