@@ -1071,7 +1071,7 @@ pj shift button
     .shift-container {
         display: flex;
         flex-direction: row;
-        width: 80%;
+        width: 94%;
         justify-content: center;
         margin: 0;
     }
@@ -1086,7 +1086,7 @@ pj shift button
     }
 
     .shift-next {
-        margin-right: 20px;
+        margin-right: 14px;
     }
 
     /* ==============================================

@@ -393,6 +393,7 @@ iframe {
     height: auto;
     padding: 20px;
     box-shadow: -3px 3px 1em rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     /* border: 5px solid var(--color-title); */
 
 }
@@ -442,6 +443,7 @@ iframe {
         display: none;
     }
 
+
 }
 
 
@@ -476,7 +478,7 @@ iframe {
     font-weight: 600;
     width: auto;
 }
-
+/* 
 @media (max-width: 1000px) {
     .oj {
 
@@ -485,14 +487,10 @@ iframe {
 
     }
 
-}
 
-@media (max-width: 768px) {
-    .oj {
-        min-width: 100px;
-    }
 
-}
+} */
+
 
 
 .oj li {
@@ -504,12 +502,34 @@ iframe {
 }
 
 @media (max-width: 768px) {
-    .oj {
-        width: 70%;
-        padding: 40px;
+
+    .oj-img{
+        width: 90%;
+        margin-bottom: 20px;
     }
 
+    .cross-container{
+        width: 90%;
+    }
+
+    .oj{
+        width: 100%;
+        min-width: 200px;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .oj li {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+
+
 }
+
+
 
 /* ====================================================================================== */
 /* User Research */
@@ -735,6 +755,7 @@ iframe {
     color: #004C92;
     font-weight: 600;
 }
+
 
 
 
@@ -1070,21 +1091,32 @@ pj shift button
         overflow-x: hidden;
     }
 
+    .frame{
+        width: 80%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
 
 
     iframe {
-        width: 95vw !important;
-        height: 70vw !important;
+        width: 86%;
+        height: 600px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         margin-bottom: 20px;
         margin-top: 30px;
 
     }
 
     iframe canvas {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
@@ -1096,8 +1128,8 @@ pj shift button
 
 
     .openInFigma {
-        color: #000 !important;
-        background-color: var(--color-sub) !important;
+        color: #FFF !important;
+        background-color: var(--color-title) !important;
         font-weight: 700;
         padding: 16px 20px;
         border-radius: 20vw;
@@ -1107,7 +1139,7 @@ pj shift button
     }
 
     .openInFigma a {
-        color: #000 !important;
+        color: #FFF !important;
     }
 
 
@@ -1119,7 +1151,7 @@ pj shift button
 
     .index {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 14px;
     }
 
 
@@ -1228,11 +1260,6 @@ hifi
         margin-top: 20px;
     }
 
-    #hifi-des-title-container {
-        font-size: 24px;
-        margin-left: 0;
-
-    }
 
     /* .openInFigma {
         padding: 20px 30px;
@@ -1304,5 +1331,103 @@ hifi
 
         border-radius: 20px;
     }
+
+}
+
+
+@media (max-width: 768px) {
+    .inner-title#rs1{
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    #es-rs-container{
+        width: 86%;
+        padding: 20px 12%;
+        margin-top: 40px;
+    }
+
+    .rs2{
+        font-size: 16px;
+    }
+
+    .rs3{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    
+    .row-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ca-img{
+        height: 180px;
+        width: auto;
+        margin-bottom: 0px;
+    }
+
+    .inner-title{
+        font-size: 16px;
+        margin-bottom: 20px;
+
+    }
+
+    .ui-img{
+        width: 82%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .ur-des{
+        width: 86%;
+        font-size: 14px;
+        text-align: left;
+        color: #1a1a1a;
+        margin-bottom:20px;
+    }
+
+    .persona-img, .storyboard-img{
+        width: 90%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .information-architecture-img{
+        width: 90%;
+        height: auto;
+    }
+
+    .des-link{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 12px 20px;
+        margin-bottom: 60px;
+    }
+
+    #end-margin{
+        margin-bottom: 40px;
+    }
+
+    #sg1{
+        margin: 0;
+    }
+
+    #hifi-des-title-container {
+        font-size: 24px;
+        margin-left: 0;
+        flex-direction: row;
+
+    }
+
+    #hifi-half-container{
+        flex-direction: row;
+    }
+
+    #hifi-half{
+        border-radius: 30px;
+    }
+
 
 }

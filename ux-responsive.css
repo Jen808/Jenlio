@@ -18,13 +18,36 @@
     .title {
         width: 92%;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 120px;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
         box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.2);
+        gap: 50px;
+        margin-bottom: 40px;
 
     }
+
+    .title-des{
+        width: 94%;
+        padding:0;
+    }
+
+    li a{
+        line-height: 28px;
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+
+    .index a{
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+
+
+
 
     .mainimg {
         height: 60vh;
@@ -98,12 +121,12 @@
         justify-content: center;
         align-items: center;
         height: auto;
-        width: 95vw;
+        width: 94%;
 
     }
 
     .tools {
-        width: 80%;
+        width: 94%;
         height: auto;
         margin: 20px 0;
         gap: 10px;
@@ -121,12 +144,45 @@
 
     .title-box {
         font-size: 28px;
-        width: 85%;
-        margin-left: 20px;
+        width: 94%;
+        margin-bottom: 10px;
 
     }
 
-    .title-des,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .sub-title{
+        margin-bottom: 40px;
+
+    }
+
+    .des, #es-des{
+        text-align: left;
+        font-size: 16px;
+        padding: 80px 20px 20px 20px;
+        width: 80%;
+    }
+
+
+    /* .title-des,
     .announcement {
         font-size: 16px;
         line-height: 5vw;
@@ -134,14 +190,14 @@
 
 
 
-    }
+    } */
 
 
     .brief {
         line-height: 5vw;
         flex-direction: column;
         height: 80px;
-        width: 80%;
+        width: 94%;
         text-align: left;
         justify-content: center;
         align-items: center;
@@ -178,16 +234,7 @@
     }
     
 
-    .title-des{
-        padding-left: 35px;
-    }
 
-    li a{
-        line-height: 28px;
-        font-size: 16px;
-        font-weight: 600;
-
-    }
 
 
 

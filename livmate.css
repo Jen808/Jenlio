@@ -362,6 +362,7 @@ body {
     width: 30em;
     height: auto;
     box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -887,7 +888,7 @@ pj shift button
     .shift-container {
         display: flex;
         flex-direction: row;
-        width: 80%;
+        width: 94%;
         justify-content: center;
         margin: 0;
     }
@@ -900,9 +901,9 @@ pj shift button
         width: 80%;
         justify-content: center;
     }
-
+    
     .shift-next {
-        display: none;
+        margin-right: 14px;
     }
 
     /* ==============================================
